@@ -1,0 +1,803 @@
+body {background-color: var(--GS11);}
+header{background-color: var(--GS02); position: fixed; width: 100%; z-index: 999;}
+header>h1>a>img{max-width: 44px;}
+header>div>div.chessGun>ul>li:nth-child(3),.noUser>ul>li:nth-child(2){background-image: url('../images/cartBlack.png');}
+header>div>div.chessGun>ul>li:nth-child(3):hover,.noUser>ul>li:nth-child(2):hover{background-image: url('../images/cartBlue.png');}
+header>div>div.chessGun>ul>li:nth-child(4),.noUser>ul>li:nth-child(3) {background-image: url('../images/account.png');}
+header>div>div.chessGun>ul>li:nth-child(4):hover,.noUser>ul>li:nth-child(3):hover {background-image: url('../images/accountBlue.png');}
+header>div>div.chessGun>ul>li:last-child,.noUser>ul>li:nth-child(4){background-image: url('../images/login.png');}
+header>div>div.chessGun>ul>li:last-child:hover,.noUser>ul>li:nth-child(4):hover {background-image: url('../images/loginBlue.png');}
+footer{background-color: var(--GS12);}
+@media screen and (max-width: 767px){
+    div.listContainer > div,
+    footer > div{
+        margin: 0 auto; 
+        width: 92.85%;
+    }
+    header > div{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        gap: 35px;
+        padding: 0 3.57%;
+    }
+    header > div > div:first-of-type, header > div > div:first-of-type:nth-of-type(2){
+        margin-left: auto;
+    }    
+    header > div nav.is-active ul{
+        margin: 20px 25px 0px;
+        padding-bottom: var(--sp20);
+    }
+    header > div nav.is-active ul li{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    header > div nav.is-active ul li b{
+        display: block;
+        padding: 20px 0;
+    }
+    header > div nav.is-active ul li b:before{
+        content: ''; 
+        background-color: var(--GS08);
+        width: 100%; height: 1px;
+        position: absolute; 
+        top: 50px;
+    }
+    header > div nav.is-active ul li ol:after{
+        content: '';  background-color: var(--GS08);
+        width: 100%; height: 1px;  position: absolute; left: 0px;
+        bottom: -10px;
+    }
+    header > div nav.is-active ul li b {
+        color: var(--B05);
+        position: relative;
+        cursor: pointer;
+    }    
+    header > div nav.is-active ul li b::after {
+        content: '';
+        width: 14px; height: 9px; 
+        background-image: url('../images/blueShowMore.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%); 
+        transition: transform 0.3s ease; 
+    }
+    header > div nav.is-active ul li b.active::after {
+        transform: translateY(-50%) rotate(180deg);
+    }    
+    header > div nav.is-active ul li:nth-of-type(2n) b{
+        color: var(--B02);
+    }
+    header > div nav.is-active ul li ol{
+        padding: var(--sp10) var(--sp20); 
+    }
+    header > div nav.is-active ul li ol li{
+        line-height: 35px; 
+    }
+    header > div > nav.is-active > ul > li > ol li a{
+        color: var(--GS08);
+        white-space: nowrap;
+    }
+    header > div > nav.is-active > ul > li > ol li a:hover{
+        color: var(--B05);
+    }
+    header > div > nav.is-active > ul > li:nth-of-type(2n) > ol li a:hover{
+        color: var(--B02)
+    }
+    .hamburger.is-active{
+        transition: all 0.2s ease-in-out;
+        transition-delay: 0.4s;
+        transform: rotate(45deg);       
+    }  
+    .hamburger.is-active span{
+        background-color: var(--GS01);
+    }
+   .hamburger.is-active span:nth-child(1){
+        transform: translateY(7.5px);
+    }  
+   .hamburger.is-active span:nth-child(3){
+        transform: translateY(-7.5px) rotate(270deg);
+    }
+    .search-Toggle {
+        position: relative;
+        cursor: pointer;
+        align-items: center;
+        background: url('../images/search.png') no-repeat center center;
+        width: 19px;
+        height: 19px;
+    }
+    .search-Panel {
+        background-color: #eeeeee;
+        border: 4px solid var(--GS01);
+        color: var(--B03);
+        width: 100%; height: 45px;
+        padding: 10px 50px;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        outline: none;
+        background-image: url('../images/search.png'), url('../images/close.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: 10px center, right 10px center;
+        background-size: 19px 19px, 11px 11px;
+        z-index: 100;
+    }      
+    header .search-Panel::placeholder {
+        color: var(--B03);
+    }
+    header > div > div input[type=button] {
+        background: url('../images/cart.png') no-repeat center center;
+        width: 19px; height: 19px;
+        text-indent: -9999px;
+        position: relative;
+        z-index: 10;
+    }
+    header > div > div:nth-of-type(2) ul {
+        position: absolute;
+        top: 100%; right: 0;
+        background-color: var(--GS02);
+        border-top: 1px solid var(--GS04);
+        min-width: 242px;
+        border-radius: 15px;
+        margin-right: 25px;
+    }
+    header > div > div:nth-of-type(2) ul li:not(:last-of-type) {
+        border-bottom: 1px solid var(--GS04);
+    }
+    header > div > div:nth-of-type(2) ul li {
+        line-height: 50px; text-align: center;
+        background-position: left 35px center;
+        background-repeat: no-repeat; 
+    }
+    header > div > div.noUser ul li{
+        padding: var(--sp10) var(--sp20);  
+    }
+    header > div > div.noUser ul li a{
+        color: var(--GS12);
+    }
+    header > div > div.noUser ul li:hover,
+    header > div > div.noUser ul li:hover a {
+        color: var(--B02);
+    }
+    header > div > div.chessGun ul li:not(:nth-child(1), :nth-child(2)):hover,
+    header > div > div.chessGun ul li:not(:nth-child(2)):hover a {
+        color: var(--B02);
+    }
+    header > div > div.chessGun ul li:not(:nth-child(2)) a {
+        display: block; padding: var(--sp10) var(--sp20); color: var(--GS12);
+    }
+    header > div > div.chessGun ul li:nth-child(1){
+        background-image: url('../images/checkout_alienware.png');
+        padding: var(--sp25) 0px var(--sp25) var(--sp60);
+        line-height: 21px;         
+    }
+    header > div > div.chessGun ul li:nth-child(2){
+        background-color: var(--B03); ;
+        box-sizing: border-box; border-radius: 5px;
+        max-width: 138px; margin: 10px auto;
+    }   
+    footer > div {
+        padding: 30px 0px;
+        width: 92.85%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    footer h2 {
+        order: 1;
+    }
+    footer h2 img {
+        max-width: 240px;
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto 25px;
+    }  
+    footer > div > ul:first-of-type {
+        padding-bottom: var(--sp80s); order: 2;
+    }    
+    footer > div > ul:first-of-type > li > strong {
+        color: var(--GS03);
+        display: block;
+        cursor: pointer;
+        position: relative;
+        padding-bottom: var(--sp20);
+        width: 100%;
+        margin-bottom: var(--sp15);
+    }
+
+    footer > div > ul:first-of-type strong::after{
+        content: ''; position: absolute;
+        background-color: var(--GS08);
+        width: 100%; height: 1px; left: 0;
+        top: 30px;
+    }
+    footer > div > ul:first-of-type > li > strong:before {
+        content: "";
+        position: absolute;
+        width: 10px;height: 6px;
+        transition: transform 0.3s ease-in-out;
+        background-image: url('../images/arrow.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    footer > div > ul:first-of-type > li > strong.active:before {
+        transform: rotate(180deg);
+    }
+    footer > div > ul > li > ol{
+       opacity: 0;
+    }
+    footer > div > ul > li > strong.active + ol {
+        opacity: 1; position: relative; margin-bottom: var(--sp15);
+    }
+    footer > div > ul > li > strong.active + ol:before{
+        content: '';  background-color: var(--GS08);
+        width: 100%; height: 1px;  position: absolute; left: 0px;
+        bottom: 0px;
+    }
+    footer > div > ul:first-of-type li ol li {
+        padding-bottom: var(--sp20);
+    }
+    footer > div > ul:first-of-type li > ol > li a {
+        white-space: nowrap;
+        color: var(--GS09);
+    }
+    footer > div > ul:first-of-type > li > ol > li a:hover {
+        color: var(--B02);
+    }
+    footer div > ul:last-of-type {
+        display: block; order: 2;
+    }
+    footer div > ul:last-of-type li:not(:last-of-type){
+        margin-bottom: var(--sp20);
+    }
+    footer div > ul:last-of-type li a{
+        color: var(--GS07);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header > div,
+    div.listContainer > div,
+    footer > div{
+        margin: 0 auto; 
+        width: 93.5%;
+    }
+    header > div{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        gap: 35px;
+        padding: 0 3.25%;
+    }
+    header > div > div:first-of-type, header > div > div:first-of-type:nth-of-type(2){
+        margin-left: auto;
+    }    
+    header > div nav.is-active ul{
+        margin: var(--sp20) var(--sp25) 0px;
+        padding-bottom: var(--sp20);
+    }
+    header > div nav.is-active ul li{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    header > div nav.is-active ul li b{
+        display: block;
+        padding: var(--sp20) 0;
+    }
+    header > div nav.is-active ul li b:before{
+        content: ''; 
+        background-color: var(--GS08);
+        width: 100%; height: 1px;
+        position: absolute; 
+        top: 50px;
+    }
+    header > div nav.is-active ul li ol:after{
+        content: '';  background-color: var(--GS08);
+        width: 100%; height: 1px;  position: absolute; left: 0px;
+        bottom: -10px;
+    }
+    header > div nav.is-active ul li b {
+        color: var(--B05);
+        position: relative;
+        cursor: pointer;
+    }    
+    header > div nav.is-active ul li b::after {
+        content: '';
+        width: 14px; height: 9px; 
+        background-image: url('../images/blueShowMore.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%); 
+        transition: transform 0.3s ease; 
+    }
+    header > div nav.is-active ul li b.active::after {
+        transform: translateY(-50%) rotate(180deg);
+    }    
+    header > div nav.is-active ul li:nth-of-type(2n) b{
+        color: var(--B02);
+    }
+    header > div nav.is-active ul li ol,
+    footer > div > ul:first-of-type li ol{
+        padding: 10px 20px; display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    header > div nav.is-active ul li ol li:nth-child(3n+2),
+    footer > div ul:first-of-type li ol li:nth-child(3n+2){
+        text-align: center;
+    }    
+    header > div nav.is-active ul li ol li:nth-child(3n+3),
+    footer > div ul:first-of-type li ol li:nth-child(3n+3){
+        text-align: right;
+    }
+    header > div nav.is-active ul li ol li{
+        line-height: 35px; 
+    }
+    header > div > nav.is-active > ul > li > ol li a{
+        color: var(--GS08);
+        white-space: nowrap;
+    }
+    header > div > nav.is-active > ul > li > ol li a:hover{
+        color: var(--B05);
+    }
+    header > div > nav.is-active > ul > li:nth-of-type(2n) > ol li a:hover{
+        color: var(--B02)
+    }
+    .hamburger.is-active{
+        transition: all 0.2s ease-in-out;
+        transition-delay: 0.4s;
+        transform: rotate(45deg);       
+    }  
+    .hamburger.is-active span{
+        background-color: var(--GS01);
+    }
+    .hamburger.is-active span:nth-child(1){
+        transform: translateY(7.5px);
+    }  
+    .hamburger.is-active span:nth-child(3){
+        transform: translateY(-7.5px) rotate(270deg);
+    }
+    .search-Toggle {
+        position: relative;
+        cursor: pointer;
+        align-items: center;
+        background: url('../images/search.png') no-repeat center center;
+        width: 19px;
+        height: 19px;
+    }
+    .search-Panel {
+        background-color: #eeeeee;
+        border: 4px solid var(--GS01);
+        color: var(--B03);
+        width: 100%; height: 45px;
+        padding: 10px 50px;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        outline: none;
+        background-image: url('../images/search.png'), url('../images/close.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: 10px center, right 10px center;
+        background-size: 19px 19px, 11px 11px;
+        z-index: 100;
+    }      
+    header .search-Panel::placeholder {
+        color: var(--B03);
+    }
+    header > div > div input[type=button] {
+        background: url('../images/cart.png') no-repeat center center;
+        width: 19px; height: 19px;
+        text-indent: -9999px;
+        position: relative;
+        z-index: 10;
+    }
+    header > div > div:nth-of-type(2) ul {
+        position: absolute;
+        top: 100%; right: 0;
+        background-color: var(--GS02);
+        border-top: 1px solid var(--GS04);
+        min-width: 242px;
+        border-radius: 15px;
+        margin-right: 25px;
+    }
+    header > div > div:nth-of-type(2) ul li:not(:last-of-type) {
+        border-bottom: 1px solid var(--GS04);
+    }
+    header > div > div:nth-of-type(2) ul li {
+        line-height: 50px; text-align: center;
+        background-position: left 35px center;
+        background-repeat: no-repeat; 
+    }
+    header > div > div.noUser ul li{
+        padding: var(--sp10) var(--sp20);  
+    }
+    header > div > div.noUser ul li a{
+        color: var(--GS12);
+    }
+    header > div > div.noUser ul li:hover,
+    header > div > div.noUser ul li:hover a {
+        color: var(--B02);
+    }
+    header > div > div.chessGun ul li:not(:nth-child(1), :nth-child(2)):hover,
+    header > div > div.chessGun ul li:not(:nth-child(2)):hover a {
+        color: var(--B02);
+    }
+    header > div > div.chessGun ul li:not(:nth-child(2)) a {
+        display: block; padding: var(--sp10) var(--sp20); color: var(--GS12);
+    }
+    header > div > div.chessGun ul li:nth-child(1){
+        background-image: url('../images/checkout_alienware.png');
+        padding: var(--sp25) 0px var(--sp25) var(--sp60);
+        line-height: 21px;         
+    }
+    header > div > div.chessGun ul li:nth-child(2){
+        background-color: var(--B03); ;
+        box-sizing: border-box; border-radius: 5px;
+        max-width: 138px; margin: 10px auto;
+    }   
+
+    footer > div {
+        padding: 30px 0px;
+        width: 93.5%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    footer h2 {
+        order: 1;
+    }
+    footer h2 img {
+        max-width: 240px;
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto 25px;
+    }  
+    footer > div > ul:first-of-type {
+        padding-bottom: var(--sp140); order: 2;
+    }    
+    footer > div > ul:first-of-type > li > strong {
+        color: var(--GS03);
+        display: block;
+        cursor: pointer;
+        position: relative;
+        padding-bottom: var(--sp20);
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    footer > div > ul:first-of-type strong::after{
+        content: ''; position: absolute;
+        background-color: var(--GS08);
+        width: 100%; height: 1px; left: 0;
+        top: 30px;
+    }
+    footer > div > ul:first-of-type > li > strong:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 6px;
+        transition: transform 0.3s ease-in-out;
+        background-image: url('../images/arrow.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    footer > div > ul:first-of-type > li > strong.active:before {
+        transform: rotate(180deg);
+    }
+    footer > div > ul > li > ol{
+       opacity: 0;
+    }
+    footer > div > ul > li > strong.active + ol {
+        opacity: 1; position: relative; margin-bottom: var(--sp15);
+    }
+    footer > div > ul > li > strong.active + ol:before{
+        content: '';  background-color: var(--GS08);
+        width: 100%; height: 1px;  position: absolute; left: 0px;
+        bottom: 0px;
+    }
+    footer > div > ul:first-of-type li ol li {
+        padding-bottom: var(--sp20);
+    }
+    footer > div > ul:first-of-type li > ol > li a {
+        white-space: nowrap;
+        color: var(--GS09);
+    }
+    footer > div > ul:first-of-type > li > ol > li a:hover {
+        color: var(--B02);
+    }
+    footer div > ul:last-of-type {
+        display: flex;
+        flex-wrap: wrap;
+        order: 2;
+        text-align: center;
+        gap: 20px;
+    }
+    footer div > ul:last-of-type li a{
+        color: var(--GS07);
+    }
+}
+@media screen and (max-width: 1279px) {
+    header > div nav, header > div > a {
+        display: none;
+    }
+    header > div nav.is-active {
+        display: block;  position: absolute; width: 100%;
+        background-color: var(--GS10);
+        left: 0px; top: 60px;
+    }
+    .hamburger span{
+        width: 25px; height: 2px;
+        display: block; margin: 5px auto;
+        background-color: var(--GS11);
+        transition: all 0.3s ease-in-out;
+    }
+    header.is-active{background-color: var(--GS10);}
+    footer div > ul:last-of-type li{
+        line-height: 30px;
+    }
+
+}
+@media screen and (min-width: 1280px){
+    header > div,
+    div.listContainer > nav > ul,
+    div.listContainer > div,
+    footer > div{
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+    header > div{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+    }    
+    header > div nav {
+        width: 59%;
+        margin-left: 16.66%;
+    }
+    header > div nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+    header > div nav > ul > li:not(:first-child) {
+        margin-left: 5.42%;
+    }
+    header > div nav ul li b {
+        line-height: 60px;
+    }
+    header > div nav ul li b:after {
+        bottom: 10px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: var(--B05);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    header > div nav ul li:hover b::after {
+        width: 100%;
+        left: 0;
+    }
+    header > div nav ul li ol {
+        background-color: var(--GS02);
+        position: absolute;
+        top: 100%;
+        left: -30%;
+        opacity: 0;
+        border-top: 1px solid var(--GS04);
+        transition: opacity 0.5s, top 0.5s;
+        min-width: 182px;
+        visibility: hidden; 
+    }
+    header > div nav ul li:hover ol {
+        opacity: 1; top: 60px; visibility: visible;
+    }
+    header > div nav ul li ol li {
+        width: 100%;    
+    }
+    header > div nav ul li ol li a {
+        color: var(--GS12);
+        white-space: nowrap;
+        padding: 10px 20px;
+        display: block;
+    }
+    header > div nav ul li ol li:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: var(--GS03);
+    }
+    header > div > input.mui {
+        display: none;
+    }
+    .search-Toggle {
+        position: relative;
+        cursor: pointer;
+        align-items: center;
+        background: url('../images/search.png') no-repeat center center;
+        width: 19px;
+        height: 19px;
+    }
+    .search-Panel {
+        background-color: #eeeeee;
+        border: 4px solid var(--GS01);
+        color: var(--B03);
+        width: 95%;
+        height: 45px;
+        padding: 10px 50px;
+        position: absolute;
+        left: 53%;
+        top: 50%;
+        transform: translate(-50%, -50%); outline: none;
+        background-image: url('../images/search.png'), url('../images/close.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: 10px center, right 10px center;
+        background-size: 19px 19px, 11px 11px;
+        z-index: 100;
+    }
+    header .search-Panel::placeholder {
+        color: var(--B03);
+    }
+    header > div > div input[type=button] {
+        background: url('../images/cart.png') no-repeat center center;
+        width: 19px; height: 19px;
+        text-indent: -9999px;
+        position: relative;
+        z-index: 10;
+    }
+    header > div > div:nth-of-type(2) ul {
+        display: none;
+        position: absolute;
+        top: 100%; right: 0;
+        background-color: var(--GS02);
+        border-top: 1px solid var(--GS04);
+        min-width: 242px;
+        border-radius: 15px;
+    }
+    header > div > div:nth-of-type(2) ul li:not(:last-of-type) {
+        border-bottom: 1px solid var(--GS04);
+    }
+    header > div > div:nth-of-type(2) ul li {
+        line-height: 50px; text-align: center;
+        background-position: left 35px center;
+        background-repeat: no-repeat; 
+    }
+    header > div > div.noUser ul li{
+        padding: var(--sp10) var(--sp20);  
+    }
+    header > div > div.noUser ul li a{
+        color: var(--GS12);
+    }
+    header > div > div.noUser ul li:hover,
+    header > div > div.noUser ul li:hover a {
+        color: var(--B02);
+    }
+    header > div > div.chessGun ul li:not(:nth-child(1), :nth-child(2)):hover,
+    header > div > div.chessGun ul li:not(:nth-child(2)):hover a {
+        color: var(--B02);
+    }
+    header > div > div.chessGun ul li:not(:nth-child(2)) a {
+        display: block; padding: var(--sp10) var(--sp20); color: var(--GS12);
+    }
+    header > div > div.chessGun ul li:nth-child(1){
+        background-image: url('../images/checkout_alienware.png');
+        padding: var(--sp25) 0px var(--sp25) var(--sp60);
+        line-height: 21px;         
+    }
+    header > div > div.chessGun ul li:nth-child(2){
+        background-color: var(--B03); ;
+        box-sizing: border-box; border-radius: 5px;
+        max-width: 138px; margin: 10px auto;
+    }   
+    header > div > a{
+        background: url('../images/support.png') no-repeat center center;
+        width: 19px;
+        height: 22px;
+        text-indent: -9999px;
+    }
+    div.hamburger{
+        display: none;
+    }
+    /* Styling for the footer */
+    footer > div {
+        padding: 30px 0;
+    }
+    footer > div > ul:first-of-type {
+        max-width: 800px;
+    }
+    footer > div > ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer > div > ul > li {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    footer > div > ul > li > ol {
+        position: absolute;
+        top: 100%; left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    footer > div > ul > li:hover > ol {
+        visibility: visible;
+        opacity: 1;
+    }
+    footer > div > ul li ol li {
+        margin-bottom: 10px;
+    }
+    footer > div > ul li > ol > li a {
+    }
+    footer > div > ul > li > strong {
+        color: var(--GS03);
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+    footer > div > ul > li > strong:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 6px;
+        background: url('../images/arrow.png') no-repeat center center;
+        background-size: contain;
+        transition: transform 0.3s ease-in-out;
+    }
+    footer > div > ul > li:hover > strong:before {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    footer > div > ul:first-of-type {
+        margin-bottom: 110px;
+    }
+    footer > div > ul > li > ol > li a {
+        color: var(--GS09);
+    }
+    footer > div > ul > li > ol > li a:hover {
+        color: var(--B02);
+    }
+    footer h2 img {
+        max-width: 240px;
+        display: block;
+        margin-bottom: 110px;
+    }
+    footer h2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    footer > div > ul:nth-of-type(2) {
+        max-width: 910px;
+    }
+    footer div > ul:nth-of-type(2) li a {
+        color: var(--GS07);
+    }
+}
+
+/* roughly 906 */

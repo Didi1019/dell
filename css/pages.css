@@ -1,0 +1,5685 @@
+
+@keyframes slideShow {
+  0% { opacity: 0; }
+  10% { opacity: 1; } 
+  45% { opacity: 1; } 
+  55% { opacity: 0; }
+  100% { opacity: 0; }
+}
+ul.bar {
+  background-color: var(--GS12);
+  height: 50px; width: 100%;
+  position: absolute;
+  z-index: 100; top: 60px;
+  display: flex; align-items: center;
+  justify-content: center; 
+}
+div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; transition-timing-function:ease-out;}  
+@media screen and (max-width: 767px){
+  ul.bar li {
+    position: absolute;
+    text-align: center; 
+    color: var(--GS01, white);
+    animation: slideShow 12s infinite;
+    opacity: 0;
+    width: 92.85%;
+  }
+  ul.bar li:nth-child(1) {
+    animation-delay: 0s;  
+  }
+  ul.bar li:nth-child(2) {
+    animation-delay: 6s; 
+  }
+  main > div:first-of-type{
+    background-color: var(--GS12);
+    padding-bottom: var(--sp60);
+    position: relative;
+    overflow: hidden;
+  }
+  main > div:first-of-type > ul{
+    height: 600px;
+    position: relative;
+    width: 100%;
+  }
+  main > div:first-of-type > ul li:nth-child(1),
+  main > div:first-of-type > ul li:nth-child(2){
+    left: 0; top: 40px; width: 100%; height: 100%;
+    transform: none; border-radius: 0;
+    box-shadow: none; opacity: 1;
+  }
+  main > div:first-of-type > ul li:nth-child(n+3) a {
+    display: none;
+  } 
+  main > div:first-of-type > ul li{
+    background-position: center;
+    background-size: cover;
+    width: 100px; height: 150px;   
+    position: absolute;
+    top: 59.33%; 
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.3) inset;
+    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s, opacity 0.5s;
+    background-color: var(--GS12);
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  main > div:first-of-type > ul li:nth-child(3){left: calc(50% - 130px); opacity: 0.9;}
+  main > div:first-of-type > ul li:nth-child(4){left: calc(50% + 0px);opacity: 0.9;}
+  main > div:first-of-type > ul li:nth-child(5){left: calc(50% + 130px);opacity: 0.9;}
+  main > div:first-of-type > ul li:nth-child(6){left: calc(50% + 370px);opacity: 0; }
+  main > div:first-of-type > ul li div{
+    width: 92.8%; position: absolute; top: 190px;
+    left: 25px; transform: translateY(-50%);
+    opacity: 0; z-index: 10;
+  }
+  main > div:first-of-type > ul li:nth-of-type(2) div {
+    display: block; animation: show 0.75s ease-in-out 0.1s forwards;
+  }
+  @keyframes show {
+    0% {
+      filter: blur(15px);
+      transform: translateY(calc(-50% + 75px));
+    }
+    100% {
+      opacity: 1; filter: blur(0);
+    }
+  } 
+  main > div:first-of-type > ul li div h2{
+    width: 92.8%;;
+  }
+  main > div:first-of-type > ul li div p{
+    margin-block: var(--sp20);
+    max-width: 400px;
+    font-size: 12px; width: 75%; line-height: 20px;
+  }
+  main > div:first-of-type .sButton{
+    position: absolute;
+    z-index: 100; 
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main > div:first-of-type .sButton > button{ 
+    background: url('../images/arrowButtonEmpty.png') no-repeat center center;
+    background-size: contain; 
+    user-select: none;
+    width: 31px;    
+    height: 23px;   
+    cursor: pointer;
+    text-indent: -9999px; 
+  }
+  main > div:first-of-type .sButton > button:hover{
+    background: url('../images/arrowButtonFill.png') no-repeat center center;
+  }
+  main > div:first-of-type .sButton > button:last-of-type{
+    margin-left: var(--sp20);
+    transform: rotate(180deg);
+  } 
+  main > video{
+    width: 100%; background-color: black;
+  }
+  /* end of main */
+  /* start of peak */
+  main > div:nth-of-type(2){
+    background: url('../images/peakBg.png') no-repeat center center;
+    background-size: cover;  padding: var(--sp40) 0 var(--sp40);
+  }
+  main > div:nth-of-type(2) > div{
+    margin-left: var(--sp60);
+    display: flex;
+    flex-direction: column;
+    width: 83.5%;
+  }
+  main > div:nth-of-type(2) > div h3{
+    margin-bottom: var(--sp30);
+  }
+  main > div:nth-of-type(2) > div p{
+    margin-bottom: var(--sp20);
+  }
+  main > div:nth-of-type(2) > div a{
+    align-self: flex-end; 
+  }
+  /*  alienware collapse*/
+  main > div:nth-of-type(3){
+    margin: 0 auto; 
+    width: 92.8%;
+  }
+  main > div:nth-of-type(3) > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: var(--sp80) 0;
+  }  
+  main > div:nth-of-type(3) > div div{
+    width: 100%;
+  }
+  main > div:nth-of-type(3) > div div h2{
+    margin-bottom: var(--sp40); padding-bottom: var(--sp20);
+    border-bottom: 1px solid var(--GS12);
+  }
+  main > div:nth-of-type(3) > div div h2,
+  main > div:nth-of-type(3) > div div p{
+    color: #e2e2e2; 
+  }
+  main > div:nth-of-type(3) > div div p{
+    width: 92.8%;
+  }
+  main > div:nth-of-type(3) > div label{
+    cursor: pointer;
+  }
+  main > div:nth-of-type(3) > div input{
+    display: none;
+  }
+  main > div:nth-of-type(3) > ul{
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    position: relative;
+    padding-bottom: 80px;
+  }
+  main > div:nth-of-type(3) > ul::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(
+      90deg,#be92ff,#be92ff,#509FC9,#30ACD5, #0083CA,#676EFF,  #00E7E7
+    );
+    content: "";
+    z-index: 2;
+    transition: all 1.2s ease;
+  }
+  main > div:nth-of-type(3) > ul li{
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    transition: all 0.4s ease; opacity: 1;   
+    position: relative;
+  }
+  main > div:nth-of-type(3) > ul li:first-of-type{background-image: url('../images/test1.png');}
+  main > div:nth-of-type(3) > ul li:nth-of-type(2){background-image: url("../images/test2.png");}
+  main > div:nth-of-type(3) > ul li:nth-of-type(3){background-image: url("../images/test3.png")}
+  main > div:nth-of-type(3) > ul li:nth-of-type(4){background-image: url("../images/test4.png");}
+  main > div:nth-of-type(3) > ul li:nth-of-type(5){background-image: url("../images/test5.png");}
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul {
+    height: 800px;
+    transition: all 0.5s ease;
+  }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul li{
+    opacity: 1;
+  }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover{
+    flex-grow: 3;
+  }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a{
+    width: 100%; height: 100%;
+  }
+  main > ul{
+    color: #fff;
+  }
+  main > ul > *{
+    margin: 0 auto;
+    text-align: center;
+  }
+  main > ul:after{
+    display: block; clear: both; content: '';
+  }
+  main > ul li{
+    float: left;  
+    padding: var(--sp40) 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  main > ul li:nth-child(2n){
+  }
+  main > ul li:nth-of-type(1){background-image: url('../images/main_bg01.png');}
+  main > ul li:nth-of-type(2){background-image: url('../images/main_bg02.png');}
+  main > ul li:nth-of-type(3){background-image: url('../images/main_bg03.png');}
+  main > ul li:nth-of-type(4){background-image: url('../images/main_bg04.png');}
+  main > ul li:nth-of-type(5){background-image: url('../images/main_bg05.png');}
+  main > ul li:nth-of-type(6){background-image: url('../images/main_bg06.png');}
+  main > ul li h4{
+    margin-bottom: 20px;
+  }
+  main > ul li span{
+    padding-bottom: 370px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  main > ul li:nth-of-type(1) span{
+    background-image: url('../images/main_mouse.png');
+  }
+  main > ul li:nth-of-type(5) span{
+    background-image: url('../images/main_bag.png');
+  }
+  main > ul li a{
+    margin: 0 auto;
+  }
+  /* end of main */
+  /* list */
+  div.listContainer{
+    background-color: var(--GS11); margin-bottom: var(--sp80);
+  }
+  div.listContainer > nav{
+    background-color: var(--GS10);
+    margin-bottom: var(--sp60);
+    padding-bottom: 10px;
+  }
+  div.listContainer > nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    overflow-x: auto;
+    padding: 160px 0 var(--sp40);
+    align-items: center;
+  }
+  div.listContainer > nav ul::-webkit-scrollbar {
+    position: absolute;
+    height: 10px; 
+    padding-bottom: 10px
+  }
+  div.listContainer > nav ul::-webkit-scrollbar-thumb {
+      min-width: 200px;
+      background-color:var(--GS12);
+      border-radius: 5px;
+  }
+  div.listContainer > nav ul::-webkit-scrollbar-thumb:hover {
+      background-color: var(--GS09); 
+  }
+  div.listContainer > nav ul::-webkit-scrollbar-track {
+      background-color: var(--GS10); 
+  }
+  div.listContainer > nav ul li {
+    display: block; text-align: center; 
+  }
+  div.listContainer > nav ul li a{
+    color: var(--GS01);
+  }
+  div.listContainer > nav ul li a img{
+    margin-bottom: var(--sp15); width: 122px;
+  }
+  /* end of list nav */
+  div.listContainer > div {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-areas: 
+      "aside"
+      "sort"
+      "list"; 
+  }
+  div.listContainer > div > div:first-child {grid-area: sort;}
+  div.listContainer > div > aside {grid-area: aside;}
+  div.listContainer > div > div:last-child{grid-area: list;}
+  div.listContainer > div > div:first-child {
+    display: flex; 
+    align-items: center; 
+    text-align: right;
+  }
+  div.listContainer > div:after {
+    clear: both;  content: '';  display: block;
+  }
+  div.listContainer > div > div:first-child > div {
+    display: flex;  align-items: center;
+  }
+  div.listContainer .cart-Toggle {
+    color: var(--GS12); 
+    padding: 13px 20px;
+    background-color: var(--B02);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 140px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  div.listContainer .cart-Toggle:hover{
+    background-color: var(--B05);
+  }
+  div.listContainer > div > div:first-child > div button {
+    display: none;
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) label {
+    margin-bottom: 5px;
+    position: relative;
+    top: -20px;
+    padding-left: var(--sp20);
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) select {
+    color: var(--GS01);
+    appearance: none;
+    background: url('../images/sortArrowRotated.png') no-repeat right center;
+    background-size: 9px;
+    padding: 0px var(--sp40) 0px var(--sp20);
+    line-height: 20px;
+    position: relative;
+    left: 0px;  top: -10px; 
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
+    color: var(--GS05); background-color: var(--GS09);
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) select option:checked {
+    color: var(--GS01);
+  }
+
+  /** aside */
+  div.listContainer > div > aside{
+    position: relative;
+  }
+  div.listContainer > div > aside > input{
+    display: none;
+    padding: 20px;
+    cursor: pointer;
+    background-size: 19px 20px;
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 0;
+    text-indent: -9999px;
+    background: url('../images/exit.png') no-repeat;
+  }
+  div.listContainer > div > aside > input.active{
+    display: block;
+  }
+  div.listContainer > div > aside > h3{
+    margin-bottom: var(--sp50); background-color: var(--GS12);
+    padding: var(--sp15) 0px var(--sp15) var(--sp30); text-align: left; 
+    max-width: 260px;
+    width: 100%;
+  }
+  div.listContainer > div > aside > ul{
+    display: none;
+  }
+  div.listContainer > div > aside > ul.active{
+    padding: var(--sp80s) var(--sp40);
+    display: block;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    background-color: black;
+  }
+  div.listContainer > div > aside ul li{
+    position: relative;
+  }
+  div.listContainer > div > aside ul li > b {
+    color: var(--GS04); 
+    position: relative; display: block; 
+    margin-bottom: 80px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  div.listContainer > div > aside ul li > b::before {
+    content: '';
+    position: absolute;
+    right: 0; top: 50%;
+    width: 14px; height: 9px; 
+    background: url('../images/sortArrowRotated.png') no-repeat center;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease; 
+  }
+  div.listContainer > div > aside ul li > b.active::before {
+    transform: translateY(-50%) rotate(180deg); 
+  }
+  div.listContainer > div > aside ul li > b:after {
+    content: ''; 
+    background-color: var(--GS08);
+    width: 100%; height: 1px;
+    position: absolute; 
+    left: 0px; bottom: -40px;
+  }
+  div.listContainer > div > aside ul li > ol {
+    margin: var(--sp80s) 0;
+  }
+  div.listContainer > div > aside ul li > ol:after{
+    content: '';  background-color: var(--GS08);
+    width: 100%; height: 1px;  position: absolute; left: -10px;
+    bottom: -40px;
+  }
+  div.listContainer > div > aside ul li > ol li{
+    color: var(--GS08); line-height: 30px;
+  }
+  div.listContainer > div > aside ul li > ol li input {
+      display: none;
+  }
+  div.listContainer > div > aside ul li > ol li label {
+      display: flex; align-items: center;
+      cursor: pointer; position: relative;
+      padding-left: var(--sp20);
+  }
+  div.listContainer > div > aside ul li > ol li label::before {
+      content: ''; position: absolute;
+      left: 0;  top: 50%;
+      width: 13px;  height: 13px; 
+      background: url('../images/checkUnclicked.png') no-repeat center / cover;
+      transform: translateY(-50%);
+      transition: background-image 0.3s ease;
+  }
+  div.listContainer > div > aside ul li > ol li input[type="checkbox"]:checked + label::before {
+      background-image: url('../images/check.png');
+  }
+/* * end of aside */
+  div.grid-group-wrapper{
+    margin-top: var(--sp40);
+  }
+  div.listContainer > div > div:last-of-type > ul li > div{
+    position: relative; display: block;
+  }
+  div.grid-group-wrapper > ul:after{
+    display: block; clear: both; content: '';
+  }
+  div.listContainer > div > div:last-child > ul >li{
+    margin-bottom: var(--sp40);   float: left;
+  }
+  div.grid-group-wrapper > ul > li {
+    display: block; width: 100%;
+    margin-bottom: var(--sp40);
+  }
+  div.listContainer > div > div:last-child > ul > li  >div{
+    background-color: var(--GS12);
+  }
+  div.grid-group-wrapper > ul > li > div {
+    position: relative;
+  }
+  div.listContainer > div > div.grid-group-wrapper > ul > li > div div:first-of-type{
+    padding: 80px 10% 40px; 
+  }
+  div.listContainer > div > div:last-child > ul > li > div div:first-of-type{
+    background-color: var(--GS10); transition: background-color .7s; box-sizing: revert;
+  }
+  div.listContainer > div > div:last-child > ul > li >  div div:first-of-type{
+    height: 165px;
+  }
+  div.listContainer > div > div:last-child > ul > li > div div:first-of-type img {
+    max-width: 234px; width: 100%;  margin: 0 auto;
+  } 
+  div.listContainer > div > div:last-child> ul > li > div > div mark {
+    position: absolute;
+    top: 20px;  left: -5px; z-index: 10; 
+    background-color: #30acd5;
+    padding: var(--sp10) 4.56%;
+  }
+  div.listContainer > div > div:last-child > ul > li > div strong{
+    display: block; margin: var(--sp20) 6.56%;
+  }
+  div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{
+    margin: 0 6.56%; 
+  }
+  div.listContainer > div > div:last-child > ul > li > div > div:last-child{
+    padding-bottom: var(--sp30); gap: 20px; 
+  }
+  div.listContainer > div > div:last-child > ul > li > div > div:last-child:after{
+    clear: both; display: block; content: '';
+  }
+  div.listContainer > div > div:last-child > ul > li > div > div:last-child > a{
+    float: left; margin-right: 4%;
+  }
+  div.listContainer > div > div:last-child > ul > li > div h3{
+    margin-inline: 4.56%; line-height: 21px; padding: 20px 0 15px; 
+    min-height: 77px;
+  }
+  div.listContainer > div > div:last-child > ul > li > div ul li{
+    color: var(--GS06); line-height: 21px;
+    margin-left: 6.56%;
+    list-style: inside;
+  }
+  /* end of normal list but start of transiton picture */
+  div.listContainer > div > div:last-child >.test >div:first-child{
+    position: relative;
+  }
+  div.listContainer > div > div:last-child .gradient{
+    width: 100%; position: absolute;
+    height: 15px; top: 275px;    
+    left: 0px;
+    display: flex;
+  }
+  div.listContainer > div > div:last-child .gradient li{
+     display: block;  text-indent: -9999px;
+  }
+  .color-change img,
+  .change img {
+    /* opacity: 1; */
+    transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  ol.pager {
+    margin: 0 3.57% var(--sp80) 53.66% ;
+    max-width: 360px;
+    display: flex;
+    justify-content: center; align-items: center;
+    position: relative;
+    border-top: 2px solid var(--GS01);
+  }
+  ol.pager li {
+    flex: 1; text-align: center;
+  }
+  ol.pager li a {
+    color: var(--GS01); 
+    padding-top: var(--sp20);
+  }
+  ol.pager li a:hover {
+    color: var(--B04);
+  }
+  #pager-line {
+    position: absolute;
+    top: -2px; left: 0; height: 2px; z-index: 2;
+    background: var(--B04);
+    transform: translateX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+  }
+/** START DETAIL */
+  section.detailContainer{
+    padding-top: 60px;
+    overflow-x: hidden;
+  }
+  section.detailContainer > div:first-child{
+    background-color: var(--GS11);
+    z-index: 90; 
+  }
+  section.detailContainer > div:first-child > div{
+    padding: var(--sp20) 3.57%;
+    line-height: 50px;
+    box-sizing: border-box; 
+  }
+  section.detailContainer > div:first-child > div > h2{
+    display: block;
+  }
+  section.detailContainer ul.bar{
+    top: 243px; max-width: 100%;
+  }
+  section.detailContainer > div:first-child > div > strong{
+    float: right;
+  }
+  section.detailContainer > div:first-child > div::after{
+    clear: both;
+  }
+  section.detailContainer > div:first-child > div > input:first-of-type {
+    margin-right: 2%; color: var(--GS05);
+    padding-right: 4.56%;
+    background: url('../images/showMore.png') no-repeat right center;
+    position: relative; 
+    cursor: pointer;
+  }
+  section.detailContainer > div:first-child > div > input:first-of-type.active{
+    background: url('../images/showLess.png') no-repeat right center;
+  }
+  section.detailContainer > div:first-child > div > input:last-of-type{
+    max-width: 100%; width: 100%; display: block;
+  }
+  section.detailContainer > div:nth-of-type(2) {
+    background-color: var(--GS11);
+    border-bottom: 3px solid var(--GS12);
+  }
+  section.detailContainer > div:nth-of-type(2) table{
+    z-index: 100;  margin: var(--sp50) auto; 
+    text-align: left; padding-top: var(--sp40);
+    width: 92.8%;
+  }
+  section.detailContainer > div:nth-of-type(2) table tr{
+    margin-bottom: var(--sp40);
+  }
+  section.detailContainer > div:nth-of-type(2) table tr th{
+    padding-right: 100px; 
+    color: var(--GS04);
+    padding-block: var(--sp20);
+    line-height: 30px;
+  }
+  section.detailContainer > div:nth-of-type(2) table tr td{
+    color: var(--GS05); line-height: 30px;
+  }
+  section.detailContainer > div:nth-of-type(2) table tr td ul li{
+    line-height: 30px;
+  }
+  /** start of image 3rd*/
+  section.detailContainer > div:nth-of-type(3){  
+    flex-direction: column;
+    background-color: var(--GS02);
+  }
+  section.detailContainer > div:nth-of-type(3) nav{
+    padding-top: 100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  section.detailContainer > div:nth-of-type(3) aside{
+    background-color: var(--GS11);
+    padding: var(--sp80) 3% 0px;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul::after{
+    border-bottom: 2px solid var(--B04); content: '';
+    width: 100%; height: 2px; bottom: -40px;
+    display: block;
+    margin-top: var(--sp40);
+  }
+  section.detailContainer > div:nth-of-type(3) span.tracker{
+    position: absolute;
+    left: 10%; 
+    bottom: 100px;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul{
+    display: flex;
+    gap: 15px;
+    padding: var(--sp40) 3.25%;
+    justify-content: center;
+    overflow: hidden;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul li {
+    background-color: var(--GS12);
+    width: 66px;
+    border: 3px solid transparent;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul li img{
+    max-width: var(--sp50); 
+    max-height: 40px;
+    object-fit: contain;
+  }
+  section.detailContainer > div:nth-of-type(3) button {    
+    display: none; opacity: 0;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul li:hover,
+  section.detailContainer > div:nth-of-type(3) nav ul li.selected,
+  .legend nav ul li.selected, .legend nav ul li:hover{
+    border-image: linear-gradient(45deg, var(--B03), var(--B06)) 1;
+  }
+  section.detailContainer > div:nth-of-type(3) nav > div{
+    position: relative; 
+  }
+  section.detailContainer > div:nth-of-type(3) nav div img.display-img {
+    max-width: 560px;
+    padding-inline: 10px;
+    height: 300px;
+    object-fit: contain;
+  }
+  section.detailContainer > div:nth-of-type(3) nav > div img.zoom {
+    display: none;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > div >h3{
+    color: var(--B03);  width: 60%;
+    margin-bottom: var(--sp40); line-height: 30px;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > div > ul > li{
+    color: var(--GS06); line-height: var(--sp30);
+  } 
+  section.detailContainer > div:nth-of-type(3) > aside > div > input{
+    color: var(--GS12);
+    display: block;
+    margin: var(--sp40) auto;
+    background-color: var(--B04);
+    line-height: var(--sp60);
+    padding: 10px 35px 10px 15px;
+    background-image: url('../images/sortArrowRotated.png');
+    background-repeat: no-repeat; background-position: right 10px center;
+    background-size: 11px; position: relative; cursor: pointer;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > div input.active {
+    background-image: url('../images/sortArrow.png');
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li:first-of-type > h4{
+    border-top: 1px solid var(--B02);
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
+    display: block;
+    padding: var(--sp40) 0 var(--sp20);
+    color: var(--GS01);
+    line-height: 21px;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > input{
+    opacity: 0;
+  }
+  /* Default label styles */
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > label {
+    color: var(--GS01);
+    border: 3px solid var(--GS08); /* Default border */
+    padding: var(--sp30) 0 var(--sp30) var(--sp20);
+    border-radius: 10px;
+    display: block; cursor: pointer;
+  }
+
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:checked + label,
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:hover + label {
+    border: 3px solid var(--border-color, var(--B02));
+  }
+  input#teal[type="radio"]:checked + label,
+  input#teal[type="radio"]:hover + label {
+    --border-color: var(--B01);
+  }
+  input#sand[type="radio"]:checked + label,
+  input#sand[type="radio"]:hover + label {
+    --border-color: var(--sand);
+  }
+  input#yellow[type="radio"]:checked + label,
+  input#yellow[type="radio"]:hover + label {
+    --border-color: var(--yellow);
+  }
+  input#black[type="radio"]:checked + label,
+  input#black[type="radio"]:hover + label {
+    --border-color: var(--GS12);
+  }
+  input#green[type="radio"]:checked + label,
+  input#green[type="radio"]:hover + label {
+    --border-color: var(--green);
+  }
+  input#red[type="radio"]:checked + label,
+  input#red[type="radio"]:hover + label {
+    --border-color: var(--red);
+  }
+  input#gray[type="radio"]:checked + label,
+  input#gray[type="radio"]:hover + label {
+    --border-color: var(--GS05);
+  }
+  input#purple[type="radio"]:checked + label,
+  input#purple[type="radio"]:hover + label {
+    --border-color: var(--B06);
+  }
+  input#pink[type="radio"]:checked + label,
+  input#pink[type="radio"]:hover + label {
+    --border-color: var(--pink);
+  }
+  input#white[type="radio"]:checked + label,
+  input#white[type="radio"]:hover + label,
+  input#silver[type="radio"]:checked + label,
+  input#silver[type="radio"]:hover + label {
+    --border-color: var(--GS01);
+  }
+  /** end of the first spec selectin */
+  /* start of details */
+  div.details{
+    overflow: hidden;
+  }
+  /* for accesibility */
+  div.details h4{
+    color: var(--GS01); 
+  }
+  div.details > h4{
+    padding: var(--sp80) 3.25%;
+  }
+  div.details > ul{
+    margin: var(--sp80) auto;
+    padding-inline: 3.25%;
+  }
+  div.details > ul li{
+    margin-bottom: var(--sp40);
+    /** why do i have backgorund postion here? */
+    /* background-position: top var(--sp40); */
+  }
+  div.details > ul li dl dt{
+    color: var(--GS01);
+    margin: var(--sp40) 0px var(--sp30);
+  }
+  div.details > ul li dl dd{
+    color: var(--GS05); line-height: 30px;
+  }
+  div.details > div.superCharge,
+  div.details > div.fineTuned{
+    background-color: var(--GS12);    
+    padding: var(--sp60) var(--sp40);
+    margin: 0 auto var(--sp80);
+  }
+  div.details > div.full{
+    background-color: black;
+    padding: var(--sp60) 0;
+  }
+  div.details > div.superCharge > div h4,
+  div.details > div.fineTuned > div h4,
+  div.details > div.full > div h4 {
+      padding-bottom: var(--sp40);
+  }
+  div.details > div.full > div {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  div.details > div.full > div img{
+    position: relative; width: 100%;
+  }
+  div.details > div.full > div > div{
+    position: absolute;
+    width: 100%; height: 100%;
+  }
+  div.details > div.full > div > div > ul{
+    display: grid;
+    overflow: visible;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+  div.details > div.full > div > div > ul li img{
+    object-fit: contain;
+  }
+  div.details > div.full > div > div > ul li:nth-of-type(1) img{
+    margin-left: 16%;
+  }
+  div.details > div.full > div > div > ul li:nth-of-type(3) img{
+    margin-top: 12%;  margin-left: 10%;
+  }
+  div.details > div.full > div > div > ul li:nth-of-type(4) img{
+    margin-top: -40px;  margin-right: 15%;  
+  }
+   div.details > div.full > div img{
+    margin: 0 auto;
+    object-fit: cover;
+    max-inline-size: 50%;
+    width: 100%; height: 100%;
+  }
+  div.details > div.full > div > div {
+    color: white; 
+  }
+  div.details > div.superCharge > div > h4,
+  div.details > div.superCharge > div > p{
+    text-align: center;
+  }
+  div.details > div.superCharge > div ul {
+    display: grid;
+    margin-top: var(--sp60);
+    gap: 40px;    
+  }
+  div.details > div.superCharge > div ul li {
+    text-align: left;
+  }
+  div.details > div.superCharge > div ul li b {
+    color: var(--GS01);
+  }
+  div.details > div.superCharge > div ul li p {
+    line-height: 30px; margin-top: var(--sp20);
+  }
+  div.details > div.fineTuned > div p{
+    margin-bottom: var(--sp20);
+  }
+  div.details > div.fineTuned > div ul{
+    display: flex; gap: 40px;
+    justify-content: space-between;
+  }
+  div.details > div.fineTuned > div ul li{
+    text-align: center;
+    padding: 40px 15px;
+    flex: 1;
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(1){
+    background-color: var(--B06);
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(2){
+    background-color: var(--B03);
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(3){
+    background-color: var(--B02);
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(4){
+    background-color: var(--B05);
+  }
+  div.details > div.fineTuned > div ul li dl dt{
+    background-repeat: no-repeat; background-position: center top;
+    padding: 100px 0px 20px;
+  }  
+  div.details > div.fineTuned > div ul li:nth-of-type(1) dl dt{
+    background-image: url('../images/fine_01.png');
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(2) dl dt{
+    background-image: url('../images/fine_02.png');
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(3) dl dt{
+    background-image: url('../images/fine_03.png');
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(4) dl dt{
+    background-image: url('../images/fine_04.png');
+  }
+  div.details .legend{
+    margin: var(--sp80) auto;
+  }
+  div.details .legend >*{
+    margin: 0 auto;
+    text-align: center;
+  }
+  div.details .legend p{
+    width: 92.8%; 
+  }
+  div.details .legend h4{
+    margin-bottom: var(--sp30);
+  }
+  div.details .legend nav > div img{
+    margin: var(--sp40) auto;
+  }
+  div.details .legend nav ul li{
+    display: inline-block;    
+    border: 3px solid transparent;
+    margin: 0px var(--sp10);
+  }
+  div.details .legend nav ul li.selected{
+    border-image: linear-gradient(45deg, #509fc9, #676eff) 1;  
+  }
+  div.details .legend nav ul li img{     
+    max-width: 125px;
+    width: 100%;
+  }
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) translateY(0);
+  }
+  section.detailContainer > .details > ul > li:nth-child(4){
+    transition-delay: 600ms;
+  }
+  section.detailContainer > .details > ul > li:nth-child(2),
+  section.detailContainer > .details > .superCharge div > ul > li:nth-child(2),
+  section.detailContainer > .details > .superCharge div > ul > li:nth-child(5){
+    transition-delay: 200ms;
+  }
+  section.detailContainer > .details > ul > li:nth-child(3),
+  section.detailContainer > .details > .superCharge div > ul > li:nth-child(3),
+  section.detailContainer > .details > .superCharge div > ul > li:nth-child(4){
+    transition-delay: 400ms;
+  }
+    
+
+  div.black{
+    text-align: center; margin: 0 auto;
+    background-color: black;
+    padding: 105px 0px var(--sp40);
+  }
+  /* * start of contactUS */
+
+  div.wave{
+    background: linear-gradient(-45deg, var(--B05), var(--GS12), var(--B02), var(--B06));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    position: relative;
+    padding-block: var(--sp80);    
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  div.wave > div::after{
+    display: block;
+    clear: both;
+    content: '';
+  }
+  div.wave > div > a.Back {
+    background-color: var(--GS10);
+    color: #fff;
+    text-align: center;
+    float: right;
+    margin-right: 3.25%;
+    height: 40px;
+  }
+  div.wave > ul{
+    width: 92.8%;
+    margin: 0 auto var(--sp80); display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp20);   
+  }
+  div.wave > ul > li{      
+    background-color: var(--GS10);      
+    display: flex;      
+    flex-direction: column;
+    border-radius: 15px;
+    padding: var(--sp20) 0px 110px var(--sp40);      
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right bottom ;  
+    background-size: 26%;  
+  }
+  div.wave > ul > li:after{
+    position: absolute;
+    width: 65%;
+    top: 90px; left: 0px;
+    height: 1px; content: '';
+  }
+  div.wave > ul > li:nth-of-type(1):after{
+    background-color: var(--B06);
+  }
+  div.wave > ul > li:nth-of-type(2):after{
+    background-color: var(--B01);
+  }
+  div.wave > ul > li:nth-of-type(3):after{
+    background-color: var(--B05);
+  }
+  div.wave > ul > li:nth-of-type(4):after{
+    background-color: var(--B02);
+  }
+  div.wave > ul.contact > li:nth-of-type(1){
+    background-image: url('../images/contactus_bg01.png');
+  }
+  div.wave > ul.contact > li:nth-of-type(2){
+    background-image: url('../images/contactus_bg02.png');
+  }
+  div.wave > ul.contact > li:nth-of-type(3){
+    background-image: url('../images/contactus_bg03.png');
+  }
+  div.wave > ul.contact > li:nth-of-type(4){
+    background-image: url('../images/contactus_bg04.png');
+  }
+  div.wave > ul.support > li:nth-of-type(1){
+    background-image: url('../images/supportHome_bg01.png');
+  }
+  div.wave > ul.support > li:nth-of-type(2){
+    background-image: url('../images/supportHome_bg02.png');
+  }
+  div.wave > ul.support > li:nth-of-type(3){
+    background-image: url('../images/supportHome_bg03.png');
+  }
+  div.wave > ul.support > li:nth-of-type(4){
+    background-image: url('../images/supportHome_bg04.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(1){
+    background-image: url('../images/contactSupport_bg01.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(2){
+    background-image: url('../images/contactSupport_bg02.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(3){
+    background-image: url('../images/contactSupport_bg03.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(4){
+    background-image: url('../images/contactSupport_bg04.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(1){
+    background-image: url('../images/glossary_bg01.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(2){
+    background-image: url('../images/glossary_bg02.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(3){
+    background-image: url('../images/glossary_bg03.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(4){
+    background-image: url('../images/glossary_bg04.png');
+  }
+  div.wave > ul > li h3{
+    position: relative; margin-bottom: var(--sp20);
+  }
+  div.wave > ul > li > ol{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  div.wave > ul > li ol li{
+    margin-bottom: var(--sp15);
+  }      
+  div.wave > ul > li > p{
+    width: 75%; line-height: 30px; color: #fff;
+  }
+  div.wave > ul > li:nth-of-type(1) ol li a:hover{
+    color: var(--B06);
+  }
+  div.wave > ul > li:nth-of-type(2) ol li a:hover{
+    color: var(--B01);
+  }
+  div.wave > ul > li:nth-of-type(3) ol li a:hover{
+    color: var(--B05);
+  }
+  div.wave > ul > li:nth-of-type(4) ol li a:hover{
+    color: var(--B02);
+  }
+  div.wave > div.supportSearch{
+    background-color: var(--GS10);
+    width: 92.8%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px 3.5% 40px;
+  }
+  div.wave > div.supportSearch h4, div.wave > div.supportSearch p{
+    margin-bottom: var(--sp40);
+  }
+  div.wave > div.supportSearch > form{
+    margin-bottom: 20px;  
+    display: flex;
+    box-sizing: border-box; 
+  }
+  div.wave > div.supportSearch > form input:nth-of-type(1){
+    background-color: var(--GS01);
+    padding: 15px 20px;
+    width: 70%;
+  }
+  div.wave > div.supportSearch > form input::placeholder{
+    color: var(--B04);    
+  }
+  div.wave > div.supportSearch > form input:nth-of-type(2){
+    padding: 15px 25px; cursor: pointer;
+  }
+  div.wave > div.supportSearch > ol{
+    display: flex; align-items: center; gap: 10px;
+  }
+  div.wave > div.supportSearch > ol li{
+    background-color: var(--B04); 
+    padding: 15px 0px 15px 50px;   
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    width: 200px;
+  }
+  div.wave > div.supportSearch > ol li:nth-of-type(1){
+    background-image: url('../images/eye.png');
+  }
+  div.wave > div.supportSearch > ol li:nth-of-type(2){
+    background-image: url('../images/allProducts.png');
+  }
+  div.wave > div.supportSearch > form > input:last-of-type{
+    background-color: var(--B04);
+  }
+
+  /* *my account */
+  .accountContainer{
+    padding: var(--sp140) 0 var(--sp80);
+    background-color: black;
+  }
+  .accountContainer > div{
+    width: 92.8%; margin: 0 auto;
+  }
+  .accountContainer > div h2{
+    margin: 0 0 40px;
+  }
+  .accountContainer > div > div.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;    
+    align-items: stretch; 
+  }
+  .accountContainer > div > div.wrapper > div,
+  .accountContainer > div > div.wrapper > ul {
+    display: flex;
+    flex-direction: column;    
+  }
+  .test > div:first-of-type{
+    order: 1;
+  }
+  .accountContainer > div > div.wrapper > div{    
+    gap: 40px;
+  }
+  .accountContainer > div > div.wrapper > div >*{
+    background-color: var(--GS11);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type{
+    padding: var(--sp20);
+  }
+  .accountContainer > div > div.wrapper > div > div:not(:first-of-type){
+    padding: var(--sp20) var(--sp20) var(--sp40);
+  }
+  .accountContainer > div > div.wrapper > div > div > hr{
+    border: 1px solid var(--B03);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--sp20);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 40px;
+    align-items: stretch;
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li{
+    margin: 0 auto;
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li img{
+    background-color: var(--GS10); box-sizing: border-box;
+    padding: var(--sp20) var(--sp25);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption{
+    background-color: var(--GS12); text-align: center; padding-block: var(--sp10);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){
+    width: 100%;
+    display: block;
+    background: url('../images/addItem.png') center center no-repeat var(--GS12);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
+    width: 100%; display: block; text-align: center;
+    padding-top: 50%; box-sizing: border-box;
+  }
+  .accountContainer > div > div.wrapper > div > div:nth-of-type(2) > div,
+  .accountContainer > div > div.wrapper > div > div:nth-of-type(3) > div{
+    display: flex; align-items: center;  justify-content: space-between;
+  }
+  .accountContainer > div > div.wrapper > div > div > p{
+    width: 66%; line-height: 30px;
+  }
+  .accountContainer > div > div.wrapper > ul{
+    background-color: var(--GS12); gap: 40px;
+  }
+  .accountContainer > div > div.wrapper > ul li{
+    position: relative;     
+  }
+  .accountContainer > div > div.wrapper > ul li:first-of-type img{
+    max-width: 476px; float: right; object-fit: cover;
+  }
+  .accountContainer > div > div.wrapper > ul li::after{
+    clear: both; display: block; content: '';
+  }
+  .accountContainer > div > div.wrapper > ul li:first-of-type p{
+    width: 60%; 
+  }
+  .accountContainer > div > div.wrapper > ul li:first-of-type a{
+    position: absolute; bottom: 20px;
+  }
+  .accountContainer > div > div.wrapper > ul li:nth-of-type(2) img{
+    width: 100%; object-fit: cover;
+  }
+  .accountContainer > div > div.wrapper > ul li p{
+    position: absolute; left: 20px; bottom: 40px;
+  }
+  .accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
+    position: absolute; left: 20px; bottom: 20px;
+  }
+  .accountContainer > div > div.wrapper > ul li:last-of-type {
+    margin-bottom: var(--sp80);  
+  }
+
+  /* !! START OF LOGIN` */
+  div.dark{    
+    width: 100%;
+  }
+  div.dark > div{
+    display: flex;
+    /* margin: 0 auto; */
+    flex-direction: column;
+    transform-style: preserve-3d;
+    position: relative;    
+  }
+  div.dark > div > div{
+    width: 100%;
+  }
+  div.dark > div > div:first-of-type{
+    background-color: var(--GS01);
+    text-align: center;
+    position: relative;
+    transition: transform 1s ease;    
+    transform-style: preserve-3d;    
+    display: block;
+    height: 760px;
+    width: 100%;
+  }
+  div.dark > div > div:first-of-type > div {
+    position: absolute;
+    width: 73.33%;
+    height: 100%;
+    top: 140px;
+    left: 12.5%;
+    transform-style: preserve-3d; 
+    backface-visibility: hidden; 
+  }
+  .dellLogin, .createPassword  {
+    transform: rotateY(0deg);
+  }
+  .createDell, .findPassword {
+    transform: rotateY(180deg);             
+  }
+  .rotate-card{
+    transform: rotateY(180deg);
+  }
+  div.dark > div > div:first-of-type > div button{
+    cursor: pointer;
+  }
+  div.dark > div > div:first-of-type > div fieldset legend{
+    margin-bottom: var(--sp40); 
+  }
+  div.dark > div > div:first-of-type > div fieldset > ul > li{
+    margin-bottom: var(--sp30); position: relative;
+  }
+  div.dark > div > div:first-of-type > div fieldset div{
+    position: relative;
+  }
+  div.dark > div > div:first-of-type > div fieldset > ul > li label,
+  div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label{
+    position: absolute;
+    top: 0; left: 20px;
+    padding: 16px 0;      
+    pointer-events: none;
+    transition: .3s;
+  }
+  div.dark > div > div:first-of-type > div fieldset input:focus ~ label,
+  div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label,
+  div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
+    top: -10px;  left: 10px;  
+    background-color: var(--GS01);
+    z-index: 20; padding: 5px 10px;
+    color: var(--B03); 
+    font-size: 10px;     
+  }
+  div.dark > div > div:first-of-type > div fieldset input:focus {
+    outline: none; border: 1px solid var(--B03);
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset > button{
+    display: block; margin-left: auto;      
+  }    
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,
+  div.dark > div > div:first-of-type > div.createPassword fieldset > button{
+    background-color: var(--B04); 
+    margin: var(--sp30) auto;
+    display: block;
+    width: 100%;
+    padding-block: var(--sp15);
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type{
+    margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type{
+    position: relative; width: 100%;  margin-block: var(--sp25);
+  } 
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
+    content: ""; position: absolute;
+    top: 50%; width: 150px; height: 1px; 
+    background-color: var(--B04); 
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before{left: 0;}
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{right: 0;}
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
+    background-color: black; width: 100%; padding: var(--sp15) 0px var(--sp15) var(--sp25);
+    background-image: url('../images/google.png');
+    background-repeat: no-repeat; background-position: left 42% center;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div{      
+    text-align: left;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:after{
+    clear: both; display: block; content: '';  
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset ul{
+    display: flex; gap: 20px;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset ul li{
+    flex: 1;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(2) input{
+    width: auto; margin-block: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3){
+    margin-bottom: var(--sp30);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) input{
+    margin-bottom: var(--sp10);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) p{
+    padding-left: var(--sp20); background: url('../images/info-icon.png') no-repeat left center;
+    background-size: 10px;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset > p{
+   line-height: 30px; text-align: left; margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset button,
+  div.dark > div > div:first-of-type > div.findPassword fieldset > button{      
+    display: block;  width: 100%;
+    padding-block: var(--sp10);
+    cursor: pointer;
+  }
+  div.dark > div > div:first-of-type > div.createDell button:first-of-type{
+    background-color: var(--B04);  margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div.createDell button:last-of-type{
+    border: 1px solid var(--B04);
+  }
+  div.dark > div > div:first-of-type > div.findPassword fieldset > *{
+    margin-bottom: var(--sp30);
+  }
+  div.dark > div > div:first-of-type > div.findPassword fieldset > button{
+    background-color: var(--B04); padding-block: var(--sp10); margin-bottom: var(--sp30);
+  }
+  div.dark > div > div:first-of-type input {
+    box-sizing: border-box; width: 100%; border-width: 1px; border-style: solid;
+    padding: 16px; outline: 0;
+  }
+  /** start dell account  */
+  div.dark > div > div:nth-of-type(2){
+    background-color: var(--GS11);
+    text-align: center;
+    padding: var(--sp80s) 0;
+  }
+  div.dark > div > div:nth-of-type(2) h2{
+    margin-bottom: 20px;
+  }
+  div.dark > div > div:nth-of-type(2) ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 3.25%;
+    margin: var(--sp40) auto;
+  }
+  div.dark > div > div:nth-of-type(2) ul li{
+    display: flex; flex: 1;
+    justify-content: space-between;
+  }
+  div.dark > div > div:nth-of-type(2) ul li dl dt{
+    padding-top: 50px; 
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:nth-of-type(2) ul li:nth-of-type(1) dl dt{
+    background-image: url('../images/dellAccount_ex01.png');
+  }
+  div.dark > div > div:nth-of-type(2) ul li:nth-of-type(2) dl dt{
+    background-image: url('../images/dellAccount_ex02.png');
+  }
+  div.dark > div > div:nth-of-type(2) ul li:nth-of-type(3) dl dt{
+    background-image: url('../images/dellAccount_ex03.png');
+  }
+  div.dark > div > div:nth-of-type(2) ul li dl dd{
+    line-height: 30px;
+  }
+  div.dark > div > div:nth-of-type(2) img{
+    width: 100%; max-width: 400px; margin: 0 auto;
+  }
+  /* * end of login */
+
+  /* * shopping checkout */
+  section.twoface > div > div.checkOut{
+    box-sizing: border-box;
+    background-color: var(--GS01); padding-inline: var(--sp80);
+  }
+  section.twoface > div > div.checkOut ol li{
+    display: inline-block; 
+  }
+  section.twoface > div > div.checkOut ol li:not(:last-of-type){
+    padding-right: var(--sp30);
+    background: url('../images/arrowShip.png') no-repeat center right 10px;
+  }
+  section.twoface > div > div.checkOut form{
+    margin-top: var(--sp40); text-align: center;
+  }
+  section.twoface > div > div.checkOut form fieldset legend,
+  section.twoface > div > div.checkOut form fieldset ul > li{
+    margin-bottom: var(--sp30);
+  }
+  section.twoface > div > div.checkOut form fieldset ul:first-of-type > li{
+    padding: 10px 0px;  border-radius: 5px;
+    background-repeat: no-repeat; background-position: center center;
+  }
+  section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{
+    text-indent: -9999px;
+    background-color: #f7c518; background-image: url('../images/paypal.png');
+  }
+  section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
+    background-color: var(--GS12);
+    padding-right: 20px;
+    background-image: url('../images/googlePay.png');
+  }
+  section.twoface > div > div.checkOut form fieldset ul:last-of-type > li:first-child{
+    display: flex; justify-content: space-between;
+  }
+  section.twoface > div > div.checkOut form fieldset ul:last-of-type > li a{
+    display: inline-block;
+  }
+  section.twoface > div > div.checkOut ul li input {
+    box-sizing: border-box; width: 100%; border-width: 1px; border-style: solid;
+    padding: 16px; outline: 0;
+  }
+  section.twoface > div > div:last-of-type{    
+     padding-inline: var(--sp40);
+  }
+  section.twoface > div > div.checkOut button{
+    cursor: pointer;
+  }
+   section.twoface > div > div.checkOut fieldset legend{
+    margin-bottom: var(--sp40); 
+  }
+  section.twoface > div > div.checkOut fieldset > ul::after{
+    clear: both; content: ''; display: block;
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li{
+    margin-bottom: var(--sp30); position: relative;
+    float: left; width: 100%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3){
+    text-align: left;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3) > input{
+    width: 3%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3) > label{
+    width: 97%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(4){
+    margin-right: 4%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(4),
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(5){
+    width: 48%;
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label{
+    position: absolute;
+    top: 0; left: 20px;
+    padding: 16px 0;      
+    pointer-events: none;
+    transition: .3s;
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label,
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label,
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label{
+    top: -10px;  left: 10px;  
+    background-color: var(--GS01);
+    z-index: 20; padding: 5px 10px;
+    color: var(--B03); 
+    font-size: 10px;     
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus {
+    outline: none; border: 1px solid var(--B03);
+  }
+   section.twoface > div > div.checkOut fieldset > button{
+    display: block; margin-left: auto;      
+  }    
+   section.twoface > div > div.checkOut fieldset div button:first-of-type,
+   section.twoface > div > div.checkOut .createPassword fieldset > button{
+    background-color: var(--B04); 
+    margin: var(--sp30) auto;
+    display: block;
+    width: 100%;
+    padding-block: var(--sp15);
+  }
+  section.twoface > div > div.checkOut fieldset > a{
+    color: var(--GS05); transition: 0.5s;
+    margin-left: auto;
+  }
+  section.twoface > div > div.checkOut fieldset > a:hover{
+    color: var(--GS01);
+  }
+
+  /* * calculator */
+
+  section.twoface div.calculator > div:first-of-type {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  section.twoface div.calculator > div:first-of-type img{
+    display: block; margin-right: var(--sp25);
+    max-width: 120px;
+  }
+  section.twoface div.calculator > div:first-of-type h3{
+    line-height: 20px;
+  }
+  section.twoface div.calculator > div:first-of-type > div input{
+    text-align: right; width: 40px;
+  }
+  section.twoface button{
+    background-color: #222222;
+    border: none;
+  }
+  div.calculator > div:first-of-type > div > button{
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -9999px;
+    padding: 10px;
+  }
+  div.calculator input{
+    background-color: white;
+  }
+  div.calculator > div:first-of-type button:first-of-type{
+    background-image: url('../images/add.png');
+  }
+  div.calculator > div:first-of-type button:nth-of-type(2){
+      background-image: url('../images/minus.png');
+  }
+  div.calculator > div:first-of-type button:nth-of-type(3){
+      background-image: url('../images/trahcan.png');
+  }
+  div.calculator > div:nth-of-type(2){
+    display: flex; 
+    margin: var(--sp20) 0px var(--sp20) 20px;
+    align-items: center;
+    flex: 1;
+  }
+  div.calculator > div:nth-of-type(2) input{
+    width: 66.6%;     
+    padding: 15px 15px;
+  }
+  div.calculator > div:nth-of-type(2) a{
+    background-color: var(--GS07);
+    margin-left: 10px;
+    padding: 15px 40px;
+  }
+  div.calculator  > hr{
+    border: 1px solid var(--B04);
+  }
+  div.calculator ul li strong::before{
+    content: '$';
+  }
+  div.calculator ul li:first-of-type strong:first-of-type::before,
+  div.calculator ul li:nth-of-type(3) strong::before{
+    content: '';
+  }
+  div.calculator ul li{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;  
+    align-items: center;
+  }
+  div.calculator ul li:first-of-type {
+    justify-content: flex-start; 
+  }
+  div.calculator ul li:first-of-type small {
+    margin-left: 5px;
+  }
+  div.calculator ul li:first-of-type strong {
+    margin-left: auto; 
+  }
+  div.calculator >*{
+    margin-inline: auto;  text-align: center;
+  }
+  div.calculator > p{
+    width: 60%; line-height: 24px; 
+  }
+  div.calculator > a{
+    margin-top: var(--sp40);
+  }
+  .twowrap{
+    background-color: var(--GS12);
+    display: flex;    
+  }
+  .twowrap > div {
+    width: 92.8%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .twowrap > div > div:first-of-type{
+    padding-block: var(--sp140) var(--sp80);
+  }
+  .twowrap > div > div:first-of-type{
+    background-color: var(--GS01);
+  }
+  .twowrap > div > div:last-of-type{
+    background-color: var(--GS11);
+    padding-block: var(--sp80s);
+  }
+  /* order status */
+  .arrival > div,
+  .arrival > ol{
+    padding-inline: var(--sp80); display: flex; 
+  }
+  .arrival > ol{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .arrival > img{
+    margin-block: var(--sp80) var(--sp80s);
+ }
+ .arrival > div > time{
+   display: flex;
+   flex-direction: column;
+ }
+  .arrival > ol {
+    padding-inline: var(--sp25);
+    justify-content: space-between;
+    align-items: center;
+  }
+ .arrival > ol li{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: block;
+    position: relative;
+    width: 25%;
+ }
+  .arrival > ol li:nth-child(n+3){
+   color: var(--GS06);
+ }
+ .arrival > ol li:nth-child(3):hover{  
+   color: var(--GS12);
+ }
+ .arrival > ol li:before {
+   content: '';
+   display: block;
+   height: 25px;
+   width: 25px;
+   border-radius: 50%;
+   box-shadow:  0 6px 6px rgba(0, 0, 0, 0.1);
+   z-index: 5; 
+   position: relative;
+   margin: 0 auto;
+   transition: all 0.2s;
+ }
+ .arrival > ol li:nth-of-type(1):before,
+ .arrival > ol li:nth-of-type(2):before{
+   background-color: var(--B05); border: 3px solid white;    
+ }
+ .arrival > ol li:nth-of-type(3):before,
+ .arrival > ol li:nth-of-type(4):before{
+   background-color: var(--GS06); border: 5px solid white;
+ }
+ .arrival > ol li:not(:nth-of-type(4)):hover:before {
+   transform: scale(1.2);
+   background-color: var(--B05); border: 3px solid white;      
+ }
+ .arrival > ol li:after {
+   content: '';
+   height: 4px;
+   background-color: var(--B05);
+   position: absolute;
+   top: calc(50% - 15px);
+   left: 50%;    
+   z-index: 0; 
+   width: 100%;
+ }
+ .arrival > ol li:nth-of-type(3):after{
+   width: 100%; background-color: var(--GS06);
+   left: 50%;    
+ }
+ .arrival > ol li:nth-of-type(4):after {
+   content: none;
+ }
+ div.orderStatus{
+    padding-inline: var(--sp25);
+  }
+  div.orderStatus > span:first-of-type{
+    display: block;
+  }
+  div.orderStatus:after{
+    content: ""; display: block; clear: both;
+  }
+  div.orderStatus > figure{
+    margin-block: var(--sp30) var(--sp20);    
+    max-width: 264px; width: 50%;
+    margin-right: 11.11%;
+    float: left;
+  }
+  div.orderStatus > figure img{
+    background-color: var(--GS10);
+    box-sizing: border-box; padding: 20px 25px;  
+  }
+  div.orderStatus > figure figcaption{
+    text-align: center;
+    background-color: var(--GS12);
+    padding-block: var(--sp10);        
+  } 
+  div.orderStatus > div{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--sp30);
+  }
+  div.orderStatus > div address{
+    margin-block: 20px;
+    background-color: var(--GS10);
+    padding: var(--sp20) var(--sp20);
+    line-height: 30px;
+    display: block;
+  } 
+  div.orderStatus > div a{
+    align-self: flex-end; margin-top: var(--sp40);
+  }
+
+  /* end of ordersttaus */
+
+  .returns{
+    margin: var(--sp80) auto;  
+    padding: 0 3.25%;
+  }
+  .returns > div:first-of-type {
+    text-align: center;
+  }
+  .returns > div > h2{
+    margin-bottom: var(--sp20);  
+  }
+  .returns > ol{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: var(--sp40) auto var(--sp80);
+    gap: 100px;
+  }
+  .returns > ol li{
+    flex: 1 0 42%; text-align: left;
+  }
+  .returns > ol li img{
+    max-width: 200px; 
+    margin: 0 auto 20px;
+  }
+  .returns > ol li > dl dt{
+    margin-bottom: var(--sp20);
+  }
+  .returns > ol li > dl dd{
+    width: 100%; line-height: 30px;
+  }
+  /* * copyright */
+  article.rightsInfo{
+    width: 92.8%;
+    margin: 0 auto;
+    padding-block: var(--sp140) var(--sp80);
+    display: flex;
+    flex-direction: column;
+  }
+  article.rightsInfo h2{
+    margin-bottom: var(--sp40);
+  }
+  article.rightsInfo small{
+    display: block; margin-top: 10px;
+  }
+  article.rightsInfo > ul{
+    background-color: var(--GS04);
+    padding: var(--sp40) var(--sp80);
+    margin-bottom: var(--sp40);
+  }
+  article.rightsInfo > ul > li{
+    margin-bottom: var(--sp20);
+  }
+  article.rightsInfo > ul li h3{
+    margin-bottom: var(--sp20);
+  }
+  article.rightsInfo > ul li > p{
+    line-height: 30px; color: var(--GS11); margin-bottom: var(--sp20);
+  }
+  article.rightsInfo > ul li > ul > li{
+    line-height: 30px; list-style: disc; margin-left: var(--sp20);
+  }
+  article.rightsInfo > ul li > address{
+    font-style: normal; color: var(--GS11); line-height: 30px;
+  }
+  article.rightsInfo a{
+    display: flex; align-self: flex-end;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  ul.bar li {
+    position: absolute; width: 93.5%; 
+    text-align: center; 
+    color: var(--GS01, white);
+    animation: slideShow 12s infinite;
+    opacity: 0;
+  }
+  ul.bar li:nth-child(1) {
+    animation-delay: 0s;  
+  }
+  ul.bar li:nth-child(2) {
+    animation-delay: 6s; 
+  }
+  main > div:first-of-type{
+    background-color: var(--GS12);
+    padding-bottom: var(--sp60);
+    position: relative;
+    overflow: hidden;
+  }
+  main > div:first-of-type > ul{
+    height: 560px;
+    position: relative;
+    width: 100%;
+  }
+  main > div:first-of-type > ul li{
+    background-position: center;
+    background-size: cover;
+    width: 112px; height: 168px;   
+    position: absolute;
+    top: 33.33%; left: 100px; 
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.3) inset;
+    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s, opacity 0.5s;
+    background-color: var(--GS12);
+  }
+  main > div:first-of-type > ul li:nth-child(1),
+  main > div:first-of-type > ul li:nth-child(2){
+    left: 0; top: 60px; width: 100%; height: 100%;
+    transform: none; border-radius: 0;
+    box-shadow: none; opacity: 1;
+  }
+  main > div:first-of-type > ul li:nth-child(n+3) a {
+    display: none;
+  } 
+  main > div:first-of-type > ul li:nth-child(3){left: 55%; opacity: 0.9;}
+  main > div:first-of-type > ul li:nth-child(4){left: calc(55% + 132px);opacity: 0.9;}
+  main > div:first-of-type > ul li:nth-child(5){left: calc(55% + 264px);opacity: 0.9;}
+  main > div:first-of-type > ul li:nth-child(6){left: calc(55% + 396px); opacity: 0.9; }
+
+  main > div:first-of-type > ul li div{
+    width: 350px; position: absolute; top: 40%; left: 25px; transform: translateY(-50%);
+    opacity: 0; display: block; z-index: 10;
+  }
+  main > div:first-of-type > ul li:nth-of-type(2) div {
+    display: block; animation: show 0.75s ease-in-out 0.1s forwards;
+  }
+  @keyframes show {
+    0% {
+      filter: blur(15px);
+      transform: translateY(calc(-50% + 75px));
+    }
+    100% {
+      opacity: 1; filter: blur(0);
+    }
+  } 
+  main > div:first-of-type > ul li div h2{
+    width: 65%;
+  }
+  main > div:first-of-type > ul li div p{
+    margin-block: var(--sp20);
+    font-size: 12px; width: 85%; line-height: 20px;
+  }
+  main > div:first-of-type .sButton{
+    position: absolute;
+    z-index: 100; 
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main > div:first-of-type .sButton > button{ 
+    background: url('../images/arrowButtonEmpty.png') no-repeat center center;
+    background-size: contain; 
+    user-select: none;
+    width: 31px;    
+    height: 23px;   
+    cursor: pointer;
+    text-indent: -9999px; 
+  }
+  main > div:first-of-type .sButton > button:hover{
+    background: url('../images/arrowButtonFill.png') no-repeat center center;
+  }
+  main > div:first-of-type .sButton > button:last-of-type{
+    margin-left: var(--sp20);
+    transform: rotate(180deg);
+  } 
+  main > video{
+    width: 100%; background-color: black;
+  }
+  /* end of main */
+  /* start of peak */
+  main > div:nth-of-type(2){
+    background: url('../images/peakBg.png') no-repeat center center;
+    background-size: cover;
+    padding: var(--sp190) 0 var(--sp345);
+  }
+  main > div:nth-of-type(2) > div{
+    margin-left: var(--sp60);
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+  main > div:nth-of-type(2) > div h3{
+    margin-bottom: var(--sp30);
+  }
+  main > div:nth-of-type(2) > div p{
+    margin-bottom: var(--sp20);
+  }
+  main > div:nth-of-type(2) > div a{
+    align-self: flex-end; 
+  }
+  /*  alienware collapse*/
+  main > div:nth-of-type(3){
+    margin: 0 auto; 
+    max-width: 720px;
+  }
+  main > div:nth-of-type(3) > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: var(--sp80) 0;
+  }  
+  main > div:nth-of-type(3) > div div{
+    width: 100%;
+    max-width: 600px;
+  }
+  main > div:nth-of-type(3) > div div h2{
+    margin-bottom: var(--sp40); padding-bottom: var(--sp20);
+    border-bottom: 1px solid var(--GS12);
+  }
+  main > div:nth-of-type(3) > div div h2,
+  main > div:nth-of-type(3) > div div p{
+    color: #e2e2e2; margin-right: 80px;
+  }
+  main > div:nth-of-type(3) > div label{
+    cursor: pointer;
+  }
+  main > div:nth-of-type(3) > div input{
+    display: none;
+  }
+  main > div:nth-of-type(3) > ul{
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    position: relative;
+    padding-bottom: 80px;
+  }
+  main > div:nth-of-type(3) > ul::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(
+      90deg,#be92ff,#be92ff,#509FC9,#30ACD5, #0083CA,#676EFF,  #00E7E7
+    );
+    content: "";
+    z-index: 2;
+    transition: all 1.2s ease;
+  }
+  main > div:nth-of-type(3) > ul li{
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    transition: all 0.4s ease;    opacity: 1;   
+    position: relative;
+  }
+  main > div:nth-of-type(3) > ul li:first-of-type{background-image: url('../images/test1.png');}
+  main > div:nth-of-type(3) > ul li:nth-of-type(2){background-image: url("../images/test2.png");}
+  main > div:nth-of-type(3) > ul li:nth-of-type(3){background-image: url("../images/test3.png")}
+  main > div:nth-of-type(3) > ul li:nth-of-type(4){background-image: url("../images/test4.png");}
+  main > div:nth-of-type(3) > ul li:nth-of-type(5){background-image: url("../images/test5.png");}
+  /* :has() style a parent based on what child */
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul {
+    height: 800px;
+    transition: all 0.5s ease;
+  }
+
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul li{
+    opacity: 1;
+  }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover{
+      flex-grow: 3;
+  }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a{
+    width: 100%; height: 100%;
+  }
+  main > ul{
+    color: #fff;
+  }
+  main > ul > *{
+    margin: 0 auto;
+    text-align: center;
+  }
+  main > ul:after{
+    display: block; clear: both; content: '';
+  }
+  main > ul li{
+    float: left;  width: 49.5%;
+    padding: var(--sp40) 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  main > ul li:nth-child(2n){
+    margin-left: 0.5%;
+  }
+  main > ul li:nth-of-type(1){background-image: url('../images/main_bg01.png');}
+  main > ul li:nth-of-type(2){background-image: url('../images/main_bg02.png');}
+  main > ul li:nth-of-type(3){background-image: url('../images/main_bg03.png');}
+  main > ul li:nth-of-type(4){background-image: url('../images/main_bg04.png');}
+  main > ul li:nth-of-type(5){background-image: url('../images/main_bg05.png');}
+  main > ul li:nth-of-type(6){background-image: url('../images/main_bg06.png');}
+  main > ul li h4{
+    margin-bottom: 20px;
+  }
+  main > ul li span{
+    padding-bottom: 370px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  main > ul li:nth-of-type(1) span{
+    background-image: url('../images/main_mouse.png');
+  }
+  main > ul li:nth-of-type(5) span{
+    background-image: url('../images/main_bag.png');
+  }
+  main > ul li a{
+    margin: 0 auto;
+  }
+  /* list */
+  div.listContainer{
+    background-color: var(--GS11); margin-bottom: var(--sp80);
+  }
+  div.listContainer > nav{
+    background-color: var(--GS10);
+    margin-bottom: var(--sp60);
+    padding-bottom: 10px;
+  }
+  div.listContainer > nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    overflow-x: auto;
+    padding: 160px 0 var(--sp50);
+    align-items: center;
+  }
+  div.listContainer > nav ul::-webkit-scrollbar {
+    position: absolute;
+    height: 10px; 
+    padding-bottom: 10px
+  }
+  div.listContainer > nav ul::-webkit-scrollbar-thumb {
+      background-color:var(--GS12);
+      border-radius: 5px;
+  }
+  div.listContainer > nav ul::-webkit-scrollbar-thumb:hover {
+      background-color: var(--GS09); 
+  }
+  div.listContainer > nav ul::-webkit-scrollbar-track {
+      background-color: var(--GS10); 
+  }
+  div.listContainer > nav ul li {
+    display: block;
+    text-align: center; 
+  }
+  div.listContainer > nav ul li a{
+    color: var(--GS01);
+  }
+  div.listContainer > nav ul li a img{
+    margin-bottom: var(--sp15); width: 122px;
+  }
+  /* end of list nav */
+  div.listContainer > div {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-areas: 
+      "aside sort"
+      "list list"; 
+  }
+  div.listContainer > div > div:first-child {grid-area: sort;}
+  div.listContainer > div > aside {grid-area: aside;}
+  div.listContainer > div > div:last-child{grid-area: list;}
+  div.listContainer > div > div:first-child {
+    display: flex; 
+    align-items: center; 
+    text-align: right;
+    justify-content: flex-end; 
+  }
+
+  div.listContainer > div:after {
+    clear: both;  content: '';  display: block;
+  }
+  div.listContainer > div > div:first-child > div {
+    display: flex;  align-items: center;
+  }
+  div.listContainer .cart-Toggle {
+    color: var(--GS12); 
+    padding: 13px 20px;
+    background-color: var(--B02);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 140px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  div.listContainer .cart-Toggle:hover{
+    background-color: var(--B05);
+  }
+  div.listContainer > div > div:first-child > div button {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 42px;  width: 42px;
+    text-indent: -9999px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  div.listContainer > div > div:first-child > div button:first-of-type {
+    background: url('../images/gridButton.png');
+  }
+  div.listContainer > div > div:first-child > div button:first-of-type.active {
+    background: url('../images/gridButtonBlue.png');
+  }
+  div.listContainer > div > div:first-child > div button:nth-of-type(2) {
+    background: url('../images/listButton.png');
+  }
+  div.listContainer > div > div:first-child > div button:nth-of-type(2).active {
+    background: url('../images/listButtonBlue.png'); 
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) label {
+    margin-bottom: 5px;
+    position: relative;
+    top: -20px;
+    padding-left: var(--sp20);
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) select {
+    color: var(--GS01);
+    appearance: none;
+    background: url('../images/sortArrowRotated.png') no-repeat right 20px center;
+    background-size: 9px;
+    padding: 0px var(--sp40) 0px var(--sp20);
+    line-height: 20px;
+    position: relative;
+    left: 0px;  top: -10px; 
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
+    color: var(--GS05);  background-color: var(--GS09);
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) select option:checked {
+    color: var(--GS01);
+  }
+
+  /** aside */
+  div.listContainer > div > aside{
+    position: relative;
+  }
+  div.listContainer > div > aside > input{
+    display: none;
+    padding: 20px;
+    cursor: pointer;
+    background-size: 19px 20px;
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    left: 180%;
+    text-indent: -9999px;
+    background: url('../images/exit.png') no-repeat;
+  }
+  div.listContainer > div > aside > input.active{
+    display: block;
+  }
+  
+  div.listContainer > div > aside > h3{
+    margin-bottom: var(--sp60); background-color: black;
+    padding: 15px 0px; text-align: center; max-width: 120px;
+  }
+  div.listContainer > div > aside > ul{
+    display: none;
+  }
+  div.listContainer > div > aside > ul.active{
+    padding: var(--sp80s) var(--sp40);
+    display: block;
+    position: absolute; 
+    top: 0;
+    left: 10%;
+    width: 180%;
+    z-index: 900;
+    background-color: black;
+  }
+  div.listContainer > div > aside ul li{
+    position: relative;
+  }
+  div.listContainer > div > aside ul li > b {
+    color: var(--GS04); 
+    position: relative; display: block; 
+    margin-bottom: 80px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  div.listContainer > div > aside ul li > b::before {
+    content: '';
+    position: absolute;
+    right: 0; top: 50%;
+    width: 14px; height: 9px; 
+    background: url('../images/sortArrowRotated.png') no-repeat center;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease; 
+  }
+  div.listContainer > div > aside ul li > b.active::before {
+    transform: translateY(-50%) rotate(180deg); 
+  }
+  div.listContainer > div > aside ul li > b:after {
+    content: ''; 
+    background-color: var(--GS08);
+    width: 100%; height: 1px;
+    position: absolute; 
+    left: 0px; bottom: -40px;
+  }
+  div.listContainer > div > aside ul li > ol {
+    margin: var(--sp80s) 0;
+  }
+  div.listContainer > div > aside ul li > ol:after{
+    content: '';  background-color: var(--GS08);
+    width: 100%; height: 1px;  position: absolute; left: -10px;
+    bottom: -40px;
+  }
+  div.listContainer > div > aside ul li > ol li{
+    color: var(--GS08); line-height: 30px;
+  }
+  div.listContainer > div > aside ul li > ol li input {
+      display: none;
+  }
+  div.listContainer > div > aside ul li > ol li label {
+      display: flex; align-items: center;
+      cursor: pointer; position: relative;
+      padding-left: var(--sp20);
+  }
+  div.listContainer > div > aside ul li > ol li label::before {
+      content: ''; position: absolute;
+      left: 0;  top: 50%;
+      width: 13px;  height: 13px; 
+      background: url('../images/checkUnclicked.png') no-repeat center / cover;
+      transform: translateY(-50%);
+      transition: background-image 0.3s ease;
+  }
+  div.listContainer > div > aside ul li > ol li input[type="checkbox"]:checked + label::before {
+      background-image: url('../images/check.png');
+  }
+/* * end of aside */
+  div.listContainer > div > div:last-of-type > ul li > div{
+    position: relative; display: block;
+  }
+  div.grid-group-wrapper > ul:after{
+    display: block; clear: both; content: '';
+  }
+  div.listContainer > div > div:last-child > ul >li{
+    margin-bottom: var(--sp40);   float: left;
+  }
+  div.grid-group-wrapper > ul > li {
+    display: block; width: 50%;
+    margin-bottom: var(--sp40);
+  }
+  div.list-group-wrapper > ul > li{
+    width: 100%;  
+  }
+  div.list-group-wrapper > ul > li > div:after{
+    display: block; clear: both; content: '';
+  }
+  div.list-group-wrapper > ul > li > div > div:first-child{
+    float: left; margin-right: 6%;
+  }
+  div.listContainer > div > div:last-child > ul > li  >div{
+    background-color: var(--GS12);
+  }
+  div.grid-group-wrapper > ul > li:nth-of-type(2n+1) > div {
+    position: relative;
+    margin-right: 4.56%;
+  }
+  div.listContainer > div > div.grid-group-wrapper > ul > li > div div:first-of-type{
+    padding: 80px 10% 40px; 
+  }
+  div.listContainer > div > div:last-child > ul > li > div div:first-of-type{
+    background-color: var(--GS10); transition: background-color .7s; box-sizing: revert;
+  }
+  div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type{
+    padding: 80px 10% 40px;  background-color: var(--GS12); 
+  }
+  div.listContainer > div > div:last-child > ul > li >  div div:first-of-type{
+    height: 165px;
+  }
+  div.listContainer > div > div:last-child > ul > li > div div:first-of-type img {
+    max-width: 234px; width: 100%;  margin: 0 auto;
+  } 
+  div.listContainer > div > div:last-child> ul > li > div > div mark {
+    position: absolute;
+    top: 20px;  left: -5px; z-index: 10; 
+    background-color: #30acd5;
+    padding: var(--sp10) 4.56%;
+  }
+  div.listContainer > div > div:last-child > ul > li > div strong{
+    display: block; margin: var(--sp20) 6.56%;
+  }
+  div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{
+    margin: 0 6.56%; 
+  }
+  div.listContainer > div > div.list-group-wrapper > ul > li > div > div:last-child{
+    margin-left: 31.56%; 
+  }
+  div.listContainer > div > div:last-child > ul > li > div > div:last-child{
+    padding-bottom: var(--sp30); gap: 20px; 
+  }
+  div.listContainer > div > div:last-child > ul > li > div > div:last-child:after{
+    clear: both; display: block; content: '';
+  }
+  div.listContainer > div > div:last-child > ul > li > div > div:last-child > a{
+    float: left; margin-right: 4%;
+  }
+  div.listContainer > div > div:last-child > ul > li > div h3{
+    margin-inline: 4.56%; line-height: 21px; padding: 20px 0 15px; 
+    min-height: 77px;
+  }
+  div.listContainer > div > div:last-child > ul > li > div ul li{
+    color: var(--GS06); line-height: 21px;
+    margin-left: 6.56%;
+    list-style: inside;
+  }
+  /* end of normal list but start of transiton picture */
+  div.listContainer > div > div:last-child >.test >div:first-child{
+    position: relative;
+  }
+  div.listContainer > div > div:last-child .gradient{
+    width: 100%; position: absolute;
+    height: 15px; top: 275px;    
+    left: 0px;
+    display: flex;
+  }
+  div.listContainer > div > div.list-group-wrapper ul li .gradient{
+    top: 305px;
+  }
+  div.listContainer > div > div:last-child .gradient li{
+     display: block;  text-indent: -9999px;
+  }
+  .color-change img,
+  .change img {
+    /* opacity: 1; */
+    transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  ol.pager {
+    margin: 0 3.25% var(--sp80) 53.66% ;
+    max-width: 360px;
+    display: flex;
+    justify-content: center; align-items: center;
+    position: relative;
+    border-top: 2px solid var(--GS01);
+  }
+  ol.pager li {
+    flex: 1; text-align: center;
+  }
+  ol.pager li a {
+    color: var(--GS01); 
+    padding-top: var(--sp20);
+  }
+  ol.pager li a:hover {
+    color: var(--B04);
+  }
+  #pager-line {
+    position: absolute;
+    top: -2px; left: 0; height: 2px; z-index: 2;
+    background: var(--B04);
+    transform: translateX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+  }
+/** START DETAIL */
+  section.detailContainer{
+    padding-top: 60px;
+    overflow-x: hidden;
+  }
+  section.detailContainer > div:first-child{
+    background-color: var(--GS11);
+    z-index: 90; 
+  }
+  section.detailContainer > div:first-child > div{
+    width: 93.5%; margin: 0 auto; padding: 10px 0;
+    text-align: right; line-height: 50px;
+    box-sizing: border-box; 
+  }
+  section.detailContainer > div:first-child > div >*{
+    display: inline-block;
+  }
+  section.detailContainer > div:first-child > div:after{
+    clear: both; display: block; content: '';
+  }
+  section.detailContainer > div:first-child > div > h2{
+    float: left; 
+  }
+  section.detailContainer ul.bar{
+    top: 130px; max-width: 100%;
+  }
+  section.detailContainer > div:first-child > div > strong{
+    margin-right: 2%;
+  }
+  section.detailContainer > div:first-child > div > input:first-of-type {
+    margin-right: 2%; color: var(--GS05);
+    padding-right: 2.56%;
+    background: url('../images/showMore.png') no-repeat right center;
+    position: relative; 
+    cursor: pointer;
+  }
+  section.detailContainer > div:first-child > div > input:first-of-type.active{
+    background: url('../images/showLess.png') no-repeat right center;
+  }
+  section.detailContainer > div:nth-of-type(2) {
+    background-color: var(--GS11);
+    border-bottom: 3px solid var(--GS12);
+  }
+  section.detailContainer > div:nth-of-type(2) table{
+    z-index: 100;   margin: 50px auto; 
+    text-align: left; padding-top: var(--sp40);
+    width: 93.5%;
+  }
+  section.detailContainer > div:nth-of-type(2) table tr{
+    margin-bottom: var(--sp40);
+  }
+  section.detailContainer > div:nth-of-type(2) table tr th{
+    padding-right: 100px; 
+    color: var(--GS04);
+    padding-block: var(--sp20);
+    line-height: 30px;
+  }
+  section.detailContainer > div:nth-of-type(2) table tr td{
+    color: var(--GS05); line-height: 30px;
+  }
+  section.detailContainer > div:nth-of-type(2) table tr td ul li{
+    line-height: 30px;
+  }
+
+  /** start of image 3rd*/
+  section.detailContainer > div:nth-of-type(3){
+    margin-inline: auto; display: flex;
+    flex-direction: column;
+    background-color: var(--GS02);
+  }
+  section.detailContainer > div:nth-of-type(3) nav{
+    padding-top: var(--sp130);
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  section.detailContainer > div:nth-of-type(3) aside{
+    background-color: var(--GS11);
+    padding: var(--sp80) 3% 0px;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul{
+    display: flex;
+    margin: 0 auto;
+    gap: 15px;
+    padding: 40px 3.25%;
+    width: 100%;
+    justify-content: center;
+  }
+section.detailContainer > div:nth-of-type(3) nav ul li {
+    background-color: var(--GS12);
+    width: 66px;
+    border: 3px solid transparent;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul li img{
+    max-width: var(--sp50); 
+    max-height: 40px;
+    object-fit: contain;
+  }
+  section.detailContainer > div:nth-of-type(3) button {    
+    display: none; opacity: 0;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul li:hover,
+  section.detailContainer > div:nth-of-type(3) nav ul li.selected,
+  .legend nav ul li.selected, .legend nav ul li:hover{
+    border-image: linear-gradient(45deg, var(--B03), var(--B06)) 1;
+  }
+  section.detailContainer > div:nth-of-type(3) nav > div{
+    position: relative; 
+  }
+  section.detailContainer > div:nth-of-type(3) nav div img.display-img {
+    max-width: 660px;
+    height: 400px;
+    object-fit: contain;
+  }
+  section.detailContainer > div:nth-of-type(3) nav > div img.zoom {
+    display: none;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > div >h3{
+    color: var(--B03);  width: 60%;
+    margin-bottom: var(--sp40); line-height: 55px;
+  }
+  
+  section.detailContainer > div:nth-of-type(3) > aside > div > ul > li{
+    color: var(--GS06); line-height: var(--sp30);
+  } 
+  section.detailContainer > div:nth-of-type(3) > aside > div > input{
+    color: var(--GS12);
+    display: block;
+    margin: var(--sp40) auto;
+    background-color: var(--B04);
+    line-height: var(--sp60);
+    padding: 10px 35px 10px 15px;
+    background-image: url('../images/sortArrowRotated.png');
+    background-repeat: no-repeat; background-position: right 10px center;
+    background-size: 11px; position: relative; cursor: pointer;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > div input.active {
+    background-image: url('../images/sortArrow.png');
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul::after{
+    border-bottom: 2px solid var(--B04); content: '';
+    width: 100%; height: 2px; bottom: -40px;
+    display: block;
+    margin-top: var(--sp40);
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li:first-of-type > h4{
+    border-top: 1px solid var(--B02);
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
+    display: block;
+    padding: var(--sp40) 0 var(--sp20);
+    color: var(--GS01);
+    line-height: 21px;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > input{
+    opacity: 0;
+  }
+  /* Default label styles */
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > label {
+    color: var(--GS01);
+    border: 3px solid var(--GS08);
+    padding: var(--sp30) 0 var(--sp30) var(--sp20);
+    border-radius: 10px;
+    display: block; cursor: pointer;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:checked + label,
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:hover + label {
+    border: 3px solid var(--border-color, var(--B02));
+  }
+  input#teal[type="radio"]:checked + label,
+  input#teal[type="radio"]:hover + label {
+    --border-color: var(--B01);
+  }
+  input#sand[type="radio"]:checked + label,
+  input#sand[type="radio"]:hover + label {
+    --border-color: var(--sand);
+  }
+  input#yellow[type="radio"]:checked + label,
+  input#yellow[type="radio"]:hover + label {
+    --border-color: var(--yellow);
+  }
+  input#black[type="radio"]:checked + label,
+  input#black[type="radio"]:hover + label {
+    --border-color: var(--GS12);
+  }
+  input#green[type="radio"]:checked + label,
+  input#green[type="radio"]:hover + label {
+    --border-color: var(--green);
+  }
+  input#red[type="radio"]:checked + label,
+  input#red[type="radio"]:hover + label {
+    --border-color: var(--red);
+  }
+  input#gray[type="radio"]:checked + label,
+  input#gray[type="radio"]:hover + label {
+    --border-color: var(--GS05);
+  }
+  input#purple[type="radio"]:checked + label,
+  input#purple[type="radio"]:hover + label {
+    --border-color: var(--B06);
+  }
+  input#pink[type="radio"]:checked + label,
+  input#pink[type="radio"]:hover + label {
+    --border-color: var(--pink);
+  }
+  input#white[type="radio"]:checked + label,
+  input#white[type="radio"]:hover + label,
+  input#silver[type="radio"]:checked + label,
+  input#silver[type="radio"]:hover + label {
+    --border-color: var(--GS01);
+  }
+  /** end of the first spec selectin */
+  /* start of details */
+  div.details{
+    overflow: hidden;
+  }
+  /* for accesibility */
+  div.details h4{
+    color: var(--GS01); 
+  }
+  div.details > h4{
+    padding: var(--sp80) 3.25%;
+  }
+  div.details > ul{
+    margin: var(--sp80) auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-inline: 3.25%;
+  }
+  div.details > ul li{
+    flex-basis: 45%; 
+    margin-bottom: var(--sp40);
+    /** why do i have backgorund postion here? */
+    /* background-position: top var(--sp40); */
+  }
+  div.details > ul li dl dt{
+    color: var(--GS01);
+    margin: var(--sp40) 0px var(--sp30);
+  }
+  div.details > ul li dl dd{
+    color: var(--GS05); line-height: 30px;
+  }
+  div.details > div.superCharge,
+  div.details > div.fineTuned{
+    background-color: var(--GS12);    
+    padding: var(--sp60) var(--sp40);
+    margin: 0 auto var(--sp80);
+  }
+  div.details > div.full{
+    background-color: black;
+    padding: var(--sp60) 0;
+  }
+  div.tracker{display: none;}
+  div.details > div.superCharge > div h4,
+  div.details > div.fineTuned > div h4,
+  div.details > div.full > div h4 {
+      padding-bottom: var(--sp40);
+  }
+  div.details > div.full > div {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  div.details > div.full > div img{
+    position: relative; width: 100%;
+  }
+  div.details > div.full > div > div{
+    position: absolute;
+    width: 100%; height: 100%;
+  }
+  div.details > div.full > div > div > ul{
+    display: grid;
+    overflow: visible;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+  div.details > div.full > div > div > ul li img{
+    object-fit: contain;
+  }
+  div.details > div.full > div > div > ul li:nth-of-type(1) img{
+    margin-left: 16%;
+  }
+  div.details > div.full > div > div > ul li:nth-of-type(3) img{
+    margin-top: 12%;  margin-left: 10%;
+  }
+  div.details > div.full > div > div > ul li:nth-of-type(4) img{
+    margin-top: -40px;  margin-right: 15%;  
+  }
+  div.details > div.full > div img{
+    margin: 0 auto;
+    object-fit: cover;
+    max-inline-size: 50%;
+    width: 100%; height: 100%;
+  }
+  div.details > div.full > div > div {
+    color: white; 
+  }
+  div.details > div.superCharge > div > h4,
+  div.details > div.superCharge > div > p{
+    text-align: center;
+  }
+  div.details > div.superCharge > div ul {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    margin-top: var(--sp60);
+    gap: 40px;    
+  }
+  div.details > div.superCharge > div ul li {
+    text-align: left;
+  }
+  div.details > div.superCharge > div ul li b {
+    color: var(--GS01);
+  }
+  div.details > div.superCharge > div ul li p {
+    line-height: 30px; margin-top: var(--sp20);
+  }
+  div.details > div.fineTuned > div p{
+    margin-bottom: var(--sp20);
+  }
+  div.details > div.fineTuned > div ul{
+    display: flex; gap: 40px;
+    justify-content: space-between;
+  }
+  div.details > div.fineTuned > div ul li{
+    text-align: center;
+    padding: 40px 15px;
+    flex: 1;
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(1){
+    background-color: var(--B06);
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(2){
+    background-color: var(--B03);
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(3){
+    background-color: var(--B02);
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(4){
+    background-color: var(--B05);
+  }
+  div.details > div.fineTuned > div ul li dl dt{
+    background-repeat: no-repeat; background-position: center top;
+    padding: 100px 0px 20px;
+  }  
+  div.details > div.fineTuned > div ul li:nth-of-type(1) dl dt{
+    background-image: url('../images/fine_01.png');
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(2) dl dt{
+    background-image: url('../images/fine_02.png');
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(3) dl dt{
+    background-image: url('../images/fine_03.png');
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(4) dl dt{
+    background-image: url('../images/fine_04.png');
+  }
+  div.details .legend{
+    margin: var(--sp80) auto;
+  }
+  div.details .legend >*{
+    margin: 0 auto;
+    text-align: center;
+  }
+  div.details .legend p{
+    width: 93.5%; 
+  }
+  div.details .legend h4{
+    margin-bottom: var(--sp30);
+  }
+  div.details .legend nav > div img{
+    margin: var(--sp40) auto;
+  }
+  div.details .legend nav ul li{
+    display: inline-block;    
+    border: 3px solid transparent;
+    margin: 0px var(--sp10);
+  }
+  div.details .legend nav ul li.selected{
+    border-image: linear-gradient(45deg, #509fc9, #676eff) 1;  
+  }
+  div.details .legend nav ul li img{     
+    max-width: 125px;
+    width: 100%;
+  }
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) translateY(0);
+  }
+  section.detailContainer > .details > ul > li:nth-child(4){
+    transition-delay: 600ms;
+  }
+  section.detailContainer > .details > ul > li:nth-child(2),
+  section.detailContainer > .details > .superCharge div > ul > li:nth-child(2),
+  section.detailContainer > .details > .superCharge div > ul > li:nth-child(5){
+    transition-delay: 200ms;
+  }
+  section.detailContainer > .details > ul > li:nth-child(3),
+  section.detailContainer > .details > .superCharge div > ul > li:nth-child(3),
+  section.detailContainer > .details > .superCharge div > ul > li:nth-child(4){
+    transition-delay: 400ms;
+  }
+  div.black{
+    text-align: center; margin: 0 auto;
+    background-color: black;
+    padding: 105px 0px var(--sp40);
+  }
+  /* * start of contactUS */
+
+  div.wave{
+    background: linear-gradient(-45deg, var(--B05), var(--GS12), var(--B02), var(--B06));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    position: relative;
+    padding-block: var(--sp80);    
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  div.wave > div::after{
+    display: block;
+    clear: both;
+    content: '';
+  }
+  div.wave > div > a.Back {
+    background-color: var(--GS10);
+    color: #fff;
+    text-align: center;
+    float: right;
+    margin-right: 3.25%;
+    height: 40px;
+  }
+  div.wave > ul{
+    width: 93.5%;
+    margin: 0 auto var(--sp80); display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp20);   
+  }
+  div.wave > ul > li{      
+    background-color: var(--GS10);      
+    display: flex;      
+    flex-direction: column;
+    border-radius: 15px;
+    padding: var(--sp20) 0px 110px var(--sp40);      
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right bottom ;    
+  }
+  div.wave > ul > li:after{
+    position: absolute;
+    width: 65%;
+    top: 90px; left: 0px;
+    height: 1px; content: '';
+  }
+  div.wave > ul > li:nth-of-type(1):after{
+    background-color: var(--B06);
+  }
+  div.wave > ul > li:nth-of-type(2):after{
+    background-color: var(--B01);
+  }
+  div.wave > ul > li:nth-of-type(3):after{
+    background-color: var(--B05);
+  }
+  div.wave > ul > li:nth-of-type(4):after{
+    background-color: var(--B02);
+  }
+  div.wave > ul.contact > li:nth-of-type(1){
+    background-image: url('../images/contactus_bg01.png');
+  }
+  div.wave > ul.contact > li:nth-of-type(2){
+    background-image: url('../images/contactus_bg02.png');
+  }
+  div.wave > ul.contact > li:nth-of-type(3){
+    background-image: url('../images/contactus_bg03.png');
+  }
+  div.wave > ul.contact > li:nth-of-type(4){
+    background-image: url('../images/contactus_bg04.png');
+  }
+  div.wave > ul.support > li:nth-of-type(1){
+    background-image: url('../images/supportHome_bg01.png');
+  }
+  div.wave > ul.support > li:nth-of-type(2){
+    background-image: url('../images/supportHome_bg02.png');
+  }
+  div.wave > ul.support > li:nth-of-type(3){
+    background-image: url('../images/supportHome_bg03.png');
+  }
+  div.wave > ul.support > li:nth-of-type(4){
+    background-image: url('../images/supportHome_bg04.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(1){
+    background-image: url('../images/contactSupport_bg01.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(2){
+    background-image: url('../images/contactSupport_bg02.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(3){
+    background-image: url('../images/contactSupport_bg03.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(4){
+    background-image: url('../images/contactSupport_bg04.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(1){
+    background-image: url('../images/glossary_bg01.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(2){
+    background-image: url('../images/glossary_bg02.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(3){
+    background-image: url('../images/glossary_bg03.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(4){
+    background-image: url('../images/glossary_bg04.png');
+  }
+  div.wave > ul > li h3{
+    position: relative; margin-bottom: var(--sp20);
+  }
+  div.wave > ul > li > ol{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  div.wave > ul > li ol li{
+    margin-bottom: var(--sp15);
+  }      
+  div.wave > ul > li > p{
+    width: 55%; line-height: 30px; color: #fff;
+  }
+  div.wave > ul > li:nth-of-type(1) ol li a:hover{
+    color: var(--B06);
+  }
+  div.wave > ul > li:nth-of-type(2) ol li a:hover{
+    color: var(--B01);
+  }
+  div.wave > ul > li:nth-of-type(3) ol li a:hover{
+    color: var(--B05);
+  }
+  div.wave > ul > li:nth-of-type(4) ol li a:hover{
+    color: var(--B02);
+  }
+  div.wave > ul.support > li p{
+    width: 30%;
+  }
+  div.wave > div.supportSearch{
+    background-color: var(--GS10);
+    width: 93.5%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px 0px 40px 40px;
+  }
+  div.wave > div.supportSearch h4, div.wave > div.supportSearch p{
+    margin-bottom: var(--sp40);
+  }
+  div.wave > div.supportSearch > form{
+    margin-bottom: 20px;  
+    display: flex;
+    box-sizing: border-box; 
+  }
+  div.wave > div.supportSearch > form input:nth-of-type(1){
+    background-color: var(--GS01);
+    padding: 15px 20px;
+    width: 70%;
+  }
+  div.wave > div.supportSearch > form input::placeholder{
+    color: var(--B04);    
+  }
+  div.wave > div.supportSearch > form input:nth-of-type(2){
+    padding: 15px 25px; cursor: pointer;
+  }
+  div.wave > div.supportSearch > ol{
+    display: flex; align-items: center; gap: 10px;
+  }
+  div.wave > div.supportSearch > ol li{
+    background-color: var(--B04); 
+    padding: 15px 0px 15px 50px;   
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    width: 200px;
+  }
+  div.wave > div.supportSearch > ol li:nth-of-type(1){
+    background-image: url('../images/eye.png');
+  }
+  div.wave > div.supportSearch > ol li:nth-of-type(2){
+    background-image: url('../images/allProducts.png');
+  }
+  div.wave > div.supportSearch > form > input:last-of-type{
+    background-color: var(--B04);
+  }
+
+  /* *my account */
+  .accountContainer{
+    padding: var(--sp140) 0 var(--sp80);
+    background-color: black;
+  }
+  .accountContainer > div{
+    width: 93.5%; margin: 0 auto;
+  }
+  .accountContainer > div h2{
+    margin: 0 0 40px;
+  }
+  .accountContainer > div > div.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;    
+    align-items: stretch; 
+  }
+  .accountContainer > div > div.wrapper > div,
+  .accountContainer > div > div.wrapper > ul {
+    display: flex;
+    flex-direction: column;    
+  }
+  .test > div:first-of-type{
+    order: 1;
+  }
+  .wrapper > ul {
+
+  }
+  .accountContainer > div > div.wrapper > div{    
+    gap: 40px;
+  }
+  .accountContainer > div > div.wrapper > div >*{
+    background-color: var(--GS11);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type{
+    padding: var(--sp20);
+  }
+  .accountContainer > div > div.wrapper > div > div:not(:first-of-type){
+    padding: var(--sp20) var(--sp20) var(--sp40);
+  }
+  .accountContainer > div > div.wrapper > div > div > hr{
+    border: 1px solid var(--B03);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--sp20);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li figure{
+    width: 100%;
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li img{
+    background-color: var(--GS10); box-sizing: border-box;
+    padding: var(--sp20) var(--sp25);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption{
+    background-color: var(--GS12); text-align: center; padding-block: var(--sp10);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){
+    width: 100%; 
+    display: block;
+    background: url('../images/addItem.png') center center no-repeat var(--GS12);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
+    width: 100%; height: 100%; display: block; text-align: center;
+    padding-top: 55%;
+  }
+  .accountContainer > div > div.wrapper > div > div:nth-of-type(2) > div,
+  .accountContainer > div > div.wrapper > div > div:nth-of-type(3) > div{
+    display: flex; align-items: center;  justify-content: space-between;
+  }
+  .accountContainer > div > div.wrapper > div > div > p{
+    width: 66%; line-height: 30px;
+  }
+  .accountContainer > div > div.wrapper > ul{
+    background-color: var(--GS12); gap: 40px;
+  }
+  .accountContainer > div > div.wrapper > ul li{
+    position: relative;     
+  }
+  .accountContainer > div > div.wrapper > ul li:first-of-type img{
+    max-width: 476px; float: right; object-fit: cover;
+  }
+  .accountContainer > div > div.wrapper > ul li::after{
+    clear: both; display: block; content: '';
+  }
+  .accountContainer > div > div.wrapper > ul li:first-of-type p{
+    width: 60%; 
+  }
+  .accountContainer > div > div.wrapper > ul li:first-of-type a{
+    position: absolute; bottom: 20px;
+  }
+  .accountContainer > div > div.wrapper > ul li:nth-of-type(2) img{
+    width: 100%; object-fit: cover;
+  }
+  .accountContainer > div > div.wrapper > ul li p{
+    position: absolute; left: 20px; bottom: 40px;
+  }
+  .accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
+    position: absolute; left: 20px; bottom: 20px;
+  }
+  .accountContainer > div > div.wrapper > ul li:last-of-type {
+    margin-bottom: var(--sp80);  
+  }
+
+  /* !! START OF LOGIN` */
+  div.dark{    
+    width: 100%;
+  }
+  div.dark > div{
+    display: flex;
+    /* margin: 0 auto; */
+    flex-direction: column;
+    transform-style: preserve-3d;
+    position: relative;    
+  }
+  div.dark > div > div{
+    width: 100%;
+  }
+  div.dark > div > div:first-of-type{
+    background-color: var(--GS01);
+    text-align: center;
+    position: relative;
+    transition: transform 1s ease;    
+    transform-style: preserve-3d;    
+    display: block;
+    height: 760px;
+    width: 100%;
+  }
+  div.dark > div > div:first-of-type > div {
+    position: absolute;
+    width: 73.33%;
+    height: 100%;
+    top: 140px;
+    left: 12.5%;
+    transform-style: preserve-3d; 
+    backface-visibility: hidden; 
+  }
+  .dellLogin, .createPassword  {
+    transform: rotateY(0deg);
+  }
+  .createDell, .findPassword {
+    transform: rotateY(180deg);             
+  }
+  .rotate-card{
+    transform: rotateY(180deg);
+  }
+  div.dark > div > div:first-of-type > div button{
+    cursor: pointer;
+  }
+  div.dark > div > div:first-of-type > div fieldset legend{
+    margin-bottom: var(--sp40); 
+  }
+  div.dark > div > div:first-of-type > div fieldset > ul > li{
+    margin-bottom: var(--sp30); position: relative;
+  }
+  div.dark > div > div:first-of-type > div fieldset div{
+    position: relative;
+  }
+  div.dark > div > div:first-of-type > div fieldset > ul > li label,
+  div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label{
+    position: absolute;
+    top: 0; left: 20px;
+    padding: 16px 0;      
+    pointer-events: none;
+    transition: .3s;
+  }
+  div.dark > div > div:first-of-type > div fieldset input:focus ~ label,
+  div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label,
+  div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
+    top: -10px;  left: 10px;  
+    background-color: var(--GS01);
+    z-index: 20; padding: 5px 10px;
+    color: var(--B03); 
+    font-size: 10px;     
+  }
+  div.dark > div > div:first-of-type > div fieldset input:focus {
+    outline: none; border: 1px solid var(--B03);
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset > button{
+    display: block; margin-left: auto;      
+  }    
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,
+  div.dark > div > div:first-of-type > div.createPassword fieldset > button{
+    background-color: var(--B04); 
+    margin: var(--sp30) auto;
+    display: block;
+    width: 100%;
+    padding-block: var(--sp15);
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type{
+    margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type{
+    position: relative; width: 100%;  margin-block: var(--sp25);
+  } 
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
+    content: ""; position: absolute;
+    top: 50%; width: 150px; height: 1px; 
+    background-color: var(--B04); 
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before{left: 0;}
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{right: 0;}
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
+    background-color: black; width: 100%; padding: var(--sp15) 0px var(--sp15) var(--sp25);
+    background-image: url('../images/google.png');
+    background-repeat: no-repeat; background-position: left 42% center;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div{      
+    text-align: left;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:after{
+    clear: both; display: block; content: '';  
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset ul{
+    display: flex; gap: 20px;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset ul li{
+    flex: 1;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(2) input{
+    width: auto; margin-block: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3){
+    margin-bottom: var(--sp30);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) input{
+    margin-bottom: var(--sp10);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) p{
+    padding-left: var(--sp20); background: url('../images/info-icon.png') no-repeat left center;
+    background-size: 10px;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset > p{
+   line-height: 30px; text-align: left; margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset button,
+  div.dark > div > div:first-of-type > div.findPassword fieldset > button{      
+    display: block;  width: 100%;
+    padding-block: var(--sp10);
+    cursor: pointer;
+  }
+  div.dark > div > div:first-of-type > div.createDell button:first-of-type{
+    background-color: var(--B04);  margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div.createDell button:last-of-type{
+    border: 1px solid var(--B04);
+  }
+  div.dark > div > div:first-of-type > div.findPassword fieldset > *{
+    margin-bottom: var(--sp30);
+  }
+  div.dark > div > div:first-of-type > div.findPassword fieldset > button{
+    background-color: var(--B04); padding-block: var(--sp10); margin-bottom: var(--sp30);
+  }
+  div.dark > div > div:first-of-type input {
+    box-sizing: border-box; width: 100%; border-width: 1px; border-style: solid;
+    padding: 16px; outline: 0;
+  }
+  /** start dell account  */
+  div.dark > div > div:nth-of-type(2){
+    background-color: var(--GS11);
+    text-align: center;
+    padding: var(--sp80s) 0;
+  }
+  div.dark > div > div:nth-of-type(2) h2{
+    margin-bottom: 20px;
+  }
+  div.dark > div > div:nth-of-type(2) ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 3.25%;
+    margin: var(--sp40) auto;
+  }
+  div.dark > div > div:nth-of-type(2) ul li{
+    display: flex; flex: 1;
+    justify-content: space-between;
+  }
+  div.dark > div > div:nth-of-type(2) ul li dl dt{
+    padding-top: 50px; 
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:nth-of-type(2) ul li:nth-of-type(1) dl dt{
+    background-image: url('../images/dellAccount_ex01.png');
+  }
+  div.dark > div > div:nth-of-type(2) ul li:nth-of-type(2) dl dt{
+    background-image: url('../images/dellAccount_ex02.png');
+  }
+  div.dark > div > div:nth-of-type(2) ul li:nth-of-type(3) dl dt{
+    background-image: url('../images/dellAccount_ex03.png');
+  }
+  div.dark > div > div:nth-of-type(2) ul li dl dd{
+    line-height: 30px;
+  }
+  div.dark > div > div:nth-of-type(2) img{
+    width: 100%; max-width: 400px; margin: 0 auto;
+  }
+  /* * end of login */
+
+  /* * shopping checkout */
+  section.twoface > div > div.checkOut{
+    box-sizing: border-box;
+    background-color: var(--GS01); padding-inline: var(--sp80);
+  }
+  section.twoface > div > div.checkOut ol li{
+    display: inline-block; 
+  }
+  section.twoface > div > div.checkOut ol li:not(:last-of-type){
+    padding-right: var(--sp30);
+    background: url('../images/arrowShip.png') no-repeat center right 10px;
+  }
+  section.twoface > div > div.checkOut form{
+    margin-top: var(--sp40); text-align: center;
+  }
+  section.twoface > div > div.checkOut form fieldset legend,
+  section.twoface > div > div.checkOut form fieldset ul > li{
+    margin-bottom: var(--sp30);
+  }
+  section.twoface > div > div.checkOut form fieldset ul:first-of-type > li{
+    padding: 10px 0px;  border-radius: 5px;
+    background-repeat: no-repeat; background-position: center center;
+  }
+  section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{
+    text-indent: -9999px;
+    background-color: #f7c518; background-image: url('../images/paypal.png');
+  }
+  section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
+    background-color: var(--GS12);
+    padding-right: 20px;
+    background-image: url('../images/googlePay.png');
+  }
+  section.twoface > div > div.checkOut form fieldset ul:last-of-type > li:first-child{
+    display: flex; justify-content: space-between;
+  }
+  section.twoface > div > div.checkOut form fieldset ul:last-of-type > li a{
+    display: inline-block;
+  }
+  section.twoface > div > div.checkOut ul li input {
+    box-sizing: border-box; width: 100%; border-width: 1px; border-style: solid;
+    padding: 16px; outline: 0;
+  }
+  section.twoface > div > div:last-of-type{    
+     padding-inline: var(--sp40);
+  }
+  section.twoface > div > div.checkOut button{
+    cursor: pointer;
+  }
+   section.twoface > div > div.checkOut fieldset legend{
+    margin-bottom: var(--sp40); 
+  }
+  section.twoface > div > div.checkOut fieldset > ul::after{
+    clear: both; content: ''; display: block;
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li{
+    margin-bottom: var(--sp30); position: relative;
+    float: left; width: 100%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3){
+    text-align: left;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3) > input{
+    width: 3%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3) > label{
+    width: 97%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(4){
+    margin-right: 4%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(4),
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(5){
+    width: 48%;
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label{
+    position: absolute;
+    top: 0; left: 20px;
+    padding: 16px 0;      
+    pointer-events: none;
+    transition: .3s;
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label,
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label,
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label{
+    top: -10px;  left: 10px;  
+    background-color: var(--GS01);
+    z-index: 20; padding: 5px 10px;
+    color: var(--B03); 
+    font-size: 10px;     
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus {
+    outline: none; border: 1px solid var(--B03);
+  }
+   section.twoface > div > div.checkOut fieldset > button{
+    display: block; margin-left: auto;      
+  }    
+   section.twoface > div > div.checkOut fieldset div button:first-of-type,
+   section.twoface > div > div.checkOut .createPassword fieldset > button{
+    background-color: var(--B04); 
+    margin: var(--sp30) auto;
+    display: block;
+    width: 100%;
+    padding-block: var(--sp15);
+  }
+  section.twoface > div > div.checkOut fieldset > a{
+    color: var(--GS05); transition: 0.5s;
+    margin-left: auto;
+  }
+  section.twoface > div > div.checkOut fieldset > a:hover{
+    color: var(--GS01);
+  }
+
+  /* * calculator */
+
+  section.twoface div.calculator > div:first-of-type {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  section.twoface div.calculator > div:first-of-type img{
+    display: block; margin-right: var(--sp25);
+    max-width: 120px;
+  }
+  section.twoface div.calculator > div:first-of-type h3{
+    line-height: 20px;
+  }
+  section.twoface div.calculator > div:first-of-type > div input{
+    text-align: right; width: 40px;
+  }
+  section.twoface button{
+    background-color: #222222;
+    border: none;
+  }
+  div.calculator > div:first-of-type > div > button{
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -9999px;
+    padding: 10px;
+  }
+  div.calculator input{
+    background-color: white;
+  }
+  div.calculator > div:first-of-type button:first-of-type{
+    background-image: url('../images/add.png');
+  }
+  div.calculator > div:first-of-type button:nth-of-type(2){
+      background-image: url('../images/minus.png');
+  }
+  div.calculator > div:first-of-type button:nth-of-type(3){
+      background-image: url('../images/trahcan.png');
+  }
+  div.calculator > div:nth-of-type(2){
+    display: flex; 
+    margin: var(--sp20) 0px var(--sp20) 20px;
+    align-items: center;
+    flex: 1;
+  }
+  div.calculator > div:nth-of-type(2) input{
+    width: 66.6%;     
+    padding: 15px 15px;
+  }
+  div.calculator > div:nth-of-type(2) a{
+    background-color: var(--GS07);
+    margin-left: 10px;
+    padding: 15px 40px;
+  }
+  div.calculator  > hr{
+    border: 1px solid var(--B04);
+  }
+  div.calculator ul li strong::before{
+    content: '$';
+  }
+  div.calculator ul li:first-of-type strong:first-of-type::before,
+  div.calculator ul li:nth-of-type(3) strong::before{
+    content: '';
+  }
+  div.calculator ul li{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;  
+    align-items: center;
+  }
+  div.calculator ul li:first-of-type {
+    justify-content: flex-start; 
+  }
+  div.calculator ul li:first-of-type small {
+    margin-left: 5px;
+  }
+  div.calculator ul li:first-of-type strong {
+    margin-left: auto; 
+  }
+  div.calculator >*{
+    margin-inline: auto;  text-align: center;
+  }
+  div.calculator > p{
+    width: 60%; line-height: 24px; 
+  }
+  div.calculator > a{
+    margin-top: var(--sp40);
+  }
+  .twowrap{
+    background-color: var(--GS12);
+    display: flex;    
+  }
+  .twowrap > div {
+    width: 93.5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .twowrap > div > div:first-of-type{
+    padding-block: var(--sp140) var(--sp80);
+  }
+  .twowrap > div > div:first-of-type{
+    background-color: var(--GS01);
+  }
+  .twowrap > div > div:last-of-type{
+    background-color: var(--GS11);
+    padding-block: var(--sp80s);
+  }
+  /* order status */
+  .arrival > div,
+  .arrival > ol{
+    padding-inline: var(--sp80); display: flex; 
+  }
+  .arrival > ol{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .arrival > img{
+    margin-block: var(--sp80) var(--sp80s);
+ }
+ .arrival > div > time{
+   display: flex;
+   flex-direction: column;
+ }
+  .arrival > ol {
+    padding-inline: var(--sp25);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .arrival > ol li{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: block;
+    position: relative;
+    width: 25%;
+ }
+  .arrival > ol li:nth-child(n+3){
+   color: var(--GS06);
+ }
+ .arrival > ol li:nth-child(3):hover{  
+   color: var(--GS12);
+ }
+ .arrival > ol li:before {
+   content: '';
+   display: block;
+   height: 25px;
+   width: 25px;
+   border-radius: 50%;
+   box-shadow:  0 6px 6px rgba(0, 0, 0, 0.1);
+   z-index: 5; 
+   position: relative;
+   margin: 0 auto;
+   transition: all 0.2s;
+ }
+ .arrival > ol li:nth-of-type(1):before,
+ .arrival > ol li:nth-of-type(2):before{
+   background-color: var(--B05); border: 3px solid white;    
+ }
+ .arrival > ol li:nth-of-type(3):before,
+ .arrival > ol li:nth-of-type(4):before{
+   background-color: var(--GS06); border: 5px solid white;
+ }
+ .arrival > ol li:not(:nth-of-type(4)):hover:before {
+   transform: scale(1.2);
+   background-color: var(--B05); border: 3px solid white;      
+ }
+ .arrival > ol li:after {
+   content: '';
+   height: 4px;
+   background-color: var(--B05);
+   position: absolute;
+   top: calc(50% - 15px);
+   left: 50%;    
+   z-index: 0; 
+   width: 100%;
+ }
+ .arrival > ol li:nth-of-type(3):after{
+   width: 100%; background-color: var(--GS06);
+   left: 50%;    
+ }
+ .arrival > ol li:nth-of-type(4):after {
+   content: none;
+ }
+ div.orderStatus{
+    padding-inline: var(--sp25);
+  }
+  div.orderStatus > span:first-of-type{
+    display: block;
+  }
+  div.orderStatus:after{
+    content: ""; display: block; clear: both;
+  }
+  div.orderStatus > figure{
+    margin-block: var(--sp30) var(--sp20);    
+    max-width: 264px; width: 50%;
+    margin-right: 11.11%;
+    float: left;
+  }
+  div.orderStatus > figure img{
+    background-color: var(--GS10);
+    box-sizing: border-box; padding: 20px 25px;  
+  }
+  div.orderStatus > figure figcaption{
+    text-align: center;
+    background-color: var(--GS12);
+    padding-block: var(--sp10);        
+  } 
+  div.orderStatus > div{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--sp30);
+  }
+  div.orderStatus > div address{
+    margin-block: 20px;
+    background-color: var(--GS10);
+    padding: var(--sp20) var(--sp20);
+    line-height: 30px;
+    display: block;
+  } 
+  div.orderStatus > div a{
+    align-self: flex-end; margin-top: var(--sp40);
+  }
+
+  /* end of ordersttaus */
+
+  .returns{
+    margin: var(--sp80) auto;  
+    padding: 0 3.25%;
+  }
+  .returns > div:first-of-type {
+    text-align: center;
+  }
+  .returns > div > h2{
+    margin-bottom: var(--sp20);  
+  }
+  .returns > ol{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: var(--sp40) auto var(--sp80);
+    gap: 100px;
+  }
+  .returns > ol li{
+    flex: 1 0 42%; text-align: left;
+  }
+  .returns > ol li img{
+    max-width: 200px; 
+    margin: 0 auto 20px;
+  }
+  .returns > ol li > dl dt{
+    margin-bottom: var(--sp20);
+  }
+  .returns > ol li > dl dd{
+    width: 100%; line-height: 30px;
+  }
+  /* * copyright */
+  article.rightsInfo{
+    width: 93.5%;
+    margin: 0 auto;
+    padding-block: var(--sp140) var(--sp80);
+    display: flex;
+    flex-direction: column;
+  }
+  article.rightsInfo h2{
+    margin-bottom: var(--sp40);
+  }
+  article.rightsInfo small{
+    display: block; margin-top: 10px;
+  }
+  article.rightsInfo > ul{
+    background-color: var(--GS04);
+    padding: var(--sp40) var(--sp80);
+    margin-bottom: var(--sp40);
+  }
+  article.rightsInfo > ul > li{
+    margin-bottom: var(--sp20);
+  }
+  article.rightsInfo > ul li h3{
+    margin-bottom: var(--sp20);
+  }
+  article.rightsInfo > ul li > p{
+    line-height: 30px; color: var(--GS11); margin-bottom: var(--sp20);
+  }
+  article.rightsInfo > ul li > ul > li{
+    line-height: 30px; list-style: disc; margin-left: var(--sp20);
+  }
+  article.rightsInfo > ul li > address{
+    font-style: normal; color: var(--GS11); line-height: 30px;
+  }
+  article.rightsInfo a{
+    display: flex; align-self: flex-end;
+  }
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media screen and (min-width: 1280px){
+  ul.bar li {
+    position: absolute; width: 100%; 
+    text-align: center; 
+    color: var(--GS01, white);
+    animation: slideShow 12s infinite;
+    opacity: 0;
+  }
+  ul.bar li:nth-child(1) {
+    animation-delay: 0s;  
+  }
+  ul.bar li:nth-child(2) {
+    animation-delay: 6s; 
+  }
+  main > div:first-of-type{
+    padding-bottom: var(--sp60);
+    background-color: var(--GS12);
+    position: relative;
+    overflow: hidden;
+    padding-top: 110px;
+  }
+  main > div:first-of-type > ul{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+  }
+  main > div:first-of-type > ul li{
+    background-position: center;
+    background-size: cover;
+    width: 200px; height: 300px;   
+    position: absolute;
+    left: 200px; 
+    top: 33.33%;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.3) inset;
+    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s, opacity 0.5s;
+    background-color: var(--GS12);
+  }
+  main > div:first-of-type > ul li:nth-child(1),
+  main > div:first-of-type > ul li:nth-child(2){
+    left: 0; width: 100%; height: calc(100% + 80px); 
+     top: 0px;
+    transform: none; border-radius: 0;
+    box-shadow: none; opacity: 1;
+  }
+  main > div:first-of-type > ul li:nth-child(3){left: 65%; opacity: 0.9;}
+  main > div:first-of-type > ul li:nth-child(4){left: calc(65% + 220px);opacity: 0.9;}
+  main > div:first-of-type > ul li:nth-child(5){left: calc(65% + 440px);opacity: 0.9;}
+  main > div:first-of-type > ul li:nth-child(6){left: calc(65% + 660px); opacity: 0; }
+  main > div:first-of-type > ul li:nth-child(n+3) a {
+    display: none;
+  }
+  main > div:first-of-type > ul li div{
+    width: 350px; position: absolute; top: 50%; left: 10%; transform: translateY(-50%);
+    opacity: 0; display: block; z-index: 10;
+  }
+  main > div:first-of-type > ul li:nth-of-type(2) div {
+    display: block; animation: show 0.75s ease-in-out 0.1s forwards;
+  }
+  @keyframes show {
+    0% {
+      filter: blur(15px);
+      transform: translateY(calc(-50% + 75px));
+    }
+    100% {
+      opacity: 1; filter: blur(0);
+    }
+  }
+  main > div:first-of-type > ul li div p{
+    margin-block: 20px;
+  }
+  main > div:first-of-type .sButton{
+    position: absolute;
+    z-index: 1000; 
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main > div:first-of-type .sButton > button{ 
+    background: url('../images/arrowButtonEmpty.png') no-repeat center center;
+    background-size: contain; 
+    user-select: none;
+    width: 31px;    
+    height: 23px;   
+    cursor: pointer;
+    text-indent: -9999px; 
+  }
+  main > div:first-of-type .sButton > button:hover{
+    background: url('../images/arrowButtonFill.png') no-repeat center center;
+  }
+  main > div:first-of-type .sButton > button:last-of-type{
+    margin-left: var(--sp20);
+    transform: rotate(180deg);
+  } 
+  main > video{
+    width: 100%;  background-color: black;
+  }
+  /* end of main */
+  /* start of peak */
+  main > div:nth-of-type(2){
+    background: url('../images/peakBg.png') no-repeat center center;
+    background-size: cover;
+    padding: var(--sp190) 0 var(--sp345);
+  }
+  main > div:nth-of-type(2) > div{
+    margin: 0 auto 0px 19%;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+  }
+  main > div:nth-of-type(2) > div h3{
+    margin-bottom: var(--sp30);
+  }
+  main > div:nth-of-type(2) > div p{
+    margin-bottom: var(--sp20);
+  }
+  main > div:nth-of-type(2) > div a{
+    align-self: flex-end; 
+  }
+
+  /*  alienware collapse*/
+  main > div:nth-of-type(3){
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+  main > div:nth-of-type(3) > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: var(--sp80) 0;
+  }  
+  main > div:nth-of-type(3) > div div{
+    width: 100%;
+    max-width: 600px;
+  }
+  main > div:nth-of-type(3) > div div h2{
+    margin-bottom: var(--sp40); padding-bottom: var(--sp20);
+    border-bottom: 1px solid var(--GS12);
+  }
+  main > div:nth-of-type(3) > div div h2,
+  main > div:nth-of-type(3) > div div p{
+    color: #e2e2e2;
+  }
+  main > div:nth-of-type(3) > div label{
+    cursor: pointer;
+  }
+  main > div:nth-of-type(3) > div input{
+    display: none;
+  }
+  main > div:nth-of-type(3) > ul{
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    transition: all 0.5s ease;
+    position: relative;
+    padding-bottom: 80px;
+  }
+  main > div:nth-of-type(3) > ul::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(
+      90deg,#be92ff,#be92ff,#509FC9,#30ACD5, #0083CA,#676EFF,  #00E7E7
+    );
+    content: "";
+    z-index: 2;
+    transition: all 1.2s ease;
+  }
+  main > div:nth-of-type(3) > ul li{
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    transition: all 0.4s ease;    opacity: 1;   
+    position: relative;
+  }
+  main > div:nth-of-type(3) > ul li:first-of-type{background-image: url('../images/test1.png');}
+  main > div:nth-of-type(3) > ul li:nth-of-type(2){background-image: url("../images/test2.png");}
+  main > div:nth-of-type(3) > ul li:nth-of-type(3){background-image: url("../images/test3.png");}
+  main > div:nth-of-type(3) > ul li:nth-of-type(4){background-image: url("../images/test4.png");}
+  main > div:nth-of-type(3) > ul li:nth-of-type(5){background-image: url("../images/test5.png");}
+  /* :has() style a parent based on what child */
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul {
+    height: 400px;
+    transition: all 0.5s ease;
+  }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul li{
+    opacity: 1;
+  }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover{
+      flex-grow: 2;
+  }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a{
+    width: 100%; height: 100%;
+  }
+  main > ul{
+    color: #fff;
+  }
+  main > ul > *{
+    margin: 0 auto;
+    text-align: center;
+  }
+  main > ul:after{
+    display: block; clear: both; content: '';
+  }
+  main > ul li{
+    float: left;  width: 49.5%;
+    padding: var(--sp40) 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  main > ul li:nth-child(2n){
+    margin-left: 0.5%;
+  }
+  main > ul li:nth-of-type(1){background-image: url('../images/main_bg01.png');}
+  main > ul li:nth-of-type(2){background-image: url('../images/main_bg02.png');}
+  main > ul li:nth-of-type(3){background-image: url('../images/main_bg03.png');}
+  main > ul li:nth-of-type(4){background-image: url('../images/main_bg04.png');}
+  main > ul li:nth-of-type(5){background-image: url('../images/main_bg05.png');}
+  main > ul li:nth-of-type(6){background-image: url('../images/main_bg06.png');}
+  main > ul li h4{
+    margin-bottom: 20px;
+  }
+  main > ul li span{
+    padding-bottom: 370px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  main > ul li:nth-of-type(1) span{
+    background-image: url('../images/main_mouse.png');
+  }
+  main > ul li:nth-of-type(5) span{
+    background-image: url('../images/main_bag.png');
+  }
+  main > ul li a{
+    margin: 0 auto;
+  }
+  /* list */
+  div.listContainer{
+    background-color: var(--GS11); margin-bottom: var(--sp80);
+  }
+  div.listContainer > nav{
+    background-color: var(--GS10);
+  }
+  div.listContainer > nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 160px 0 var(--sp50);
+    margin-bottom: var(--sp60);
+    align-items: center;
+  }
+  div.listContainer > nav ul li {
+    display: block;
+    text-align: center; 
+  }
+  div.listContainer > nav ul li a{
+    color: var(--GS01);
+  }
+  div.listContainer > nav ul li a img{
+    margin-bottom: var(--sp15); max-width: 122px;
+  }
+  /* end of list nav */
+  div.listContainer > div {
+    display: grid; 
+    grid-template-columns: 20% 70%; 
+    grid-template-rows: var(--sp60) auto; gap: 30px 10%; 
+    grid-template-areas: 
+      "aside sort"
+      "aside list"; 
+  }
+  div.listContainer > div > div:first-child {grid-area: sort;}
+  div.listContainer > div > aside {grid-area: aside;}
+  div.listContainer > div > div:last-child{grid-area: list;}
+  div.listContainer > div > div:first-child {
+    display: flex; 
+    align-items: center; 
+    text-align: right;
+    justify-content: flex-end; 
+  }
+  div.listContainer > div:after {
+    clear: both;  content: '';  display: block;
+  }
+  div.listContainer > div > div:first-child > div {
+    display: flex;  align-items: center;
+  }
+  div.listContainer .cart-Toggle{
+    color: var(--GS12); 
+    padding: 13px 10px; background-color: var(--B02);
+    max-width: 110px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  div.listContainer .cart-Toggle:hover{
+    background-color: var(--B05);
+  }
+  div.listContainer > div > div:first-child > div button {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 42px;  width: 42px;
+    text-indent: -9999px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  div.listContainer > div > div:first-child > div button:first-of-type {
+    background: url('../images/gridButton.png');
+  }
+  div.listContainer > div > div:first-child > div button:first-of-type.active {
+    background: url('../images/gridButtonBlue.png');
+  }
+  div.listContainer > div > div:first-child > div button:nth-of-type(2) {
+    background: url('../images/listButton.png');
+  }
+  div.listContainer > div > div:first-child > div button:nth-of-type(2).active {
+    background: url('../images/listButtonBlue.png'); 
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) label {
+    margin-bottom: 5px;
+    position: relative;
+    top: -20px;
+    padding-left: var(--sp20);
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) select {
+    color: var(--GS01);
+    appearance: none;
+    background: url('../images/sortArrowRotated.png') no-repeat right 20px center;
+    background-size: 9px;
+    padding: 0px var(--sp40) 0px var(--sp20);
+    line-height: 20px;
+    position: relative;
+    left: 0px; top: -10px; 
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
+    color: var(--GS05);  background-color: var(--GS09);
+  }
+  div.listContainer > div > div:first-child > div:nth-of-type(2) select option:checked {
+    color: var(--GS01);
+  }
+
+  /** aside */
+  div.listContainer > div > aside input{
+    margin-right: 10px; 
+  }
+  div.listContainer > div > aside > input{
+    display: none;
+  }
+  div.listContainer > div > aside h3{
+    margin-bottom: var(--sp60);
+  }
+  div.listContainer > div > aside ul li{
+    position: relative;
+  }
+  div.listContainer > div > aside ul li > b {
+    color: var(--GS04); 
+    position: relative; 
+    padding-right: 140px;
+    display: block; 
+    margin-bottom: var(--sp80);
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  div.listContainer > div > aside ul li > b::before {
+    content: '';
+    position: absolute;
+    right: 0; top: 50%;
+    width: 14px; height: 9px; 
+    background: url('../images/sortArrowRotated.png') no-repeat center;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease; 
+  }
+  div.listContainer > div > aside ul li > b.active::before {
+    transform: translateY(-50%) rotate(180deg); 
+  }
+  div.listContainer > div > aside ul li > b:after {
+    content: ''; 
+    background-color: var(--GS08);
+    width: 265px; height: 1px;
+    position: absolute; 
+    left: -10px; bottom: -40px;
+  }
+  div.listContainer > div > aside ul li > ol {
+    margin: var(--sp80) 0;
+  }
+  div.listContainer > div > aside ul li > ol:after{
+    content: '';  background-color: var(--GS08);
+    width: 265px; height: 1px;  position: absolute; left: -10px;
+    bottom: -40px;
+  }
+  div.listContainer > div > aside ul li > ol li{
+    color: var(--GS08); line-height: 30px;
+  }
+  div.listContainer > div > aside ul li > ol li input {
+      display: none;
+  }
+  div.listContainer > div > aside ul li > ol li label {
+      display: flex; align-items: center;
+      cursor: pointer; position: relative;
+      padding-left: var(--sp20);
+  }
+  div.listContainer > div > aside ul li > ol li label::before {
+      content: ''; position: absolute;
+      left: 0;  top: 50%;
+      width: 13px;  height: 13px; 
+      background: url('../images/checkUnclicked.png') no-repeat center / cover;
+      transform: translateY(-50%);
+      transition: background-image 0.3s ease;
+  }
+  div.listContainer > div > aside ul li > ol li input[type="checkbox"]:checked + label::before {
+      background-image: url('../images/check.png');
+  }
+/* * end of aside */
+  div.listContainer > div > div:last-of-type > ul li > div{
+    position: relative;      display: block;
+  }
+  div.grid-group-wrapper > ul:after{
+    display: block; clear: both; content: '';
+  }
+  div.listContainer > div > div:last-child > ul >li{
+    margin-bottom: var(--sp40);   float: left;
+  }
+  div.grid-group-wrapper > ul > li {
+     display: block;
+    width: 33.3333%;
+    margin-bottom: var(--sp40);
+ }
+ div.list-group-wrapper > ul > li{
+  width: 100%;  
+ }
+ div.list-group-wrapper > ul > li > div:after{
+  display: block; clear: both; content: '';
+ }
+ div.list-group-wrapper > ul > li > div > div:first-child{
+  float: left; margin-right: 6%;
+ }
+ div.listContainer > div > div:last-child > ul > li  >div{
+  background-color: var(--GS12);
+ }
+ div.grid-group-wrapper > ul > li > div {
+  background-color: var(--GS12);
+  position: relative;
+  display: block;
+  margin-right: 4.56%;
+  }
+  div.listContainer > div > div.grid-group-wrapper > ul > li > div div:first-of-type{
+    padding: var(--sp85) 10% var(--sp60); 
+  }
+  div.listContainer > div > div:last-child > ul > li > div div:first-of-type{
+    background-color: var(--GS10); transition: background-color .7s; box-sizing: revert;
+  }
+  div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type{
+    padding: var(--sp85) 5% var(--sp60); background-color: var(--GS12); 
+  }
+  div.listContainer > div > div:last-child > ul > li >  div div:first-of-type{
+    height: var(--sp140); 
+  }
+  div.listContainer > div > div:last-child > ul > li > div div:first-of-type img {
+    max-width: 214px; width: 100%; 
+  } 
+  div.listContainer > div > div:last-child> ul > li > div > div mark {
+    position: absolute;
+    top: 20px;  left: -5px; z-index: 10; 
+    background-color: #30acd5;
+    padding: var(--sp10) 4.56%;
+  }
+  div.listContainer > div > div:last-child > ul > li > div strong{
+    display: block; margin: var(--sp20) 6.56%;
+  }
+  div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{
+    margin: 0 6.56%; 
+  }
+  div.listContainer > div > div.list-group-wrapper > ul > li > div > div:last-child{
+    margin-left: 31.56%; 
+  }
+  div.listContainer > div > div:last-child > ul > li > div > div:last-child{
+    padding-bottom: var(--sp30); gap: 20px; 
+  }
+  div.listContainer > div > div:last-child > ul > li > div > div:last-child:after{
+    clear: both; display: block; content: '';
+  }
+  div.listContainer > div > div:last-child > ul > li > div > div:last-child > a{
+    float: left; margin-right: 4%;
+  }
+  div.listContainer > div > div:last-child > ul > li > div h3{
+    margin-inline: 4.56%; line-height: 21px; padding: 20px 0 15px; 
+    min-height: 77px;
+  }
+  div.listContainer > div > div:last-child > ul > li > div ul li{
+    color: var(--GS06); line-height: 21px;
+    margin-left: 6.56%;
+    list-style: inside;
+  }
+
+/* end of normal list but start of transiton picture */
+  div.listContainer > div > div:last-child >.test >div:first-child{
+    position: relative;
+  }
+  div.listContainer > div > div:last-child .gradient{
+    width: 100%; position: absolute;
+    height: 15px; top: 275px;    
+    left: 0px;
+    display: flex;
+  }
+  div.listContainer > div > div.list-group-wrapper ul li .gradient{
+    top: 305px;
+  }
+  div.listContainer > div > div:last-child .gradient li{
+    display: block;  text-indent: -9999px;
+  }
+  .color-change img,
+  .change img {
+      opacity: 1;
+      transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+ ol.pager {
+    margin: 0 0 var(--sp80) 63.66% ;
+    max-width: 360px;
+    display: flex;
+    justify-content: center; align-items: center;
+    position: relative;
+    border-top: 2px solid var(--GS01);
+  }
+  ol.pager li {
+    flex: 1; text-align: center;
+  }
+  ol.pager li a {
+    color: var(--GS01); 
+    padding-top: var(--sp20);
+  }
+  ol.pager li a:hover {
+    color: var(--B04);
+  }
+  #pager-line {
+    position: absolute;
+    top: -2px; left: 0; height: 2px; z-index: 2;
+    background: var(--B04);
+    transform: translateX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+  }
+/** START DETAIL *//** START DETAIL */
+  section.detailContainer{
+    padding-top: var(--sp60);
+  }
+  section.detailContainer > div:first-child{
+    background-color: var(--GS11);
+    z-index: 90; 
+  }
+  section.detailContainer > div:first-child > div{
+    max-width: 1200px; margin: 0 auto; padding: 10px 0;
+    text-align: right; line-height: 50px;
+    box-sizing: border-box; 
+  }
+  section.detailContainer > div:first-child > div >*{
+    display: inline-block;
+  }
+  section.detailContainer > div:first-child > div:after{
+    clear: both; display: block; content: '';
+  }
+  section.detailContainer > div:first-child > div > h2{
+    float: left; 
+  }
+  section.detailContainer ul.bar{
+    top: 130px; max-width: 100%;
+  }
+  section.detailContainer > div:first-child > div > strong{
+    margin-right: 2%;
+  }
+  section.detailContainer > div:first-child > div > input:first-of-type {
+    margin-right: 2%; color: var(--GS05);
+    padding-right: 1.56%;
+    background: url('../images/showMore.png') no-repeat right center;
+    position: relative; 
+    cursor: pointer;
+  }
+  section.detailContainer > div:first-child > div > input:first-of-type.active{
+    background: url('../images/showLess.png') no-repeat right center;
+  }
+  section.detailContainer > div:nth-of-type(2) {
+    background-color: var(--GS11);
+    border-bottom: 3px solid var(--GS12);
+  }
+  section.detailContainer > div:nth-of-type(2) table{
+    z-index: 1000;   margin: 50px auto; 
+    text-align: left; padding-top: var(--sp40);
+    max-width: 1200px; width: 100%;
+  }
+  section.detailContainer > div:nth-of-type(2) table tr th{
+    padding-right: 100px; 
+    color: var(--GS04);
+    padding-bottom: var(--sp40);
+    line-height: 30px;
+  }
+  section.detailContainer > div:nth-of-type(2) table tr td{
+    color: var(--GS05);
+  }
+  section.detailContainer > div:nth-of-type(2) table tr td ul li{
+    line-height: 30px;
+  }
+
+  /** start of image */
+  section.detailContainer > div:nth-of-type(3){
+    margin-inline: auto; display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--B04);
+  }
+  section.detailContainer > div:nth-of-type(3) nav{
+    flex-basis: 57%; padding: var(--sp130) var(--sp80) var(--sp80) 260px;
+    background-color: var(--GS02);
+    position: sticky;
+    box-sizing: border-box;
+    top: 0; height: 100vh;
+    min-height: 700px;
+  }
+  section.detailContainer > div:nth-of-type(3) aside{
+    flex-basis: 43%;
+    background-color: var(--GS11);
+    padding: var(--sp130) 11.45% var(--sp80) 4.16%;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul{
+    position: absolute;
+    left: var(--sp80);
+    top: 130px; width: 90px;
+    height: 480px;
+    overflow-y: scroll; 
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul::-webkit-scrollbar {
+    display: none; 
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul li{
+    background-color: var(--GS12);
+    padding: 10px 5px;
+    margin-bottom: var(--sp20);
+    border: 3px solid transparent;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul li:last-of-type{
+    margin-bottom: 0px;
+  }
+  section.detailContainer > div:nth-of-type(3) nav ul li img{
+    margin: 0 auto; 
+    object-fit: contain; 
+    height: 50px;
+  }
+  section.detailContainer > div:nth-of-type(3) button {    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 15px 9px;
+    text-indent: -9999px;
+    width: 15px;
+    height: 9px; 
+    position: absolute; 
+    z-index: 10;
+    left: 115.5px;
+}
+section.detailContainer > div:nth-of-type(3) button:first-of-type {
+    background-image: url('../images/arrowUp.png');
+    top: 100px; 
+}
+section.detailContainer > div:nth-of-type(3) button:last-of-type {
+    background-image: url('../images/arrowUp.png');
+    transform: rotate(180deg); 
+    top: 630px; 
+}
+  section.detailContainer > div:nth-of-type(3) nav ul li:hover,
+  section.detailContainer > div:nth-of-type(3) nav ul li.selected,
+  .legend nav ul li.selected, .legend nav ul li:hover{
+    border-image: linear-gradient(45deg, var(--B03), var(--B06)) 1;
+  }
+  section.detailContainer > div:nth-of-type(3) nav > div{
+    position: relative; height: 700px;
+    cursor: zoom-in; overflow: hidden;
+  }
+  section.detailContainer > div:nth-of-type(3) nav div img.display-img {
+    opacity: 1; max-width: 100%; 
+    max-height: 500px;
+    object-fit: contain;
+    margin: 0 auto; width: auto; 
+  }
+  section.detailContainer > div:nth-of-type(3) nav > div img.zoom {
+    position: absolute; max-height: 900px; object-fit: contain;
+    opacity: 0; bottom: 500px;
+  }
+  section.detailContainer > div:nth-of-type(3) nav > div.zoomed {
+    cursor: zoom-out;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > div >h3{
+    color: var(--B03);  width: 100%;
+    margin-bottom: var(--sp40); line-height: 55px;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > div > ul > li{
+    color: var(--GS06); line-height: var(--sp30);
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > div input{
+    color: var(--B02);
+    line-height: var(--sp60);
+    padding-right: 4.56%;
+    background-image: url('../images/sortArrowRotated.png');
+    background-repeat: no-repeat; background-position: right center;
+    background-size: 11px; position: relative; cursor: pointer;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > div input.active {
+    background-image: url('../images/sortArrow.png');
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li:first-of-type > h4{
+    border-top: 1px solid var(--B02);
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
+    display: block;
+    padding: var(--sp40) 0 var(--sp20);
+    color: var(--GS01);
+    line-height: 21px;
+  }
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > input{
+    opacity: 0;
+  }
+  div.tracker{display: none;}
+  /* Default label styles */
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > label {
+    color: var(--GS01);
+    border: 3px solid var(--GS08); /* Default border */
+    padding: var(--sp30) 0 var(--sp30) var(--sp20);
+    border-radius: 10px;
+    display: block; cursor: pointer;
+  }
+
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:checked + label,
+  section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:hover + label {
+    border: 3px solid var(--border-color, var(--B02));
+  }
+  input#teal[type="radio"]:checked + label,
+  input#teal[type="radio"]:hover + label {
+    --border-color: var(--B01);
+  }
+  input#sand[type="radio"]:checked + label,
+  input#sand[type="radio"]:hover + label {
+    --border-color: var(--sand);
+  }
+  input#yellow[type="radio"]:checked + label,
+  input#yellow[type="radio"]:hover + label {
+    --border-color: var(--yellow);
+  }
+  input#black[type="radio"]:checked + label,
+  input#black[type="radio"]:hover + label {
+    --border-color: var(--GS12);
+  }
+  input#green[type="radio"]:checked + label,
+  input#green[type="radio"]:hover + label {
+    --border-color: var(--green);
+  }
+  input#red[type="radio"]:checked + label,
+  input#red[type="radio"]:hover + label {
+    --border-color: var(--red);
+  }
+  input#gray[type="radio"]:checked + label,
+  input#gray[type="radio"]:hover + label {
+    --border-color: var(--GS05);
+  }
+  input#purple[type="radio"]:checked + label,
+  input#purple[type="radio"]:hover + label {
+    --border-color: var(--B06);
+  }
+  input#pink[type="radio"]:checked + label,
+  input#pink[type="radio"]:hover + label {
+    --border-color: var(--pink);
+  }
+  input#white[type="radio"]:checked + label,
+  input#white[type="radio"]:hover + label,
+  input#silver[type="radio"]:checked + label,
+  input#silver[type="radio"]:hover + label {
+    --border-color: var(--GS01);
+  }
+  /** end of the first spec selectin */
+  /* start of details */
+  div.details h4{
+    color: var(--GS01); 
+  }
+  div.details > h4{
+    padding: var(--sp80) 0;  margin-left: 110px;
+  }
+  div.details > ul{
+    margin: var(--sp80) auto;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 80px;
+  }
+  div.details > ul li{
+    flex-basis: 20%; 
+    /* background-position: top var(--sp40); */
+  }
+  div.details > ul li dl dt{
+    color: var(--GS01);
+    margin: var(--sp40) 0px var(--sp30);
+    padding-top: var(--sp20);
+  }
+  div.details > ul li dl dd{
+    color: var(--GS05);
+  }
+  div.details > div.superCharge,
+  div.details > div.fineTuned{
+    background-color: var(--GS12);    
+    padding: var(--sp60) var(--sp40);
+    margin: 0 auto var(--sp80);
+  }
+  div.details > div.full{
+    max-width: 1920px; background-color: black;
+    padding: var(--sp60) 0;
+  }
+  div.details > div.superCharge > div,
+  div.details > div.fineTuned > div{
+    max-width: 1760px;
+    text-align: center;
+    margin: 0 auto;    
+  }
+  div.details > div.superCharge > div h4,
+  div.details > div.fineTuned > div h4,
+  div.details > div.full > div h4 {
+      padding-bottom: var(--sp40);
+  }
+  div.details > div.full > div {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  div.details > div.full > div img{
+    position: relative; width: 100%;
+  }
+  div.details > div.full > div > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  div.details > div.full > div > div > ul{
+    display: grid;
+    overflow: visible;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+  div.details > div.full > div > div > ul li img{
+    object-fit: contain;
+  }
+  div.details > div.full > div > div > ul li:nth-of-type(1) img{
+    margin-left: 16%;
+  }
+  div.details > div.full > div > div > ul li:nth-of-type(3) img{
+    margin-top: 12%;  margin-left: 10%;
+  }
+  div.details > div.full > div > div > ul li:nth-of-type(4) img{
+    margin-top: -40px;  margin-right: 15%;  
+  }
+   div.details > div.full > div img{
+    margin: 0 auto;
+    object-fit: cover;
+    max-inline-size: 50%;
+    width: 100%; height: 100%;
+  }
+  div.details > div.full > div > div {
+    color: white; 
+  }
+  div.details > div.superCharge > div ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28%, 1fr));
+    margin-top: var(--sp60);
+    gap: 80px;    
+  }
+  div.details > div.superCharge > div ul li {
+      text-align: left;
+  }
+  div.details > div.superCharge > div ul li b {
+      color: var(--GS01);
+  }
+  div.details > div.superCharge > div ul li p {
+      line-height: 30px;    margin-top: var(--sp20);
+  }
+  div.details > div.fineTuned > div p{
+    margin-bottom: var(--sp20);
+  }
+  div.details > div.fineTuned > div ul{
+    display: flex; gap: 40px;
+    justify-content: space-between;
+  }
+  div.details > div.fineTuned > div ul li{
+    text-align: center;
+    padding: 40px 15px;
+    flex: 1;
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(1){
+    background-color: var(--B06);
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(2){
+    background-color: var(--B03);
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(3){
+    background-color: var(--B02);
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(4){
+    background-color: var(--B05);
+  }
+  div.details > div.fineTuned > div ul li dl dt{
+    background-repeat: no-repeat; background-position: center top;
+    padding: 100px 0px 20px;
+  }  
+  div.details > div.fineTuned > div ul li:nth-of-type(1) dl dt{
+    background-image: url('../images/fine_01.png');
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(2) dl dt{
+    background-image: url('../images/fine_02.png');
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(3) dl dt{
+    background-image: url('../images/fine_03.png');
+  }
+  div.details > div.fineTuned > div ul li:nth-of-type(4) dl dt{
+    background-image: url('../images/fine_04.png');
+  }
+  div.details .legend{
+    max-width: 1516px;
+    margin: var(--sp80) auto;
+  }
+  div.details .legend >*{
+    margin: 0 auto;
+    text-align: center;
+  }
+  div.details .legend p{
+    width: 66%; 
+  }
+  div.details .legend h4{
+    margin-bottom: var(--sp30);
+  }
+  div.details .legend nav > div img{
+    margin: var(--sp40) auto;
+    max-width: 1200px;
+  }
+  div.details .legend nav ul li{
+    display: inline-block;    
+    border: 3px solid transparent;
+    margin: 0px var(--sp10);
+  }
+  div.details .legend nav ul li.selected{
+    border-image: linear-gradient(45deg, #509fc9, #676eff) 1;  
+  }
+  div.details .legend nav ul li img{     
+    max-width: 125px;
+    width: 100%;
+  }
+  .show{
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0) translateY(0);
+    }
+    section.detailContainer > .details > ul > li:nth-child(4){
+      transition-delay: 600ms;
+    }
+    section.detailContainer > .details > ul > li:nth-child(2),
+    section.detailContainer > .details > .superCharge div > ul > li:nth-child(2),
+    section.detailContainer > .details > .superCharge div > ul > li:nth-child(5){
+      transition-delay: 200ms;
+    }
+    section.detailContainer > .details > ul > li:nth-child(3),
+    section.detailContainer > .details > .superCharge div > ul > li:nth-child(3),
+    section.detailContainer > .details > .superCharge div > ul > li:nth-child(4){
+      transition-delay: 400ms;
+    }
+    
+
+  div.black{
+    text-align: center; margin: 0 auto;
+    background-color: black;
+    padding: 105px 0px var(--sp40);
+  }
+  /* * start of contactUS */
+
+  div.wave{
+    background: linear-gradient(-45deg, var(--B05), var(--GS12), var(--B02), var(--B06));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    position: relative;
+    padding-block: var(--sp80);    
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  div.wave >*{
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  div.wave > div{
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+  }
+  div.wave > div > a.Back {
+    background-color: var(--GS10);
+  }
+  div.wave > ul{
+    max-width: 1200px;
+    margin: 0 auto var(--sp80); display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp20);   
+  }
+  div.wave > ul > li{      
+    background-color: var(--GS10);      
+    display: flex;      
+    flex-direction: column;
+    border-radius: 15px;
+    padding: var(--sp20) 0px 140px var(--sp40);      
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right bottom ;    
+  }
+  div.wave > ul > li:after{
+    position: absolute;
+    width: 65%;
+    top: 90px; left: 0px;
+    height: 1px; content: '';
+  }
+  div.wave > ul > li:nth-of-type(1):after{
+    background-color: var(--B06);
+  }
+  div.wave > ul > li:nth-of-type(2):after{
+    background-color: var(--B01);
+  }
+  div.wave > ul > li:nth-of-type(3):after{
+    background-color: var(--B05);
+  }
+  div.wave > ul > li:nth-of-type(4):after{
+    background-color: var(--B02);
+  }
+  div.wave > ul.contact > li:nth-of-type(1){
+    background-image: url('../images/contactus_bg01.png');
+  }
+  div.wave > ul.contact > li:nth-of-type(2){
+    background-image: url('../images/contactus_bg02.png');
+  }
+  div.wave > ul.contact > li:nth-of-type(3){
+    background-image: url('../images/contactus_bg03.png');
+  }
+  div.wave > ul.contact > li:nth-of-type(4){
+    background-image: url('../images/contactus_bg04.png');
+  }
+  div.wave > ul.support > li:nth-of-type(1){
+    background-image: url('../images/supportHome_bg01.png');
+  }
+  div.wave > ul.support > li:nth-of-type(2){
+    background-image: url('../images/supportHome_bg02.png');
+  }
+  div.wave > ul.support > li:nth-of-type(3){
+    background-image: url('../images/supportHome_bg03.png');
+  }
+  div.wave > ul.support > li:nth-of-type(4){
+    background-image: url('../images/supportHome_bg04.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(1){
+    background-image: url('../images/contactSupport_bg01.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(2){
+    background-image: url('../images/contactSupport_bg02.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(3){
+    background-image: url('../images/contactSupport_bg03.png');
+  }
+  div.wave > ul.contactSupport > li:nth-of-type(4){
+    background-image: url('../images/contactSupport_bg04.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(1){
+    background-image: url('../images/glossary_bg01.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(2){
+    background-image: url('../images/glossary_bg02.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(3){
+    background-image: url('../images/glossary_bg03.png');
+  }
+  div.wave > ul.glossary > li:nth-of-type(4){
+    background-image: url('../images/glossary_bg04.png');
+  }
+  div.wave > ul > li h3{
+    position: relative; margin-bottom: var(--sp20);
+  }
+  div.wave > ul > li > ol{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 57%;
+  }
+  div.wave > ul > li ol li{
+    margin-bottom: var(--sp15);
+  }      
+  div.wave > ul > li > p{
+    width: 55%; line-height: 30px; color: #fff;
+  }
+  div.wave > ul > li:nth-of-type(1) ol li a:hover{
+    color: var(--B06);
+  }
+  div.wave > ul > li:nth-of-type(2) ol li a:hover{
+    color: var(--B01);
+  }
+  div.wave > ul > li:nth-of-type(3) ol li a:hover{
+    color: var(--B05);
+  }
+  div.wave > ul > li:nth-of-type(4) ol li a:hover{
+    color: var(--B02);
+  }
+  div.wave > div.supportSearch{
+    background-color: var(--GS10);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px 0px 40px 40px;
+  }
+  div.wave > div.supportSearch h4, div.wave > div.supportSearch p{
+    margin-bottom: var(--sp40);
+  }
+  div.wave > div.supportSearch > form{
+    margin-bottom: 20px;  
+    display: flex;
+    box-sizing: border-box; 
+  }
+  div.wave > div.supportSearch > form input:nth-of-type(1){
+    background-color: var(--GS01);
+    padding: 15px 20px;
+    width: 60%;
+  }
+  div.wave > div.supportSearch > form input::placeholder{
+    color: var(--B04); 
+  }
+  div.wave > div.supportSearch > form input:nth-of-type(2){
+    padding: 15px 25px; cursor: pointer;
+  }
+  div.wave > div.supportSearch > ol{
+    display: flex; align-items: center; gap: 10px;
+  }
+  div.wave > div.supportSearch > ol li{
+    background-color: var(--B04); 
+    padding: 15px 0px 15px 50px;   
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    width: 18%;
+  }
+  div.wave > div.supportSearch > ol li:nth-of-type(1){
+    background-image: url('../images/eye.png');
+  }
+  div.wave > div.supportSearch > ol li:nth-of-type(2){
+    background-image: url('../images/allProducts.png');
+  }
+  div.wave > div.supportSearch > form > input:last-of-type{
+    background-color: var(--B04);
+  }
+
+  /* *my account */
+  .accountContainer{
+    padding: var(--sp145) 0 var(--sp80);
+    background-color: black;
+  }
+  .accountContainer > div{
+    max-width: 1200px; margin: 0 auto;
+  }
+  .accountContainer > div h2{
+    margin: 0 0 40px;
+  }
+  .accountContainer > div > div.wrapper{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 40px;    
+    align-items: stretch; 
+  }
+  .accountContainer > div > div.wrapper > div,
+  .accountContainer > div > div.wrapper > ul {
+    display: flex;
+    flex-direction: column;    
+  }
+  .accountContainer > div > div.wrapper > div{    
+    gap: 40px;
+  }
+  .accountContainer > div > div.wrapper > div >*{
+    background-color: var(--GS11);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type{
+    padding: var(--sp20);
+  }
+  .accountContainer > div > div.wrapper > div > div:not(:first-of-type){
+    padding: var(--sp20) var(--sp20) var(--sp40);
+  }
+  .accountContainer > div > div.wrapper > div > div > hr{
+    border: 1px solid var(--B03);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--sp20);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul{
+    display: flex; justify-content: space-between;
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li figure{
+    max-width: 264px; 
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li img{
+       background-color: var(--GS10); box-sizing: border-box;
+    padding: var(--sp20) var(--sp25);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption{
+    background-color: var(--GS12); text-align: center; padding-block: var(--sp10);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){
+    width: 50%; 
+    display: block;
+    background: url('../images/addItem.png') center center no-repeat var(--GS12);
+  }
+  .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
+    width: 100%; height: 100%; display: block; text-align: center;
+    padding-top: 150px;
+  }
+  .accountContainer > div > div.wrapper > div > div:nth-of-type(2) > div,
+  .accountContainer > div > div.wrapper > div > div:nth-of-type(3) > div{
+    display: flex; align-items: center;  justify-content: space-between;
+  }
+  .accountContainer > div > div.wrapper > div > div > p{
+    width: 66%; line-height: 30px;
+  }
+  .accountContainer > div > div.wrapper > ul{
+    background-color: var(--GS12);    gap: 40px;
+  }
+  .accountContainer > div > div.wrapper > ul li{
+    position: relative;
+  }
+  .accountContainer > div > div.wrapper > ul li p{
+    position: absolute; left: 20px; bottom: 40px;
+  }
+  .accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
+    position: absolute; left: 20px; bottom: 20px;
+  }
+
+
+
+
+  /* !! START OF LOGIN` */
+
+
+  div.dark{
+    background-color: var(--GS12); padding-top: var(--sp60);
+  }
+  div.dark > div{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    position: relative;    
+  }
+  div.dark > div > div{
+    flex: 1;
+    max-width: 600px;
+  }
+  div.dark > div > div:first-of-type{
+    background-color: var(--GS01);
+    padding: var(--sp80);
+    text-align: center;
+    position: relative;
+    transition: transform 1s ease;    
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  div.dark > div > div:first-of-type > div {
+    position: absolute;
+    width: 73.33%;
+    height: 100%;
+    top: 80px;
+    left: 80px;
+    transform-style: preserve-3d; 
+    backface-visibility: hidden; 
+  }
+  .dellLogin, .createPassword  {
+    transform: rotateY(0deg);
+  }
+  .createDell, .findPassword {
+    transform: rotateY(180deg);             
+  }
+  .rotate-card{
+    transform: rotateY(180deg);
+  }
+  div.dark > div > div:first-of-type > div button{
+    cursor: pointer;
+  }
+  div.dark > div > div:first-of-type > div fieldset legend{
+    margin-bottom: var(--sp40); 
+  }
+  div.dark > div > div:first-of-type > div fieldset > ul > li{
+    margin-bottom: var(--sp30); position: relative;
+  }
+  div.dark > div > div:first-of-type > div fieldset div{
+    position: relative;
+  }
+  div.dark > div > div:first-of-type > div fieldset > ul > li label,
+  div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label{
+    position: absolute;
+    top: 0;    
+    left: 20px;
+    padding: 16px 0;      
+    pointer-events: none;
+    transition: .3s;
+  }
+  div.dark > div > div:first-of-type > div fieldset input:focus ~ label,
+  div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label,
+  div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
+    top: -10px;  left: 10px;  
+    background-color: var(--GS01);
+    z-index: 20; padding: 5px 10px;
+    color: var(--B03); 
+    font-size: 10px;     
+  }
+  div.dark > div > div:first-of-type > div fieldset input:focus {
+    outline: none; border: 1px solid var(--B03);
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset > button{
+    display: block; margin-left: auto;      
+  }    
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,
+  div.dark > div > div:first-of-type > div.createPassword fieldset > button{
+    background-color: var(--B04); 
+    margin: var(--sp30) auto;
+    display: block;
+    width: 100%;
+    padding-block: var(--sp15);
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type{
+    margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type{
+    position: relative; width: 100%;  margin-block: var(--sp25);
+  } 
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
+    content: ""; position: absolute;
+    top: 50%; width: 150px; height: 1px; 
+    background-color: var(--B04); 
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before{left: 0;}
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{right: 0;
+  }
+  div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
+    background-color: black; width: 100%; padding: var(--sp15) 0px var(--sp15) var(--sp25);
+    background-image: url('../images/google.png');
+    background-repeat: no-repeat; background-position: 170px center;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div{      
+    text-align: left;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:after{
+    clear: both; display: block; content: '';  
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset ul{
+    display: flex; gap: 20px;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset ul li{
+    flex: 1;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(2) input{
+    width: auto; margin-block: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3){
+    margin-bottom: var(--sp30);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) input{
+    margin-bottom: var(--sp10);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) p{
+    padding-left: var(--sp20); background: url('../images/info-icon.png') no-repeat left center;
+    background-size: 10px;
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset > p{
+   line-height: 30px; text-align: left; margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div.createDell fieldset button,
+  div.dark > div > div:first-of-type > div.findPassword fieldset > button{      
+    display: block;  width: 100%;
+    padding-block: var(--sp10);
+    cursor: pointer;
+  }
+  div.dark > div > div:first-of-type > div.createDell button:first-of-type{
+    background-color: var(--B04);  margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:first-of-type > div.createDell button:last-of-type{
+    border: 1px solid var(--B04);
+  }
+  div.dark > div > div:first-of-type > div.findPassword fieldset > *{
+    margin-bottom: var(--sp30);
+  }
+  div.dark > div > div:first-of-type > div.findPassword fieldset > button{
+    background-color: var(--B04); padding-block: var(--sp10); margin-bottom: var(--sp30);
+  }
+  div.dark > div > div:first-of-type input {
+    box-sizing: border-box; width: 100%; border-width: 1px; border-style: solid;
+    padding: 16px; outline: 0;
+  }
+
+
+  /** start dell account  */
+  div.dark > div > div:nth-of-type(2){
+    background-color: var(--GS11);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  div.dark > div > div:nth-of-type(2) h2{
+    margin-bottom: 20px;
+  }
+  div.dark > div > div:nth-of-type(2) ul{
+    margin-top: 40px; display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  div.dark > div > div:nth-of-type(2) ul li{
+    display: flex; flex: 1;
+    justify-content: space-between;
+  }
+  div.dark > div > div:nth-of-type(2) ul li dl dt{
+    padding-top: 50px; 
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-bottom: var(--sp20);
+  }
+  div.dark > div > div:nth-of-type(2) ul li:nth-of-type(1) dl dt{
+    background-image: url('../images/dellAccount_ex01.png');
+  }
+  div.dark > div > div:nth-of-type(2) ul li:nth-of-type(2) dl dt{
+    background-image: url('../images/dellAccount_ex01.png');
+  }
+  div.dark > div > div:nth-of-type(2) ul li:nth-of-type(3) dl dt{
+    background-image: url('../images/dellAccount_ex01.png');
+  }
+  div.dark > div > div:nth-of-type(2) ul li dl dd{
+    line-height: 30px;
+  }
+  div.dark > div > div:nth-of-type(2) img{
+    width: 100%; max-width: 400px; margin: 0 auto;
+  }
+  /* * end of login */
+
+  /* * shopping checkout */
+  section.twoface > div > div.checkOut{
+    box-sizing: border-box;
+    background-color: var(--GS01); padding-inline: var(--sp80);
+  }
+  section.twoface > div > div.checkOut ol li{
+    display: inline-block; 
+  }
+  section.twoface > div > div.checkOut ol li:not(:last-of-type){
+    padding-right: var(--sp30);
+    background: url('../images/arrowShip.png') no-repeat center right 10px;
+  }
+  section.twoface > div > div.checkOut form{
+    margin-top: var(--sp40); text-align: center;
+  }
+  section.twoface > div > div.checkOut form fieldset legend,
+  section.twoface > div > div.checkOut form fieldset ul > li{
+    margin-bottom: var(--sp30);
+  }
+  section.twoface > div > div.checkOut form fieldset ul:first-of-type > li{
+    padding: 10px 0px;  border-radius: 5px;
+    background-repeat: no-repeat; background-position: center center;
+  }
+  section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{
+    text-indent: -9999px;
+    background-color: #f7c518; background-image: url('../images/paypal.png');
+  }
+  section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
+    background-color: var(--GS12);
+    padding-right: var(--sp20);
+    background-image: url('../images/googlePay.png');
+  }
+  section.twoface > div > div.checkOut form fieldset ul:last-of-type > li:first-child{
+    display: flex; justify-content: space-between;
+  }
+  section.twoface > div > div.checkOut form fieldset ul:last-of-type > li a{
+    display: inline-block;
+  }
+  section.twoface > div > div.checkOut ul li input {
+    box-sizing: border-box; width: 100%; border-width: 1px; border-style: solid;
+    padding: 16px; outline: 0;
+  }
+  section.twoface > div > div:last-of-type{    
+     padding-inline: var(--sp40);
+  }
+  section.twoface > div > div.checkOut button{
+    cursor: pointer;
+  }
+   section.twoface > div > div.checkOut fieldset legend{
+    margin-bottom: var(--sp40); 
+  }
+  section.twoface > div > div.checkOut fieldset > ul::after{
+    clear: both; content: ''; display: block;
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li{
+    margin-bottom: var(--sp30); position: relative;
+    float: left; width: 100%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3){
+    text-align: left;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3) > input{
+    width: 3%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3) > label{
+    width: 97%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(4){
+    margin-right: 4%;
+  }
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(4),
+  section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(5){
+    width: 48%;
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label{
+    position: absolute;
+    top: 0; left: 20px;
+    padding: 16px 0;      
+    pointer-events: none;
+    transition: .3s;
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label,
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label,
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label{
+    top: -10px;  left: 10px;  
+    background-color: var(--GS01);
+    z-index: 20; padding: 5px 10px;
+    color: var(--B03); 
+    font-size: 10px;     
+  }
+   section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus {
+    outline: none; border: 1px solid var(--B03);
+  }
+   section.twoface > div > div.checkOut fieldset > button{
+    display: block; margin-left: auto;      
+  }    
+  section.twoface > div > div.checkOut fieldset div button:first-of-type,
+  section.twoface > div > div.checkOut .createPassword fieldset > button{
+    background-color: var(--B04); 
+    margin: var(--sp30) auto;
+    display: block;
+    width: 100%;
+    padding-block: var(--sp15);
+  }
+  section.twoface > div > div.checkOut fieldset > a{
+    color: var(--GS05); transition: 0.5s;
+    margin-left: auto;
+  }
+  section.twoface > div > div.checkOut fieldset > a:hover{
+    color: var(--GS01);
+  }
+
+  /* * calculator */
+
+  section.twoface div.calculator > div:first-of-type {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  section.twoface div.calculator > div:first-of-type img{
+    display: block; margin-right: var(--sp25);
+    max-width: 120px;
+  }
+  section.twoface div.calculator > div:first-of-type h3{
+    line-height: 20px;
+  }
+  section.twoface div.calculator > div:first-of-type > div input{
+    text-align: right; width: 40px;
+  }
+  div.calculator > div:first-of-type > div > button{
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -9999px;
+    padding: 10px;
+  }
+  section.twoface button{
+    background-color: #222222;
+    border: none;
+  }
+  div.calculator input{
+    background-color: white;
+  }
+  div.calculator > div:first-of-type button:first-of-type{
+    background-image: url('../images/add.png');
+  }
+  div.calculator > div:first-of-type button:nth-of-type(2){
+      background-image: url('../images/minus.png');
+  }
+  div.calculator > div:first-of-type button:nth-of-type(3){
+      background-image: url('../images/trahcan.png');
+  }
+  div.calculator > div:nth-of-type(2){
+    display: flex; 
+    margin: var(--sp20) 0px var(--sp20) 20px;
+    align-items: center;
+    flex: 1;
+  }
+  div.calculator > div:nth-of-type(2) input{
+    width: 66.6%;     
+    padding: 15px 15px;
+  }
+  div.calculator > div:nth-of-type(2) a{
+    background-color: var(--GS07);
+    margin-left: 10px;
+    padding: 15px 40px;
+  }
+  div.calculator  > hr{
+    border: 1px solid var(--B04);
+  }
+  div.calculator ul li strong::before{
+    content: '$';
+  }
+  div.calculator ul li:first-of-type strong:first-of-type::before,
+  div.calculator ul li:nth-of-type(3) strong::before{
+    content: '';
+  }
+  div.calculator ul li{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;  
+    align-items: center;
+  }
+  div.calculator ul li:first-of-type {
+    justify-content: flex-start; 
+  }
+  div.calculator ul li:first-of-type small {
+    margin-left: 5px;
+  }
+  div.calculator ul li:first-of-type strong {
+    margin-left: auto; 
+  }
+  div.calculator >*{
+    margin-inline: auto;  text-align: center;
+  }
+  div.calculator > p{
+    width: 80%; line-height: 24px; 
+  }
+  div.calculator > a{
+    margin-top: var(--sp40);
+  }
+
+  .twowrap{
+    background-color: var(--GS12);
+    display: flex;    
+  }
+  .twowrap > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .twowrap > div > div{
+    padding-block: 145px 80px;
+  }
+  .twowrap > div > div:first-of-type{
+    background-color: var(--GS01);
+  }
+  .twowrap > div > div:last-of-type{
+    background-color: var(--GS11);
+  }
+
+  /* order status */
+  .arrival > div,
+  .arrival > ol{
+    padding-inline: 80px; display: flex; 
+  }
+  .arrival > ol{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .arrival > img{
+     margin-block: 20px 80px;
+  }
+  .arrival > div > time{
+    display: flex;
+    flex-direction: column;
+  }
+  .arrival > ol li{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .arrival > ol {
+    padding-inline: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .arrival > ol li:nth-child(n+3){
+    color: var(--GS06);
+  }
+  .arrival > ol li:nth-child(3):hover{  
+    color: var(--GS12);
+  }
+  .arrival > ol li:before {
+    content: '';
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow:  0 6px 6px rgba(0, 0, 0, 0.1);
+    z-index: 5; 
+    position: relative;
+    margin: 0 auto;
+    transition: all 0.2s;
+  }
+  .arrival > ol li:nth-of-type(1):before,
+  .arrival > ol li:nth-of-type(2):before{
+    background-color: var(--B05); border: 3px solid white;    
+  }
+  .arrival > ol li:nth-of-type(3):before,
+  .arrival > ol li:nth-of-type(4):before{
+    background-color: var(--GS06); border: 5px solid white;
+  }
+  .arrival > ol li:not(:nth-of-type(4)):hover:before {
+    transform: scale(1.2);
+    background-color: var(--B05); border: 3px solid white;      
+    cursor: pointer;
+  }
+  .arrival > ol li:after {
+    content: '';
+    height: 4px;
+    background-color: var(--B05);
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 20px;    
+    z-index: 0; 
+    width: 250%;
+  }
+  .arrival > ol li:nth-of-type(3):after{
+    width: 140%; background-color: var(--GS06);
+    left: 50px;    
+  }
+  .arrival > ol li:nth-of-type(4):after {
+      content: none;
+  }
+  div.orderStatus{
+    padding-inline: 80px;
+  }
+  div.orderStatus > span{
+
+  }
+  div.orderStatus > figure{
+    margin-block: var(--sp30) var(--sp20);    
+    max-width: 264px;
+  }
+  div.orderStatus > figure img{
+    background-color: var(--GS10);
+    box-sizing: border-box; padding: 20px 25px;    
+  }
+  div.orderStatus > figure figcaption{
+    text-align: center;
+    background-color: var(--GS12);
+    padding-block: var(--sp10);        
+  }
+  div.orderStatus > div address{
+    margin-block: 20px;
+    background-color: var(--GS10);
+    padding: var(--sp20) var(--sp20);
+    font-style: normal;
+    line-height: 30px;
+  } 
+  /* end of ordersttaus */
+
+  .returns{
+    margin: var(--sp80) auto;  
+  }
+  .returns > div:first-of-type {
+    text-align: center;
+  }
+  .returns > div > h2{
+    margin-bottom: var(--sp20);  
+  }
+  .returns > ol{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1690px;
+    padding: 0 4%;
+    margin: var(--sp40) auto var(--sp80);
+  }
+  .returns > ol li{
+    flex: 1; text-align: left;
+  }
+  .returns > ol li img{
+    max-width: 200px;
+  }
+  .returns > ol li > dl dt{
+    margin-bottom: var(--sp20);
+  }
+  .returns > ol li > dl dd{
+    width: 80%; line-height: 30px;
+  }
+  /* * copyright */
+  article.rightsInfo{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-block: var(--sp145) var(--sp80);
+    display: flex;
+    flex-direction: column;
+  }
+  article.rightsInfo h2{
+    margin-bottom: var(--sp40);
+  }
+  article.rightsInfo small{
+    display: block; margin-top: 10px;
+  }
+  article.rightsInfo > ul{
+    background-color: var(--GS04);
+    padding: var(--sp40) var(--sp80);
+    margin-bottom: var(--sp40);
+  }
+  article.rightsInfo > ul > li{
+    margin-bottom: var(--sp20);
+  }
+  article.rightsInfo > ul li h3{
+    margin-bottom: var(--sp20);
+  }
+  article.rightsInfo > ul li > p{
+    line-height: 30px; color: var(--GS11); margin-bottom: var(--sp20);
+  }
+  article.rightsInfo > ul li > ul > li{
+    line-height: 30px; list-style: disc; margin-left: var(--sp20);
+  }
+  article.rightsInfo > ul li > address{
+    font-style: normal; color: var(--GS11); line-height: 30px;
+  }
+  article.rightsInfo a{
+    display: flex; align-self: flex-end;
+  }
+}
+
+
+
+
+  
+

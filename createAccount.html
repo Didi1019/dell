@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/dell.js"></script>
+    <script defer src="js/before.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html"><img src="images/logo.png" alt="Dell Logo"></a>
+            </h1>
+            <nav>
+                <ul class="rzLT16">
+                    <li>
+                        <b class="rzLT16">Laptops</b>
+                        <ol>
+                            <li><a href="list_laptop_alienware01.html">View All Laptops</a></li>
+                            <li><a href="list_laptop_alienware01.html">Alienware Laptops</a></li>
+                            <li><a href="list_laptop_chromebook01.html">Chromebook Laptops</a></li>
+                            <li><a href="list_laptop_gseries01.html">G Series Laptops</a></li>
+                            <li><a href="list_laptop_latitude01.html">Latitude Laptops</a></li>
+                            <li><a href="list_laptop_precision01.html">Precision Laptops</a></li>
+                            <li><a href="list_laptop_vostro01.html">Vostro Laptops</a></li>
+                            <li><a href="list_laptop_xps01.html">XPS Laptops</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b class="rzLT16">Desktops</b>
+                        <ol>
+                            <li><a href="list_desktop_all.html">View All Desktops</a></li>
+                            <li><a href="list_desktop_alienware.html">Alienware Desktops</a></li>
+                            <li><a href="list_desktop_all.html">Inspiron Desktops</a></li>
+                            <li><a href="list_desktop_all.html">Precision Desktops</a></li>
+                            <li><a href="list_desktop_all.html">Vostro Desktops</a></li>
+                            <li><a href="list_desktop_all.html">XPS Desktops</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b class="rzLT16">Alienware</b>
+                        <ol>
+                            <li><a href="list_laptop_alienware01.html">Alienware Laptops</a></li>
+                            <li><a href="list_desktop_alienware.html">Alienware Desktops</a></li>
+                            <li><a href="list_keyboard01.html">Alienware Keyboards</a></li>
+                            <li><a href="list_mouse.html">Alienware Mice</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b class="rzLT16">Monitors</b>
+                        <ol>
+                            <li><a href="list_monitor_all.html">View All Monitors</a></li>
+                            <li><a href="list_monitor_all.html">Ultra Sharp Monitor</a></li>
+                            <li><a href="list_monitor_alienware.html">Alienware Monitor</a></li>
+                            <li><a href="list_monitor_all.html">Business Monitor</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b class="rzLT16">Accessories</b>
+                        <ol>
+                            <li><a href="list_keyboard01.html">Keyboard</a></li>
+                            <li><a href="list_mouse.html">Mice</a></li>
+                            <li><a href="list_bag.html">Bags & Sleeves</a></li>
+                            <li><a href="list_speaker.html">Speakers</a></li>
+                            <li><a href="list_headphone.html">Headphones</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b class="rzLT16">Support</b>
+                        <ol>
+                            <li><a href="supportHome.html">Support Home</a></li>
+                            <li><a href="contactSupport.html">Contact Support</a></li>
+                            <li><a href="returns.html">Returns</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <div id="searchPanel" class="search-Toggle"></div>
+            <input class="search-Panel" type="text" placeholder="Search Dell">
+            <div class="chessGun">
+                <input type="button" value="cart" class="cart-Toggle">
+                <ul class="cart-Panel">
+                    <li class="rbSB16 devil">Alienware x15 R2 <br> Gaming Laptop</li>
+                    <li class="rzSB16 fff"><a href="checkOut.html" class="fff">CHECKOUT</a></li>
+                    <li class="rzSB16 devil"><a href="checkOut.html">Cart(1)</a></li>
+                    <li class="rzSB16 devil"><a href="myAccount.html">ChessGun</a></li>
+                    <li class="rzSB16 devil"><a href="index.html">Log out</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <a href="contactUs.html">contact us</a>
+        </div>
+    </header>
+    <section class="create">
+        <div>
+            <form id="createAccount" class="form">
+                <fieldset>
+                    <legend class="rzLT40">Create Your Account</legend>
+                    <ul>
+                     <li>
+                         <label for="accountFirstname">First Name</label>
+                         <input type="text" id="accountFirstname" placeholder="First name">
+                     </li>
+                     <li>
+                         <label for="accountLastname">Last Name</label>
+                         <input type="text" id="accountLastname" placeholder="Last name">
+                     </li>
+                     <li>
+                         <label for="accountEmail">Email</label>
+                         <input type="email" title="userEmail" id="accountEmail" placeholder="Email">
+                     </li>
+                     <li>
+                         <p>Yes, I would like Dell to send me email communications.</p>
+                         <input type="checkbox" id="emailCommunication">
+                     </li>
+                     <li>
+                         <label for="accountPassword">Password</label>
+                         <input type="password" title="userPassword" id="accountPassword">
+                         <p class="rbRG10">Passwords must be at least 8 characters in length and contain 1 upper case letter, 1 lower case letter, and 1 number.</p>
+                     </li>
+                     <li>
+                        <p class="rbRG14">Dell Technologies and its group of companies (“Dell”) would like to stay in touch and update you on products, services, solutions, exclusive offers and special events. For more details about our information practices, see our Privacy Statement. You can unsubscribe at any time.</p>
+                     </li>
+                    </ul>
+                    <a href="index.html">Create Account</a>
+                    <a href="index.html">Cancel</a>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h2 class="rzLT40 cB04">Dell Account Benefits</h2>
+                    <p class="rzLT16">Creating a Dell account gives you access to special perks.</p>
+                </li>
+                <li class="west">
+                    <dl>
+                        <dt class="rbMD14 cb02">Order Tracking</dt>
+                        <dd class="rbRG14">Manage orders, track shipping status.</dd>
+                    </dl>
+                </li>
+                <li class="west">
+                    <dl>
+                        <dt class="rbMD14 cb02">Free Shipping</dt>
+                        <dd class="rbRG14">Enjoy free expedited shipping when you sign up.</dd>
+                    </dl>
+                </li>
+                <li class="west">
+                    <dl>
+                        <dt class="rbMD14 cb02">Dell Rewards</dt>
+                        <dd class="rbRG14">Get up to 3% back on purchases and free expedited delivery as a Dell Rewards member when you join.</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <ul class="rzLT12">
+                <li>
+                    <strong>Account</strong>
+                    <ol>
+                        <li><a href="myAccount.html">My Account</a></li>
+                        <li><a href="orderStatus.html">Order Status</a></li>
+                        <li><a href="myProducts.html">My Products</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Resource</strong>
+                    <ol>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Support</strong>
+                    <ol>
+                        <li><a href="supportHome.html">Support Home</a></li>
+                        <li><a href="contactSupport.html">Contact Support</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Company</strong>
+                    <ol>
+                        <li><a href="whoWeare.html">Who we are</a></li>
+                        <li><a href="perspectives.html">Perspectives</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <strong >Connect with Us</strong>
+                    <ol>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="https://twitter.com/Dell?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/company/delltechnologies/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/dell/?hl=en" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UC01FW5V9UVohbPtqKSmXX-w" target="_blank">Youtube</a></li>
+                    </ol>
+                </li>
+            </ul>
+            <h2>
+                <img src="images/footerlogo.png" alt="dell Technologies">
+            </h2>
+            <ul class="rzLT12">
+                <li><a href="copyRight.html">Copyright © 2023 Dell Inc.</a></li>
+                <li><a href="termsofsale.html">Terms of Sale</a></li>
+                <li><a href="privacyStatement.html">Privacy Statement</a></li>
+                <li><a href="personalInfo.html">Do Not Sell or Share My Personal Information</a></li>
+                <li><a href="cookies.html">Cookies, Ads &amp; Emails</a></li>
+                <li><a href="legal.html">Legal &amp; Regulatiory</a></li>
+                <li><a href="accesiblity.html">Accesibility</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

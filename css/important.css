@@ -1,0 +1,4 @@
+  header:has(.hamburger.is-active) .cart-Panel,
+  header:has(.hamburger.is-active) .search-Panel {
+      display: none !important;
+  }
