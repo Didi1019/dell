@@ -12,7 +12,10 @@ $(function() {
     calculator();
     tablet();
     mouseLeave();
+    intersection();
 });
+
+
 function hoverImg() {
     var fileName = window.location.pathname.split('/').pop();
     if (fileName.startsWith('list')) {        
@@ -49,6 +52,41 @@ function password() {
           confirm_password.setCustomValidity('');
         }
       
+    });
+}
+function intersection() {
+    // const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach((entry) => {
+    //         $(entry.target).toggleClass('show', entry.isIntersecting);
+    //     });
+    // });
+
+    // const hiddenElements = $('.details ul > li, .imageLf > *, .imageRT > *');
+    // hiddenElements.each(function() {
+    //     observer.observe(this);
+    // });
+    // function scrollAxis(){
+    //     var textSlideOne=$('main>div:nth-of-type(2) p:first-of-type');
+    //     var textSlideTwo=$('main>div:nth-of-type(2) p:last-of-type');
+    //     $(window).scroll(function(){
+    //         if($(window).scrollTop()>=281){
+    //             textSlideOne.addClass('active');
+    //         }if($(window).scrollTop()>=381){
+    //             textSlideTwo.addClass('active');
+    //         }
+    //     });
+    // };
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                $(entry.target).addClass('show');
+                observer.unobserve(entry.target); 
+            }
+        });
+    });
+    const hiddenElements = $('.details ul > li, .imageLf > *, .imageRT > *');
+    hiddenElements.each(function() {
+        observer.observe(this);
     });
 }
 function marked(){
@@ -172,13 +210,10 @@ function toggleUI() {
 }
 
 function tablet() {
-    function applyTabletSettings() {
-        if (window.matchMedia("(min-width: 368px) and (max-width: 1279px)").matches) {
-            $('header > div nav ul li ol').hide();
-            $('footer > div ul li ol').hide();
-            $('header > div nav ul li b').removeClass('active');
-            $('footer > div ul li strong').removeClass('active');
-
+    function applySettings() {
+        if (window.matchMedia("(max-width: 1279px)").matches) {
+            $('header > div nav ul li ol, footer > div ul li ol').hide();
+            $('header > div nav ul li b, footer > div ul li strong').removeClass('active');
             $('header > div nav ul li b').off('click').on('click', function () {
                 $(this).next('ol').slideToggle("fast");
                 $(this).toggleClass('active');
@@ -188,14 +223,14 @@ function tablet() {
                 $(this).next('ol').slideToggle("fast");
                 $(this).toggleClass('active');
             });
+        } else {
+            $('header > div nav ul li b, footer > div ul li strong').off('click').removeClass('active');
+            $('header > div nav ul li ol, footer > div ul li ol').show(); 
         }
     }
-    applyTabletSettings();
-    $(window).on('resize', function () {
-        applyTabletSettings();
-    });
+    applySettings();
+    $(window).on('resize', applySettings);
 }
-
 function calculator() {
     const productPrice = 1242.99;
 
@@ -322,7 +357,6 @@ function gridtolist() {
     });
     $(window).resize(applyGridWrapper);
 }
-
 
 function rotation() {
     $('.createDell, .findPassword, .createPassword').hide();
@@ -487,66 +521,3 @@ $(document).ready(function() {
 
 
 //  might not need
-$(document).ready(function() {
-    const initMobileTracker = () => {
-        const $thumbs = $("#thumbs");
-        const $displayImg = $(".display-img");
-        const $tracker = $(".tracker");
-        const $items = $thumbs.find("li");
-        const totalItems = $items.length;
-        let currentIndex = 1;
-
-        // Initial tracker display
-        const updateTracker = () => {
-            $tracker.text(`${currentIndex} / ${totalItems}`).show();
-        };
-
-        // Thumbnail click event
-        $items.on("click", function() {
-            currentIndex = $(this).index() + 1;
-            const newSrc = $(this).find("img").attr("src");
-            $displayImg.attr("src", newSrc);
-            updateTracker();
-        });
-
-        // Scroll functions for "up" and "down" buttons
-        const scrollThumbnails = (direction) => {
-            const scrollAmount = $items.first().outerHeight(true);
-            const newScrollTop = $thumbs.scrollTop() + (direction * scrollAmount);
-            $thumbs.scrollTop(newScrollTop);
-        };
-
-        $("#up").on("click", function() {
-            if (currentIndex > 1) {
-                currentIndex--;
-                scrollThumbnails(-1);
-                updateTracker();
-            }
-        });
-
-        $("#down").on("click", function() {
-            if (currentIndex < totalItems) {
-                currentIndex++;
-                scrollThumbnails(1);
-                updateTracker();
-            }
-        });
-
-        // Initialize tracker on load
-        updateTracker();
-    };
-
-    const checkMobileView = () => {
-        if (window.innerWidth <= 768) {
-            console.log("Initializing mobile tracker");
-            initMobileTracker();
-        } else {
-            $(".tracker").hide(); // Hide the tracker on larger screens
-        }
-    };
-
-    checkMobileView();
-
-    // Add a resize event listener to recheck the condition
-    $(window).on("resize", checkMobileView);
-});

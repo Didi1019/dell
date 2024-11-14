@@ -3,6 +3,7 @@ img{width: 100%; display: block;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
 li, ul {list-style:none;}
 blockquote, q {quotes:none;}
-a {margin:0; padding:0; font-size:100%;  display: block; text-decoration: none;}
+a {margin:0; padding:0; font-size:100%;  display: block; text-decoration: none; color: inherit;}
 hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;}
 input, select {vertical-align:middle;}
+*::placeholder{color: inherit;}

@@ -1,3 +1,22 @@
+.calculator input[type="number"]::-webkit-outer-spin-button,
+.calculator input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* order status */
+div.orderStatus > div address{
+  margin-block: 20px;
+  background-color: var(--GS10);
+  padding: var(--sp20) var(--sp20);
+  line-height: 30px;
+  font-style: normal;
+} 
+
+/* calculator */
+div.calculator ul li:not(:nth-child(3)) strong::before{
+  content: '$';
+}
+
 
 @keyframes slideShow {
   0% { opacity: 0; }
@@ -14,22 +33,20 @@ ul.bar {
   display: flex; align-items: center;
   justify-content: center; 
 }
+ul.bar li {
+  position: absolute;  
+  text-align: center; 
+  animation: slideShow 12s infinite;
+  opacity: 0;
+}
+ul.bar li:nth-child(1) {
+  animation-delay: 0s;  
+}
+ul.bar li:nth-child(2) {
+  animation-delay: 6s; 
+}
 div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; transition-timing-function:ease-out;}  
 @media screen and (max-width: 767px){
-  ul.bar li {
-    position: absolute;
-    text-align: center; 
-    color: var(--GS01, white);
-    animation: slideShow 12s infinite;
-    opacity: 0;
-    width: 92.85%;
-  }
-  ul.bar li:nth-child(1) {
-    animation-delay: 0s;  
-  }
-  ul.bar li:nth-child(2) {
-    animation-delay: 6s; 
-  }
   main > div:first-of-type{
     background-color: var(--GS12);
     padding-bottom: var(--sp60);
@@ -557,7 +574,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
   ol.pager {
-    margin: 0 3.57% var(--sp80) 53.66% ;
+    margin: 0 3.25% var(--sp80) 53.66% ;
     max-width: 360px;
     display: flex;
     justify-content: center; align-items: center;
@@ -593,7 +610,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     z-index: 90; 
   }
   section.detailContainer > div:first-child > div{
-    padding: var(--sp20) 3.57%;
+    padding-block: var(--sp20);
     line-height: 50px;
     box-sizing: border-box; 
   }
@@ -678,7 +695,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   section.detailContainer > div:nth-of-type(3) nav ul{
     display: flex;
     gap: 15px;
-    padding: var(--sp40) 3.25%;
+    padding-block: var(--sp40);
     justify-content: center;
     overflow: hidden;
   }
@@ -717,11 +734,11 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     display: none;
   }
   section.detailContainer > div:nth-of-type(3) > aside > div >h3{
-    color: var(--B03);  width: 60%;
+    width: 60%;
     margin-bottom: var(--sp40); line-height: 30px;
   }
   section.detailContainer > div:nth-of-type(3) > aside > div > ul > li{
-    color: var(--GS06); line-height: var(--sp30);
+    line-height: var(--sp30);
   } 
   section.detailContainer > div:nth-of-type(3) > aside > div > input{
     color: var(--GS12);
@@ -810,15 +827,11 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     overflow: hidden;
   }
   /* for accesibility */
-  div.details h4{
-    color: var(--GS01); 
-  }
   div.details > h4{
-    padding: var(--sp80) 3.25%;
+    padding-block: var(--sp80);
   }
   div.details > ul{
     margin: var(--sp80) auto;
-    padding-inline: 3.25%;
   }
   div.details > ul li{
     margin-bottom: var(--sp40);
@@ -908,13 +921,17 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     margin-bottom: var(--sp20);
   }
   div.details > div.fineTuned > div ul{
-    display: flex; gap: 40px;
-    justify-content: space-between;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr; 
+    margin: 0 auto;
+    align-self: center;
   }
   div.details > div.fineTuned > div ul li{
     text-align: center;
-    padding: 40px 15px;
-    flex: 1;
+    padding: var(--sp40) var(--sp15);
+    margin: 0 auto;
+    width: 100%;
   }
   div.details > div.fineTuned > div ul li:nth-of-type(1){
     background-color: var(--B06);
@@ -943,6 +960,32 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
   div.details > div.fineTuned > div ul li:nth-of-type(4) dl dt{
     background-image: url('../images/fine_04.png');
+  }
+  .recycle{
+    padding: var(--sp80s) 0 60px;
+    margin-bottom: 0px;
+  }
+  .recycle > div{
+    padding: var(--sp60) var(--sp40) 50px;
+    background-image: url('../images/recylce.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 199px 183px;
+  }
+  .recycle > img{
+    max-width: 579px; 
+    margin: 0 auto;
+  }
+  .recycle{
+    margin-bottom: 0px;
+    background-image: url('../images/xps_13plus_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .recycle >img{
+    max-width: 579px; padding: var(--sp80) 0;
+    margin: 0 auto;
   }
   div.details .legend{
     margin: var(--sp80) auto;
@@ -1453,7 +1496,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   div.dark > div > div:nth-of-type(2){
     background-color: var(--GS11);
     text-align: center;
-    padding: var(--sp80s) 0;
+    padding: var(--sp80s) 0; 
   }
   div.dark > div > div:nth-of-type(2) h2{
     margin-bottom: 20px;
@@ -1462,7 +1505,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 0 3.25%;
     margin: var(--sp40) auto;
   }
   div.dark > div > div:nth-of-type(2) ul li{
@@ -1608,20 +1650,20 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   /* * calculator */
 
   section.twoface div.calculator > div:first-of-type {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
+    display: flex; align-items: center;        
   }
   section.twoface div.calculator > div:first-of-type img{
     display: block; margin-right: var(--sp25);
     max-width: 120px;
   }
   section.twoface div.calculator > div:first-of-type h3{
-    line-height: 20px;
+    line-height: 20px; text-align: left;
+  }
+  section.twoface div.calculator > div:first-of-type > div{
+    margin-left: auto;
   }
   section.twoface div.calculator > div:first-of-type > div input{
-    text-align: right; width: 40px;
+    width: 40px; box-sizing: border-box; padding-left: var(--sp20);   
   }
   section.twoface button{
     background-color: #222222;
@@ -1662,13 +1704,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
   div.calculator  > hr{
     border: 1px solid var(--B04);
-  }
-  div.calculator ul li strong::before{
-    content: '$';
-  }
-  div.calculator ul li:first-of-type strong:first-of-type::before,
-  div.calculator ul li:nth-of-type(3) strong::before{
-    content: '';
   }
   div.calculator ul li{
     display: flex;
@@ -1712,57 +1747,53 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
   .twowrap > div > div:last-of-type{
     background-color: var(--GS11);
-    padding-block: var(--sp80s);
+    padding-block: var(--sp80);
   }
   /* order status */
   .arrival > div,
   .arrival > ol{
     padding-inline: var(--sp80); display: flex; 
   }
-  .arrival > ol{
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
+
   .arrival > img{
     margin-block: var(--sp80) var(--sp80s);
  }
  .arrival > div > time{
    display: flex;
    flex-direction: column;
- }
+  }
   .arrival > ol {
     padding-inline: var(--sp25);
     justify-content: space-between;
     align-items: center;
   }
- .arrival > ol li{
+  .arrival > ol li{
     text-align: center;
     position: relative;
     z-index: 1;
     display: block;
     position: relative;
     width: 25%;
- }
+  }
   .arrival > ol li:nth-child(n+3){
-   color: var(--GS06);
- }
- .arrival > ol li:nth-child(3):hover{  
-   color: var(--GS12);
- }
- .arrival > ol li:before {
-   content: '';
-   display: block;
-   height: 25px;
-   width: 25px;
-   border-radius: 50%;
-   box-shadow:  0 6px 6px rgba(0, 0, 0, 0.1);
-   z-index: 5; 
-   position: relative;
-   margin: 0 auto;
-   transition: all 0.2s;
- }
- .arrival > ol li:nth-of-type(1):before,
+    color: var(--GS06);
+  }
+  .arrival > ol li:nth-child(3):hover{  
+    color: var(--GS12);
+  }
+  .arrival > ol li:before {
+    content: '';
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow:  0 6px 6px rgba(0, 0, 0, 0.1);
+    z-index: 5; 
+    position: relative;
+    margin: 0 auto;
+    transition: all 0.2s;
+  }
+  .arrival > ol li:nth-of-type(1):before,
  .arrival > ol li:nth-of-type(2):before{
    background-color: var(--B05); border: 3px solid white;    
  }
@@ -1779,9 +1810,8 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
    height: 4px;
    background-color: var(--B05);
    position: absolute;
-   top: calc(50% - 15px);
-   left: 50%;    
-   z-index: 0; 
+   top: calc(50% - 12px);
+   left: 50%; z-index: 0; 
    width: 100%;
  }
  .arrival > ol li:nth-of-type(3):after{
@@ -1792,7 +1822,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
    content: none;
  }
  div.orderStatus{
-    padding-inline: var(--sp25);
+    padding-inline: 3.25%;
   }
   div.orderStatus > span:first-of-type{
     display: block;
@@ -1802,9 +1832,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
   div.orderStatus > figure{
     margin-block: var(--sp30) var(--sp20);    
-    max-width: 264px; width: 50%;
-    margin-right: 11.11%;
-    float: left;
   }
   div.orderStatus > figure img{
     background-color: var(--GS10);
@@ -1820,13 +1847,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     flex-direction: column;
     margin-top: var(--sp30);
   }
-  div.orderStatus > div address{
-    margin-block: 20px;
-    background-color: var(--GS10);
-    padding: var(--sp20) var(--sp20);
-    line-height: 30px;
-    display: block;
-  } 
   div.orderStatus > div a{
     align-self: flex-end; margin-top: var(--sp40);
   }
@@ -1834,8 +1854,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   /* end of ordersttaus */
 
   .returns{
-    margin: var(--sp80) auto;  
-    padding: 0 3.25%;
+    margin: var(--sp80) auto;      
   }
   .returns > div:first-of-type {
     text-align: center;
@@ -1902,19 +1921,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
-  ul.bar li {
-    position: absolute; width: 93.5%; 
-    text-align: center; 
-    color: var(--GS01, white);
-    animation: slideShow 12s infinite;
-    opacity: 0;
-  }
-  ul.bar li:nth-child(1) {
-    animation-delay: 0s;  
-  }
-  ul.bar li:nth-child(2) {
-    animation-delay: 6s; 
-  }
   main > div:first-of-type{
     background-color: var(--GS12);
     padding-bottom: var(--sp60);
@@ -2584,7 +2590,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     display: flex;
     margin: 0 auto;
     gap: 15px;
-    padding: 40px 3.25%;
+    padding-block: 40px;
     width: 100%;
     justify-content: center;
   }
@@ -2622,12 +2628,11 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     display: none;
   }
   section.detailContainer > div:nth-of-type(3) > aside > div >h3{
-    color: var(--B03);  width: 60%;
+    width: 60%;
     margin-bottom: var(--sp40); line-height: 55px;
   }
-  
   section.detailContainer > div:nth-of-type(3) > aside > div > ul > li{
-    color: var(--GS06); line-height: var(--sp30);
+    line-height: var(--sp30);
   } 
   section.detailContainer > div:nth-of-type(3) > aside > div > input{
     color: var(--GS12);
@@ -2721,18 +2726,14 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     overflow: hidden;
   }
   /* for accesibility */
-  div.details h4{
-    color: var(--GS01); 
-  }
   div.details > h4{
-    padding: var(--sp80) 3.25%;
+    padding-block: var(--sp80);
   }
   div.details > ul{
     margin: var(--sp80) auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-inline: 3.25%;
   }
   div.details > ul li{
     flex-basis: 45%; 
@@ -2752,6 +2753,9 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     background-color: var(--GS12);    
     padding: var(--sp60) var(--sp40);
     margin: 0 auto var(--sp80);
+  }
+  div.details > div.fineTuned > div{
+    text-align: center;
   }
   div.details > div.full{
     background-color: black;
@@ -2824,13 +2828,17 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     margin-bottom: var(--sp20);
   }
   div.details > div.fineTuned > div ul{
-    display: flex; gap: 40px;
-    justify-content: space-between;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr; 
+    margin: 0 auto;
+    align-self: center;
   }
   div.details > div.fineTuned > div ul li{
     text-align: center;
-    padding: 40px 15px;
-    flex: 1;
+    padding: var(--sp40) var(--sp15);
+    margin: 0 auto;
+    width: 100%;
   }
   div.details > div.fineTuned > div ul li:nth-of-type(1){
     background-color: var(--B06);
@@ -2859,6 +2867,21 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   }
   div.details > div.fineTuned > div ul li:nth-of-type(4) dl dt{
     background-image: url('../images/fine_04.png');
+  }
+  .recycle{
+    padding: var(--sp80s) 0 60px;
+    margin-bottom: 0px;
+  }
+  .recycle > div{
+    padding: var(--sp60) var(--sp40) 50px;
+    background-image: url('../images/recylce.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 199px 183px;
+  }
+  .recycle > img{
+    max-width: 579px; 
+    margin: 0 auto;
   }
   div.details .legend{
     margin: var(--sp80) auto;
@@ -3379,7 +3402,6 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 0 3.25%;
     margin: var(--sp40) auto;
   }
   div.dark > div > div:nth-of-type(2) ul li{
@@ -3524,21 +3546,22 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
 
   /* * calculator */
 
-  section.twoface div.calculator > div:first-of-type {
+ section.twoface div.calculator > div:first-of-type {
     display: flex;
     align-items: center;
-    width: 100%;
-    justify-content: space-between;
   }
   section.twoface div.calculator > div:first-of-type img{
     display: block; margin-right: var(--sp25);
     max-width: 120px;
   }
   section.twoface div.calculator > div:first-of-type h3{
-    line-height: 20px;
+    line-height: 20px; text-align: left;
+  }
+  section.twoface div.calculator > div:first-of-type > div{
+    margin-left: auto;
   }
   section.twoface div.calculator > div:first-of-type > div input{
-    text-align: right; width: 40px;
+    width: 40px; box-sizing: border-box; padding-left: var(--sp20);   
   }
   section.twoface button{
     background-color: #222222;
@@ -3579,13 +3602,6 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   }
   div.calculator  > hr{
     border: 1px solid var(--B04);
-  }
-  div.calculator ul li strong::before{
-    content: '$';
-  }
-  div.calculator ul li:first-of-type strong:first-of-type::before,
-  div.calculator ul li:nth-of-type(3) strong::before{
-    content: '';
   }
   div.calculator ul li{
     display: flex;
@@ -3737,22 +3753,13 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     flex-direction: column;
     margin-top: var(--sp30);
   }
-  div.orderStatus > div address{
-    margin-block: 20px;
-    background-color: var(--GS10);
-    padding: var(--sp20) var(--sp20);
-    line-height: 30px;
-    display: block;
-  } 
   div.orderStatus > div a{
     align-self: flex-end; margin-top: var(--sp40);
   }
-
   /* end of ordersttaus */
 
   .returns{
     margin: var(--sp80) auto;  
-    padding: 0 3.25%;
   }
   .returns > div:first-of-type {
     text-align: center;
@@ -3818,27 +3825,7 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     display: flex; align-self: flex-end;
   }
 }
-/* !!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!! */
-
 @media screen and (min-width: 1280px){
-  ul.bar li {
-    position: absolute; width: 100%; 
-    text-align: center; 
-    color: var(--GS01, white);
-    animation: slideShow 12s infinite;
-    opacity: 0;
-  }
-  ul.bar li:nth-child(1) {
-    animation-delay: 0s;  
-  }
-  ul.bar li:nth-child(2) {
-    animation-delay: 6s; 
-  }
   main > div:first-of-type{
     padding-bottom: var(--sp60);
     background-color: var(--GS12);
@@ -3865,8 +3852,7 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   }
   main > div:first-of-type > ul li:nth-child(1),
   main > div:first-of-type > ul li:nth-child(2){
-    left: 0; width: 100%; height: calc(100% + 80px); 
-     top: 0px;
+    left: 0; width: 100%; height: calc(100% + 80px); top: 0px;
     transform: none; border-radius: 0;
     box-shadow: none; opacity: 1;
   }
@@ -3904,8 +3890,7 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     transform: translateX(-50%);
   }
   main > div:first-of-type .sButton > button{ 
-    background: url('../images/arrowButtonEmpty.png') no-repeat center center;
-    background-size: contain; 
+    background: url('../images/arrowButtonEmpty.png') no-repeat center center / contain;
     user-select: none;
     width: 31px;    
     height: 23px;   
@@ -3945,11 +3930,6 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     align-self: flex-end; 
   }
 
-  /*  alienware collapse*/
-  main > div:nth-of-type(3){
-    max-width: 1200px;
-    margin: 0 auto; 
-  }
   main > div:nth-of-type(3) > div {
     width: 100%;
     display: flex;
@@ -4389,7 +4369,7 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     z-index: 90; 
   }
   section.detailContainer > div:first-child > div{
-    max-width: 1200px; margin: 0 auto; padding: 10px 0;
+    padding: 10px 0;
     text-align: right; line-height: 50px;
     box-sizing: border-box; 
   }
@@ -4423,9 +4403,9 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     border-bottom: 3px solid var(--GS12);
   }
   section.detailContainer > div:nth-of-type(2) table{
-    z-index: 1000;   margin: 50px auto; 
+    z-index: 1000;   margin-block: var(--sp50); 
     text-align: left; padding-top: var(--sp40);
-    max-width: 1200px; width: 100%;
+    width: 100%;
   }
   section.detailContainer > div:nth-of-type(2) table tr th{
     padding-right: 100px; 
@@ -4526,14 +4506,13 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
     cursor: zoom-out;
   }
   section.detailContainer > div:nth-of-type(3) > aside > div >h3{
-    color: var(--B03);  width: 100%;
+    width: 100%;
     margin-bottom: var(--sp40); line-height: 55px;
   }
   section.detailContainer > div:nth-of-type(3) > aside > div > ul > li{
-    color: var(--GS06); line-height: var(--sp30);
+    line-height: var(--sp30);
   }
   section.detailContainer > div:nth-of-type(3) > aside > div input{
-    color: var(--B02);
     line-height: var(--sp60);
     padding-right: 4.56%;
     background-image: url('../images/sortArrowRotated.png');
@@ -4613,9 +4592,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   }
   /** end of the first spec selectin */
   /* start of details */
-  div.details h4{
-    color: var(--GS01); 
-  }
   div.details > h4{
     padding: var(--sp80) 0;  margin-left: 110px;
   }
@@ -4623,11 +4599,10 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
     margin: var(--sp80) auto;
     display: flex;
     justify-content: space-between;
-    padding-inline: 80px;
+    padding-inline: var(--sp80);
   }
   div.details > ul li{
     flex-basis: 20%; 
-    /* background-position: top var(--sp40); */
   }
   div.details > ul li dl dt{
     color: var(--GS01);
@@ -4644,7 +4619,7 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
     margin: 0 auto var(--sp80);
   }
   div.details > div.full{
-    max-width: 1920px; background-color: black;
+    background-color: black;
     padding: var(--sp60) 0;
   }
   div.details > div.superCharge > div,
@@ -4753,6 +4728,16 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   div.details > div.fineTuned > div ul li:nth-of-type(4) dl dt{
     background-image: url('../images/fine_04.png');
   }
+  .recycle{
+    margin-bottom: 0px;
+    background-image: url('../images/xps_13plus_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .recycle > img{
+    max-width: 579px; padding: var(--sp80) 0;
+  }
   div.details .legend{
     max-width: 1516px;
     margin: var(--sp80) auto;
@@ -4768,8 +4753,7 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
     margin-bottom: var(--sp30);
   }
   div.details .legend nav > div img{
-    margin: var(--sp40) auto;
-    max-width: 1200px;
+    margin-block: var(--sp40);
   }
   div.details .legend nav ul li{
     display: inline-block;    
@@ -4801,8 +4785,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
     section.detailContainer > .details > .superCharge div > ul > li:nth-child(4){
       transition-delay: 400ms;
     }
-    
-
   div.black{
     text-align: center; margin: 0 auto;
     background-color: black;
@@ -4828,10 +4810,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
       background-position: 0% 50%;
     }
   }
-  div.wave >*{
-    max-width: 1200px; 
-    margin: 0 auto; 
-  }
   div.wave > div{
     display: flex;
     justify-content: flex-end; 
@@ -4841,8 +4819,7 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
     background-color: var(--GS10);
   }
   div.wave > ul{
-    max-width: 1200px;
-    margin: 0 auto var(--sp80); display: grid;
+    margin-bottom: var(--sp80); display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--sp20);   
   }
@@ -4950,8 +4927,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   }
   div.wave > div.supportSearch{
     background-color: var(--GS10);
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -5000,9 +4975,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   .accountContainer{
     padding: var(--sp145) 0 var(--sp80);
     background-color: black;
-  }
-  .accountContainer > div{
-    max-width: 1200px; margin: 0 auto;
   }
   .accountContainer > div h2{
     margin: 0 0 40px;
@@ -5091,8 +5063,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   }
   div.dark > div{
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
     transform-style: preserve-3d;
     position: relative;    
   }
@@ -5258,8 +5228,9 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
     gap: 20px;
   }
   div.dark > div > div:nth-of-type(2) ul li{
-    display: flex; flex: 1;
+    display: flex; 
     justify-content: space-between;
+    flex: 1;
   }
   div.dark > div > div:nth-of-type(2) ul li dl dt{
     padding-top: 50px; 
@@ -5402,18 +5373,19 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   section.twoface div.calculator > div:first-of-type {
     display: flex;
     align-items: center;
-    width: 100%;
-    justify-content: space-between;
   }
   section.twoface div.calculator > div:first-of-type img{
     display: block; margin-right: var(--sp25);
     max-width: 120px;
   }
   section.twoface div.calculator > div:first-of-type h3{
-    line-height: 20px;
+    line-height: 20px; text-align: left;
+  }
+  section.twoface div.calculator > div:first-of-type > div{
+    margin-left: auto;
   }
   section.twoface div.calculator > div:first-of-type > div input{
-    text-align: right; width: 40px;
+    width: 40px; box-sizing: border-box; padding-left: var(--sp20);   
   }
   div.calculator > div:first-of-type > div > button{
     background-repeat: no-repeat;
@@ -5439,9 +5411,9 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   }
   div.calculator > div:nth-of-type(2){
     display: flex; 
-    margin: var(--sp20) 0px var(--sp20) 20px;
     align-items: center;
     flex: 1;
+    margin: var(--sp20) 0px var(--sp20) 20px;
   }
   div.calculator > div:nth-of-type(2) input{
     width: 66.6%;     
@@ -5454,13 +5426,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   }
   div.calculator  > hr{
     border: 1px solid var(--B04);
-  }
-  div.calculator ul li strong::before{
-    content: '$';
-  }
-  div.calculator ul li:first-of-type strong:first-of-type::before,
-  div.calculator ul li:nth-of-type(3) strong::before{
-    content: '';
   }
   div.calculator ul li{
     display: flex;
@@ -5492,8 +5457,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
     display: flex;    
   }
   .twowrap > div {
-    max-width: 1200px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -5602,13 +5565,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
     background-color: var(--GS12);
     padding-block: var(--sp10);        
   }
-  div.orderStatus > div address{
-    margin-block: 20px;
-    background-color: var(--GS10);
-    padding: var(--sp20) var(--sp20);
-    font-style: normal;
-    line-height: 30px;
-  } 
   /* end of ordersttaus */
 
   .returns{
@@ -5641,8 +5597,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   }
   /* * copyright */
   article.rightsInfo{
-    max-width: 1200px;
-    margin: 0 auto;
     padding-block: var(--sp145) var(--sp80);
     display: flex;
     flex-direction: column;
@@ -5679,7 +5633,6 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
 }
 
 
-
-
+/* 5690 */
   
 
