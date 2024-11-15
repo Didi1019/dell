@@ -696,7 +696,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     display: flex;
     gap: 15px;
     padding-block: var(--sp40);
-    justify-content: center;
     overflow: hidden;
   }
   section.detailContainer > div:nth-of-type(3) nav ul li {
@@ -714,7 +713,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     object-fit: contain;
   }
   section.detailContainer > div:nth-of-type(3) button {    
-    display: none; opacity: 0;
+    opacity: 1; background-color: black;
   }
   section.detailContainer > div:nth-of-type(3) nav ul li:hover,
   section.detailContainer > div:nth-of-type(3) nav ul li.selected,

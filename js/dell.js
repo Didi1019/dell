@@ -55,27 +55,6 @@ function password() {
     });
 }
 function intersection() {
-    // const observer = new IntersectionObserver((entries) => {
-    //     entries.forEach((entry) => {
-    //         $(entry.target).toggleClass('show', entry.isIntersecting);
-    //     });
-    // });
-
-    // const hiddenElements = $('.details ul > li, .imageLf > *, .imageRT > *');
-    // hiddenElements.each(function() {
-    //     observer.observe(this);
-    // });
-    // function scrollAxis(){
-    //     var textSlideOne=$('main>div:nth-of-type(2) p:first-of-type');
-    //     var textSlideTwo=$('main>div:nth-of-type(2) p:last-of-type');
-    //     $(window).scroll(function(){
-    //         if($(window).scrollTop()>=281){
-    //             textSlideOne.addClass('active');
-    //         }if($(window).scrollTop()>=381){
-    //             textSlideTwo.addClass('active');
-    //         }
-    //     });
-    // };
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -233,11 +212,9 @@ function tablet() {
 }
 function calculator() {
     const productPrice = 1242.99;
-
     function updateCart(action) {
         let currentItemCount = parseInt($('#itemNumber').text());
         let currentInputCount = parseInt($('#numberInput').val());
-
         switch (action) {
             case 'add':
                 currentItemCount++;
@@ -286,7 +263,6 @@ function calculator() {
 
 }
 
-
 function slider() {
     $('.sButton > button').on('click', function() {
         const slider = $('main > div:first-of-type > ul');
@@ -303,7 +279,6 @@ function slider() {
         $(this).insertAfter(slider.children().first()); 
     });
 }
-
 
 function pager() {
     var $pagerLine = $("<li id='pager-line'></li>").appendTo("ol.pager");
@@ -518,6 +493,3 @@ $(document).ready(function() {
     }
     
 });
-
-
-//  might not need
