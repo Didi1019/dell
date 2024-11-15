@@ -296,7 +296,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    overflow-x: auto;
+    overflow-x: scroll;
     padding: 160px 0 var(--sp40);
     align-items: center;
   }
@@ -570,13 +570,12 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
   .color-change img,
   .change img {
-    /* opacity: 1; */
     transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
   ol.pager {
-    margin: 0 3.25% var(--sp80) 53.66% ;
-    max-width: 360px;
+    margin: 0 3.25% var(--sp80) auto;    
     display: flex;
+    width: 93.5%;
     justify-content: center; align-items: center;
     position: relative;
     border-top: 2px solid var(--GS01);
