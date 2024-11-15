@@ -2383,10 +2383,10 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     display: block; clear: both; content: '';
   }
   div.listContainer > div > div:last-child > ul >li{
-    margin-bottom: var(--sp40);   float: left;
+    margin-bottom: var(--sp40); float: left;
   }
   div.grid-group-wrapper > ul > li {
-    display: block; width: 50%;
+    display: block; width: 49.99%;
     margin-bottom: var(--sp40);
   }
   div.list-group-wrapper > ul > li{
@@ -2396,7 +2396,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     display: block; clear: both; content: '';
   }
   div.list-group-wrapper > ul > li > div > div:first-child{
-    float: left; margin-right: 6%;
+    float: left;
   }
   div.listContainer > div > div:last-child > ul > li  >div{
     background-color: var(--GS12);
@@ -2475,7 +2475,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
   ol.pager {
-    margin: 0 3.25% var(--sp80) 53.66% ;
+    margin: 0 3.25% var(--sp80) auto;
     max-width: 360px;
     display: flex;
     justify-content: center; align-items: center;
