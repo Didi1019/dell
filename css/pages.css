@@ -2388,6 +2388,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   div.grid-group-wrapper > ul > li {
     display: block; width: 49.99%;
     margin-bottom: var(--sp40);
+    background-color: red;
   }
   div.list-group-wrapper > ul > li{
     width: 100%;  
