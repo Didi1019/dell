@@ -44,6 +44,7 @@ footer>div{padding-block:var(--sp30);}
     section.detailContainer > div:nth-of-type(3) nav ul,
     section.detailContainer > div:first-child > div,
     .returns,
+    ul.bar li,
     div.dark > div > div:nth-of-type(2) ul {
         padding-inline: 3.25%; 
    }
