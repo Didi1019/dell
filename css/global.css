@@ -78,16 +78,15 @@ footer>div{padding-block:var(--sp30);}
     footer>div{
         position:relative;
         display:flex; flex-direction:column;
-    }
-    
+    }  
     footer h2{order:1;}
     footer h2 img{max-width:240px; margin:0 auto 25px;}
     footer>div>ul:first-of-type>li>strong:before{content:""; position:absolute; width:10px; height:6px; transition:transform 0.3s ease-in-out; background-image:url('../images/arrow.png'); right:0; top:10px;}
     footer>div>ul:first-of-type>li>strong{display:block; cursor:pointer; position:relative; padding-bottom:var(--sp20); width:100%; margin-bottom:var(--sp15);}
-    footer>div>ul>li>ol{opacity:0;}
+    footer>div>ul>li>ol{opacity:0; transition: opacity .5s ease-in-out;}
+    footer>div>ul>li>strong.active+ol{opacity:1; position:relative; margin-bottom:var(--sp15);}
     footer>div>ul:first-of-type li ol li{padding-bottom:var(--sp20);}
     footer>div>ul:first-of-type strong::after{content:''; position:absolute; background-color:var(--GS08); width:100%; height:1px; left:0; top:30px;}
-    footer>div>ul>li>strong.active+ol{opacity:1; position:relative; margin-bottom:var(--sp15);}
     footer>div>ul:first-of-type>li>strong.active:before{transform:rotate(180deg);}
     footer>div>ul:first-of-type li>ol>li a{white-space:nowrap;}
 }

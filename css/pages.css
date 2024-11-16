@@ -1,29 +1,5 @@
-.calculator input[type="number"]::-webkit-outer-spin-button,
-.calculator input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-/* order status */
-div.orderStatus > div address{
-  margin-block: 20px;
-  background-color: var(--GS10);
-  padding: var(--sp20) var(--sp20);
-  line-height: 30px;
-  font-style: normal;
-} 
-
-/* calculator */
-div.calculator ul li:not(:nth-child(3)) strong::before{
-  content: '$';
-}
-
-
-@keyframes slideShow {
-  0% { opacity: 0; }
-  10% { opacity: 1; } 
-  45% { opacity: 1; } 
-  55% { opacity: 0; }
-  100% { opacity: 0; }
+main > div:first-of-type > ul li:nth-child(n+3) a {
+  display: none;
 }
 ul.bar {
   background-color: var(--GS12);
@@ -45,18 +21,43 @@ ul.bar li:nth-child(1) {
 ul.bar li:nth-child(2) {
   animation-delay: 6s; 
 }
-div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; transition-timing-function:ease-out;}  
+main > div:first-of-type > ul{
+  position: relative;
+  width: 100%;
+}
+.calculator input[type="number"]::-webkit-outer-spin-button,
+.calculator input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* order status */
+div.orderStatus > div address{
+  margin-block: 20px;
+  background-color: var(--GS10);
+  padding: var(--sp20) var(--sp20);
+  line-height: 30px;
+  font-style: normal;
+} 
+
+/* calculator */
+div.calculator ul li:not(:nth-child(3)) strong::before{
+  content: '$';
+}
+div.wave{
+  padding-block: var(--sp80);
+}
+
+
+@keyframes slideShow {
+  0% { opacity: 0; }
+  10% { opacity: 1; } 
+  45% { opacity: 1; } 
+  55% { opacity: 0; }
+  100% { opacity: 0; }
+}
+div.listContainer > div > div:last-child > ul > li{transition: 0.7s ease-in-out;}  
 @media screen and (max-width: 767px){
-  main > div:first-of-type{
-    background-color: var(--GS12);
-    padding-bottom: var(--sp60);
-    position: relative;
-    overflow: hidden;
-  }
   main > div:first-of-type > ul{
     height: 600px;
-    position: relative;
-    width: 100%;
   }
   main > div:first-of-type > ul li:nth-child(1),
   main > div:first-of-type > ul li:nth-child(2){
@@ -64,9 +65,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     transform: none; border-radius: 0;
     box-shadow: none; opacity: 1;
   }
-  main > div:first-of-type > ul li:nth-child(n+3) a {
-    display: none;
-  } 
   main > div:first-of-type > ul li{
     background-position: center;
     background-size: cover;
@@ -1067,7 +1065,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     position: relative;
-    padding-block: var(--sp80);    
   }
   @keyframes gradient {
     0% {
@@ -1940,16 +1937,12 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
-  main > div:first-of-type{
-    background-color: var(--GS12);
-    padding-bottom: var(--sp60);
-    position: relative;
-    overflow: hidden;
+  [class^='middle'] > div ol{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
   main > div:first-of-type > ul{
     height: 560px;
-    position: relative;
-    width: 100%;
   }
   main > div:first-of-type > ul li{
     background-position: center;
@@ -1968,9 +1961,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     transform: none; border-radius: 0;
     box-shadow: none; opacity: 1;
   }
-  main > div:first-of-type > ul li:nth-child(n+3) a {
-    display: none;
-  } 
   main > div:first-of-type > ul li:nth-child(3){left: 55%; opacity: 0.9;}
   main > div:first-of-type > ul li:nth-child(4){left: calc(55% + 132px);opacity: 0.9;}
   main > div:first-of-type > ul li:nth-child(5){left: calc(55% + 264px);opacity: 0.9;}
@@ -2760,8 +2750,6 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   div.details > ul li{
     flex-basis: 45%; 
     margin-bottom: var(--sp40);
-    /** why do i have backgorund postion here? */
-    /* background-position: top var(--sp40); */
   }
   div.details > ul li dl dt{
     color: var(--GS01);
@@ -2963,7 +2951,6 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     position: relative;
-    padding-block: var(--sp80);    
   }
   @keyframes gradient {
     0% {
@@ -3847,6 +3834,12 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   }
 }
 @media screen and (max-width:1279px){
+  main > div:first-of-type{
+    background-color: var(--GS12);
+    padding-bottom: var(--sp60);
+    position: relative;
+    overflow: hidden;
+  }
   main > div:nth-of-type(3) > ul li a{
     display: none;
   }
@@ -3861,8 +3854,6 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   }
   main > div:first-of-type > ul{
     height: 100vh;
-    position: relative;
-    width: 100%;
   }
   main > div:first-of-type > ul li{
     background-position: center;
@@ -3886,9 +3877,7 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   main > div:first-of-type > ul li:nth-child(4){left: calc(65% + 220px);opacity: 0.9;}
   main > div:first-of-type > ul li:nth-child(5){left: calc(65% + 440px);opacity: 0.9;}
   main > div:first-of-type > ul li:nth-child(6){left: calc(65% + 660px); opacity: 0; }
-  main > div:first-of-type > ul li:nth-child(n+3) a {
-    display: none;
-  }
+
   main > div:first-of-type > ul li div{
     width: 350px; position: absolute; top: 50%; left: 10%; transform: translateY(-50%);
     opacity: 0; display: block; z-index: 10;
@@ -4829,8 +4818,7 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     background: linear-gradient(-45deg, var(--B05), var(--GS12), var(--B02), var(--B06));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    position: relative;
-    padding-block: var(--sp80);    
+    position: relative;        
   }
   @keyframes gradient {
     0% {
