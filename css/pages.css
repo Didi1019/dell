@@ -1381,10 +1381,10 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
   div.dark > div > div:first-of-type > div {
     position: absolute;
-    width: 73.33%;
+    width: 93.5%;
     height: 100%;
-    top: 140px;
-    left: 12.5%;
+    top: 100px;
+    left: 3.25%;
     transform-style: preserve-3d; 
     backface-visibility: hidden; 
   }
@@ -1449,7 +1449,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,
   div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
     content: ""; position: absolute;
-    top: 50%; width: 150px; height: 1px; 
+    top: 50%; width: 30%; height: 1px; 
     background-color: var(--B04); 
   }
   div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before{left: 0;}
@@ -1457,7 +1457,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
     background-color: black; width: 100%; padding: var(--sp15) 0px var(--sp15) var(--sp25);
     background-image: url('../images/google.png');
-    background-repeat: no-repeat; background-position: left 42% center;
+    background-repeat: no-repeat; background-position: left 38% center;
   }
   div.dark > div > div:first-of-type > div.createDell fieldset div{      
     text-align: left;
@@ -3257,7 +3257,6 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   }
   div.dark > div{
     display: flex;
-    /* margin: 0 auto; */
     flex-direction: column;
     transform-style: preserve-3d;
     position: relative;    
