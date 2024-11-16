@@ -1376,7 +1376,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     transition: transform 1s ease;    
     transform-style: preserve-3d;    
     display: block;
-    height: 760px;
+    height: 830px;
     width: 100%;
   }
   div.dark > div > div:first-of-type > div {
@@ -1466,13 +1466,11 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     clear: both; display: block; content: '';  
   }
   div.dark > div > div:first-of-type > div.createDell fieldset ul{
-    display: flex; gap: 20px;
-  }
-  div.dark > div > div:first-of-type > div.createDell fieldset ul li{
-    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
   div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(2) input{
-    width: auto; margin-block: var(--sp20);
+    margin-block: var(--sp20); transform: scale(0.6); width: auto;
   }
   div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3){
     margin-bottom: var(--sp30);
