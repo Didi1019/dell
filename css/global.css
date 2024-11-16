@@ -41,7 +41,7 @@ footer>div{padding-block:var(--sp30);}
     header > div,
     .details > ul,
     .details > h4,
-    section.detailContainer > div:nth-of-type(3) nav ul,
+    
     section.detailContainer > div:first-child > div,
     .returns,
     ul.bar li,

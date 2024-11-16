@@ -391,7 +391,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   div.listContainer > div > div:first-child > div:nth-of-type(2) select option:checked {
     color: var(--GS01);
   }
-
   /** aside */
   div.listContainer > div > aside{
     position: relative;
@@ -668,7 +667,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
   section.detailContainer > div:nth-of-type(3) nav{
     padding-top: 100px;
-    margin: 0 auto;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -685,16 +683,13 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     display: block;
     margin-top: var(--sp40);
   }
-  section.detailContainer > div:nth-of-type(3) span.tracker{
-    position: absolute;
-    left: 10%; 
-    bottom: 100px;
-  }
   section.detailContainer > div:nth-of-type(3) nav ul{
     display: flex;
     gap: 15px;
     padding-block: var(--sp40);
     overflow: hidden;
+    position: relative;
+    max-width: 82%;
   }
   section.detailContainer > div:nth-of-type(3) nav ul li {
     background-color: var(--GS12);
@@ -711,7 +706,29 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     object-fit: contain;
   }
   section.detailContainer > div:nth-of-type(3) button {    
-    opacity: 1; background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 15px 9px;
+    text-indent: -9999px;
+    width: 15px;
+    height: 9px; 
+    position: absolute; 
+    z-index: 10;
+    right: 3.5%;
+    bottom: 120px;
+  }
+  section.detailContainer > div:nth-of-type(3) button:first-of-type {
+    background-image: url('../images/arrowUp.png');
+  }
+  section.detailContainer > div:nth-of-type(3) button:last-of-type {
+    background-image: url('../images/arrowUp.png');
+  }
+  section.detailContainer > div:nth-of-type(3) span.tracker{
+    background-color: black; opacity: 0.8;
+    position: absolute;
+    padding: 10px;
+    right: 10.5%;
+    bottom: 120px
   }
   section.detailContainer > div:nth-of-type(3) nav ul li:hover,
   section.detailContainer > div:nth-of-type(3) nav ul li.selected,
@@ -4228,7 +4245,7 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   }
 /* * end of aside */
   div.listContainer > div > div:last-of-type > ul li > div{
-    position: relative;      display: block;
+    position: relative; display: block;
   }
   div.grid-group-wrapper > ul:after{
     display: block; clear: both; content: '';
@@ -4420,6 +4437,7 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     margin-inline: auto; display: flex;
     justify-content: space-between;
     border-bottom: 2px solid var(--B04);
+
   }
   section.detailContainer > div:nth-of-type(3) nav{
     flex-basis: 57%; padding: var(--sp130) var(--sp80) var(--sp80) 260px;
@@ -4428,6 +4446,8 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     box-sizing: border-box;
     top: 0; height: 100vh;
     min-height: 700px;
+    user-select: none;
+    -webkit-user-drag: none;
   }
   section.detailContainer > div:nth-of-type(3) aside{
     flex-basis: 43%;
@@ -4468,16 +4488,16 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     position: absolute; 
     z-index: 10;
     left: 115.5px;
-}
-section.detailContainer > div:nth-of-type(3) button:first-of-type {
-    background-image: url('../images/arrowUp.png');
-    top: 100px; 
-}
-section.detailContainer > div:nth-of-type(3) button:last-of-type {
-    background-image: url('../images/arrowUp.png');
-    transform: rotate(180deg); 
-    top: 630px; 
-}
+  }
+  section.detailContainer > div:nth-of-type(3) button:first-of-type {
+      background-image: url('../images/arrowUp.png');
+      top: 100px; 
+  }
+  section.detailContainer > div:nth-of-type(3) button:last-of-type {
+      background-image: url('../images/arrowUp.png');
+      transform: rotate(180deg); 
+      top: 630px; 
+  }
   section.detailContainer > div:nth-of-type(3) nav ul li:hover,
   section.detailContainer > div:nth-of-type(3) nav ul li.selected,
   .legend nav ul li.selected, .legend nav ul li:hover{
@@ -4496,6 +4516,7 @@ section.detailContainer > div:nth-of-type(3) button:last-of-type {
   section.detailContainer > div:nth-of-type(3) nav > div img.zoom {
     position: absolute; max-height: 900px; object-fit: contain;
     opacity: 0; bottom: 500px;
+ 
   }
   section.detailContainer > div:nth-of-type(3) nav > div.zoomed {
     cursor: zoom-out;
