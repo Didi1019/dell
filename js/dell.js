@@ -13,8 +13,8 @@ $(function() {
     tablet();
     mouseLeave();
     intersection();
-    checkScrollButtons();
 });
+
 
 function hoverImg() {
     var fileName = window.location.pathname.split('/').pop();
@@ -391,8 +391,10 @@ $(document).ready(function() {
             $('nav.change ul li').removeClass('selected');
             $(this).parent().addClass('selected');
         });
-            $("nav.change ul li:first-of-type, div.legend nav ul li:first-of-type").addClass("selected");
-            $('.legend nav ul li img').click(function() {
+    
+        $("nav.change ul li:first-of-type, div.legend nav ul li:first-of-type").addClass("selected");
+    
+        $('.legend nav ul li img').click(function() {
             var src = $(this).attr('src');
             $('.current-legend').attr('src', src);
             $('.img-legend').removeClass('selected');
@@ -456,42 +458,80 @@ $(document).ready(function() {
                 });
             }
         }
-            $(window).on('resize', applyZoom);
+    
+        $(window).on('resize', applyZoom);
         applyZoom();
-    }
-});
-$(document).ready(function() {
-    if (window.matchMedia("(max-width: 1279px)").matches) {
-        function checkScrollButtons() {
-            var $thumbs = $('#thumbs');
-            var scrollTop = $thumbs.scrollTop();
-            var maxScrollTop = $thumbs[0].scrollHeight - $thumbs.outerHeight();
-            if (scrollTop <= 0) {
-                $('nav.change button:first-of-type').hide();
-            } else {
-                $('nav.change button:first-of-type').show();
-            }
+    
 
-            if (scrollTop >= maxScrollTop) {
-                $('nav.change button:last-of-type').hide();
-            } else {
-                $('nav.change button:last-of-type').show();
-            }
+    }
+    
+});
+$(document).ready(function () {
+
+    function desktopScrollButtons() {
+        var $thumbs = $('#thumbs');
+
+        
+        var scrollTop = $thumbs.scrollTop();
+        var maxScrollTop = $thumbs[0].scrollHeight - $thumbs.outerHeight();
+
+        
+        $('nav.change button:first-of-type').toggle(scrollTop > 0);
+
+        
+        $('nav.change button:last-of-type').toggle(scrollTop < maxScrollTop);
+
+        
+        $('nav.change button:first-of-type').off('click').on('click', function () {
+            $thumbs.animate({ scrollTop: '-=100' }, 300);
+        });
+
+        $('nav.change button:last-of-type').off('click').on('click', function () {
+            $thumbs.animate({ scrollTop: '+=100' }, 300);
+        });
+    }
+
+    
+    function mobileScrollButtons() {
+        var $thumbs = $('#thumbs');
+
+        
+        var scrollLeft = $thumbs.scrollLeft();
+        var maxScrollLeft = $thumbs[0].scrollWidth - $thumbs.outerWidth();
+
+        
+        $('nav.change button:first-of-type').toggle(scrollLeft > 0);
+
+        
+        $('nav.change button:last-of-type').toggle(scrollLeft < maxScrollLeft);
+
+        
+        $('nav.change button:first-of-type').off('click').on('click', function () {
+            $thumbs.animate({ scrollLeft: '-=100' }, 300);
+        });
+
+        $('nav.change button:last-of-type').off('click').on('click', function () {
+            $thumbs.animate({ scrollLeft: '+=100' }, 300);
+        });
+    }
+
+
+    function checkScrollMode() {
+        if (window.matchMedia("(min-width: 1280px)").matches) {
+            
+            desktopScrollButtons();
+            $('#thumbs').off('scroll').on('scroll', desktopScrollButtons);
+        } else if (window.matchMedia("(max-width: 767px)").matches) {
+            
+            mobileScrollButtons();
+            $('#thumbs').off('scroll').on('scroll', mobileScrollButtons);
+        } else {
+            
+            $('nav.change button').hide();
+            $('#thumbs').off('scroll');
         }
-        $('nav.change button:first-of-type').click(function() {
-            var scrollAmount = 100;
-            $('#thumbs').animate({ scrollTop: '-=' + scrollAmount }, 300, checkScrollButtons);
-        });
-
-        $('nav.change button:last-of-type').click(function() {
-            var scrollAmount = 100;
-            $('#thumbs').animate({ scrollTop: '+=' + scrollAmount }, 300, checkScrollButtons);
-        });
-        $('#thumbs').on('scroll', checkScrollButtons);
-        checkScrollButtons();
     }
+
+    checkScrollMode();
+    $(window).on('resize', checkScrollMode);
 });
-
-
-
-

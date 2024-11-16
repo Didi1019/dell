@@ -715,13 +715,17 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     position: absolute; 
     z-index: 10;
     right: 3.5%;
-    bottom: 120px;
+    bottom: 62.5px;
   }
   section.detailContainer > div:nth-of-type(3) button:first-of-type {
-    background-image: url('../images/arrowUp.png');
+    background-image: url('../images/arrowUp.png'); 
+    left: 3.5%; 
+    transform: rotate(270deg);
   }
   section.detailContainer > div:nth-of-type(3) button:last-of-type {
     background-image: url('../images/arrowUp.png');
+    transform: rotate(90deg);
+
   }
   section.detailContainer > div:nth-of-type(3) span.tracker{
     background-color: black; opacity: 0.8;
@@ -849,7 +853,6 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   }
   div.details > ul li{
     margin-bottom: var(--sp40);
-    /** why do i have backgorund postion here? */
     /* background-position: top var(--sp40); */
   }
   div.details > ul li dl dt{
