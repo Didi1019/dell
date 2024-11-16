@@ -211,6 +211,9 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     z-index: 2;
     transition: all 1.2s ease;
   }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{
+    width: 0px;
+  }
   main > div:nth-of-type(3) > ul li{
     flex-grow: 1;
     background-size: cover;
@@ -2075,6 +2078,7 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   main > div:nth-of-type(3) > div input{
     display: none;
   }
+  
   main > div:nth-of-type(3) > ul{
     width: 100%;
     height: 0;
@@ -2096,6 +2100,9 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
     content: "";
     z-index: 2;
     transition: all 1.2s ease;
+  }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{
+    width: 0px;
   }
   main > div:nth-of-type(3) > ul li{
     flex-grow: 1;
@@ -3839,6 +3846,11 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     display: flex; align-self: flex-end;
   }
 }
+@media screen and (max-width:1279px){
+  main > div:nth-of-type(3) > ul li a{
+    display: none;
+  }
+}
 @media screen and (min-width: 1280px){
   main > div:first-of-type{
     padding-bottom: var(--sp60);
@@ -3980,6 +3992,7 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     transition: all 0.5s ease;
     position: relative;
     padding-bottom: 80px;
+
   }
   main > div:nth-of-type(3) > ul::before {
     position: absolute;
@@ -3994,13 +4007,17 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
     z-index: 2;
     transition: all 1.2s ease;
   }
+  main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{
+    width: 0px;
+  }
   main > div:nth-of-type(3) > ul li{
     flex-grow: 1;
+    text-indent: -9999px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    transition: all 0.4s ease;    opacity: 1;   
+    transition: all 0.4s ease; opacity: 1;   
     position: relative;
   }
   main > div:nth-of-type(3) > ul li:first-of-type{background-image: url('../images/test1.png');}
@@ -4008,7 +4025,6 @@ section.detailContainer > div:nth-of-type(3) nav ul li {
   main > div:nth-of-type(3) > ul li:nth-of-type(3){background-image: url("../images/test3.png");}
   main > div:nth-of-type(3) > ul li:nth-of-type(4){background-image: url("../images/test4.png");}
   main > div:nth-of-type(3) > ul li:nth-of-type(5){background-image: url("../images/test5.png");}
-  /* :has() style a parent based on what child */
   main > div:nth-of-type(3) > div:has(input:checked) ~ ul {
     height: 400px;
     transition: all 0.5s ease;
