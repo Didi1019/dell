@@ -1513,14 +1513,15 @@ div.listContainer > div > div:last-child > ul > li{transition-duration:0.45s; tr
   div.dark > div > div:nth-of-type(2){
     background-color: var(--GS11);
     text-align: center;
-    padding: var(--sp80s) 0; 
+    padding-block: var(--sp80); 
   }
   div.dark > div > div:nth-of-type(2) h2{
     margin-bottom: 20px;
   }
   div.dark > div > div:nth-of-type(2) ul{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
     margin: var(--sp40) auto;
   }
