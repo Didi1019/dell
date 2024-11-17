@@ -1,0 +1,220 @@
+div.listContainer > div > div:first-child > div:nth-of-type(2) select option,
+section.detailContainer > div:first-child > div > input:first-of-type,
+section.detailContainer > div:nth-of-type(2) table tr td,
+div.details > ul li dl dd,
+section.twoface > div > div.checkOut fieldset > a{
+    color: var(--GS05);
+}
+.accountContainer > div > div.wrapper > div > div > p{
+    width: 66%;
+}
+div.listContainer > div > aside ul li > ol li{
+    color: var(--GS08);        
+}
+section.detailContainer > div:nth-of-type(2) table tr th{
+    padding-right: 100px;
+    color: var(--GS04);
+}
+div.details > div.superCharge > div ul li p { 
+    margin-top: var(--sp20);
+}
+section.twoface > div > div.checkOut fieldset > a{
+    transition: 0.5s;
+    margin-left: auto;
+}
+div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
+    background-color: var(--GS09);
+}
+
+section.twoface > div > div.checkOut fieldset div button:first-of-type, section.twoface > div > div.checkOut .createPassword fieldset > button{
+    background-color: var(--B04);
+    margin: var(--sp30) auto;
+    display: block;
+    padding-block: var(--sp15);
+}
+section.twoface > div > div.checkOut ul li input {
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+}
+.arrival > ol li:nth-of-type(3):after{ 
+    background-color: var(--GS06);
+    left: 50px;
+}
+div.dark > div > div:nth-of-type(2) img{
+    max-width: 400px;
+    margin: 0 auto;
+}
+main > video{
+    background-color: var(--GS12)
+}
+main > div:nth-of-type(3) > div div{
+    max-width: 600px;
+}
+div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, 
+div.dark > div > div:first-of-type > div.createPassword fieldset > button{
+    background-color: var(--B04);
+    margin: var(--sp30) auto;
+    display: block;
+    padding-block: var(--sp15);
+}
+div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
+    background-color: black;
+    padding: var(--sp15) 0px var(--sp15) var(--sp25);
+    background-image: url('../images/google.png');
+    background-repeat: no-repeat;
+}
+div.dark > div > div:first-of-type > div.createDell fieldset button, 
+div.dark > div > div:first-of-type > div.findPassword fieldset > button{
+    display: block;
+    padding-block: var(--sp10);
+    cursor: pointer;
+}
+div.dark > div > div:first-of-type input {
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+}
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
+    display: block;
+    text-align: center;
+}
+main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a{
+    height: 100%;
+}
+div.details .legend nav ul li img{
+    max-width: 125px;
+}
+div.details > div.full > div img{
+    margin: 0 auto;
+    object-fit: cover;
+    max-inline-size: 50%;
+    height: 100%;
+}
+div.details > div.full > div > div{
+    position: absolute;
+    height: 100%;
+}
+#pager-line {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 2px;
+    z-index: 2;
+    background: var(--B04);
+    transform: translateX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out;
+}
+div.listContainer > div > div:last-child .gradient{
+    position: absolute;
+    height: 15px;
+    top: 275px;
+    left: 0px;
+    display: flex;
+}
+div.listContainer > div > div:last-child > ul > li > div div:first-of-type img {
+    margin: 0 auto;
+}
+.arrival > ol li:after {
+    content: '';
+    height: 4px;
+    background-color: var(--B05);
+    position: absolute;
+    z-index: 0;
+}
+main > div:nth-of-type(3) > ul{
+    height: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    transition: all 0.5s ease;
+    padding-bottom: 80px;
+}
+main > div:nth-of-type(3) > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: var(--sp80) 0;
+}
+main > div:nth-of-type(3) > ul::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    background-image: linear-gradient( 90deg,#be92ff,#be92ff,#509FC9,#30ACD5, #0083CA,#676EFF, #00E7E7 );
+    content: "";
+    z-index: 2;
+    transition: all 1.2s ease;
+}
+div.listContainer > div > aside ul li > ol:after{
+    content: '';
+    background-color: var(--GS08);
+    height: 1px;
+    position: absolute;
+    left: -10px;
+    bottom: -40px;
+}
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){
+    display: block;
+    background: url('../images/addItem.png') center center no-repeat var(--GS12);
+}
+div.details > div.fineTuned > div ul li{
+    text-align: center;
+    padding: var(--sp40) var(--sp15);
+}
+/** mobile */
+div.grid-group-wrapper > ul > li {
+    display: block;
+}
+/* ? tablet */
+/** media mobile and tablet*/
+main > div:nth-of-type(3) > div {
+    flex-direction: row;
+}
+div.details > div.fineTuned > div ul li{
+    margin: 0 auto;
+}
+section.detailContainer > div:nth-of-type(2) table tr th{
+    padding-block: var(--sp20);
+}
+div.listContainer > div > aside ul li > b:after {
+    content: '';
+    background-color: var(--GS08);
+    height: 1px;
+    position: absolute;
+    left: 0px;
+    bottom: -40px;
+}
+section.detailContainer > div:nth-of-type(3) > aside > ul::after{
+    border-bottom: 2px solid var(--B04);
+    content: '';
+    height: 2px;
+    bottom: -40px;
+    display: block;
+    margin-top: var(--sp40);
+}
+div.listContainer > div > div:last-child > ul > li > div div:first-of-type img {
+    max-width: 234px;
+}
+.accountContainer > div > div.wrapper > ul li:nth-of-type(2) img{
+    object-fit: cover;
+}
+div.dark > div > div:first-of-type{
+    display: block;
+}
+div.dark > div > div:first-of-type > div.createDell fieldset button, 
+div.dark > div > div:first-of-type > div.findPassword fieldset > button{
+    display: block;
+    padding-block: var(--sp10);
+    cursor: pointer;
+}
+.arrival > ol li:after {
+    left: 50%;    
+}
+/*? desktop */

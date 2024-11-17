@@ -18,6 +18,13 @@ header>div>div:nth-of-type(2) ul li{line-height:50px; text-align:center; backgro
 header>div>div.chessGun ul li:nth-child(1){background-image:url('../images/checkout_alienware.png'); padding:var(--sp25) 0px var(--sp25) var(--sp60); line-height:21px;}
 footer{background-color: #111;}
 footer>div{padding-block:var(--sp30);}
+main > ul li a{
+    margin-inline: auto;
+}
+article.rightsInfo > ul li > ul > li{
+    line-height: 30px;
+}
+
 @media screen and (max-width:767px){
     header>div>nav.is-active ul li ol{padding:var(--sp10) var(--sp20);}
     footer h2 img{display:block; text-align:center; align-items:center;}
@@ -41,7 +48,6 @@ footer>div{padding-block:var(--sp30);}
     header > div,
     .details > ul,
     .details > h4,
-    
     section.detailContainer > div:first-child > div,
     .returns,
     ul.bar li,
@@ -85,7 +91,9 @@ footer>div{padding-block:var(--sp30);}
     footer>div>ul:first-of-type>li>strong{display:block; cursor:pointer; position:relative; padding-bottom:var(--sp20); width:100%; margin-bottom:var(--sp15);}
     footer>div>ul>li>ol{opacity:0; transition: opacity .5s ease-in-out;}
     footer>div>ul>li>strong.active+ol{opacity:1; position:relative; margin-bottom:var(--sp15);}
-    footer>div>ul:first-of-type li ol li{padding-bottom:var(--sp20);}
+    footer>div>ul:first-of-type li ol li{
+        padding-bottom:var(--sp20);
+    }
     footer>div>ul:first-of-type strong::after{content:''; position:absolute; background-color:var(--GS08); width:100%; height:1px; left:0; top:30px;}
     footer>div>ul:first-of-type>li>strong.active:before{transform:rotate(180deg);}
     footer>div>ul:first-of-type li>ol>li a{white-space:nowrap;}
@@ -106,7 +114,7 @@ footer>div{padding-block:var(--sp30);}
     div.wave > ul,
     article.rightsInfo,
     footer>div{
-        max-width:1200px; margin-inline: auto; 
+        max-width:1200px; margin: 0 auto; 
    }
     header>div{position:relative; width:100%; height:60px; display: flex; justify-content: space-between; align-items: center;}
     header>div>nav{width:59%; margin-left:16.66%;}
