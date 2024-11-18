@@ -7,6 +7,26 @@ section.detailContainer > div:nth-of-type(3) aside,
 div.dark > div > div:nth-of-type(2){
      background-color: var(--GS11);
 }
+main > ul li span,
+main > div:first-of-type > ul li:nth-of-type(2) div,
+.arrival > ol li:before,
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2),
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,
+section.twoface > div > div.checkOut fieldset div button:first-of-type, 
+section.twoface > div > div.checkOut .createPassword fieldset > button,
+div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, 
+div.dark > div > div:first-of-type > div.createPassword fieldset > button,
+section.twoface div.calculator > div:first-of-type img,
+article.rightsInfo small,
+div.listContainer > div > div:last-of-type > ul li > div,
+div.listContainer > nav ul li,
+section.twoface > div > div.checkOut fieldset > button,
+section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4,
+div.listContainer > div > div:last-child > ul > li > div strong,
+section.detailContainer > div:nth-of-type(3) > aside > ul > li > label,
+div.listContainer > div > div:last-child .gradient li{
+    display: block;
+}    
 div.details .legend h4,
 div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3),
 div.dark > div > div:first-of-type > div.findPassword fieldset > *,
@@ -97,29 +117,174 @@ main > div:nth-of-type(3) > div div,
 main > div:nth-of-type(3) > ul::before,
 main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a,
 div.details > div.full > div img,
-section.twoface > div > div.checkOut fieldset div button:first-of-type, 
-section.twoface > div > div.checkOut .createPassword fieldset > button,
-div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type,
 div.details .legend nav ul li img,
 div.details > div.full > div > div,
+div.dark > div > div:nth-of-type(2) img,
 ul.bar,
 div.listContainer > div > div:last-child .gradient,
 div.list-group-wrapper > ul > li,
 #pager-line,
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,
+section.twoface > div > div.checkOut fieldset div button:first-of-type,
+section.twoface > div > div.checkOut .createPassword fieldset > button,
 section.twoface > div > div.checkOut ul li input,
-div.dark > div > div:nth-of-type(2) img,
-div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, 
-div.dark > div > div:first-of-type > div.createPassword fieldset > button,
+div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type,
+div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,
 div.dark > div > div:first-of-type > div:first-of-type fieldset div > a,
-div.dark > div > div:first-of-type > div.createDell fieldset button, 
+div.dark > div > div:first-of-type > div.createPassword fieldset > button,
+div.dark > div > div:first-of-type > div.createDell fieldset button,
 div.dark > div > div:first-of-type > div.findPassword fieldset > button,
-div.dark > div > div:first-of-type input,
-.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a {
+div.dark > div > div:first-of-type input {
     width: 100%;
 }
 
+/* ????????????? */
+
+
+article.rightsInfo small{
+    margin-top: 10px;
+}
+section.twoface div.calculator > div:first-of-type img{
+    margin-right: var(--sp25);
+    max-width: 120px;
+}
+section.twoface > div > div.checkOut fieldset > button{
+    margin-left: auto;
+}
+div.dark > div > div:first-of-type > div:first-of-type fieldset > button{
+    margin-left: auto;
+}
+section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
+    padding: var(--sp40) 0 var(--sp20);
+    color: var(--GS01);
+    line-height: 21px;
+}
+section.detailContainer > div:nth-of-type(3) > aside > ul > li > label {
+    color: var(--GS01);
+    border: 3px solid var(--GS08);
+    padding: var(--sp30) 0 var(--sp30) var(--sp20);
+    border-radius: 10px;
+    cursor: pointer;
+}
+div.listContainer > div > div:last-child > ul > li > div strong{
+    margin: var(--sp20) 6.56%;
+}
+div.listContainer > div > div:last-child .gradient li{
+    text-indent: -9999px;
+}
+div.listContainer > nav ul li {
+    text-align: center;
+}
+main > div:first-of-type > ul li:nth-of-type(2) div {
+    animation: show 0.75s ease-in-out 0.1s forwards;
+}
+main > ul li h4{
+    margin-bottom: var(--sp20)
+}
+main > ul li span{
+    padding-bottom: 370px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.listContainer > nav ul li a{
+    color: var(--GS01);
+}
+main > div:nth-of-type(2) {
+    background: url('../images/peakBg.png') no-repeat center center;
+    background-size: cover;
+}
+section.twoface div.calculator > div:first-of-type {
+    display: flex;
+    align-items: center;
+}
+section.twoface > div > div.checkOut fieldset > a:hover{
+    color: var(--GS01);
+}
+div.details .legend >*,
+div.calculator >*{
+    margin-inline: auto;
+    text-align: center;
+}
+ol.pager li {
+    flex: 1;
+    text-align: center;
+}
+main > ul > *,
+div.black{
+    margin: 0 auto;
+    text-align: center;
+}
+/* ******* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! need to clean up */
+div.listContainer > div > div:first-child > div:nth-of-type(2) select option,
+section.detailContainer > div:first-child > div > input:first-of-type,
+section.detailContainer > div:nth-of-type(2) table tr td,
+div.details > ul li dl dd,
+section.twoface > div > div.checkOut fieldset > a{
+    color: var(--GS05);
+}
 main > div:first-of-type > ul li:nth-child(n+3) a {
     display: none;
+}
+main > video{
+    background-color: var(--GS12)
+}
+main > ul li:nth-of-type(1){
+    background-image: url('../images/main_bg01.png');
+}
+main > ul li:nth-of-type(2){
+    background-image: url('../images/main_bg02.png');
+}
+main > ul li:nth-of-type(3){
+    background-image: url('../images/main_bg03.png');
+}
+main > ul li:nth-of-type(4){
+    background-image: url('../images/main_bg04.png');
+}
+main > ul li:nth-of-type(5){
+    background-image: url('../images/main_bg05.png');
+}
+main > ul li:nth-of-type(6){
+    background-image: url('../images/main_bg06.png');
+}
+main > ul li:nth-of-type(1) span{
+    background-image: url('../images/main_mouse.png');
+}
+main > ul li:nth-of-type(5) span{
+    background-image: url('../images/main_bag.png');
+}
+main > div:nth-of-type(3) > ul li:first-of-type{
+    background-image: url('../images/test1.png');
+}
+main > div:nth-of-type(3) > ul li:nth-of-type(2){
+    background-image: url("../images/test2.png");
+}
+main > div:nth-of-type(3) > ul li:nth-of-type(3){
+    background-image: url("../images/test3.png");
+}
+main > div:nth-of-type(3) > ul li:nth-of-type(4){
+    background-image: url("../images/test4.png");
+}
+main > div:nth-of-type(3) > ul li:nth-of-type(5){
+    background-image: url("../images/test5.png");
+}
+main > div:nth-of-type(3) > div div{
+    max-width: 600px;
 }
 main > div:nth-of-type(3) > ul li{
     flex-grow: 1;
@@ -131,39 +296,29 @@ main > div:nth-of-type(3) > ul li{
     transition: all 0.4s ease;
     opacity: 1;
 }
-/* ! need to clean up */
-div.listContainer > div > div:first-child > div:nth-of-type(2) select option,
-section.detailContainer > div:first-child > div > input:first-of-type,
-section.detailContainer > div:nth-of-type(2) table tr td,
-div.details > ul li dl dd,
-section.twoface > div > div.checkOut fieldset > a{
-    color: var(--GS05);
-}
-.accountContainer > div > div.wrapper > div > div > p{
-    width: 66%;
-}
 div.listContainer > div > aside ul li > ol li{
     color: var(--GS08);        
+}
+div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
+    background-color: var(--GS09);
+}
+div.details > div.superCharge > div ul li p { 
+    margin-top: var(--sp20);
 }
 section.detailContainer > div:nth-of-type(2) table tr th{
     padding-right: 100px;
     color: var(--GS04);
 }
-div.details > div.superCharge > div ul li p { 
-    margin-top: var(--sp20);
+.accountContainer > div > div.wrapper > div > div > p{
+    width: 66%;
 }
 section.twoface > div > div.checkOut fieldset > a{
     transition: 0.5s;
     margin-left: auto;
 }
-div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
-    background-color: var(--GS09);
-}
-
 section.twoface > div > div.checkOut fieldset div button:first-of-type, section.twoface > div > div.checkOut .createPassword fieldset > button{
     background-color: var(--B04);
     margin: var(--sp30) auto;
-    display: block;
     padding-block: var(--sp15);
 }
 section.twoface > div > div.checkOut ul li input {
@@ -181,17 +336,10 @@ div.dark > div > div:nth-of-type(2) img{
     max-width: 400px;
     margin: 0 auto;
 }
-main > video{
-    background-color: var(--GS12)
-}
-main > div:nth-of-type(3) > div div{
-    max-width: 600px;
-}
 div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, 
 div.dark > div > div:first-of-type > div.createPassword fieldset > button{
     background-color: var(--B04);
     margin: var(--sp30) auto;
-    display: block;
     padding-block: var(--sp15);
 }
 div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
@@ -202,7 +350,6 @@ div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
 }
 div.dark > div > div:first-of-type > div.createDell fieldset button, 
 div.dark > div > div:first-of-type > div.findPassword fieldset > button{
-    display: block;
     padding-block: var(--sp10);
     cursor: pointer;
 }
@@ -214,7 +361,6 @@ div.dark > div > div:first-of-type input {
     outline: 0;
 }
 .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
-    display: block;
     text-align: center;
 }
 main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a{
@@ -274,7 +420,7 @@ main > div:nth-of-type(3) > div {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    padding: var(--sp80) 0;
+    padding-block: var(--sp80);
 }
 main > div:nth-of-type(3) > ul::before {
     position: absolute;
@@ -286,6 +432,9 @@ main > div:nth-of-type(3) > ul::before {
     z-index: 2;
     transition: all 1.2s ease;
 }
+main > div:first-of-type .sButton > button:hover{
+    background: url('../images/arrowButtonFill.png') no-repeat center center;
+}
 div.listContainer > div > aside ul li > ol:after{
     content: '';
     background-color: var(--GS08);
@@ -294,17 +443,27 @@ div.listContainer > div > aside ul li > ol:after{
     left: -10px;
     bottom: -40px;
 }
+div.listContainer > div > div:first-child {
+    grid-area: sort;
+}
+div.listContainer > div > aside {
+    grid-area: aside;
+}
+div.listContainer > div > div:last-child{
+    grid-area: list;
+}
+div.listContainer > div > div:first-child > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){
-    display: block;
     background: url('../images/addItem.png') center center no-repeat var(--GS12);
 }
 div.details > div.fineTuned > div ul li{
     text-align: center;
     padding: var(--sp40) var(--sp15);
 }
-
-
-
 ul.bar {
     height: 50px;
     position: absolute;
@@ -381,7 +540,6 @@ div.listContainer > div > div:last-child > ul > li{
 }
 .arrival > ol li:before {
     content: '';
-    display: block;
     height: 25px;
     width: 25px;
     border-radius: 50%;
@@ -399,15 +557,24 @@ div.listContainer > div > div:first-child > div:nth-of-type(2) label {
     top: -20px;
     padding-left: var(--sp20);
 }
+div.listContainer > div > aside ul li > ol li label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    background: url('../images/checkUnclicked.png') no-repeat center / cover;
+    transform: translateY(-50%);
+    transition: background-image 0.3s ease;
+}
 div.listContainer > div > aside ul li > ol li label {
     display: flex;
     align-items: center;
     cursor: pointer;
     padding-left: var(--sp20);
 }
-div.listContainer > div > div:last-of-type > ul li > div{
-    display: block;
-}
+
 div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type{
     margin-block: var(--sp25);
 }
@@ -436,8 +603,6 @@ div.wave{
     animation: gradient 10s ease infinite;
 }
 div.black{
-    text-align: center;
-    margin: 0 auto;
     background-color: black;
     padding: 105px 0px var(--sp40);
 }
@@ -470,6 +635,15 @@ input#pink[type="radio"]:checked + label, input#pink[type="radio"]:hover + label
 }
 input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + label, input#silver[type="radio"]:checked + label, input#silver[type="radio"]:hover + label {
     --border-color: var(--GS01);
+}
+div.calculator > div:first-of-type button:first-of-type{
+    background-image: url('../images/add.png');
+}
+div.calculator > div:first-of-type button:nth-of-type(2){
+    background-image: url('../images/minus.png');
+}
+div.calculator > div:first-of-type button:nth-of-type(3){
+    background-image: url('../images/trahcan.png');
 }
 @media screen and (max-width: 767px){
     div.grid-group-wrapper > ul > li {
@@ -533,10 +707,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         opacity: 0;
         z-index: 10;
    }
-    main > div:first-of-type > ul li:nth-of-type(2) div {
-        display: block;
-        animation: show 0.75s ease-in-out 0.1s forwards;
-   }
     @keyframes show{
         0% {
             filter: blur(15px);
@@ -549,7 +719,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
    }
     main > div:first-of-type > ul li div h2{
         width: 92.8%;
-        ;
    }
     main > div:first-of-type > ul li div p{
         margin-block: var(--sp20);
@@ -565,19 +734,11 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         left: 50%;
         transform: translateX(-50%);
    }
-    main > div:first-of-type .sButton > button:hover{
-        background: url('../images/arrowButtonFill.png') no-repeat center center;
-   }
     main > div:first-of-type .sButton > button:last-of-type{
         margin-left: var(--sp20);
         transform: rotate(180deg);
    }
-
-   /* end of main */
-   /* start of peak */
-    main > div:nth-of-type(2){
-        background: url('../images/peakBg.png') no-repeat center center;
-        background-size: cover;
+    main > div:nth-of-type(2) {
         padding: var(--sp40) 0 var(--sp40);
    }
     main > div:nth-of-type(2) > div{
@@ -608,25 +769,8 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     main > div:nth-of-type(3) > div input{
         display: none;
    }
-
-
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{
         width: 0px;
-   }
-    main > div:nth-of-type(3) > ul li:first-of-type{
-        background-image: url('../images/test1.png');
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(2){
-        background-image: url("../images/test2.png");
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(3){
-        background-image: url("../images/test3.png") 
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(4){
-        background-image: url("../images/test4.png");
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(5){
-        background-image: url("../images/test5.png");
    }
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul {
         height: 800px;
@@ -638,13 +782,8 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover{
         flex-grow: 3;
    }
-
     main > ul{
         color: var(--GS01);
-   }
-    main > ul > *{
-        margin: 0 auto;
-        text-align: center;
    }
 
     main > ul li{
@@ -652,39 +791,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;        
-   }
-    main > ul li:nth-of-type(1){
-        background-image: url('../images/main_bg01.png');
-   }
-    main > ul li:nth-of-type(2){
-        background-image: url('../images/main_bg02.png');
-   }
-    main > ul li:nth-of-type(3){
-        background-image: url('../images/main_bg03.png');
-   }
-    main > ul li:nth-of-type(4){
-        background-image: url('../images/main_bg04.png');
-   }
-    main > ul li:nth-of-type(5){
-        background-image: url('../images/main_bg05.png');
-   }
-    main > ul li:nth-of-type(6){
-        background-image: url('../images/main_bg06.png');
-   }
-    main > ul li h4{
-        margin-bottom: 20px;
-   }
-    main > ul li span{
-        padding-bottom: 370px;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-   }
-    main > ul li:nth-of-type(1) span{
-        background-image: url('../images/main_mouse.png');
-   }
-    main > ul li:nth-of-type(5) span{
-        background-image: url('../images/main_bag.png');
    }
     div.listContainer{
         margin-bottom: var(--sp80);
@@ -702,28 +808,10 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         padding: 160px 0 var(--sp40);
         align-items: center;
    }
-    div.listContainer > nav ul::-webkit-scrollbar {
-        position: absolute;
-        height: 10px;
-        padding-bottom: 10px 
-   }
     div.listContainer > nav ul::-webkit-scrollbar-thumb {
         min-width: 200px;
         background-color:var(--GS12);
         border-radius: 5px;
-   }
-    div.listContainer > nav ul::-webkit-scrollbar-thumb:hover {
-        background-color: var(--GS09);
-   }
-    div.listContainer > nav ul::-webkit-scrollbar-track {
-        background-color: var(--GS10);
-   }
-    div.listContainer > nav ul li {
-        display: block;
-        text-align: center;
-   }
-    div.listContainer > nav ul li a{
-        color: var(--GS01);
    }
     div.listContainer > nav ul li a img{
         margin-bottom: var(--sp15);
@@ -736,26 +824,14 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         grid-template-areas: "aside" "sort" "list";
    }
     div.listContainer > div > div:first-child {
-        grid-area: sort;
-   }
-    div.listContainer > div > aside {
-        grid-area: aside;
-   }
-    div.listContainer > div > div:last-child{
-        grid-area: list;
-   }
-    div.listContainer > div > div:first-child {
         display: flex;
         align-items: center;
         text-align: right;
    }
-
-    div.listContainer .cart-Toggle {
+    div.listContainer .cart-Toggle{
         color: var(--GS12);
         padding: 13px 20px;
         background-color: var(--B02);
-        text-align: center;
-        margin: 0 auto;
         max-width: 140px;
         transition: background-color 0.3s ease;
         border-radius: 4px;
@@ -766,12 +842,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.listContainer > div > div:first-child > div button {
         display: none;
    }
-    div.listContainer > div > div:first-child > div:nth-of-type(2) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-   }
-
     div.listContainer > div > div:first-child > div:nth-of-type(2) select {
         color: var(--GS01);
         appearance: none;
@@ -781,10 +851,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         line-height: 20px;
         left: 0px;
         top: -10px;
-   }
-
-    div.listContainer > div > div:first-child > div:nth-of-type(2) select option:checked {
-        color: var(--GS01);
    }
    /** aside */
     div.listContainer > div > aside > input{
@@ -798,9 +864,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         right: 0;
         text-indent: -9999px;
         background: url('../images/exit.png') no-repeat;
-   }
-    div.listContainer > div > aside > input.active{
-        display: block;
    }
     div.listContainer > div > aside > h3{
         margin-bottom: var(--sp50);
@@ -843,17 +906,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.listContainer > div > aside ul li > ol li input {
         display: none;
    }
-    div.listContainer > div > aside ul li > ol li label::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 13px;
-        height: 13px;
-        background: url('../images/checkUnclicked.png') no-repeat center / cover;
-        transform: translateY(-50%);
-        transition: background-image 0.3s ease;
-   }
+
     div.listContainer > div > aside ul li > ol li input[type="checkbox"]:checked + label::before {
         background-image: url('../images/check.png');
    }
@@ -861,8 +914,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.grid-group-wrapper{
         margin-top: var(--sp40);
    }
-
-
     div.listContainer > div > div:last-child > ul > li >div{
         background-color: var(--GS12);
    }
@@ -877,7 +928,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.listContainer > div > div:last-child > ul > li > div div:first-of-type{
         height: 165px;
    }
-
     div.listContainer > div > div:last-child> ul > li > div > div mark {
         position: absolute;
         top: 20px;
@@ -886,10 +936,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         background-color: #30acd5;
         padding: var(--sp10) 4.56%;
    }
-    div.listContainer > div > div:last-child > ul > li > div strong{
-        display: block;
-        margin: var(--sp20) 6.56%;
-   }
     div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{
         margin: 0 6.56%;
    }
@@ -897,7 +943,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         padding-bottom: var(--sp30);
         gap: 20px;
    }
-
     div.listContainer > div > div:last-child > ul > li > div > div:last-child > a{
         margin-right: 4%;
    }
@@ -913,13 +958,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         margin-left: 6.56%;
         list-style: inside;
    }
-   /* end of normal list but start of transiton picture */
-
-
-    div.listContainer > div > div:last-child .gradient li{
-        display: block;
-        text-indent: -9999px;
-   }
     .color-change img, .change img {
         transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
    }
@@ -932,10 +970,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         position: relative;
         border-top: 2px solid var(--GS01);
    }
-    ol.pager li {
-        flex: 1;
-        text-align: center;
-   }
+
     ol.pager li a {
         padding-top: var(--sp20);
    }
@@ -1090,25 +1125,12 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     section.detailContainer > div:nth-of-type(3) > aside > ul > li:first-of-type > h4{
         border-top: 1px solid var(--B02);
    }
-    section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
-        display: block;
-        padding: var(--sp40) 0 var(--sp20);
-        color: var(--GS01);
-        line-height: 21px;
-   }
+
     section.detailContainer > div:nth-of-type(3) > aside > ul > li > input{
         opacity: 0;
    }
    /* Default label styles */
-    section.detailContainer > div:nth-of-type(3) > aside > ul > li > label {
-        color: var(--GS01);
-        border: 3px solid var(--GS08);
-       /* Default border */
-        padding: var(--sp30) 0 var(--sp30) var(--sp20);
-        border-radius: 10px;
-        display: block;
-        cursor: pointer;
-   }
+
     section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:checked + label, section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:hover + label {
         border: 3px solid var(--border-color, var(--B02));
    }
@@ -1168,9 +1190,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.details > div.full > div > div {
         color: white;
    }
-    div.details > div.superCharge > div > h4, div.details > div.superCharge > div > p{
-        text-align: center;
-   }
+
     div.details > div.superCharge > div ul {
         display: grid;
         margin-top: var(--sp60);
@@ -1244,16 +1264,13 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
    }
     .recycle >img{
         max-width: 579px;
-        padding: var(--sp80) 0;
+        padding-block: var(--sp80);
         margin: 0 auto;
    }
     div.details .legend{
         margin: var(--sp80) auto;
    }
-    div.details .legend >*{
-        margin: 0 auto;
-        text-align: center;
-   }
+
     div.details .legend p{
         width: 92.8%;
    }
@@ -1617,10 +1634,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         outline: none;
         border: 1px solid var(--B03);
    }
-    div.dark > div > div:first-of-type > div:first-of-type fieldset > button{
-        display: block;
-        margin-left: auto;
-   }
+
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type{
         margin-bottom: var(--sp20);
    }
@@ -1809,25 +1823,8 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         outline: none;
         border: 1px solid var(--B03);
    }
-    section.twoface > div > div.checkOut fieldset > button{
-        display: block;
-        margin-left: auto;
-   }
 
-
-    section.twoface > div > div.checkOut fieldset > a:hover{
-        color: var(--GS01);
-   }
    /* * calculator */
-    section.twoface div.calculator > div:first-of-type {
-        display: flex;
-        align-items: center;
-   }
-    section.twoface div.calculator > div:first-of-type img{
-        display: block;
-        margin-right: var(--sp25);
-        max-width: 120px;
-   }
     section.twoface div.calculator > div:first-of-type h3{
         line-height: 20px;
         text-align: left;
@@ -1847,15 +1844,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.calculator input{
         background-color: white;
    }
-    div.calculator > div:first-of-type button:first-of-type{
-        background-image: url('../images/add.png');
-   }
-    div.calculator > div:first-of-type button:nth-of-type(2){
-        background-image: url('../images/minus.png');
-   }
-    div.calculator > div:first-of-type button:nth-of-type(3){
-        background-image: url('../images/trahcan.png');
-   }
+
     div.calculator > div:nth-of-type(2){
         display: flex;
         margin: var(--sp20) 0px var(--sp20) 20px;
@@ -1889,10 +1878,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.calculator ul li:first-of-type strong {
         margin-left: auto;
    }
-    div.calculator >*{
-        margin-inline: auto;
-        text-align: center;
-   }
+
     div.calculator > p{
         width: 60%;
         line-height: 24px;
@@ -2028,10 +2014,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         display: flex;
         flex-direction: column;
    }
-    article.rightsInfo small{
-        display: block;
-        margin-top: 10px;
-   }
+
     article.rightsInfo > ul{
         background-color: var(--GS04);
         padding: var(--sp40) var(--sp80);
@@ -2046,18 +2029,67 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         list-style: disc;
         margin-left: var(--sp20);
    }
-
-
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     [class^='middle'] > div ol{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
    }
+   div.listContainer > div > aside > input.active,
+   .arrival > ol li,
+    div.dark > div > div:first-of-type,
+    div.dark > div > div:first-of-type > div.createDell fieldset button, 
+    div.dark > div > div:first-of-type > div.findPassword fieldset > button{
+        display: block;
+    }
+   .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li figure,
    section.detailContainer > div:nth-of-type(3) nav ul{
         width: 100%;
    }
+/* ** need diet */
+
+
+div.listContainer > nav ul::-webkit-scrollbar {
+    position: absolute;
+    height: 10px;
+    padding-bottom: 10px 
+}
+div.listContainer > nav ul::-webkit-scrollbar-thumb:hover {
+    background-color: var(--GS09);
+}
+div.listContainer > nav ul::-webkit-scrollbar-track {
+    background-color: var(--GS10);
+}
+div.listContainer > div > div:first-child > div:nth-of-type(2) select option:checked {
+    color: var(--GS01);
+}
+div.details > div.superCharge > div > h4, div.details > div.superCharge > div > p{
+    text-align: center;
+}
+div.listContainer .cart-Toggle {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* **** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     main > div:first-of-type > ul{
         height: 560px;
    }
@@ -2108,10 +2140,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         display: block;
         z-index: 10;
    }
-    main > div:first-of-type > ul li:nth-of-type(2) div {
-        display: block;
-        animation: show 0.75s ease-in-out 0.1s forwards;
-   }
+
     @keyframes show {
         0% {
             filter: blur(15px);
@@ -2138,9 +2167,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         left: 50%;
         transform: translateX(-50%);
    }
-    main > div:first-of-type .sButton > button:hover{
-        background: url('../images/arrowButtonFill.png') no-repeat center center;
-   }
+
     main > div:first-of-type .sButton > button:last-of-type{
         margin-left: var(--sp20);
         transform: rotate(180deg);
@@ -2148,9 +2175,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
 
    /* end of main */
    /* start of peak */
-    main > div:nth-of-type(2){
-        background: url('../images/peakBg.png') no-repeat center center;
-        background-size: cover;
+    main > div:nth-of-type(2) {
         padding: var(--sp190) 0 var(--sp345);
    }
     main > div:nth-of-type(2) > div{
@@ -2178,25 +2203,8 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     main > div:nth-of-type(3) > div input{
         display: none;
    }
-
-
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{
         width: 0px;
-   }
-    main > div:nth-of-type(3) > ul li:first-of-type{
-        background-image: url('../images/test1.png');
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(2){
-        background-image: url("../images/test2.png");
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(3){
-        background-image: url("../images/test3.png") 
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(4){
-        background-image: url("../images/test4.png");
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(5){
-        background-image: url("../images/test5.png");
    }
    /* :has() style a parent based on what child */
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul {
@@ -2213,10 +2221,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     main > ul{
         color: var(--GS01);
    }
-    main > ul > *{
-        margin: 0 auto;
-        text-align: center;
-   }
+
 
     main > ul li{
         width: 49.5%;
@@ -2228,39 +2233,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     main > ul li:nth-child(2n){
         margin-left: 0.5%;
    }
-    main > ul li:nth-of-type(1){
-        background-image: url('../images/main_bg01.png');
-   }
-    main > ul li:nth-of-type(2){
-        background-image: url('../images/main_bg02.png');
-   }
-    main > ul li:nth-of-type(3){
-        background-image: url('../images/main_bg03.png');
-   }
-    main > ul li:nth-of-type(4){
-        background-image: url('../images/main_bg04.png');
-   }
-    main > ul li:nth-of-type(5){
-        background-image: url('../images/main_bg05.png');
-   }
-    main > ul li:nth-of-type(6){
-        background-image: url('../images/main_bg06.png');
-   }
-    main > ul li h4{
-        margin-bottom: 20px;
-   }
-    main > ul li span{
-        padding-bottom: 370px;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-   }
-    main > ul li:nth-of-type(1) span{
-        background-image: url('../images/main_mouse.png');
-   }
-    main > ul li:nth-of-type(5) span{
-        background-image: url('../images/main_bag.png');
-   }
+
    /* list */
     div.listContainer{        
         margin-bottom: var(--sp80);
@@ -2278,28 +2251,14 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         padding: 160px 0 var(--sp50);
         align-items: center;
    }
-    div.listContainer > nav ul::-webkit-scrollbar {
-        position: absolute;
-        height: 10px;
-        padding-bottom: 10px 
-   }
+
     div.listContainer > nav ul::-webkit-scrollbar-thumb {
         background-color:var(--GS12);
         border-radius: 5px;
    }
-    div.listContainer > nav ul::-webkit-scrollbar-thumb:hover {
-        background-color: var(--GS09);
-   }
-    div.listContainer > nav ul::-webkit-scrollbar-track {
-        background-color: var(--GS10);
-   }
-    div.listContainer > nav ul li {
-        display: block;
-        text-align: center;
-   }
-    div.listContainer > nav ul li a{
-        color: var(--GS01);
-   }
+
+
+
     div.listContainer > nav ul li a img{
         margin-bottom: var(--sp15);
         width: 122px;
@@ -2310,15 +2269,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "aside sort" "list list";
    }
-    div.listContainer > div > div:first-child {
-        grid-area: sort;
-   }
-    div.listContainer > div > aside {
-        grid-area: aside;
-   }
-    div.listContainer > div > div:last-child{
-        grid-area: list;
-   }
+
     div.listContainer > div > div:first-child {
         display: flex;
         align-items: center;
@@ -2330,8 +2281,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         color: var(--GS12);
         padding: 13px 20px;
         background-color: var(--B02);
-        text-align: center;
-        margin: 0 auto;
         max-width: 140px;
         transition: background-color 0.3s ease;
         border-radius: 4px;
@@ -2360,11 +2309,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.listContainer > div > div:first-child > div button:nth-of-type(2).active {
         background: url('../images/listButtonBlue.png');
    }
-    div.listContainer > div > div:first-child > div:nth-of-type(2) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-   }
+
 
     div.listContainer > div > div:first-child > div:nth-of-type(2) select {
         color: var(--GS01);
@@ -2377,9 +2322,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         top: -10px;
    }
 
-    div.listContainer > div > div:first-child > div:nth-of-type(2) select option:checked {
-        color: var(--GS01);
-   }
+
    /** aside */
     div.listContainer > div > aside > input{
         display: none;
@@ -2393,9 +2336,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         text-indent: -9999px;
         background: url('../images/exit.png') no-repeat;
    }
-    div.listContainer > div > aside > input.active{
-        display: block;
-   }
+
     div.listContainer > div > aside > h3{
         margin-bottom: var(--sp60);
         background-color: black;
@@ -2441,17 +2382,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         display: none;
    }
 
-    div.listContainer > div > aside ul li > ol li label::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 13px;
-        height: 13px;
-        background: url('../images/checkUnclicked.png') no-repeat center / cover;
-        transform: translateY(-50%);
-        transition: background-image 0.3s ease;
-   }
+
     div.listContainer > div > aside ul li > ol li input[type="checkbox"]:checked + label::before {
         background-image: url('../images/check.png');
    }
@@ -2495,10 +2426,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         background-color: #30acd5;
         padding: var(--sp10) 4.56%;
    }
-    div.listContainer > div > div:last-child > ul > li > div strong{
-        display: block;
-        margin: var(--sp20) 6.56%;
-   }
+
     div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{
         margin: 0 6.56%;
    }
@@ -2525,19 +2453,11 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         margin-left: 6.56%;
         list-style: inside;
    }
-   /* end of normal list but start of transiton picture */
-
-
     div.listContainer > div > div.list-group-wrapper ul li .gradient{
         top: 305px;
    }
-    div.listContainer > div > div:last-child .gradient li{
-        display: block;
-        text-indent: -9999px;
-   }
     .color-change img, .change img {
-       /* opacity: 1;
-        */
+       /* opacity: 1;*/
         transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
    }
     ol.pager {
@@ -2549,10 +2469,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         position: relative;
         border-top: 2px solid var(--GS01);
    }
-    ol.pager li {
-        flex: 1;
-        text-align: center;
-   }
+
     ol.pager li a {
         padding-top: var(--sp20);
    }
@@ -2589,7 +2506,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     section.detailContainer > div:first-child > div > input:first-of-type {
         padding-right: 2.56%;
    }
-
     section.detailContainer > div:nth-of-type(2) {        
         border-bottom: 3px solid var(--GS12);
    }
@@ -2600,10 +2516,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         padding-top: var(--sp40);
         width: 93.5%;
    }
-
-
-
-
    /** start of image 3rd*/
     section.detailContainer > div:nth-of-type(3){
         margin-inline: auto;
@@ -2686,24 +2598,12 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     section.detailContainer > div:nth-of-type(3) > aside > ul > li:first-of-type > h4{
         border-top: 1px solid var(--B02);
    }
-    section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
-        display: block;
-        padding: var(--sp40) 0 var(--sp20);
-        color: var(--GS01);
-        line-height: 21px;
-   }
+
     section.detailContainer > div:nth-of-type(3) > aside > ul > li > input{
         opacity: 0;
    }
    /* Default label styles */
-    section.detailContainer > div:nth-of-type(3) > aside > ul > li > label {
-        color: var(--GS01);
-        border: 3px solid var(--GS08);
-        padding: var(--sp30) 0 var(--sp30) var(--sp20);
-        border-radius: 10px;
-        display: block;
-        cursor: pointer;
-   }
+
     section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:checked + label, section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:hover + label {
         border: 3px solid var(--border-color, var(--B02));
    }
@@ -2774,9 +2674,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.details > div.full > div > div {
         color: white;
    }
-    div.details > div.superCharge > div > h4, div.details > div.superCharge > div > p{
-        text-align: center;
-   }
+
     div.details > div.superCharge > div ul {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
@@ -2847,14 +2745,9 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.details .legend{
         margin: var(--sp80) auto;
    }
-    div.details .legend >*{
-        margin: 0 auto;
-        text-align: center;
-   }
     div.details .legend p{
         width: 93.5%;
    }
-
     div.details .legend nav > div img{
         margin: var(--sp40) auto;
    }
@@ -3210,10 +3103,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         outline: none;
         border: 1px solid var(--B03);
    }
-    div.dark > div > div:first-of-type > div:first-of-type fieldset > button{
-        display: block;
-        margin-left: auto;
-   }
+
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type{
         margin-bottom: var(--sp20);
    }
@@ -3402,25 +3292,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         outline: none;
         border: 1px solid var(--B03);
    }
-    section.twoface > div > div.checkOut fieldset > button{
-        display: block;
-        margin-left: auto;
-   }
-
-
-    section.twoface > div > div.checkOut fieldset > a:hover{
-        color: var(--GS01);
-   }
    /* * calculator */
-    section.twoface div.calculator > div:first-of-type {
-        display: flex;
-        align-items: center;
-   }
-    section.twoface div.calculator > div:first-of-type img{
-        display: block;
-        margin-right: var(--sp25);
-        max-width: 120px;
-   }
     section.twoface div.calculator > div:first-of-type h3{
         line-height: 20px;
         text-align: left;
@@ -3439,15 +3311,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
    }
     div.calculator input{
         background-color: white;
-   }
-    div.calculator > div:first-of-type button:first-of-type{
-        background-image: url('../images/add.png');
-   }
-    div.calculator > div:first-of-type button:nth-of-type(2){
-        background-image: url('../images/minus.png');
-   }
-    div.calculator > div:first-of-type button:nth-of-type(3){
-        background-image: url('../images/trahcan.png');
    }
     div.calculator > div:nth-of-type(2){
         display: flex;
@@ -3481,10 +3344,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
    }
     div.calculator ul li:first-of-type strong {
         margin-left: auto;
-   }
-    div.calculator >*{
-        margin-inline: auto;
-        text-align: center;
    }
     div.calculator > p{
         width: 60%;
@@ -3632,10 +3491,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         flex-direction: column;
    }
 
-    article.rightsInfo small{
-        display: block;
-        margin-top: 10px;
-   }
+
     article.rightsInfo > ul{
         background-color: var(--GS04);
         padding: var(--sp40) var(--sp80);
@@ -3703,12 +3559,8 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     .accountContainer > div > div.wrapper > ul li:nth-of-type(2) img{
         object-fit: cover;
     }
-    div.dark > div > div:first-of-type{
-        display: block;
-    }
     div.dark > div > div:first-of-type > div.createDell fieldset button, 
     div.dark > div > div:first-of-type > div.findPassword fieldset > button{
-        display: block;
         padding-block: var(--sp10);
         cursor: pointer;
     }
@@ -3743,8 +3595,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     article.rightsInfo > ul li > address{
         font-style: normal;
     }
-    .arrival > ol li{
-        display: block;
+    .arrival > ol li{        
         width: 25%;
     }
     div.listContainer > div > aside ul li > b {
@@ -3825,10 +3676,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         display: block;
         z-index: 10;
    }
-    main > div:first-of-type > ul li:nth-of-type(2) div {
-        display: block;
-        animation: show 0.75s ease-in-out 0.1s forwards;
-   }
+
     @keyframes show {
         0% {
             filter: blur(15px);
@@ -3857,17 +3705,12 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         cursor: pointer;
         text-indent: -9999px;
    }
-    main > div:first-of-type .sButton > button:hover{
-        background: url('../images/arrowButtonFill.png') no-repeat center center;
-   }
+
     main > div:first-of-type .sButton > button:last-of-type{
         margin-left: var(--sp20);
         transform: rotate(180deg);
    }
-
     main > div:nth-of-type(2) {
-        background: url('../images/peakBg.png') no-repeat center center;
-        background-size: cover;
         padding: var(--sp190) 0 var(--sp345);
    }
     main > div:nth-of-type(2) > div{
@@ -3895,21 +3738,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{
         width: 0px;
    }
-    main > div:nth-of-type(3) > ul li:first-of-type{
-        background-image: url('../images/test1.png');
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(2){
-        background-image: url("../images/test2.png");
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(3){
-        background-image: url("../images/test3.png");
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(4){
-        background-image: url("../images/test4.png");
-   }
-    main > div:nth-of-type(3) > ul li:nth-of-type(5){
-        background-image: url("../images/test5.png");
-   }
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul {
         height: 400px;
         transition: all 0.5s ease;
@@ -3920,15 +3748,9 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover{
         flex-grow: 2;
    }
-
     main > ul{
         color: var(--GS01);
    }
-    main > ul > *{
-        margin: 0 auto;
-        text-align: center;
-   }
-
     main > ul li{
         width: 49.5%;
         padding: var(--sp40) 0;
@@ -3938,39 +3760,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
    }
     main > ul li:nth-child(2n){
         margin-left: 0.5%;
-   }
-    main > ul li:nth-of-type(1){
-        background-image: url('../images/main_bg01.png');
-   }
-    main > ul li:nth-of-type(2){
-        background-image: url('../images/main_bg02.png');
-   }
-    main > ul li:nth-of-type(3){
-        background-image: url('../images/main_bg03.png');
-   }
-    main > ul li:nth-of-type(4){
-        background-image: url('../images/main_bg04.png');
-   }
-    main > ul li:nth-of-type(5){
-        background-image: url('../images/main_bg05.png');
-   }
-    main > ul li:nth-of-type(6){
-        background-image: url('../images/main_bg06.png');
-   }
-    main > ul li h4{
-        margin-bottom: 20px;
-   }
-    main > ul li span{
-        padding-bottom: 370px;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-   }
-    main > ul li:nth-of-type(1) span{
-        background-image: url('../images/main_mouse.png');
-   }
-    main > ul li:nth-of-type(5) span{
-        background-image: url('../images/main_bag.png');
    }
    /* list */
    div.listContainer,
@@ -3991,16 +3780,9 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.listContainer > nav ul {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 160px 0 var(--sp50);
         margin-bottom: var(--sp60);
-        align-items: center;
-   }
-    div.listContainer > nav ul li {
-        display: block;
-        text-align: center;
-   }
-    div.listContainer > nav ul li a{
-        color: var(--GS01);
    }
     div.listContainer > nav ul li a img{
         margin-bottom: var(--sp15);
@@ -4015,21 +3797,11 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         grid-template-areas: "aside sort" "aside list";
    }
     div.listContainer > div > div:first-child {
-        grid-area: sort;
-   }
-    div.listContainer > div > aside {
-        grid-area: aside;
-   }
-    div.listContainer > div > div:last-child{
-        grid-area: list;
-   }
-    div.listContainer > div > div:first-child {
         display: flex;
         align-items: center;
         text-align: right;
         justify-content: flex-end;
    }
-
     div.listContainer .cart-Toggle{
         color: var(--GS12);
         padding: 13px 10px;
@@ -4062,12 +3834,11 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.listContainer > div > div:first-child > div button:nth-of-type(2).active {
         background: url('../images/listButtonBlue.png');
    }
-    div.listContainer > div > div:first-child > div:nth-of-type(2) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-   }
 
+   div.details > div.superCharge > div, div.details > div.fineTuned > div{
+    text-align: center;
+    margin: 0 auto;
+}
     div.listContainer > div > div:first-child > div:nth-of-type(2) select {
         appearance: none;
         background: url('../images/sortArrowRotated.png') no-repeat right 20px center;
@@ -4136,17 +3907,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         display: none;
    }
 
-    div.listContainer > div > aside ul li > ol li label::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 13px;
-        height: 13px;
-        background: url('../images/checkUnclicked.png') no-repeat center / cover;
-        transform: translateY(-50%);
-        transition: background-image 0.3s ease;
-   }
+
     div.listContainer > div > aside ul li > ol li input[type="checkbox"]:checked + label::before {
         background-image: url('../images/check.png');
    }
@@ -4190,10 +3951,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         background-color: #30acd5;
         padding: var(--sp10) 4.56%;
    }
-    div.listContainer > div > div:last-child > ul > li > div strong{
-        display: block;
-        margin: var(--sp20) 6.56%;
-   }
+
     div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{
         margin: 0 6.56%;
    }
@@ -4226,10 +3984,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.listContainer > div > div.list-group-wrapper ul li .gradient{
         top: 305px;
    }
-    div.listContainer > div > div:last-child .gradient li{
-        display: block;
-        text-indent: -9999px;
-   }
+
     .color-change img, .change img {
         opacity: 1;
         transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -4243,17 +3998,13 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         position: relative;
         border-top: 2px solid var(--GS01);
    }
-    ol.pager li {
-        flex: 1;
-        text-align: center;
-   }
+
     ol.pager li a {
         padding-top: var(--sp20);
    }
     ol.pager li a:hover {
         color: var(--B04);
    }
-
    /** START DETAIL */
    /** START DETAIL */
     section.detailContainer{
@@ -4409,12 +4160,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     section.detailContainer > div:nth-of-type(3) > aside > ul > li:first-of-type > h4{
         border-top: 1px solid var(--B02);
    }
-    section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
-        display: block;
-        padding: var(--sp40) 0 var(--sp20);
-        color: var(--GS01);
-        line-height: 21px;
-   }
+
     section.detailContainer > div:nth-of-type(3) > aside > ul > li > input{
         opacity: 0;
    }
@@ -4422,15 +4168,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         display: none;
    }
    /* Default label styles */
-    section.detailContainer > div:nth-of-type(3) > aside > ul > li > label {
-        color: var(--GS01);
-        border: 3px solid var(--GS08);
-       /* Default border */
-        padding: var(--sp30) 0 var(--sp30) var(--sp20);
-        border-radius: 10px;
-        display: block;
-        cursor: pointer;
-   }
+
     section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:checked + label, section.detailContainer > div:nth-of-type(3) > aside > ul > li > input[type="radio"]:hover + label {
         border: 3px solid var(--border-color, var(--B02));
    }
@@ -4438,7 +4176,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
    /** end of the first spec selectin */
    /* start of details */
     div.details > h4{
-        padding: var(--sp80) 0;
+        padding-block: var(--sp80);
         margin-left: 110px;
    }
     div.details > ul{
@@ -4465,8 +4203,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
    }
     div.details > div.superCharge > div, div.details > div.fineTuned > div{
         max-width: 1760px;
-        text-align: center;
-        margin: 0 auto;
    }
     div.details > div.superCharge > div h4, div.details > div.fineTuned > div h4, div.details > div.full > div h4 {
         padding-bottom: var(--sp40);
@@ -4550,16 +4286,13 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
    }
     .recycle > img{
         max-width: 579px;
-        padding: var(--sp80) 0;
+        padding-block: var(--sp80);
    }
     div.details .legend{
         max-width: 1516px;
         margin: var(--sp80) auto;
    }
-    div.details .legend >*{
-        margin: 0 auto;
-        text-align: center;
-   }
+
     div.details .legend p{
         width: 66%;
    }
@@ -4901,11 +4634,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         outline: none;
         border: 1px solid var(--B03);
    }
-    div.dark > div > div:first-of-type > div:first-of-type fieldset > button{
-        display: block;
-        margin-left: auto;
-   }
-
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
         content: "";
         position: absolute;
@@ -5074,25 +4802,9 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
         outline: none;
         border: 1px solid var(--B03);
    }
-    section.twoface > div > div.checkOut fieldset > button{
-        display: block;
-        margin-left: auto;
-   }
 
-
-    section.twoface > div > div.checkOut fieldset > a:hover{
-        color: var(--GS01);
-   }
    /* * calculator */
-    section.twoface div.calculator > div:first-of-type {
-        display: flex;
-        align-items: center;
-   }
-    section.twoface div.calculator > div:first-of-type img{
-        display: block;
-        margin-right: var(--sp25);
-        max-width: 120px;
-   }
+
     section.twoface div.calculator > div:first-of-type h3{
         line-height: 20px;
    }
@@ -5111,15 +4823,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.calculator input{
         background-color: white;
    }
-    div.calculator > div:first-of-type button:first-of-type{
-        background-image: url('../images/add.png');
-   }
-    div.calculator > div:first-of-type button:nth-of-type(2){
-        background-image: url('../images/minus.png');
-   }
-    div.calculator > div:first-of-type button:nth-of-type(3){
-        background-image: url('../images/trahcan.png');
-   }
+
     div.calculator > div:nth-of-type(2){
         display: flex;
         align-items: center;
@@ -5153,10 +4857,7 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     div.calculator ul li:first-of-type strong {
         margin-left: auto;
    }
-    div.calculator >*{
-        margin-inline: auto;
-        text-align: center;
-   }
+
     div.calculator > p{
         width: 80%;
         line-height: 24px;
@@ -5302,10 +5003,6 @@ input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + lab
     article.rightsInfo{        
         display: flex;
         flex-direction: column;
-   }
-    article.rightsInfo small{
-        display: block;
-        margin-top: 10px;
    }
     article.rightsInfo > ul{
         background-color: var(--GS04);
