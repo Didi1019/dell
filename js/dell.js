@@ -370,13 +370,15 @@ function rotation() {
         }
     });
 }
-function mouseLeave(){
+function mouseLeave() {
     const $sort = $('#sort');
-    $sort.on('focus', function() {
-        $(this).css('background-image', "url('../images/sortArrow.png')");
+
+    $sort.on('focus', function () {
+        $(this).addClass('focused');
     });
-    $sort.on('mouseleave', function() {
-        $(this).css('background-image', "url('../images/sortArrowRotated.png')");
+
+    $sort.on('mouseleave', function () {
+        $(this).removeClass('focused');
     });
 }
 $(document).ready(function() {
@@ -468,7 +470,6 @@ $(document).ready(function() {
 });
 $(document).ready(function () {
     var fileName = window.location.pathname.split("/").pop();
-
     if (fileName.startsWith("detail")) {
         var $thumbs = $('#thumbs');
         var $buttons = $('nav.change button');
