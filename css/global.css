@@ -42,6 +42,9 @@ article.rightsInfo > ul li > ul > li{
 }
 @media screen and (max-width:1279px){
     header>div,div.listContainer>div,
+    div.wave > div.supportSearch,
+    .accountContainer > div,
+    .twowrap > div,
     footer>div{
         margin:0 auto; width:93.5%; 
    }

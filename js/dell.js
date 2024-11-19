@@ -467,71 +467,60 @@ $(document).ready(function() {
     
 });
 $(document).ready(function () {
+    var fileName = window.location.pathname.split("/").pop();
 
-    function desktopScrollButtons() {
+    if (fileName.startsWith("detail")) {
         var $thumbs = $('#thumbs');
+        var $buttons = $('nav.change button');
+        var $upButton = $('nav.change button:first-of-type');
+        var $downButton = $('nav.change button:last-of-type');
 
-        
-        var scrollTop = $thumbs.scrollTop();
-        var maxScrollTop = $thumbs[0].scrollHeight - $thumbs.outerHeight();
+        function updateScrollButtons(scrollProp, maxScrollProp, scrollStep) {
+            var scrollValue = $thumbs[scrollProp]();
+            var maxScrollValue = $thumbs[0][maxScrollProp] - $thumbs[scrollStep]();
 
-        
-        $('nav.change button:first-of-type').toggle(scrollTop > 0);
+            $upButton.toggle(scrollValue > 0);
+            $downButton.toggle(scrollValue < maxScrollValue);
 
-        
-        $('nav.change button:last-of-type').toggle(scrollTop < maxScrollTop);
+            $upButton.off('click').on('click', function () {
+                var animateProp = {};
+                animateProp[scrollProp] = `-=${scrollStep}`;
+                $thumbs.animate(animateProp, 300);
+            });
 
-        
-        $('nav.change button:first-of-type').off('click').on('click', function () {
-            $thumbs.animate({ scrollTop: '-=100' }, 300);
-        });
-
-        $('nav.change button:last-of-type').off('click').on('click', function () {
-            $thumbs.animate({ scrollTop: '+=100' }, 300);
-        });
-    }
-
-    
-    function mobileScrollButtons() {
-        var $thumbs = $('#thumbs');
-
-        
-        var scrollLeft = $thumbs.scrollLeft();
-        var maxScrollLeft = $thumbs[0].scrollWidth - $thumbs.outerWidth();
-
-        
-        $('nav.change button:first-of-type').toggle(scrollLeft > 0);
-
-        
-        $('nav.change button:last-of-type').toggle(scrollLeft < maxScrollLeft);
-
-        
-        $('nav.change button:first-of-type').off('click').on('click', function () {
-            $thumbs.animate({ scrollLeft: '-=100' }, 300);
-        });
-
-        $('nav.change button:last-of-type').off('click').on('click', function () {
-            $thumbs.animate({ scrollLeft: '+=100' }, 300);
-        });
-    }
-
-
-    function checkScrollMode() {
-        if (window.matchMedia("(min-width: 1280px)").matches) {
-            
-            desktopScrollButtons();
-            $('#thumbs').off('scroll').on('scroll', desktopScrollButtons);
-        } else if (window.matchMedia("(max-width: 767px)").matches) {
-            
-            mobileScrollButtons();
-            $('#thumbs').off('scroll').on('scroll', mobileScrollButtons);
-        } else {
-            
-            $('nav.change button').hide();
-            $('#thumbs').off('scroll');
+            $downButton.off('click').on('click', function () {
+                var animateProp = {};
+                animateProp[scrollProp] = `+=${scrollStep}`;
+                $thumbs.animate(animateProp, 300);
+            });
         }
-    }
 
-    checkScrollMode();
-    $(window).on('resize', checkScrollMode);
+        function desktopScrollButtons() {
+            updateScrollButtons("scrollTop", "scrollHeight", "outerHeight");
+        }
+
+        function mobileScrollButtons() {
+            updateScrollButtons("scrollLeft", "scrollWidth", "outerWidth");
+        }
+
+        function checkScrollMode() {
+            var isDesktop = window.matchMedia("(min-width: 1280px)").matches;
+            var isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+            if (isDesktop) {
+                desktopScrollButtons();
+                $thumbs.off('scroll').on('scroll', desktopScrollButtons);
+            } else if (isMobile) {
+                mobileScrollButtons();
+                $thumbs.off('scroll').on('scroll', mobileScrollButtons);
+            } else {
+                $buttons.hide();
+                $thumbs.off('scroll');
+            }
+        }
+
+        checkScrollMode();
+        $(window).on('resize', checkScrollMode);
+    }
 });
+
