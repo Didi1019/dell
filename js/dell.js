@@ -17,39 +17,31 @@ $(function() {
 });
 
 
+
 function preloadHoverImages() {
     $(".change img").each(function () {
-        var originalSrc = $(this).attr('src');
-        var hoverSrc = originalSrc.replace(".png", "Hover.png");
+        var hoverSrc = $(this).attr('src').replace(".png", "Hover.png");
         $('<img>').attr('src', hoverSrc); 
     });
 }
-
 function hoverImg() {
     var fileName = window.location.pathname.split('/').pop();
     if (fileName.startsWith('list')) {
-        $(".change").hover(
-            function () {
-                var img = $(this).find('img'); 
-                img.css('opacity', '0');
-                img.one('transitionend', function () {
-                    var originalSrc = img.attr('src');
-                    var hoverSrc = originalSrc.replace(".png", "Hover.png");
-                    img.attr('src', hoverSrc).css('opacity', '1');
-                });
-            },
-            function () {
-                var img = $(this).find('img'); 
-                img.css('opacity', '0');
-                img.one('transitionend', function () {
-                    var hoverSrc = img.attr('src');
-                    var originalSrc = hoverSrc.replace("Hover.png", ".png");
-                    img.attr('src', originalSrc).css('opacity', '1');
-                });
-            }
-        );
+        var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+        $(".change").on(isTouchDevice ? "click" : "mouseenter mouseleave", function (e) {
+            var img = $(this).find('img');
+            var isHovering = e.type === "mouseenter" || e.type === "click" && !img.attr('src').includes("Hover.png");
+            var newSrc = img.attr('src').replace(isHovering ? ".png" : "Hover.png", isHovering ? "Hover.png" : ".png");
+
+            img.css('opacity', '0').one('transitionend', function () {
+                img.attr('src', newSrc).css('opacity', '1');
+            });
+        });
     }
 }
+
+
 
 function password() {
     $('#createPW').submit(function(event) {
