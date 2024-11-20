@@ -5,6 +5,7 @@ $(function() {
     pager();
     gridtolist();
     hoverImg();
+    preloadHoverImages();
     gradientImg();
     marked();
     password();
@@ -16,21 +17,35 @@ $(function() {
 });
 
 
+function preloadHoverImages() {
+    $(".change img").each(function () {
+        var originalSrc = $(this).attr('src');
+        var hoverSrc = originalSrc.replace(".png", "Hover.png");
+        $('<img>').attr('src', hoverSrc); 
+    });
+}
+
 function hoverImg() {
     var fileName = window.location.pathname.split('/').pop();
     if (fileName.startsWith('list')) {
         $(".change").hover(
             function () {
                 var img = $(this).find('img'); 
-                var originalSrc = img.attr('src');
-                var hoverSrc = originalSrc.replace(".png", "Hover.png");
-                img.attr('src', hoverSrc); // Update the src immediately
+                img.css('opacity', '0');
+                img.one('transitionend', function () {
+                    var originalSrc = img.attr('src');
+                    var hoverSrc = originalSrc.replace(".png", "Hover.png");
+                    img.attr('src', hoverSrc).css('opacity', '1');
+                });
             },
             function () {
                 var img = $(this).find('img'); 
-                var hoverSrc = img.attr('src');
-                var originalSrc = hoverSrc.replace("Hover.png", ".png");
-                img.attr('src', originalSrc); // Update the src immediately
+                img.css('opacity', '0');
+                img.one('transitionend', function () {
+                    var hoverSrc = img.attr('src');
+                    var originalSrc = hoverSrc.replace("Hover.png", ".png");
+                    img.attr('src', originalSrc).css('opacity', '1');
+                });
             }
         );
     }
