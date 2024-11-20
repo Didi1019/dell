@@ -16,35 +16,31 @@ $(function() {
 });
 
 
-$(document).ready(function () {
-    function hoverImg() {
-        var fileName = window.location.pathname.split('/').pop();
-        if (fileName.startsWith('list')) {        
-            $(".change img").hover(
-                function() {
-                    var img = $(this);
-                    img.css('opacity', '0');
-                    img.one('transitionend', function() {
-                        var originalSrc = img.attr('src');
-                        var hoverSrc = originalSrc.replace(".png", "Hover.png");
-                        img.attr('src', hoverSrc).css('opacity', '1'); 
-                    });
-                },
-                function() {
-                    var img = $(this);
-                    img.css('opacity', '0');
-                    img.one('transitionend', function() {
-                        var hoverSrc = img.attr('src');
-                        var originalSrc = hoverSrc.replace("Hover.png", ".png");
-                        img.attr('src', originalSrc).css('opacity', '1'); 
-                    });
-                }
-            );
-        }
+function hoverImg() {
+    var fileName = window.location.pathname.split('/').pop();
+    if (fileName.startsWith('list')) {
+        $(".change").hover(
+            function () {
+                var img = $(this).find('img'); 
+                img.css('opacity', '0');
+                img.one('transitionend', function () {
+                    var originalSrc = img.attr('src');
+                    var hoverSrc = originalSrc.replace(".png", "Hover.png");
+                    img.attr('src', hoverSrc).css('opacity', '1');
+                });
+            },
+            function () {
+                var img = $(this).find('img'); 
+                img.css('opacity', '0');
+                img.one('transitionend', function () {
+                    var hoverSrc = img.attr('src');
+                    var originalSrc = hoverSrc.replace("Hover.png", ".png");
+                    img.attr('src', originalSrc).css('opacity', '1');
+                });
+            }
+        );
     }
-
-    hoverImg();
-});
+}
 function password() {
     $('#createPW').submit(function(event) {
         const newPassword = $('#newPassword').val();
