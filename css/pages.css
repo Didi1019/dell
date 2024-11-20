@@ -1,3 +1,15 @@
+div.wave > div.supportSearch > form input:nth-of-type(1),
+.twowrap > div > div:first-of-type,
+div.dark > div > div:first-of-type,
+section.twoface > div > div.checkOut,
+section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label,
+section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, 
+section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label,
+div.dark > div > div:first-of-type > div fieldset input:focus ~ label, 
+div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, 
+div.dark > div > div:first-of-type > div fieldset input:valid ~ label{   
+    background-color: var(--GS01);
+}
 div.listContainer,
 section.detailContainer > div:first-child,
 section.detailContainer > div:nth-of-type(2),
@@ -159,7 +171,12 @@ div.wave > ul > li h3,
 div.wave > ul > li{
     position: relative;
 }
-
+div.listContainer > div > aside ul li > ol li label,
+div.listContainer > div > div:first-child > div:nth-of-type(2) label,
+section.twoface div.calculator > div:first-of-type > div input,
+div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type {
+    padding-left: var(--sp20);
+}
 
 main > div:first-of-type > ul,
 main > div:first-of-type > ul li:nth-child(1),
@@ -191,6 +208,8 @@ div.dark > div > div:first-of-type > div.findPassword fieldset > button,
 div.dark > div > div:first-of-type input {
     width: 100%;
 }
+/*  */
+
 
 /* ????????????? */
 .arrival > ol li:nth-of-type(1):before, .arrival > ol li:nth-of-type(2):before{
@@ -212,7 +231,6 @@ section.twoface div.calculator > div:first-of-type img{
 
 section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
     padding: var(--sp40) 0 var(--sp20);
-    color: var(--GS01);
     line-height: 21px;
 }
 section.detailContainer > div:nth-of-type(3) > aside > ul > li > label {
@@ -284,24 +302,50 @@ main > ul li:nth-of-type(4){background-image: url('../images/main_bg04.png');}
 main > ul li:nth-of-type(5){background-image: url('../images/main_bg05.png');}
 main > ul li:nth-of-type(6){background-image: url('../images/main_bg06.png');}
 main > ul li:nth-of-type(1)span{background-image: url('../images/main_mouse.png');}
-main > ul li:nth-of-type(5) span{
-    background-image: url('../images/main_bag.png');
-}
-main > div:nth-of-type(3) > ul li:first-of-type{
-    background-image: url('../images/test1.png');
-}
-main > div:nth-of-type(3) > ul li:nth-of-type(2){
-    background-image: url("../images/test2.png");
-}
-main > div:nth-of-type(3) > ul li:nth-of-type(3){
-    background-image: url("../images/test3.png");
-}
-main > div:nth-of-type(3) > ul li:nth-of-type(4){
-    background-image: url("../images/test4.png");
-}
-main > div:nth-of-type(3) > ul li:nth-of-type(5){
-    background-image: url("../images/test5.png");
-}
+main > ul li:nth-of-type(5) span{background-image: url('../images/main_bag.png');}
+main>div:nth-of-type(3)>ul li:first-of-type{background-image: url('../images/test1.png');}
+main>div:nth-of-type(3)>ul li:nth-of-type(2){background-image: url("../images/test2.png");}
+main>div:nth-of-type(3)>ul li:nth-of-type(3){background-image: url("../images/test3.png");}
+main>div:nth-of-type(3)>ul li:nth-of-type(4){background-image: url("../images/test4.png");}
+main>div:nth-of-type(3)>ul li:nth-of-type(5){background-image: url("../images/test5.png");}
+div.details>div.fineTuned>div ul li:nth-of-type(1) dl dt{background-image: url('../images/fine_01.png');}
+div.details>div.fineTuned>div ul li:nth-of-type(2) dl dt{background-image: url('../images/fine_02.png');}
+div.details>div.fineTuned>div ul li:nth-of-type(3) dl dt{background-image: url('../images/fine_03.png');}
+div.details>div.fineTuned>div ul li:nth-of-type(4) dl dt{background-image: url('../images/fine_04.png');}
+section.detailContainer>div:nth-of-type(3)>aside>div input.active{background-image: url('../images/sortArrow.png');}
+div.listContainer>div>aside ul li>b::before{background: url('../images/sortArrowRotated.png') no-repeat center;}
+section.detailContainer>div:nth-of-type(3)>aside>div input{background-image: url('../images/sortArrowRotated.png');}
+section.detailContainer>div:nth-of-type(3)>aside>div input{background-image: url('../images/sortArrowRotated.png');}
+div.listContainer>div>aside ul li>ol li input[type="checkbox"]:checked+label::before{background-image: url('../images/check.png');}
+div.dark>div>div:first-of-type>div.createDell fieldset div:nth-of-type(3) p{background: url('../images/info-icon.png') no-repeat left center;}
+section.twoface>div>div.checkOut ol li:not(:last-of-type){background: url('../images/arrowShip.png') no-repeat center right 10px;}
+div.wave>ul.contact>li:nth-of-type(1){background-image: url('../images/contactus_bg01.png');}
+div.wave>ul.contact>li:nth-of-type(2){background-image: url('../images/contactus_bg02.png');}
+div.wave>ul.contact>li:nth-of-type(3){background-image: url('../images/contactus_bg03.png');}
+div.wave>ul.contact>li:nth-of-type(4){background-image: url('../images/contactus_bg04.png');}
+div.wave>ul.support>li:nth-of-type(1){background-image: url('../images/supportHome_bg01.png');}
+div.wave>ul.support>li:nth-of-type(2){background-image: url('../images/supportHome_bg02.png');}
+div.wave>ul.support>li:nth-of-type(3){background-image: url('../images/supportHome_bg03.png');}
+div.wave>ul.support>li:nth-of-type(4){background-image: url('../images/supportHome_bg04.png');}
+div.wave>ul.contactSupport>li:nth-of-type(1){background-image: url('../images/contactSupport_bg01.png');}
+div.wave>ul.contactSupport>li:nth-of-type(2){background-image: url('../images/contactSupport_bg02.png');}
+div.wave>ul.contactSupport>li:nth-of-type(3){background-image: url('../images/contactSupport_bg03.png');}
+div.wave>ul.contactSupport>li:nth-of-type(4){background-image: url('../images/contactSupport_bg04.png');}
+div.wave>ul.glossary>li:nth-of-type(1){background-image: url('../images/glossary_bg01.png');}
+div.wave>ul.glossary>li:nth-of-type(2){background-image: url('../images/glossary_bg02.png');}
+div.wave>ul.glossary>li:nth-of-type(3){background-image: url('../images/glossary_bg03.png');}
+div.wave>ul.glossary>li:nth-of-type(4){background-image: url('../images/glossary_bg04.png');}
+div.wave>div.supportSearch>ol li:nth-of-type(1){background-image: url('../images/eye.png');}
+div.wave>div.supportSearch>ol li:nth-of-type(2){background-image: url('../images/allProducts.png');}
+main>div:first-of-type .sButton>button{background: url('../images/arrowButtonEmpty.png') no-repeat center center;}
+div.dark>div>div:nth-of-type(2) ul li:nth-of-type(1) dl dt{background-image: url('../images/dellAccount_ex01.png');}
+div.dark>div>div:nth-of-type(2) ul li:nth-of-type(2) dl dt{background-image: url('../images/dellAccount_ex02.png');}
+div.dark>div>div:nth-of-type(2) ul li:nth-of-type(3) dl dt{background-image: url('../images/dellAccount_ex03.png');}
+section.twoface>div>div.checkOut form fieldset ul:first-of-type>li:first-child{background-image: url('../images/paypal.png');}
+section.twoface>div>div.checkOut form fieldset ul:first-of-type>li:last-child{background-image: url('../images/googlePay.png');}
+div.calculator>div:first-of-type button:first-of-type{background-image: url('../images/add.png');}
+div.calculator>div:first-of-type button:nth-of-type(2){background-image: url('../images/minus.png');}
+div.calculator>div:first-of-type button:nth-of-type(3){background-image: url('../images/trahcan.png');}
 main > div:nth-of-type(3) > div div{
     max-width: 600px;
 }
@@ -321,6 +365,11 @@ div.listContainer > div > aside ul li > ol li{
 div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
     background-color: var(--GS09);
 }
+div.listContainer>div>div:first-child>div button:first-of-type{background: url('../images/gridButton.png');}
+div.listContainer>div>div:first-child>div button:first-of-type.active{background: url('../images/gridButtonBlue.png');}
+div.listContainer>div>div:first-child>div button:nth-of-type(2){background: url('../images/listButton.png');}
+div.listContainer>div>div:first-child>div button:nth-of-type(2).active{background: url('../images/listButtonBlue.png');}
+
 div.details > div.superCharge > div ul li p { 
     margin-top: var(--sp20);
 }
@@ -340,7 +389,6 @@ section.twoface > div > div.checkOut fieldset div button:first-of-type, section.
     padding-block: var(--sp15);
 }
 section.twoface > div > div.checkOut ul li input {
-    box-sizing: border-box;
     border-width: 1px;
     border-style: solid;
     padding: 16px;
@@ -361,10 +409,8 @@ div.dark > div > div:first-of-type > div.createPassword fieldset > button{
     padding-block: var(--sp15);
 }
 div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
-    background-color: black;
     padding: var(--sp15) 0px var(--sp15) var(--sp25);
-    background-image: url('../images/google.png');
-    background-repeat: no-repeat;
+    background: var(--GS12) url('../images/google.png') no-repeat;
 }
 div.dark > div > div:first-of-type > div.createDell fieldset button, 
 div.dark > div > div:first-of-type > div.findPassword fieldset > button{
@@ -372,7 +418,6 @@ div.dark > div > div:first-of-type > div.findPassword fieldset > button{
     cursor: pointer;
 }
 div.dark > div > div:first-of-type input {
-    box-sizing: border-box;
     border-width: 1px;
     border-style: solid;
     padding: 16px;
@@ -503,8 +548,7 @@ section.detailContainer > div:first-child > div > input:first-of-type.active{
 }
 /* order status */
 div.orderStatus > div address{
-    margin-block: 20px;
-    background-color: var(--GS10);
+    margin-block: 20px;    
     padding: var(--sp20) var(--sp20);
     font-style: normal;
 }
@@ -563,7 +607,6 @@ div.listContainer > div > div:last-child > ul > li{
 div.listContainer > div > div:first-child > div:nth-of-type(2) label {
     margin-bottom: 5px;
     top: -20px;
-    padding-left: var(--sp20);
 }
 div.listContainer > div > aside ul li > ol li label::before {
     content: '';
@@ -588,7 +631,6 @@ div.listContainer > div > aside ul li > ol li label::before {
 }
 div.listContainer > div > aside ul li > ol li label {
     cursor: pointer;
-    padding-left: var(--sp20);
 }
 ul.bar li,
 div.dark > div > div:first-of-type,
@@ -604,7 +646,6 @@ section.detailContainer > div:first-child > div > input:first-of-type {
     cursor: pointer;
 }
 div.dark > div > div:first-of-type{
-    background-color: var(--GS01);
     transition: transform 1s ease;
     transform-style: preserve-3d;
 }
@@ -654,15 +695,6 @@ input#pink[type="radio"]:checked + label, input#pink[type="radio"]:hover + label
 }
 input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + label, input#silver[type="radio"]:checked + label, input#silver[type="radio"]:hover + label {
     --border-color: var(--GS01);
-}
-div.calculator > div:first-of-type button:first-of-type{
-    background-image: url('../images/add.png');
-}
-div.calculator > div:first-of-type button:nth-of-type(2){
-    background-image: url('../images/minus.png');
-}
-div.calculator > div:first-of-type button:nth-of-type(3){
-    background-image: url('../images/trahcan.png');
 }
 div.wave > ul > li:after{
     width: 65%;
@@ -823,7 +855,6 @@ div.wave > ul > li:after{
         margin-bottom: var(--sp80);
    }
     div.listContainer > nav{
-        background-color: var(--GS10);
         margin-bottom: var(--sp60);
         padding-bottom: 10px;
    }
@@ -872,7 +903,7 @@ div.wave > ul > li:after{
         top: 20px;
         right: 0;
         text-indent: -9999px;
-        background: url('../images/exit.png') no-repeat;
+        
    }
     div.listContainer > div > aside > h3{
         margin-bottom: var(--sp50);
@@ -920,7 +951,6 @@ div.wave > ul > li:after{
         padding: 80px 10% 40px;
    }
     div.listContainer > div > div:last-child > ul > li > div div:first-of-type{
-        background-color: var(--GS10);
         transition: background-color .7s;
         box-sizing: revert;
    }
@@ -986,7 +1016,6 @@ div.wave > ul > li:after{
     section.detailContainer > div:first-child > div{
         padding-block: var(--sp20);
         line-height: 50px;
-        box-sizing: border-box;
    }
     section.detailContainer > div:first-child > div > h2{
         float: none;
@@ -1021,7 +1050,6 @@ div.wave > ul > li:after{
    }
     section.detailContainer > div:nth-of-type(3) nav{
         padding-top: 100px;
-        box-sizing: border-box;
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
@@ -1051,7 +1079,7 @@ div.wave > ul > li:after{
         object-fit: contain;
    }
     section.detailContainer > div:nth-of-type(3) button {
-        background: url('../images/arrowUp.png') no-repeat center center;
+        
         background-size: 15px 9px;
         text-indent: -9999px;
         width: 55px;
@@ -1204,17 +1232,15 @@ div.wave > ul > li:after{
    .recycle{
         margin-bottom: 0px; padding-block: var(--sp80);
     }
-    .recycle > div{
-        padding: var(--sp60) var(--sp40) 0px;
-        background-image: url('../images/recylce.png');
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        background-size: 199px 183px;
-   }
+
     .recycle >img{
         max-width: 579px;
         margin: 0 auto;
    }
+   .recycle > div{
+        padding: var(--sp60) var(--sp40) 50px;
+        background: url('../images/recycle.png') no-repeat bottom left;
+        background-size: 199px 183px;}
     div.details .legend{
         margin: var(--sp80) auto;
    }
@@ -1261,7 +1287,6 @@ div.wave > ul > li:after{
        }
    }
     div.wave > div > a.Back {
-        background-color: var(--GS10);
         color: var(--GS01);
         text-align: center;
         float: right;
@@ -1276,7 +1301,6 @@ div.wave > ul > li:after{
         gap: var(--sp20);
    }
     div.wave > ul > li{
-        background-color: var(--GS10);
         display: flex;
         flex-direction: column;
         border-radius: 15px;
@@ -1322,7 +1346,6 @@ div.wave > ul > li:after{
         color: var(--B02);
    }
     div.wave > div.supportSearch{
-        background-color: var(--GS10);
         width: 93.5%;
         margin: 0 auto;
         display: flex;
@@ -1332,13 +1355,11 @@ div.wave > ul > li:after{
    }
 
     div.wave > div.supportSearch > form{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
         display: flex;
-        box-sizing: border-box;
    }
     div.wave > div.supportSearch > form input:nth-of-type(1){
-        background-color: var(--GS01);
-        padding: 15px 20px;
+        padding: var(--sp15) var(--sp20);
         width: 70%;
    }
     div.wave > div.supportSearch > form input::placeholder{
@@ -1360,8 +1381,6 @@ div.wave > ul > li:after{
         background-position: left 20px center;
         width: 200px;
    }
-
-
     div.wave > div.supportSearch > form > input:last-of-type{
         background-color: var(--B04);
    }
@@ -1387,9 +1406,9 @@ div.wave > ul > li:after{
         display: flex;
         flex-direction: column;
    }
-    .test > div:first-of-type{
-        order: 1;
-   }
+    .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){
+        width: 100%;
+    }    
     .accountContainer > div > div.wrapper > div{
         gap: 40px;
    }
@@ -1418,8 +1437,6 @@ div.wave > ul > li:after{
         margin: 0 auto;
    }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li img{
-        background-color: var(--GS10);
-        box-sizing: border-box;
         padding: var(--sp20) var(--sp25);
    }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption{
@@ -1430,7 +1447,6 @@ div.wave > ul > li:after{
 
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
         padding-top: 50%;
-        box-sizing: border-box;
    }
     .accountContainer > div > div.wrapper > div > div:nth-of-type(2) > div, .accountContainer > div > div.wrapper > div > div:nth-of-type(3) > div{
         display: flex;
@@ -1503,7 +1519,6 @@ div.wave > ul > li:after{
     div.dark > div > div:first-of-type > div fieldset input:focus ~ label, div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
         top: -10px;
         left: 10px;
-        background-color: var(--GS01);
         z-index: 20;
         padding: 5px 10px;
         color: var(--B03);
@@ -1576,7 +1591,7 @@ div.wave > ul > li:after{
         padding-block: var(--sp80);
    }
     div.dark > div > div:nth-of-type(2) h2{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
    }
     div.dark > div > div:nth-of-type(2) ul{
         display: flex;
@@ -1603,8 +1618,6 @@ div.wave > ul > li:after{
    /* * end of login */
    /* * shopping checkout */
     section.twoface > div > div.checkOut{
-        box-sizing: border-box;
-        background-color: var(--GS01);
         padding-inline: var(--sp80);
    }
     section.twoface > div > div.checkOut ol li{
@@ -1625,12 +1638,10 @@ div.wave > ul > li:after{
     section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{
         text-indent: -9999px;
         background-color: #f7c518;
-        background-image: url('../images/paypal.png');
    }
     section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
         background-color: var(--GS12);
         padding-right: 20px;
-        background-image: url('../images/googlePay.png');
    }
     section.twoface > div > div.checkOut form fieldset ul:last-of-type > li:first-child{
         display: flex;
@@ -1674,7 +1685,6 @@ div.wave > ul > li:after{
     section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label{
         top: -10px;
         left: 10px;
-        background-color: var(--GS01);
         z-index: 20;
         padding: 5px 10px;
         color: var(--B03);
@@ -1693,8 +1703,6 @@ div.wave > ul > li:after{
 
     section.twoface div.calculator > div:first-of-type > div input{
         width: 40px;
-        box-sizing: border-box;
-        padding-left: var(--sp20);
    }
     section.twoface button{
         background-color: #222222;
@@ -1754,9 +1762,6 @@ div.wave > ul > li:after{
     .twowrap > div > div:first-of-type{
         padding-block: var(--sp140) var(--sp80);
    }
-    .twowrap > div > div:first-of-type{
-        background-color: var(--GS01);
-   }
     .twowrap > div > div:last-of-type{        
         padding-block: var(--sp80);
    }
@@ -1806,9 +1811,7 @@ div.wave > ul > li:after{
         margin-block: var(--sp30) var(--sp20);
    }
     div.orderStatus > figure img{
-        background-color: var(--GS10);
-        box-sizing: border-box;
-        padding: 20px 25px;
+        padding: var(--sp20) var(--sp25);
    }
     div.orderStatus > figure figcaption{
         text-align: center;
@@ -2045,7 +2048,6 @@ div.wave > ul > li:after{
         margin-bottom: var(--sp80);
    }
     div.listContainer > nav{
-        background-color: var(--GS10);
         margin-bottom: var(--sp60);
         padding-bottom: 10px;
    }
@@ -2105,10 +2107,8 @@ div.wave > ul > li:after{
         top: 20px;
         left: 180%;
         background-size: 19px 20px;
-        text-indent: -9999px;
-        background: url('../images/exit.png') no-repeat;
+        text-indent: -9999px;        
    }
-
     div.listContainer > div > aside > h3{
         margin-bottom: var(--sp60);
         background-color: black;
@@ -2116,7 +2116,6 @@ div.wave > ul > li:after{
         text-align: center;
         max-width: 120px;
    }
-
     div.listContainer > div > aside > ul.active{
         padding: var(--sp80s) var(--sp40);
         top: 0;
@@ -2165,7 +2164,6 @@ div.wave > ul > li:after{
         padding: 80px 10% 40px;
    }
     div.listContainer > div > div:last-child > ul > li > div div:first-of-type{
-        background-color: var(--GS10);
         transition: background-color .7s;
         box-sizing: revert;
    }
@@ -2247,7 +2245,6 @@ div.wave > ul > li:after{
         padding-block: var(--sp10);
         text-align: right;
         line-height: 50px;
-        box-sizing: border-box;
    }
     section.detailContainer > div:first-child > div >*{
         display: inline-block;
@@ -2282,7 +2279,6 @@ div.wave > ul > li:after{
     section.detailContainer > div:nth-of-type(3) nav{
         padding-top: var(--sp130);
         margin: 0 auto;
-        box-sizing: border-box;
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
@@ -2516,7 +2512,6 @@ div.wave > ul > li:after{
        }
    }
     div.wave > div > a.Back {
-        background-color: var(--GS10);
         color: var(--GS01);
         text-align: center;
         float: right;
@@ -2531,7 +2526,6 @@ div.wave > ul > li:after{
         gap: var(--sp20);
    }
     div.wave > ul > li{
-        background-color: var(--GS10);
         display: flex;
         flex-direction: column;
         border-radius: 15px;
@@ -2584,7 +2578,6 @@ div.wave > ul > li:after{
         width: 30%;
    }
     div.wave > div.supportSearch{
-        background-color: var(--GS10);
         width: 93.5%;
         margin: 0 auto;
         display: flex;
@@ -2594,13 +2587,11 @@ div.wave > ul > li:after{
    }
 
     div.wave > div.supportSearch > form{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
         display: flex;
-        box-sizing: border-box;
    }
     div.wave > div.supportSearch > form input:nth-of-type(1){
-        background-color: var(--GS01);
-        padding: 15px 20px;
+        padding: var(--sp15) var(--sp20);
         width: 70%;
    }
     div.wave > div.supportSearch > form input::placeholder{
@@ -2676,8 +2667,6 @@ div.wave > ul > li:after{
    }
 
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li img{
-        background-color: var(--GS10);
-        box-sizing: border-box;
         padding: var(--sp20) var(--sp25);
    }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption{
@@ -2695,12 +2684,10 @@ div.wave > ul > li:after{
         align-items: center;
         justify-content: space-between;
    }
-
     .accountContainer > div > div.wrapper > ul{
         background-color: var(--GS12);
         gap: 40px;
    }
-
     .accountContainer > div > div.wrapper > ul li:first-of-type img{
         max-width: 476px;
         float: right;
@@ -2712,7 +2699,6 @@ div.wave > ul > li:after{
     .accountContainer > div > div.wrapper > ul li:first-of-type a{
         bottom: 20px;
    }
-
     .accountContainer > div > div.wrapper > ul li p{
         left: 20px;
         bottom: 40px;
@@ -2759,7 +2745,6 @@ div.wave > ul > li:after{
     div.dark > div > div:first-of-type > div fieldset input:focus ~ label, div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
         top: -10px;
         left: 10px;
-        background-color: var(--GS01);
         z-index: 20;
         padding: 5px 10px;
         color: var(--B03);
@@ -2833,7 +2818,7 @@ div.wave > ul > li:after{
         padding: var(--sp80s) 0;
    }
     div.dark > div > div:nth-of-type(2) h2{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
    }
     div.dark > div > div:nth-of-type(2) ul{
         display: flex;
@@ -2859,8 +2844,6 @@ div.wave > ul > li:after{
    /* * end of login */
    /* * shopping checkout */
     section.twoface > div > div.checkOut{
-        box-sizing: border-box;
-        background-color: var(--GS01);
         padding-inline: var(--sp80);
    }
     section.twoface > div > div.checkOut ol li{
@@ -2881,12 +2864,10 @@ div.wave > ul > li:after{
     section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{
         text-indent: -9999px;
         background-color: #f7c518;
-        background-image: url('../images/paypal.png');
    }
     section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
         background-color: var(--GS12);
         padding-right: 20px;
-        background-image: url('../images/googlePay.png');
    }
     section.twoface > div > div.checkOut form fieldset ul:last-of-type > li:first-child{
         display: flex;
@@ -2930,7 +2911,6 @@ div.wave > ul > li:after{
     section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label{
         top: -10px;
         left: 10px;
-        background-color: var(--GS01);
         z-index: 20;
         padding: 5px 10px;
         color: var(--B03);
@@ -2948,8 +2928,6 @@ div.wave > ul > li:after{
 
     section.twoface div.calculator > div:first-of-type > div input{
         width: 40px;
-        box-sizing: border-box;
-        padding-left: var(--sp20);
    }
     section.twoface button{
         background-color: #222222;
@@ -3009,9 +2987,6 @@ div.wave > ul > li:after{
     .twowrap > div > div:first-of-type{
         padding-block: var(--sp140) var(--sp80);
    }
-    .twowrap > div > div:first-of-type{
-        background-color: var(--GS01);
-   }
     .twowrap > div > div:last-of-type{        
         padding-block: var(--sp80s);
    }
@@ -3070,9 +3045,7 @@ div.wave > ul > li:after{
         float: left;
    }
     div.orderStatus > figure img{
-        background-color: var(--GS10);
-        box-sizing: border-box;
-        padding: 20px 25px;
+        padding: var(--sp20) var(--sp25);
    }
     div.orderStatus > figure figcaption{
         text-align: center;
@@ -3183,12 +3156,16 @@ div.wave > ul > li:after{
     .arrival > ol li:after{
         width: 100%;
     }
+    section.twoface > div > div.checkOut ol li:not(:last-of-type){
+        padding-right: var(--sp30);
+    }
     main > div:nth-of-type(3) > div {
         flex-direction: row;
     }
     section.detailContainer > div:nth-of-type(2) table tr th{
         padding-block: var(--sp20);
     }
+    div.listContainer> div > aside > input{background: url('../images/exit.png') no-repeat;}
     div.listContainer > div > aside ul li > b:after {
         background-color: var(--GS08);
         height: 1px;
@@ -3197,14 +3174,12 @@ div.wave > ul > li:after{
     }
     div.listContainer > nav ul::-webkit-scrollbar{
         height: 10px;            
-        padding-bottom: 10px 
+        padding-bottom: 10px; 
     }
     div.listContainer > nav ul::-webkit-scrollbar-thumb:hover {
         background-color: var(--GS09);
     }
-    div.listContainer > nav ul::-webkit-scrollbar-track {
-        background-color: var(--GS10);
-    }
+
     div.listContainer > nav ul::-webkit-scrollbar-thumb {
         background-color: var(--GS12);
         border-radius: 5px;
@@ -3236,6 +3211,7 @@ div.wave > ul > li:after{
     section.detailContainer > div:nth-of-type(2) table tr,div.details > ul li{
         margin-bottom: var(--sp40);
     }
+    section.detailContainer > div:nth-of-type(3) button {background: url('../images/arrowUp.png') no-repeat center center;}
     main > div:nth-of-type(2) > div p,
     article.rightsInfo > ul li > p{
         margin-bottom: var(--sp20);
@@ -3431,9 +3407,7 @@ div.wave > ul > li:after{
     div.listContainer{        
         margin-bottom: var(--sp80);
    }
-    div.listContainer > nav{
-        background-color: var(--GS10);
-   }
+
     div.listContainer > nav ul {
         display: flex;
         justify-content: space-between;
@@ -3539,8 +3513,7 @@ div.wave > ul > li:after{
     div.listContainer > div > div.grid-group-wrapper > ul > li > div div:first-of-type{
         padding: var(--sp85) 10% var(--sp60);
    }
-    div.listContainer > div > div:last-child > ul > li > div div:first-of-type{
-        background-color: var(--GS10);
+    div.listContainer > div > div:last-child > ul > li > div div:first-of-type{        
         transition: background-color .7s;
         box-sizing: revert;
    }
@@ -3621,7 +3594,6 @@ div.wave > ul > li:after{
         padding-block: var(--sp10);
         text-align: right;
         line-height: 50px;
-        box-sizing: border-box;
    }
     section.detailContainer > div:first-child > div >*{
         display: inline-block;
@@ -3661,7 +3633,6 @@ div.wave > ul > li:after{
         padding: var(--sp130) var(--sp80) var(--sp80) 260px;
         background-color: var(--GS02);
         position: sticky;
-        box-sizing: border-box;
         top: 0;
         height: 100vh;
         min-height: 700px;
@@ -3698,7 +3669,7 @@ div.wave > ul > li:after{
         height: 9px;
         z-index: 10;
         left: 115.5px;
-        background: url('../images/arrowUp.png') no-repeat center center;
+        
    }
     section.detailContainer > div:nth-of-type(3) button:first-of-type {
         top: 100px;
@@ -3916,9 +3887,6 @@ div.wave > ul > li:after{
         display: flex;
         justify-content: flex-end;
    }
-    div.wave > div > a.Back {
-        background-color: var(--GS10);
-   }
     div.wave > ul{
         margin-bottom: var(--sp80);
         display: grid;
@@ -3926,7 +3894,6 @@ div.wave > ul > li:after{
         gap: var(--sp20);
    }
     div.wave > ul > li{
-        background-color: var(--GS10);
         display: flex;
         flex-direction: column;
         border-radius: 15px;
@@ -3934,7 +3901,6 @@ div.wave > ul > li:after{
         background-repeat: no-repeat;
         background-position: right bottom ;
    }
-
     div.wave > ul > li:nth-of-type(1):after{
         background-color: var(--B06);
    }
@@ -3947,11 +3913,6 @@ div.wave > ul > li:after{
     div.wave > ul > li:nth-of-type(4):after{
         background-color: var(--B02);
    }
-
-
-
-
-
     div.wave > ul > li > ol{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -3977,7 +3938,6 @@ div.wave > ul > li:after{
         color: var(--B02);
    }
     div.wave > div.supportSearch{
-        background-color: var(--GS10);
         display: flex;
         flex-direction: column;
         border-radius: 15px;
@@ -3985,13 +3945,11 @@ div.wave > ul > li:after{
    }
 
     div.wave > div.supportSearch > form{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
         display: flex;
-        box-sizing: border-box;
    }
     div.wave > div.supportSearch > form input:nth-of-type(1){
-        background-color: var(--GS01);
-        padding: 15px 20px;
+        padding: var(--sp15) var(--sp20);
         width: 60%;
    }
     div.wave > div.supportSearch > form input::placeholder{
@@ -4060,8 +4018,6 @@ div.wave > ul > li:after{
         max-width: 264px;
    }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li img{
-        background-color: var(--GS10);
-        box-sizing: border-box;
         padding: var(--sp20) var(--sp25);
    }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption{
@@ -4100,7 +4056,7 @@ div.wave > ul > li:after{
         max-width: 600px;
    }
     div.dark > div > div:first-of-type{
-        background-color: var(--GS01);
+        
         text-align: center;
         transition: transform 1s ease;
         transform-style: preserve-3d;
@@ -4138,7 +4094,6 @@ div.wave > ul > li:after{
     div.dark > div > div:first-of-type > div fieldset input:focus ~ label, div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
         top: -10px;
         left: 10px;
-        background-color: var(--GS01);
         z-index: 20;
         padding: 5px 10px;
         color: var(--B03);
@@ -4199,7 +4154,7 @@ div.wave > ul > li:after{
         text-align: center;
    }
     div.dark > div > div:nth-of-type(2) h2{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
    }
     div.dark > div > div:nth-of-type(2) ul{
         margin-top: 40px;
@@ -4221,10 +4176,6 @@ div.wave > ul > li:after{
 
    /* * end of login */
    /* * shopping checkout */
-    section.twoface > div > div.checkOut{
-        box-sizing: border-box;
-        background-color: var(--GS01);
-   }
     section.twoface > div > div.checkOut ol li{
         display: inline-block;
    }
@@ -4285,7 +4236,6 @@ div.wave > ul > li:after{
     section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label{
         top: -10px;
         left: 10px;
-        background-color: var(--GS01);
         z-index: 20;
         padding: 5px 10px;
         color: var(--B03);
@@ -4304,8 +4254,6 @@ div.wave > ul > li:after{
 
     section.twoface div.calculator > div:first-of-type > div input{
         width: 40px;
-        box-sizing: border-box;
-        padding-left: var(--sp20);
    }
     section.twoface button{
         background-color: #222222;
@@ -4364,9 +4312,7 @@ div.wave > ul > li:after{
     .twowrap > div > div,article.rightsInfo{
         padding-block: var(--sp145) var(--sp80);
    }
-    .twowrap > div > div:first-of-type{
-        background-color: var(--GS01);
-   }
+
    /* order status */
     .arrival > div, 
     .arrival > ol{        
@@ -4426,8 +4372,6 @@ div.wave > ul > li:after{
         max-width: 264px;
    }
     div.orderStatus > figure img{
-        background-color: var(--GS10);
-        box-sizing: border-box;
         padding: var(--sp20) var(--sp25);
    }
     div.orderStatus > figure figcaption{

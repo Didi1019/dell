@@ -449,5 +449,27 @@
 }
 
 /* 65 */
+/* BOXSZING */
 
-
+section.detailContainer > div:first-child > div,
+section.detailContainer > div:nth-of-type(3) nav,
+section.twoface > div > div.checkOut ul li input,
+section.twoface div.calculator > div:first-of-type > div input,
+section.twoface > div > div.checkOut,
+div.dark > div > div:first-of-type input,
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li img,
+div.orderStatus > figure img,
+div.wave > div.supportSearch > form{
+    box-sizing: border-box;
+}
+/* * BACKGROUND COLOR */
+div.listContainer > nav,
+div.listContainer > div > div:last-child > ul > li > div div:first-of-type,
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li img,
+div.orderStatus > figure img,
+div.orderStatus > div address,
+div.wave > div > a.Back,
+div.wave > ul > li,
+div.wave > div.supportSearch{
+    background-color: var(--GS10);
+}
