@@ -1029,13 +1029,12 @@ div.wave > ul > li:after{
     section.detailContainer > div:nth-of-type(3) aside{
         padding: var(--sp80) 3% 0px;
    }
-
     section.detailContainer > div:nth-of-type(3) nav ul{
         display: flex;
         gap: 15px;
         padding-block: var(--sp40);
         overflow: hidden;
-        max-width: 82%;
+        max-width: 70%;
    }
     section.detailContainer > div:nth-of-type(3) nav ul li {
         background-color: var(--GS12);
@@ -1055,11 +1054,11 @@ div.wave > ul > li:after{
         background: url('../images/arrowUp.png') no-repeat center center;
         background-size: 15px 9px;
         text-indent: -9999px;
-        width: 15px;
-        height: 9px;
+        width: 55px;
+        height: 50px;
         z-index: 10;
         right: 3.5%;
-        bottom: 62.5px;
+        bottom: 42.5px;
    }
     section.detailContainer > div:nth-of-type(3) button:first-of-type {
         left: 3.5%;
@@ -1736,10 +1735,8 @@ div.wave > ul > li:after{
     div.calculator ul li:first-of-type small {
         margin-left: 5px;
    }
-
-
     div.calculator > p{
-        width: 60%;
+        width: 93.5%;
         line-height: 24px;
    }
     div.calculator > a{
