@@ -1076,7 +1076,6 @@ div.wave > ul > li:after{
         height: 300px;
         object-fit: contain;
    }
-
     section.detailContainer > div:nth-of-type(3) > aside > div >h3{
         width: 60%;
         line-height: 30px;
