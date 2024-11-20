@@ -3591,13 +3591,9 @@ div.wave > ul > li:after{
         margin-left: 6.56%;
         list-style: inside;
    }
-   /* end of normal list but start of transiton picture */
-
-
     div.listContainer > div > div.list-group-wrapper ul li .gradient{
         top: 305px;
    }
-
     .color-change img, .change img {
         opacity: 1;
         transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);

@@ -5,6 +5,7 @@ $(function() {
     pager();
     gridtolist();
     hoverImg();
+    preloadHoverImages(); 
     gradientImg();
     marked();
     password();
@@ -15,13 +16,20 @@ $(function() {
     intersection();
 });
 
+function preloadHoverImages() {
+    $(".change img").each(function () {
+        var originalSrc = $(this).attr('src');
+        var hoverSrc = originalSrc.replace(".png", "Hover.png");
+        $('<img>').attr('src', hoverSrc); 
+    });
+}
 
 function hoverImg() {
     var fileName = window.location.pathname.split('/').pop();
     if (fileName.startsWith('list')) {
         $(".change").hover(
             function () {
-                var img = $(this).find('img'); 
+                var img = $(this).find('img'); // Target the img inside .change
                 img.css('opacity', '0');
                 img.one('transitionend', function () {
                     var originalSrc = img.attr('src');
@@ -30,7 +38,7 @@ function hoverImg() {
                 });
             },
             function () {
-                var img = $(this).find('img'); 
+                var img = $(this).find('img'); // Target the img inside .change
                 img.css('opacity', '0');
                 img.one('transitionend', function () {
                     var hoverSrc = img.attr('src');
