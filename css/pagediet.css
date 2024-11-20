@@ -1,10 +1,145 @@
 
-
+div.details > div.fineTuned > div ul li:nth-of-type(1) dl dt{
+    background-image: url('../images/fine_01.png');
+}
+div.details > div.fineTuned > div ul li:nth-of-type(2) dl dt{
+    background-image: url('../images/fine_02.png');
+}
+div.details > div.fineTuned > div ul li:nth-of-type(3) dl dt{
+    background-image: url('../images/fine_03.png');
+}
+div.details > div.fineTuned > div ul li:nth-of-type(4) dl dt{
+    background-image: url('../images/fine_04.png');
+}
+section.detailContainer > div:nth-of-type(3) > aside > div input.active {
+    background-image: url('../images/sortArrow.png');
+}
+div.listContainer > div > aside ul li > b::before {
+    background: url('../images/sortArrowRotated.png') no-repeat center;
+}
+section.detailContainer > div:nth-of-type(3) > aside > div input{
+    background-image: url('../images/sortArrowRotated.png');
+}
+div.listContainer > div > aside ul li > ol li input[type="checkbox"]:checked + label::before {
+    background-image: url('../images/check.png');
+}
+div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) p{
+    background: url('../images/info-icon.png') no-repeat left center;
+}
+section.twoface > div > div.checkOut ol li:not(:last-of-type){
+    background: url('../images/arrowShip.png') no-repeat center right 10px;
+}   
+div.wave > ul.contact > li:nth-of-type(1){
+    background-image: url('../images/contactus_bg01.png');
+}
+div.wave > ul.contact > li:nth-of-type(2){
+    background-image: url('../images/contactus_bg02.png');
+}
+div.wave > ul.contact > li:nth-of-type(3){
+    background-image: url('../images/contactus_bg03.png');
+}
+div.wave > ul.contact > li:nth-of-type(4){
+    background-image: url('../images/contactus_bg04.png');
+}
+div.wave > ul.support > li:nth-of-type(1){
+    background-image: url('../images/supportHome_bg01.png');
+}
+div.wave > ul.support > li:nth-of-type(2){
+    background-image: url('../images/supportHome_bg02.png');
+}
+div.wave > ul.support > li:nth-of-type(3){
+    background-image: url('../images/supportHome_bg03.png');
+}
+div.wave > ul.support > li:nth-of-type(4){
+    background-image: url('../images/supportHome_bg04.png');
+}
+div.wave > ul.contactSupport > li:nth-of-type(1){
+    background-image: url('../images/contactSupport_bg01.png');
+}
+div.wave > ul.contactSupport > li:nth-of-type(2){
+    background-image: url('../images/contactSupport_bg02.png');
+}
+div.wave > ul.contactSupport > li:nth-of-type(3){
+    background-image: url('../images/contactSupport_bg03.png');
+}
+div.wave > ul.contactSupport > li:nth-of-type(4){
+    background-image: url('../images/contactSupport_bg04.png');
+}
+div.wave > ul.glossary > li:nth-of-type(1){
+    background-image: url('../images/glossary_bg01.png');
+}
+div.wave > ul.glossary > li:nth-of-type(2){
+    background-image: url('../images/glossary_bg02.png');
+}
+div.wave > ul.glossary > li:nth-of-type(3){
+    background-image: url('../images/glossary_bg03.png');
+}
+div.wave > ul.glossary > li:nth-of-type(4){
+    background-image: url('../images/glossary_bg04.png');
+}
+div.wave > div.supportSearch > ol li:nth-of-type(1){
+    background-image: url('../images/eye.png');
+}
+div.wave > div.supportSearch > ol li:nth-of-type(2){
+    background-image: url('../images/allProducts.png');
+}
+div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) p{
+    padding-left: var(--sp20);
+    background-size: 10px;
+}
+section.twoface > div > div.checkOut ol li:not(:last-of-type){
+    padding-right: var(--sp30);
+}
+main > div:first-of-type .sButton > button{
+    background: url('../images/arrowButtonEmpty.png') no-repeat center center;
+}
+div.dark > div > div:nth-of-type(2) ul li:nth-of-type(1) dl dt{
+    background-image: url('../images/dellAccount_ex01.png');
+}
+div.dark > div > div:nth-of-type(2) ul li:nth-of-type(2) dl dt{
+    background-image: url('../images/dellAccount_ex02.png');
+}
+div.dark > div > div:nth-of-type(2) ul li:nth-of-type(3) dl dt{
+    background-image: url('../images/dellAccount_ex03.png');
+}
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{
+    background-image: url('../images/paypal.png');
+}
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
+    background-image: url('../images/googlePay.png');
+}
 
 /* *mobile */
 
 /*! tabet */
+div.listContainer > div > div:first-child > div button:first-of-type {
+    background: url('../images/gridButton.png');
+}
+div.listContainer > div > div:first-child > div button:first-of-type.active {
+    background: url('../images/gridButtonBlue.png');
+}
+div.listContainer > div > div:first-child > div button:nth-of-type(2) {
+    background: url('../images/listButton.png');
+}
+div.listContainer > div > div:first-child > div button:nth-of-type(2).active {
+    background: url('../images/listButtonBlue.png');
+}
 /*?s mobile Tablet */
-
-
+.recycle > div{
+    padding: var(--sp60) var(--sp40) 50px;
+    background: url('../images/recycle.png') no-repeat bottom left;
+    background-size: 199px 183px;
+}
 /* desktop */
+div.listContainer > div > div:first-child > div button:first-of-type {
+    background: url('../images/gridButton.png');
+}
+div.listContainer > div > div:first-child > div button:first-of-type.active {
+    background: url('../images/gridButtonBlue.png');
+}
+div.listContainer > div > div:first-child > div button:nth-of-type(2) {
+    background: url('../images/listButton.png');
+}
+div.listContainer > div > div:first-child > div button:nth-of-type(2).active {
+    background: url('../images/listButtonBlue.png');
+}

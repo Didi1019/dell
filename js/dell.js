@@ -16,31 +16,35 @@ $(function() {
 });
 
 
-function hoverImg() {
-    var fileName = window.location.pathname.split('/').pop();
-    if (fileName.startsWith('list')) {        
-        $(".change img").hover(
-            function() {
-                var img = $(this);
-                img.css('opacity', '0');
-                img.one('transitionend', function() {
-                    var originalSrc = img.attr('src');
-                    var hoverSrc = originalSrc.replace(".png", "Hover.png");
-                    img.attr('src', hoverSrc).css('opacity', '1'); 
-                });
-            },
-            function() {
-                var img = $(this);
-                img.css('opacity', '0');
-                img.one('transitionend', function() {
-                    var hoverSrc = img.attr('src');
-                    var originalSrc = hoverSrc.replace("Hover.png", ".png");
-                    img.attr('src', originalSrc).css('opacity', '1'); 
-                });
-            }
-        );
+$(document).ready(function () {
+    function hoverImg() {
+        var fileName = window.location.pathname.split('/').pop();
+        if (fileName.startsWith('list')) {        
+            $(".change img").hover(
+                function() {
+                    var img = $(this);
+                    img.css('opacity', '0');
+                    img.one('transitionend', function() {
+                        var originalSrc = img.attr('src');
+                        var hoverSrc = originalSrc.replace(".png", "Hover.png");
+                        img.attr('src', hoverSrc).css('opacity', '1'); 
+                    });
+                },
+                function() {
+                    var img = $(this);
+                    img.css('opacity', '0');
+                    img.one('transitionend', function() {
+                        var hoverSrc = img.attr('src');
+                        var originalSrc = hoverSrc.replace("Hover.png", ".png");
+                        img.attr('src', originalSrc).css('opacity', '1'); 
+                    });
+                }
+            );
+        }
     }
-}
+
+    hoverImg();
+});
 function password() {
     $('#createPW').submit(function(event) {
         const newPassword = $('#newPassword').val();
@@ -470,58 +474,63 @@ $(document).ready(function() {
 });
 $(document).ready(function () {
     var fileName = window.location.pathname.split("/").pop();
-    if (fileName.startsWith("detail")) {
+    if (!fileName.startsWith("detail")) return;
+    function handleDesktopScroll() {
         var $thumbs = $('#thumbs');
-        var $buttons = $('nav.change button');
-        var $upButton = $('nav.change button:first-of-type');
-        var $downButton = $('nav.change button:last-of-type');
+        var scrollTop = $thumbs.scrollTop();
+        var maxScrollTop = $thumbs[0].scrollHeight - $thumbs.outerHeight();
 
-        function updateScrollButtons(scrollProp, maxScrollProp, scrollStep) {
-            var scrollValue = $thumbs[scrollProp]();
-            var maxScrollValue = $thumbs[0][maxScrollProp] - $thumbs[scrollStep]();
+        toggleButtons(scrollTop > 0, scrollTop < maxScrollTop);
 
-            $upButton.toggle(scrollValue > 0);
-            $downButton.toggle(scrollValue < maxScrollValue);
+        $('nav.change button:first-of-type').off('click').on('click', function () {
+            scrollThumbs($thumbs, 'scrollTop', '-=100');
+        });
 
-            $upButton.off('click').on('click', function () {
-                var animateProp = {};
-                animateProp[scrollProp] = `-=${scrollStep}`;
-                $thumbs.animate(animateProp, 300);
-            });
-
-            $downButton.off('click').on('click', function () {
-                var animateProp = {};
-                animateProp[scrollProp] = `+=${scrollStep}`;
-                $thumbs.animate(animateProp, 300);
-            });
-        }
-
-        function desktopScrollButtons() {
-            updateScrollButtons("scrollTop", "scrollHeight", "outerHeight");
-        }
-
-        function mobileScrollButtons() {
-            updateScrollButtons("scrollLeft", "scrollWidth", "outerWidth");
-        }
-
-        function checkScrollMode() {
-            var isDesktop = window.matchMedia("(min-width: 1280px)").matches;
-            var isMobile = window.matchMedia("(max-width: 767px)").matches;
-
-            if (isDesktop) {
-                desktopScrollButtons();
-                $thumbs.off('scroll').on('scroll', desktopScrollButtons);
-            } else if (isMobile) {
-                mobileScrollButtons();
-                $thumbs.off('scroll').on('scroll', mobileScrollButtons);
-            } else {
-                $buttons.hide();
-                $thumbs.off('scroll');
-            }
-        }
-
-        checkScrollMode();
-        $(window).on('resize', checkScrollMode);
+        $('nav.change button:last-of-type').off('click').on('click', function () {
+            scrollThumbs($thumbs, 'scrollTop', '+=100');
+        });
     }
+    function handleMobileScroll() {
+        var $thumbs = $('#thumbs');
+        var $listItem = $thumbs.find('li').first();
+        var listItemWidth = $listItem.outerWidth(true);
+        var scrollLeft = $thumbs.scrollLeft();
+        var maxScrollLeft = $thumbs[0].scrollWidth - $thumbs.outerWidth();
+        toggleButtons(scrollLeft > 0, scrollLeft < maxScrollLeft);
+        $('nav.change button:first-of-type').off('click').on('click', function () {
+            scrollThumbs($thumbs, 'scrollLeft', `-=${listItemWidth}`);
+        });
+        $('nav.change button:last-of-type').off('click').on('click', function () {
+            scrollThumbs($thumbs, 'scrollLeft', `+=${listItemWidth}`);
+        });
+    }
+    function toggleButtons(showUp, showDown) {
+        $('nav.change button:first-of-type').toggle(showUp);
+        $('nav.change button:last-of-type').toggle(showDown);
+    }
+    function scrollThumbs($container, scrollDirection, value) {
+        var scrollConfig = {};
+        scrollConfig[scrollDirection] = value;
+        $container.animate(scrollConfig, 300);
+    }
+    function applyScrollBehavior() {
+        var isDesktop = window.matchMedia("(min-width: 1280px)").matches;
+        var isMobile = window.matchMedia("(max-width: 767px)").matches;
+        $('#thumbs').off('scroll');
+
+        if (isDesktop) {
+            handleDesktopScroll();
+            $('#thumbs').on('scroll', handleDesktopScroll);
+        } else if (isMobile) {
+            handleMobileScroll();
+            $('#thumbs').on('scroll', handleMobileScroll);
+        } else {
+            $('nav.change button').hide();
+        }
+    }
+    applyScrollBehavior();
+    $(window).on('resize', applyScrollBehavior);
 });
+
+
 

@@ -252,7 +252,6 @@
 [class*='twoface'] > div {
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
 }
 [class$="Back"]{
     color: var(--GS01);
@@ -339,6 +338,9 @@
     [class*='twoface'] > div > div {
         padding-block: var(--sp80);
     }    
+    [class*='twoface'] > div {         
+        flex-direction: column;
+    }
     [class*="slice"]{ height: 30px; max-width: 80px;}
 }
 @media screen and (min-width: 1280px){
@@ -396,7 +398,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    [class^='full'] > p, [class^='middle'], [class*='twoface'] > div{
+    [class^='full'] > p, 
+    [class^='middle'], 
+    [class*='twoface'] > div{
         max-width: 1200px;
     }
     [class*='twoface']{        
