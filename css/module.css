@@ -260,10 +260,25 @@
     cursor: pointer;
     height: 50px;
 }
-[class*='JCend']{justify-content:flex-end;}
-[class*='selfEnd']{align-self: flex-end;}
 [class*='floatL']{float: left;}
 [class*='w100']{width: 100%;}
+
+
+[class*='fUno']{flex: 1;}
+[class*='flexWrapper']{display: flex;}
+[class*='JCmid']{justify-content: center;}    
+[class*='JCstart']{justify-content:flex-start;}
+[class*='JCend']{justify-content:flex-end;}
+[class*='JCspace']{justify-content: space-between;}    
+[class*='JCstretch']{justify-content: stretch;}    
+[class*='alignC']{align-items: center;}
+[class*='alignE']{align-items: flex-end;}
+[class*='alignStart']{align-items: flex-start;}
+[class*='alignStrech']{align-items: stretch;}
+
+[class*='selfEnd']{align-self: flex-end;}
+[class*='dRow']{flex-direction: row;}
+[class*='dColumn']{flex-direction: column;}
 
 @media screen and (max-width: 767px){   
     .rzTH80, .rzTH40uc, .rzSB50uc, .rzSB50, .rzLT40, .rzSB30{font-size: 20px;}
@@ -344,14 +359,10 @@
     [class*="slice"]{ height: 30px; max-width: 80px;}
 }
 @media screen and (min-width: 1280px){
+    
     p.rzTH18, p.rzTH16, td>ul>li.rbRG16, dd.rbRG16{line-height: 30px;}
     p.rbRG16:not(div.superCharge p, ul li > p){ line-height: 50px;}
     
-    [class*='flexWrapper']{display: flex;}
-    [class*='JCspace']{justify-content: space-between;}    
-    [class*='alignC']{align-items: center;}
-    [class*='alignE']{align-items: flex-end;}
-
     [class*='10']{font-size: 10px;}
     [class*='16']{font-size: 16px;}
     [class*='18']{font-size: 18px;}

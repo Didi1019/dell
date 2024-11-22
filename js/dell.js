@@ -16,32 +16,38 @@ $(function() {
     intersection();
 });
 
-
-
 function preloadHoverImages() {
     $(".change img").each(function () {
-        var hoverSrc = $(this).attr('src').replace(".png", "Hover.png");
-        $('<img>').attr('src', hoverSrc); 
+        $('<img>').attr('src', $(this).attr('src').replace(".png", "Hover.png"));
     });
 }
 function hoverImg() {
-    var fileName = window.location.pathname.split('/').pop();
-    if (fileName.startsWith('list')) {
-        var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (!window.location.pathname.split('/').pop().startsWith('list')) return;
 
-        $(".change").on(isTouchDevice ? "click" : "mouseenter mouseleave", function (e) {
-            var img = $(this).find('img');
-            var isHovering = e.type === "mouseenter" || e.type === "click" && !img.attr('src').includes("Hover.png");
-            var newSrc = img.attr('src').replace(isHovering ? ".png" : "Hover.png", isHovering ? "Hover.png" : ".png");
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-            img.css('opacity', '0').one('transitionend', function () {
-                img.attr('src', newSrc).css('opacity', '1');
-            });
+    $(".change").on(isTouchDevice ? "click" : "mouseenter mouseleave", function (e) {
+        const img = $(this).find('img');
+        const isHovering = shouldChangeToHover(e, img);
+        updateImageSrc(img, isHovering);
+    });
+
+    // Helper to decide if the image should switch to the hover version
+    function shouldChangeToHover(event, img) {
+        const isClick = event.type === "click";
+        const isHoverEvent = event.type === "mouseenter";
+        const isAlreadyHovering = img.attr('src').includes("Hover.png");
+        return isHoverEvent || (isClick && !isAlreadyHovering);
+    }
+
+    // Helper to update the image source and handle opacity transitions
+    function updateImageSrc(img, toHover) {
+        const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
+        img.css('opacity', '0').one('transitionend', function () {
+            img.attr('src', newSrc).css('opacity', '1');
         });
     }
 }
-
-
 
 function password() {
     $('#createPW').submit(function(event) {
@@ -491,7 +497,7 @@ $(document).ready(function () {
     function handleMobileScroll() {
         var $thumbs = $('#thumbs');
         var $listItem = $thumbs.find('li').first();
-        var listItemWidth = $listItem.outerWidth(true);
+        var listItemWidth = $listItem.outerWidth(true) + 15;
         var scrollLeft = $thumbs.scrollLeft();
         var maxScrollLeft = $thumbs[0].scrollWidth - $thumbs.outerWidth();
         toggleButtons(scrollLeft > 0, scrollLeft < maxScrollLeft);

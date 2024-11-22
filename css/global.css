@@ -119,6 +119,7 @@ article.rightsInfo > ul li > ul > li{
     footer>div{
         max-width:1200px; margin: 0 auto; 
    }
+    footer>div>ul{display:flex;}
     header>div{position:relative; width:100%; height:60px; display: flex; justify-content: space-between; align-items: center;}
     header>div>nav{width:59%; margin-left:16.66%;}
     header>div>nav ul li{display:inline-block; position:relative;}
@@ -136,7 +137,6 @@ article.rightsInfo > ul li > ul > li{
     header>div>div:nth-of-type(2) ul{display:none; position:absolute; top:100%; right:0; background-color:var(--GS02); border-top:1px solid var(--GS04); min-width:242px; border-radius:15px;}
     header>div>a{background:url('../images/support.png') no-repeat center center; width:19px; height:22px; text-indent:-9999px;}    
     footer>div>ul:first-of-type{max-width:800px;}
-    footer>div>ul{display:flex; justify-content:space-between;}
     footer>div>ul>li{position:relative; margin-bottom:var(--sp15);}
     footer>div>ul>li>ol{position:absolute; top:100%; left:0; visibility:hidden; opacity:0; transition:opacity 0.3s ease,visibility 0.3s ease;}
     footer>div>ul>li:hover>ol{visibility:visible; opacity:1;}

@@ -1,17 +1,49 @@
-
-
-
 div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) p{
     background-size: 10px;
 }
+div.wave > div.supportSearch > form{
+    margin-bottom: var(--sp20);
+}
+div.calculator > div:nth-of-type(2){
+    flex: 1;
+}    
+.twowrap{
+    background-color: var(--GS12);
+}
+div.listContainer > div > div:first-child {
+    text-align: right;
+}    
 
 
 
 /* *mobile */
-
+.twowrap > div,
+article.rightsInfo,
+.accountContainer > div,
+div.wave > div.supportSearch{
+    width: 93.5%;
+    margin: 0 auto;
+}
 /*! tabet */
+div.wave > div.supportSearch,
+section.detailContainer > div:first-child > div{
+    width: 93.5%;
+    margin: 0 auto;
+}    
 
 /*?s mobile Tablet */
-
+div.wave > ul{
+    width: 93.5%;
+    margin: 0 auto var(--sp80);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp20);
+}
+.arrival > ol{
+    padding-inline: var(--sp80);
+}
+div.orderStatus > div{
+    margin-top: var(--sp30);
+}
 
 /* desktop */
