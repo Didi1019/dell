@@ -1,49 +1,32 @@
-div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) p{
-    background-size: 10px;
+div.details > div.full{
+    padding-block: var(--sp60);
 }
-div.wave > div.supportSearch > form{
-    margin-bottom: var(--sp20);
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption,
+div.dark > div > div:first-of-type > div.findPassword fieldset > button{
+    padding-block: var(--sp10);
 }
-div.calculator > div:nth-of-type(2){
-    flex: 1;
-}    
-.twowrap{
-    background-color: var(--GS12);
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
+    padding-right: var(--sp20);
 }
-div.listContainer > div > div:first-child {
-    text-align: right;
-}    
-
-
-
+section.twoface > div > div.checkOut form{
+    margin-top: var(--sp40);
+}
+div.details > div.full > div img,
+div.details > div.full > div > div,
+main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a{
+    height: 100%;
+}
+.accountContainer > div > div.wrapper > ul li p{
+    left: 20px;
+    bottom: 40px;
+}
+.accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
+    left: 20px;
+    bottom: 20px;
+}
 /* *mobile */
-.twowrap > div,
-article.rightsInfo,
-.accountContainer > div,
-div.wave > div.supportSearch{
-    width: 93.5%;
-    margin: 0 auto;
-}
-/*! tabet */
-div.wave > div.supportSearch,
-section.detailContainer > div:first-child > div{
-    width: 93.5%;
-    margin: 0 auto;
-}    
 
+/*! tabet */
 /*?s mobile Tablet */
-div.wave > ul{
-    width: 93.5%;
-    margin: 0 auto var(--sp80);
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--sp20);
-}
-.arrival > ol{
-    padding-inline: var(--sp80);
-}
-div.orderStatus > div{
-    margin-top: var(--sp30);
-}
 
 /* desktop */

@@ -1,24 +1,4 @@
-div.wave > div.supportSearch > form input:nth-of-type(1),
-.twowrap > div > div:first-of-type,
-div.dark > div > div:first-of-type,
-section.twoface > div > div.checkOut,
-section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label,
-section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, 
-section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label,
-div.dark > div > div:first-of-type > div fieldset input:focus ~ label, 
-div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, 
-div.dark > div > div:first-of-type > div fieldset input:valid ~ label{   
-    background-color: var(--GS01);
-}
-div.listContainer,
-section.detailContainer > div:first-child,
-section.detailContainer > div:nth-of-type(2),
-section.detailContainer > div:nth-of-type(3) aside,
-.accountContainer > div > div.wrapper > div >*,
-.twowrap > div > div:last-of-type,
-div.dark > div > div:nth-of-type(2){
-     background-color: var(--GS11);
-}
+
 main > ul li span,
 main > div:first-of-type > ul li div,
 main > div:first-of-type > ul li:nth-of-type(2) div,
@@ -35,12 +15,24 @@ section.twoface > div > div.checkOut fieldset div button:first-of-type,
 section.twoface > div > div.checkOut .createPassword fieldset > button,
 div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, 
 div.dark > div > div:first-of-type > div.createPassword fieldset > button,
-section.twoface div.calculator > div:first-of-type img,
 article.rightsInfo small,
 section.twoface > div > div.checkOut fieldset > button,
 section.detailContainer > div:nth-of-type(3) > aside > ul > li > label,
 div.listContainer > div > div:last-child .gradient li{
     display: block;
+}
+div.listContainer > div > div:first-child > div button,
+div.details .legend nav ul li,
+section.twoface > div > div.checkOut ol li,    
+section.twoface > div > div.checkOut form fieldset ul:last-of-type > li a{
+    display: inline-block;
+}
+div.listContainer > div > div:last-child .gradient,
+div.listContainer > div > aside ul li > ol li label{
+    display: flex;
+}
+div.listContainer > div > aside ul li > ol li label{ 
+    align-items: center;
 }
 main > div:first-of-type > ul li:nth-child(n+3) a,
 main > div:nth-of-type(3) > div input,
@@ -78,7 +70,6 @@ div.wave > div.supportSearch h4,
 div.wave > div.supportSearch p {
     margin-bottom: var(--sp40);
 }
-
 div.listContainer > div > aside ul li > ol li,
 section.detailContainer > div:nth-of-type(2) table tr th,
 section.detailContainer > div:nth-of-type(2) table tr td,
@@ -113,7 +104,7 @@ section.detailContainer > div:nth-of-type(3) button,
 .accountContainer > div > div.wrapper > ul li p,
 div.dark > div > div:first-of-type > div,
 div.dark > div > div:first-of-type > div fieldset > ul > li label, 
-div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label
+div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label,
 .accountContainer > div > div.wrapper > ul li:not(:last-of-type) a,
 section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label{
     position: absolute;
@@ -139,36 +130,29 @@ section.detailContainer > div:first-child > div:after {
     content: '';
     display: block;
 }
-div.listContainer > div > div:last-child .gradient,
-div.listContainer > div > aside ul li > ol li label{
-    display: flex;
-}
-div.listContainer > div > aside ul li > ol li label{ 
-    align-items: center;
-}
 main > div:nth-of-type(3) > ul,
 main > div:nth-of-type(3) > ul li,
-ol.pager,
 div.listContainer > div > aside ul li > b,
 div.listContainer > div > div:first-child > div:nth-of-type(2) select,
 div.listContainer > div > div:first-child > div:nth-of-type(2) label,
 div.listContainer > div > aside ul li,
 div.listContainer > div > aside ul li > ol li label,
 div.listContainer > div > div:last-of-type > ul li > div,
-div.grid-group-wrapper > ul > li > div,
 div.listContainer > div > div:last-child >.test >div:first-child,
-section.detailContainer > div:nth-of-type(3) nav > div,
-#sort,
+div.grid-group-wrapper > ul > li > div,
+ol.pager,
 div.details > div.full > div,
 div.details > div.full > div img,
-div.dark > div > div:first-of-type > div fieldset > ul > li,
+section.detailContainer > div:nth-of-type(3) nav > div,
+#sort,
 section.twoface > div > div.checkOut fieldset > ul > li,
 .arrival > ol li:before,
 .arrival > ol li,
-.accountContainer > div > div.wrapper > ul li,
+div.dark > div > div:first-of-type > div fieldset div,
+div.dark > div > div:first-of-type > div fieldset > ul > li,
 div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type,
-
 section.detailContainer > div:first-child > div > input:first-of-type,
+.accountContainer > div > div.wrapper > ul li,
 div.dark > div > div:first-of-type,
 main > div:first-of-type,
 div.dark > div,
@@ -218,8 +202,8 @@ div.dark > div > div:first-of-type input {
 
 
 /* ????????????? */
-.arrival > ol li:nth-of-type(1):before, .arrival > ol li:nth-of-type(2):before{
-    background-color: var(--B05);
+.arrival > ol li:nth-of-type(1):before, 
+.arrival > ol li:nth-of-type(2):before{
     border: 3px solid white;
 }
 .arrival > ol li:nth-of-type(3):before, .arrival > ol li:nth-of-type(4):before{
@@ -234,73 +218,25 @@ section.twoface div.calculator > div:first-of-type img{
     margin-right: var(--sp25);
     max-width: 120px;
 }
-
 section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
     padding: var(--sp40) 0 var(--sp20);
     line-height: 21px;
 }
 section.detailContainer > div:nth-of-type(3) > aside > ul > li > label {
-    color: var(--GS01);
     border: 3px solid var(--GS08);
     padding: var(--sp30) 0 var(--sp30) var(--sp20);
     border-radius: 10px;
     cursor: pointer;
 }
-div.listContainer > div > div:last-child > ul > li > div strong{
-    margin: var(--sp20) 6.56%;
-}
-div.listContainer > div > div:last-child .gradient li{
-    text-indent: -9999px;
-}
-div.listContainer > nav ul li {
-    text-align: center;
-}
-main > div:first-of-type > ul li:nth-of-type(2) div {
-    animation: show 0.75s ease-in-out 0.1s forwards;
-}
-main > ul li h4{
-    margin-bottom: var(--sp20)
-}
-main > ul li span{
-    padding-bottom: 370px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-div.listContainer > nav ul li a{
-    color: var(--GS01);
-}
-main > div:nth-of-type(2) {
-    background: url('../images/peakBg.png') no-repeat center center / cover;    
-}
-main > div:first-of-type .sButton > button:hover{
-    background: url('../images/arrowButtonFill.png') no-repeat center center;
-}
-section.twoface > div > div.checkOut fieldset > a:hover{
-    color: var(--GS01);
-}
-div.details .legend >*,
-div.calculator >*{
-    margin-inline: auto;
-    text-align: center;
-}
-ol.pager li {
-    flex: 1;
-    text-align: center;
-}
-main > ul > *,
-div.black{
-    margin: 0 auto;
-    text-align: center;
-}
 
-/* ! need to clean up */
-div.listContainer > div > div:first-child > div:nth-of-type(2) select option,
-section.detailContainer > div:first-child > div > input:first-of-type,
-section.detailContainer > div:nth-of-type(2) table tr td,
-div.details > ul li dl dd,
-section.twoface > div > div.checkOut fieldset > a{
-    color: var(--GS05);
+
+/* details */
+div.details > div.superCharge, 
+div.details > div.fineTuned{
+    padding: var(--sp60) var(--sp40);   
+    margin-bottom: var(--sp80);     
 }
+/* ! need to clean up */
 main > ul li:nth-of-type(1){background-image: url('../images/main_bg01.png');}
 main > ul li:nth-of-type(2){background-image: url('../images/main_bg02.png');}
 main > ul li:nth-of-type(3){background-image: url('../images/main_bg03.png');}
@@ -324,7 +260,7 @@ section.detailContainer>div:nth-of-type(3)>aside>div input{background-image: url
 section.detailContainer>div:nth-of-type(3)>aside>div input{background-image: url('../images/sortArrowRotated.png');}
 div.listContainer>div>aside ul li>ol li input[type="checkbox"]:checked+label::before{background-image: url('../images/check.png');}
 div.dark>div>div:first-of-type>div.createDell fieldset div:nth-of-type(3) p{background: url('../images/info-icon.png') no-repeat left center / 10px;}
-section.twoface>div>div.checkOut ol li:not(:last-of-type){background: url('../images/arrowShip.png') no-repeat center right 10px;}
+section.twoface>div>div.checkOut ol li:not(:last-of-type){background: url('../images/arrowShip.png') no-repeat center right 10px; padding-right: var(--sp30);}
 div.wave>ul.contact>li:nth-of-type(1){background-image: url('../images/contactus_bg01.png');}
 div.wave>ul.contact>li:nth-of-type(2){background-image: url('../images/contactus_bg02.png');}
 div.wave>ul.contact>li:nth-of-type(3){background-image: url('../images/contactus_bg03.png');}
@@ -352,6 +288,10 @@ section.twoface>div>div.checkOut form fieldset ul:first-of-type>li:last-child{ba
 div.calculator>div:first-of-type button:first-of-type{background-image: url('../images/add.png');}
 div.calculator>div:first-of-type button:nth-of-type(2){background-image: url('../images/minus.png');}
 div.calculator>div:first-of-type button:nth-of-type(3){background-image: url('../images/trahcan.png');}
+
+
+
+/*** main */
 main > div:nth-of-type(3) > div div{
     max-width: 600px;
 }
@@ -365,112 +305,8 @@ main > div:nth-of-type(3) > ul li{
     transition: all 0.4s ease;
     opacity: 1;
 }
-div.listContainer > div > aside ul li > ol li{
-    color: var(--GS08);        
-}
-div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
-    background-color: var(--GS09);
-}
-div.listContainer>div>div:first-child>div button:first-of-type{background: url('../images/gridButton.png');}
-div.listContainer>div>div:first-child>div button:first-of-type.active{background: url('../images/gridButtonBlue.png');}
-div.listContainer>div>div:first-child>div button:nth-of-type(2){background: url('../images/listButton.png');}
-div.listContainer>div>div:first-child>div button:nth-of-type(2).active{background: url('../images/listButtonBlue.png');}
-
-div.details > div.superCharge > div ul li p { 
-    margin-top: var(--sp20);
-}
-section.detailContainer > div:nth-of-type(2) table tr th{
-    padding-right: 100px;
-    color: var(--GS04);
-}
-.accountContainer > div > div.wrapper > div > div > p{
-    width: 66%;
-}
-section.twoface > div > div.checkOut fieldset > a{
-    transition: 0.5s;    
-}
-section.twoface > div > div.checkOut fieldset div button:first-of-type, section.twoface > div > div.checkOut .createPassword fieldset > button{
-    background-color: var(--B04);
-    margin: var(--sp30) auto;
-    padding-block: var(--sp15);
-}
-section.twoface > div > div.checkOut ul li input {
-    border-width: 1px;
-    border-style: solid;
-    padding: 16px;
-    outline: 0;
-}
-.arrival > ol li:nth-of-type(3):after{ 
-    background-color: var(--GS06);
-    left: 50px;
-}
-div.dark > div > div:nth-of-type(2) img{
-    max-width: 400px;
-    margin: 0 auto;
-}
-div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, 
-div.dark > div > div:first-of-type > div.createPassword fieldset > button{
-    background-color: var(--B04);
-    margin: var(--sp30) auto;
-    padding-block: var(--sp15);
-}
-div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
-    padding: var(--sp15) 0px var(--sp15) var(--sp25);
-    background: var(--GS12) url('../images/google.png') no-repeat;
-}
-div.dark > div > div:first-of-type > div.createDell fieldset button, 
-div.dark > div > div:first-of-type > div.findPassword fieldset > button{
-    padding-block: var(--sp10);
-    cursor: pointer;
-}
-div.dark > div > div:first-of-type input {
-    border-width: 1px;
-    border-style: solid;
-    padding: 16px;
-    outline: 0;
-}
-.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
-    text-align: center;
-}
-main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a{
-    height: 100%;
-}
-div.details .legend nav ul li img{
-    max-width: 125px;
-}
-div.details > div.full > div img{
-    margin: 0 auto;
-    object-fit: cover;
-    max-inline-size: 50%;
-    height: 100%;
-}
-div.details > div.full > div > div{
-    height: 100%;
-}
-#pager-line {
-    top: -2px;
-    left: 0;
-    height: 2px;
-    z-index: 2;
-    background: var(--B04);
-    transform: translateX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease-in-out;
-}
-div.listContainer > div > div:last-child .gradient{
-    height: 15px;
-    top: 275px;
-    left: 0px;
-}
-div.listContainer > div > div:last-child > ul > li > div div:first-of-type img {
-    margin: 0 auto;
-}
-.arrival > ol li:after {
-    position: absolute;
-    content: '';
-    height: 4px;
-    background-color: var(--B05);
-    z-index: 0;
+main > ul li h4{
+    margin-bottom: var(--sp20);
 }
 main > div:nth-of-type(3) > ul{
     height: 0;
@@ -489,10 +325,124 @@ main > div:nth-of-type(3) > ul::before {
     z-index: 2;
     transition: all 1.2s ease;
 }
+main > div:first-of-type > ul li:nth-of-type(2) div {
+    animation: show 0.75s ease-in-out 0.1s forwards;
+}
+main > ul li span{
+    padding-bottom: 370px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main > div:nth-of-type(2) {
+    background: url('../images/peakBg.png') no-repeat center center / cover;    
+}
+main > div:first-of-type .sButton > button:hover{
+    background: url('../images/arrowButtonFill.png') no-repeat center center;
+}
 
+/*?? LIST */
+div.listContainer > div > aside ul li > ol li{
+    color: var(--GS08);        
+}
+div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
+    background-color: var(--GS09);
+}
+div.listContainer>div>div:first-child>div button:first-of-type{background: url('../images/gridButton.png');}
+div.listContainer>div>div:first-child>div button:first-of-type.active{background: url('../images/gridButtonBlue.png');}
+div.listContainer>div>div:first-child>div button:nth-of-type(2){background: url('../images/listButton.png');}
+div.listContainer>div>div:first-child>div button:nth-of-type(2).active{background: url('../images/listButtonBlue.png');}
+div.listContainer > div > div:last-child > ul > li > div strong{
+    margin: var(--sp20) 6.56%;
+}
+div.listContainer > div > div:last-child .gradient li{
+    text-indent: -9999px;
+}
+
+ol.pager li {
+    flex: 1;
+}
+
+div.details > div.superCharge > div ul li p { 
+    margin-top: var(--sp20);
+}
+section.detailContainer > div:nth-of-type(2) table tr th{
+    padding-right: 100px;
+    color: var(--GS04);
+}
+.accountContainer > div > div.wrapper > div > div > p{
+    width: 66%;
+}
+section.twoface > div > div.checkOut fieldset > a{
+    transition: 0.5s;    
+}
+section.twoface > div > div.checkOut fieldset div button:first-of-type,
+ section.twoface > div > div.checkOut .createPassword fieldset > button{
+    margin: var(--sp30) auto;
+    padding-block: var(--sp15);
+}
+section.twoface > div > div.checkOut ul li input {
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+}
+.arrival > ol li:nth-of-type(3):after{ 
+    background-color: var(--GS06);
+    left: 50px;
+}
+div.dark > div > div:nth-of-type(2) img{
+    max-width: 400px;
+}
+div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, 
+div.dark > div > div:first-of-type > div.createPassword fieldset > button{
+    margin: var(--sp30) auto;
+    padding-block: var(--sp15);
+}
+div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
+    padding: var(--sp15) 0px var(--sp15) var(--sp25);
+    background: var(--GS12) url('../images/google.png') no-repeat;
+}
+div.dark > div > div:first-of-type > div.createDell fieldset button, 
+div.dark > div > div:first-of-type > div.findPassword fieldset > button{
+    padding-block: var(--sp10);
+    cursor: pointer;
+}
+div.dark > div > div:first-of-type input {
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+}
+div.details .legend nav ul li img{
+    max-width: 125px;
+}
+div.details > div.full > div img{
+    object-fit: cover;
+    max-inline-size: 50%;
+}
+#pager-line {
+    top: -2px;
+    left: 0;
+    height: 2px;
+    z-index: 2;
+    background: var(--B04);
+    transform: translateX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out;
+}
+div.listContainer > div > div:last-child .gradient{
+    height: 15px;
+    top: 275px;
+    left: 0px;
+}
+.arrival > ol li:after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    z-index: 0;
+}
 div.listContainer > div > aside ul li > ol:after{
     content: '';
-    background-color: var(--GS08);
     height: 1px;
     left: -10px;
     bottom: -40px;
@@ -509,10 +459,6 @@ div.listContainer > div > div:last-child{
 
 .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){
     background: url('../images/addItem.png') center center no-repeat var(--GS12);
-}
-div.details > div.fineTuned > div ul li{
-    text-align: center;
-    margin-inline: auto;
 }
 div.details > div.fineTuned > div ul li{
     padding: var(--sp40) var(--sp15);
@@ -544,6 +490,9 @@ div.orderStatus > div address{
     padding: var(--sp20) var(--sp20);
     font-style: normal;
 }
+div.orderStatus > figure figcaption{
+    padding-block: var(--sp10);
+}
 div.calculator ul li:not(:nth-child(3)) strong::before{
     content: '$';
 }
@@ -553,8 +502,30 @@ div.calculator > div:first-of-type > div > button{
     text-indent: -9999px;
     padding: 10px;
 }
+div.calculator > a{
+    margin-top: var(--sp40);
+}
+div.calculator > div:nth-of-type(2){
+    flex: 1;
+}       
 div.wave{
     padding-block: var(--sp80);
+}
+div.wave > ul{
+    margin-bottom: var(--sp80);
+}
+section.twoface > div > div.checkOut form{
+    margin-top: var(--sp40);
+}
+/*  LOGGGIN */
+.dellLogin, .createPassword {
+    transform: rotateY(0deg);
+}
+.createDell, .findPassword {
+    transform: rotateY(180deg);
+}
+.rotate-card{
+    transform: rotateY(180deg);
 }
 @keyframes slideShow {
     0% {
@@ -584,7 +555,6 @@ div.listContainer > div > div:last-child > ul > li{
     border-radius: 50%;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
     z-index: 5;
-    margin: 0 auto;
     transition: all 0.2s;
 }
 .arrival > ol li{
@@ -618,11 +588,6 @@ div.listContainer > div > aside ul li > ol li label::before {
 div.listContainer > div > aside ul li > ol li label {
     cursor: pointer;
 }
-ul.bar li,
-div.dark > div > div:first-of-type,
-.arrival > ol li{
-    text-align: center;
-}
 div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type{
     margin-block: var(--sp25);
 }
@@ -648,7 +613,6 @@ div.wave{
     animation: gradient 10s ease infinite;
 }
 div.black{
-    background-color: black;
     padding: 105px 0px var(--sp40);
 }
 input#teal[type="radio"]:checked + label, input#teal[type="radio"]:hover + label {
@@ -748,7 +712,6 @@ div.wave > ul > li:after{
         opacity: 0;
    }
     main > div:first-of-type > ul li div{
-        width: 93.5%;
         top: 190px;
         left: 25px;
         transform: translateY(-50%);
@@ -764,9 +727,6 @@ div.wave > ul > li:after{
             opacity: 1;
             filter: blur(0);
        }
-   }
-    main > div:first-of-type > ul li div h2{
-        width: 93.5%;
    }
     main > div:first-of-type > ul li div p{
         margin-block: var(--sp20);
@@ -794,11 +754,6 @@ div.wave > ul > li:after{
    }
 
    /* alienware collapse*/
-    main > div:nth-of-type(3){
-        margin: 0 auto;
-        width: 93.5%;
-   }
-   
     main > div:nth-of-type(3) > div,
     div.dark > div > div:first-of-type > div.createDell fieldset ul,
     div.dark > div > div:nth-of-type(2) ul{
@@ -811,9 +766,7 @@ div.wave > ul > li:after{
         padding-bottom: var(--sp20);
         border-bottom: 1px solid var(--GS12);
    }
-    main > div:nth-of-type(3) > div div p{
-        width: 93.5%;
-   }
+
     main > div:nth-of-type(3) > div label{
         cursor: pointer;
    }
@@ -830,9 +783,7 @@ div.wave > ul > li:after{
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover{
         flex-grow: 3;
    }
-    main > ul{
-        color: var(--GS01);
-   }
+
 
     main > ul li{
         padding: var(--sp40) 0;
@@ -840,15 +791,11 @@ div.wave > ul > li:after{
         background-position: center;
         background-repeat: no-repeat;        
    }
-    div.listContainer{
-        margin-bottom: var(--sp80);
-   }
     div.listContainer > nav{
         margin-bottom: var(--sp60);
         padding-bottom: 10px;
    }
     div.listContainer > nav ul {
-        gap: 40px;
         overflow-x: scroll;
         padding: 160px 0 var(--sp40);
    }
@@ -865,15 +812,10 @@ div.wave > ul > li:after{
     div.listContainer .cart-Toggle{
         color: var(--GS12);
         padding: 13px 20px;
-        background-color: var(--B02);
         max-width: 140px;
         transition: background-color 0.3s ease;
         border-radius: 4px;
    }
-    div.listContainer .cart-Toggle:hover{
-        background-color: var(--B05);
-   }
-
 
    /** aside */
     div.listContainer > div > aside > input{
@@ -883,50 +825,37 @@ div.wave > ul > li:after{
         z-index: 1000;
         top: 20px;
         right: 0;
-        text-indent: -9999px;
-        
-   }
-    div.listContainer > div > aside > h3{
-        margin-bottom: var(--sp50);
-        background-color: var(--GS12);
-        padding: var(--sp15) 0px var(--sp15) var(--sp30);
-        text-align: left;
-        max-width: 260px;
+        text-indent: -9999px;        
    }
 
+    div.listContainer > div > aside > h3{
+        margin-bottom: var(--sp50);        
+        padding: var(--sp15) 0px var(--sp15) var(--sp30);
+        max-width: 260px;
+   }
     div.listContainer > div > aside > ul.active {
         padding: var(--sp80s) var(--sp40);
         top: 0;
         left: 0;        
-        z-index: 900;
-        background-color: black;
+        z-index: 900;        
    }
     div.listContainer > div > aside ul li > b::before {
         right: 0;
         top: 50%;
         width: 14px;
-        height: 9px;
-        
+        height: 9px;        
         transform: translateY(-50%);
         transition: transform 0.3s ease;
    }
     div.listContainer > div > aside ul li > b.active::before {
         transform: translateY(-50%) rotate(180deg);
    }
-
     div.listContainer > div > aside ul li > ol {
         margin: var(--sp80s) 0;
    }
-
-
-
-
    /* * end of aside */
     div.grid-group-wrapper{
         margin-top: var(--sp40);
-   }
-    div.listContainer > div > div:last-child > ul > li >div{
-        background-color: var(--GS12);
    }
     div.listContainer > div > div.grid-group-wrapper > ul > li > div div:first-of-type{
         padding: 80px 10% 40px;
@@ -942,7 +871,6 @@ div.wave > ul > li:after{
         top: 20px;
         left: -5px;
         z-index: 10;
-        background-color: #30acd5;
         padding: var(--sp10) 4.56%;
    }
     div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{
@@ -975,17 +903,12 @@ div.wave > ul > li:after{
    }
     ol.pager {
         margin: 0 3.25% var(--sp80) auto;
-        width: 93.5%;
         border-top: 2px solid var(--GS01);
    }
 
     ol.pager li a {
         padding-top: var(--sp20);
    }
-    ol.pager li a:hover {
-        color: var(--B04);
-   }
-
    /** START DETAIL */
     section.detailContainer{
         padding-top: 60px;
@@ -1020,14 +943,10 @@ div.wave > ul > li:after{
     section.detailContainer > div:nth-of-type(2) table{
         z-index: 100;
         margin: var(--sp50) auto;
-        text-align: left;
         padding-top: var(--sp40);
-        width: 93.5%;
    }
    /** start of image 3rd*/
-    section.detailContainer > div:nth-of-type(3){
-        background-color: var(--GS02);
-   }
+
     section.detailContainer > div:nth-of-type(3) nav{
         padding-top: 100px;
    }
@@ -1041,7 +960,6 @@ div.wave > ul > li:after{
         max-width: 70%;
    }
     section.detailContainer > div:nth-of-type(3) nav ul li {
-        background-color: var(--GS12);
         width: 66px;
         border: 3px solid transparent;
         padding: 5px;
@@ -1087,7 +1005,6 @@ div.wave > ul > li:after{
     section.detailContainer > div:nth-of-type(3) > aside > div > input{
         color: var(--GS12);
         margin: var(--sp40) auto;
-        background-color: var(--B04);
         line-height: var(--sp60);
         padding: 10px 35px 10px 15px;
         background-repeat: no-repeat;
@@ -1122,17 +1039,7 @@ div.wave > ul > li:after{
         margin: var(--sp80) auto;
    }
     div.details > ul li dl dt{
-        color: var(--GS01);
         margin: var(--sp40) 0px var(--sp30);
-   }
-
-    div.details > div.superCharge, div.details > div.fineTuned{
-        padding: var(--sp60) var(--sp40);        
-        margin-bottom: var(--sp80);
-   }
-    div.details > div.full{
-        background-color: var(--GS12);
-        padding-block: var(--sp60);
    }
     div.details > div.superCharge > div h4, div.details > div.fineTuned > div h4, div.details > div.full > div h4 {
         padding-bottom: var(--sp40);
@@ -1158,45 +1065,21 @@ div.wave > ul > li:after{
         margin-right: 15%;
    }
 
-    div.details > div.full > div > div {
-        color: white;
-   }
+
 
     div.details > div.superCharge > div ul {
         display: grid;
         margin-top: var(--sp60);
-        gap: 40px;
-   }
-    div.details > div.superCharge > div ul li {
-        text-align: left;
-   }
-    div.details > div.superCharge > div ul li b {
-        color: var(--GS01);
    }
 
-    div.details > div.fineTuned > div p{
-        margin-bottom: var(--sp20);
-   }
+
+
     div.details > div.fineTuned > div ul{
         display: grid;
-        gap: 40px;
         grid-template-columns: 1fr;
-        margin: 0 auto;
-        align-self: center;
    }
 
-    div.details > div.fineTuned > div ul li:nth-of-type(1){
-        background-color: var(--B06);
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(2){
-        background-color: var(--B03);
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(3){
-        background-color: var(--B02);
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(4){
-        background-color: var(--B05);
-   }
+
     div.details > div.fineTuned > div ul li dl dt{
         background-repeat: no-repeat;
         background-position: center top;
@@ -1208,7 +1091,6 @@ div.wave > ul > li:after{
 
     .recycle >img{
         max-width: 579px;
-        margin: 0 auto;
    }
    .recycle > div{
         padding: var(--sp60) var(--sp40) 50px;
@@ -1217,14 +1099,11 @@ div.wave > ul > li:after{
     div.details .legend{
         margin: var(--sp80) auto;
    }
-    div.details .legend p{
-        width: 93.5%;
-   }
+
     div.details .legend nav > div img{
         margin: var(--sp40) auto;
    }
     div.details .legend nav ul li{
-        display: inline-block;
         border: 3px solid transparent;
         margin: 0px var(--sp10);
    }
@@ -1259,9 +1138,7 @@ div.wave > ul > li:after{
             background-position: 0% 50%;
        }
    }
-    div.wave > div > a.Back {
-        color: var(--GS01);
-        text-align: center;
+    div.wave > div > a.Back {        
         float: right;
         margin-right: 3.25%;
         height: 40px;
@@ -1275,18 +1152,9 @@ div.wave > ul > li:after{
         background-size: 26%;
    }
 
-    div.wave > ul > li:nth-of-type(1):after{
-        background-color: var(--B06);
-   }
-    div.wave > ul > li:nth-of-type(2):after{
-        background-color: var(--B01);
-   }
-    div.wave > ul > li:nth-of-type(3):after{
-        background-color: var(--B05);
-   }
-    div.wave > ul > li:nth-of-type(4):after{
-        background-color: var(--B02);
-   }
+
+
+
     div.wave > ul > li > ol{
         display: grid;
         grid-template-columns: 1fr;
@@ -1296,20 +1164,8 @@ div.wave > ul > li:after{
    }
     div.wave > ul > li > p{
         width: 75%;
-        color: var(--GS01);
    }
-    div.wave > ul > li:nth-of-type(1) ol li a:hover{
-        color: var(--B06);
-   }
-    div.wave > ul > li:nth-of-type(2) ol li a:hover{
-        color: var(--B01);
-   }
-    div.wave > ul > li:nth-of-type(3) ol li a:hover{
-        color: var(--B05);
-   }
-    div.wave > ul > li:nth-of-type(4) ol li a:hover{
-        color: var(--B02);
-   }
+
     div.wave > div.supportSearch{
         border-radius: 15px;
         padding: 40px 3.5% 40px;
@@ -1321,9 +1177,7 @@ div.wave > ul > li:after{
         padding: var(--sp15) var(--sp20);
         width: 70%;
    }
-    div.wave > div.supportSearch > form input::placeholder{
-        color: var(--B04);
-   }
+
     div.wave > div.supportSearch > form input:nth-of-type(2){
         padding: 15px 25px;
         cursor: pointer;
@@ -1332,33 +1186,21 @@ div.wave > ul > li:after{
         gap: 10px;
    }
     div.wave > div.supportSearch > ol li{
-        background-color: var(--B04);
         padding: 15px 0px 15px 50px;
         background-repeat: no-repeat;
         background-position: left 20px center;
         width: 200px;
    }
-    div.wave > div.supportSearch > form > input:last-of-type{
-        background-color: var(--B04);
-   }
    /* *my account */
     .accountContainer{
         padding: var(--sp140) 0 var(--sp80);
-        background-color: black;
    }
     .accountContainer > div h2{
-        margin-bottom: var(-sp40);
+        margin-bottom: var(--sp40);
    }
-    .accountContainer > div > div.wrapper{
-        gap: 40px;
-   }
-
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){
         width: 100%;
     }    
-    .accountContainer > div > div.wrapper > div{
-        gap: 40px;
-   }
     .accountContainer > div > div.wrapper > div > div:first-of-type{
         padding: var(--sp20);
    }
@@ -1368,38 +1210,18 @@ div.wave > ul > li:after{
     .accountContainer > div > div.wrapper > div > div > hr{
         border: 1px solid var(--B03);
    }
-    .accountContainer > div > div.wrapper > div > div:first-of-type > div {
-        margin-bottom: var(--sp20);
-   }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul{
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: 1fr;
-        gap: 40px;
         align-items: stretch;
-   }
-    .accountContainer > div > div.wrapper > div > div:first-of-type ul li{
-        margin: 0 auto;
    }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li img{
         padding: var(--sp20) var(--sp25);
    }
-    .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption{
-        background-color: var(--GS12);
-        text-align: center;
-        padding-block: var(--sp10);
-   }
-
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
         padding-top: 50%;
    }
-
-
-    .accountContainer > div > div.wrapper > ul{
-        background-color: var(--GS12);
-        gap: 40px;
-   }
-
     .accountContainer > div > div.wrapper > ul li:first-of-type img{
         max-width: 476px;
         float: right;
@@ -1411,45 +1233,19 @@ div.wave > ul > li:after{
     .accountContainer > div > div.wrapper > ul li:first-of-type a{
         bottom: 20px;
    }
-
-    .accountContainer > div > div.wrapper > ul li p{
-        left: 20px;
-        bottom: 40px;
-   }
-    .accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
-        left: 20px;
-        bottom: 20px;
-   }
-    .accountContainer > div > div.wrapper > ul li:last-of-type {
-        margin-bottom: var(--sp80);
-   }
-   /* !! START OF LOGIN` */
-
-
     div.dark > div > div:first-of-type{
         height: 830px;
    }
     div.dark > div > div:first-of-type > div {
-        width: 93.5%;
         height: 100%;
         top: 100px;
         left: 3.25%;
         transform-style: preserve-3d;
         backface-visibility: hidden;
    }
-    .dellLogin, .createPassword {
-        transform: rotateY(0deg);
-   }
-    .createDell, .findPassword {
-        transform: rotateY(180deg);
-   }
-    .rotate-card{
-        transform: rotateY(180deg);
-   }
     div.dark > div > div:first-of-type > div button{
         cursor: pointer;
    }
-
     div.dark > div > div:first-of-type > div fieldset > ul > li label, div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label{ 
         top: 0;
         left: 20px;
@@ -1469,16 +1265,11 @@ div.wave > ul > li:after{
         outline: none;
         border: 1px solid var(--B03);
    }
-
-    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type{
-        margin-bottom: var(--sp20);
-   }
-
-    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
+    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, 
+    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
         top: 50%;
         width: 30%;
         height: 1px;
-        background-color: var(--B04);
    }
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before{
         left: 0;
@@ -1490,9 +1281,7 @@ div.wave > ul > li:after{
 
         background-position: left 38% center;
    }
-    div.dark > div > div:first-of-type > div.createDell fieldset div{
-        text-align: left;
-   }
+
     div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(2) input{
         margin-block: var(--sp20);
         transform: scale(0.6);
@@ -1503,31 +1292,12 @@ div.wave > ul > li:after{
         margin-bottom: var(--sp10);
    }
 
-    div.dark > div > div:first-of-type > div.createDell fieldset > p{
-        text-align: left;
-        margin-bottom: var(--sp20);
-   }
-
-    div.dark > div > div:first-of-type > div.createDell button:first-of-type{
-        background-color: var(--B04);
-        margin-bottom: var(--sp20);
-   }
     div.dark > div > div:first-of-type > div.createDell button:last-of-type{
         border: 1px solid var(--B04);
    }
-
-    div.dark > div > div:first-of-type > div.findPassword fieldset > button{
-        background-color: var(--B04);
-        padding-block: var(--sp10);
-   }
-
    /** start dell account */
     div.dark > div > div:nth-of-type(2){        
-        text-align: center;
         padding-block: var(--sp80);
-   }
-    div.dark > div > div:nth-of-type(2) h2{
-        margin-bottom: var(--sp20);
    }
     div.dark > div > div:nth-of-type(2) ul{
         gap: 20px;
@@ -1538,24 +1308,9 @@ div.wave > ul > li:after{
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: top center;
-        margin-bottom: var(--sp20);
    }
-
-
-
    /* * end of login */
    /* * shopping checkout */
-    section.twoface > div > div.checkOut{
-        padding-inline: var(--sp80);
-   }
-    section.twoface > div > div.checkOut ol li{
-        display: inline-block;
-   }
-
-    section.twoface > div > div.checkOut form{
-        margin-top: var(--sp40);
-        text-align: center;
-   }
 
     section.twoface > div > div.checkOut form fieldset ul:first-of-type > li{
         padding: 10px 0px;
@@ -1567,26 +1322,11 @@ div.wave > ul > li:after{
         text-indent: -9999px;
         background-color: #f7c518;
    }
-    section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
-        background-color: var(--GS12);
-        padding-right: 20px;
-   }
-
-    section.twoface > div > div.checkOut form fieldset ul:last-of-type > li a{
-        display: inline-block;
-   }
-
     section.twoface > div > div:last-of-type{
         padding-inline: var(--sp40);
    }
     section.twoface > div > div.checkOut button{
         cursor: pointer;
-   }
-
-
-
-    section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3){
-        text-align: left;
    }
     section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3) > input{
         width: 3%;
@@ -1601,6 +1341,7 @@ div.wave > ul > li:after{
         width: 48%;
    }
     section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label{
+        position: absolute;
         top: 0;
         left: 20px;
         padding: 16px 0;
@@ -1619,24 +1360,16 @@ div.wave > ul > li:after{
         outline: none;
         border: 1px solid var(--B03);
    }
-
    /* * calculator */
     section.twoface div.calculator > div:first-of-type h3{
         line-height: 20px;
-        text-align: left;
    }
-
     section.twoface div.calculator > div:first-of-type > div input{
         width: 40px;
    }
     section.twoface button{
-        background-color: #222222;
         border: none;
    }
-    div.calculator input{
-        background-color: white;
-   }
-
     div.calculator > div:nth-of-type(2){
         margin: var(--sp20) 0px var(--sp20) 20px;
    }
@@ -1645,7 +1378,6 @@ div.wave > ul > li:after{
         padding: 15px 15px;
    }
     div.calculator > div:nth-of-type(2) a{
-        background-color: var(--GS07);
         margin-left: 10px;
         padding: 15px 40px;
    }
@@ -1662,13 +1394,8 @@ div.wave > ul > li:after{
         margin-left: 5px;
    }
     div.calculator > p{
-        width: 93.5%;
         line-height: 24px;
    }
-    div.calculator > a{
-        margin-top: var(--sp40);
-   }
-
     .twowrap > div {
         display: grid;
         grid-template-columns: 1fr;
@@ -1680,23 +1407,14 @@ div.wave > ul > li:after{
         padding-block: var(--sp80);
    }
    /* order status */
-
     .arrival > img{
         margin-block: var(--sp80) var(--sp80s);
    }
-
     .arrival > ol {
         padding-inline: var(--sp25);
    }
-    .arrival > ol li:nth-child(n+3){
-        color: var(--GS06);
-   }
-    .arrival > ol li:nth-child(3):hover{
-        color: var(--GS12);
-   }
     .arrival > ol li:not(:nth-of-type(4)):hover:before {
         transform: scale(1.2);
-        background-color: var(--B05);
         border: 3px solid white;
    }
     .arrival > ol li:after {
@@ -1708,64 +1426,33 @@ div.wave > ul > li:after{
     div.orderStatus{
         padding-inline: 3.25%;
    }
-
-
     div.orderStatus > figure{
         margin-block: var(--sp30) var(--sp20);
    }
     div.orderStatus > figure img{
         padding: var(--sp20) var(--sp25);
    }
-    div.orderStatus > figure figcaption{
-        text-align: center;
-        background-color: var(--GS12);
-        padding-block: var(--sp10);
-   }
-
-    div.orderStatus > div a{
-        margin-top: var(--sp40);
-   }
    /* end of ordersttaus */
-    .returns{
-        margin: var(--sp80) auto;
-   }
-    .returns > div:first-of-type {
-        text-align: center;
-   }
-    .returns > div > h2{
-        margin-bottom: var(--sp20);
-   }
     .returns > ol{
         margin: var(--sp40) auto var(--sp80);
         gap: 100px;
    }
     .returns > ol li{
         flex: 1 0 42%;
-        text-align: left;
    }
     .returns > ol li img{
         max-width: 200px;
         margin: 0 auto 20px;
    }
-    .returns > ol li > dl dt{
-        margin-bottom: var(--sp20);
-   }
-
    /* * copyright */
     article.rightsInfo{
         padding-block: var(--sp140) var(--sp80);
    }
-
     article.rightsInfo > ul{
         background-color: var(--GS04);
         padding: var(--sp40) var(--sp80);
    }
-    article.rightsInfo > ul > li{
-        margin-bottom: var(--sp20);
-   }
-    article.rightsInfo > ul li h3{
-        margin-bottom: var(--sp20);
-   }
+
     article.rightsInfo > ul li > ul > li{
         list-style: disc;
         margin-left: var(--sp20);
@@ -1775,6 +1462,11 @@ div.wave > ul > li:after{
     [class^='middle'] > div ol{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    section.detailContainer > div:nth-of-type(3),
+    section.detailContainer > div:nth-of-type(3) nav,
+    section.detailContainer > div:nth-of-type(3) nav ul{
+        margin-inline: auto;
     }
     div.details > ul{
         display: flex;
@@ -1795,13 +1487,7 @@ div.wave > ul > li:after{
 }   
 /* ** need diet */
 
-    div.details > div.superCharge > div > h4, div.details > div.superCharge > div > p{
-        text-align: center;
-    }
-    div.listContainer .cart-Toggle {
-        text-align: center;
-        margin: 0 auto;
-    }
+
     main > div:first-of-type > ul{
         height: 560px;
    }
@@ -1886,12 +1572,9 @@ div.wave > ul > li:after{
         margin-left: var(--sp60);
         width: 65%;
    }
-   /* alienware collapse*/
-    main > div:nth-of-type(3){
-        margin: 0 auto;
+    main > div:nth-of-type(3){    
         max-width: 720px;
    }
-
     main > div:nth-of-type(3) > div div h2{
         padding-bottom: var(--sp20);
         border-bottom: 1px solid var(--GS12);
@@ -1917,9 +1600,7 @@ div.wave > ul > li:after{
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover{
         flex-grow: 3;
    }
-    main > ul{
-        color: var(--GS01);
-   }
+
     main > ul li{
         width: 49.5%;
         padding: var(--sp40) 0;
@@ -1931,15 +1612,12 @@ div.wave > ul > li:after{
         margin-left: 0.5%;
    }
    /* list */
-    div.listContainer{        
-        margin-bottom: var(--sp80);
-   }
+
     div.listContainer > nav{
         margin-bottom: var(--sp60);
         padding-bottom: 10px;
    }
     div.listContainer > nav ul {
-        gap: 40px;
         overflow-x: auto;
         padding: 160px 0 var(--sp50);
    }
@@ -1953,25 +1631,20 @@ div.wave > ul > li:after{
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "aside sort" "list list";
    }
-
     div.listContainer .cart-Toggle {
         color: var(--GS12);
         padding: 13px 20px;
-        background-color: var(--B02);
         max-width: 140px;
         transition: background-color 0.3s ease;
         border-radius: 4px;
    }
-    div.listContainer .cart-Toggle:hover{
-        background-color: var(--B05);
-   }
+
     div.listContainer > div > div:first-child > div button {
         background-repeat: no-repeat;
         background-position: center center;
         height: 42px;
         width: 42px;
         text-indent: -9999px;
-        display: inline-block;
         margin-right: 20px;
    }
    /** aside */
@@ -1986,9 +1659,7 @@ div.wave > ul > li:after{
    }
     div.listContainer > div > aside > h3{
         margin-bottom: var(--sp60);
-        background-color: black;
         padding: 15px 0px;
-        text-align: center;
         max-width: 120px;
    }
     div.listContainer > div > aside > ul.active{
@@ -1997,7 +1668,6 @@ div.wave > ul > li:after{
         left: 10%;
         width: 180%;
         z-index: 900;
-        background-color: black;
    }
     div.listContainer > div > aside ul li > b::before {
         right: 0;
@@ -2023,9 +1693,7 @@ div.wave > ul > li:after{
     div.list-group-wrapper > ul > li > div > div:first-child{
         float: left;
    }
-    div.listContainer > div > div:last-child > ul > li >div{
-        background-color: var(--GS12);
-   }
+
     div.grid-group-wrapper > ul > li:nth-of-type(2n+1) > div {
         margin-right: 4.56%;
    }
@@ -2038,7 +1706,6 @@ div.wave > ul > li:after{
    }
     div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type{
         padding: 80px 10% 40px;
-        background-color: var(--GS12);
    }
     div.listContainer > div > div:last-child > ul > li > div div:first-of-type{
         height: 165px;
@@ -2047,7 +1714,6 @@ div.wave > ul > li:after{
         top: 20px;
         left: -5px;
         z-index: 10;
-        background-color: #30acd5;
         padding: var(--sp10) 4.56%;
    }
 
@@ -2091,10 +1757,6 @@ div.wave > ul > li:after{
     ol.pager li a {
         padding-top: var(--sp20);
    }
-    ol.pager li a:hover {
-        color: var(--B04);
-   }
-
    /** START DETAIL */
     section.detailContainer{
         padding-top: 60px;
@@ -2127,29 +1789,20 @@ div.wave > ul > li:after{
     section.detailContainer > div:nth-of-type(2) table{
         z-index: 100;
         margin: 50px auto;
-        text-align: left;
         padding-top: var(--sp40);
-        width: 93.5%;
    }
    /** start of image 3rd*/
-    section.detailContainer > div:nth-of-type(3){
-        margin-inline: auto;
-        background-color: var(--GS02);
-   }
     section.detailContainer > div:nth-of-type(3) nav{
-        padding-top: var(--sp130);
-        margin: 0 auto;
+        padding-top: var(--sp130);        
    }
     section.detailContainer > div:nth-of-type(3) aside{        
         padding: var(--sp80) 3% 0px;
    }
     section.detailContainer > div:nth-of-type(3) nav ul{
-        margin: 0 auto;
         gap: 15px;
         padding-block: 40px;                
    }
     section.detailContainer > div:nth-of-type(3) nav ul li {
-        background-color: var(--GS12);
         width: 66px;
         border: 3px solid transparent;
         padding: 5px;
@@ -2182,7 +1835,6 @@ div.wave > ul > li:after{
     section.detailContainer > div:nth-of-type(3) > aside > div > input{
         color: var(--GS12);
         margin: var(--sp40) auto;
-        background-color: var(--B04);
         line-height: var(--sp60);
         padding: 10px 35px 10px 15px;
         background-repeat: no-repeat;
@@ -2221,20 +1873,7 @@ div.wave > ul > li:after{
         flex-basis: 45%;
    }
     div.details > ul li dl dt{
-        color: var(--GS01);
         margin: var(--sp40) 0px var(--sp30);
-   }
-    div.details > div.superCharge, div.details > div.fineTuned{
-        background-color: var(--GS12);
-        padding: var(--sp60) var(--sp40);
-        margin-bottom: var(--sp80);
-    }
-    div.details > div.fineTuned > div{
-        text-align: center;
-   }
-    div.details > div.full{
-        background-color: var(--GS12);
-        padding-block: var(--sp60);
    }
     div.details > div.superCharge > div h4, div.details > div.fineTuned > div h4, div.details > div.full > div h4 {
         padding-bottom: var(--sp40);
@@ -2260,77 +1899,40 @@ div.wave > ul > li:after{
         margin-right: 15%;
    }
 
-    div.details > div.full > div > div {
-        color: white;
-   }
-
     div.details > div.superCharge > div ul {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
         margin-top: var(--sp60);
-        gap: 40px;
-   }
-    div.details > div.superCharge > div ul li {
-        text-align: left;
-   }
-    div.details > div.superCharge > div ul li b {
-        color: var(--GS01);
-   }
-    div.details > div.fineTuned > div p{
-        margin-bottom: var(--sp20);
    }
     div.details > div.fineTuned > div ul{
         display: grid;
-        gap: 40px;
         grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
-        align-self: center;
-   }
-
-    div.details > div.fineTuned > div ul li:nth-of-type(1){
-        background-color: var(--B06);
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(2){
-        background-color: var(--B03);
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(3){
-        background-color: var(--B02);
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(4){
-        background-color: var(--B05);
    }
     div.details > div.fineTuned > div ul li dl dt{
         background-repeat: no-repeat;
         background-position: center top;
         padding: 100px 0px 20px;
    }
-
     .recycle{
         padding: var(--sp80s) 0 60px;
         margin-bottom: 0px;
    }
     .recycle > img{
         max-width: 579px;
-        margin: 0 auto;
    }
     div.details .legend{
         margin: var(--sp80) auto;
-   }
-    div.details .legend p{
-        width: 93.5%;
    }
     div.details .legend nav > div img{
         margin: var(--sp40) auto;
    }
     div.details .legend nav ul li{
-        display: inline-block;
         border: 3px solid transparent;
         margin: 0px var(--sp10);
    }
     div.details .legend nav ul li.selected{
         border-image: linear-gradient(45deg, #509fc9, #676eff) 1;
    }
-
     .show{
         opacity: 1;
         filter: blur(0);
@@ -2360,37 +1962,17 @@ div.wave > ul > li:after{
        }
    }
     div.wave > div > a.Back {
-        color: var(--GS01);
-        text-align: center;
+        color: var(--GS01);        
         float: right;
         margin-right: 3.25%;
         height: 40px;
    }
-
     div.wave > ul > li{
         border-radius: 15px;
         padding: var(--sp20) 0px 110px var(--sp40);        
         background-repeat: no-repeat;
         background-position: right bottom ;
    }
-
-    div.wave > ul > li:nth-of-type(1):after{
-        background-color: var(--B06);
-   }
-    div.wave > ul > li:nth-of-type(2):after{
-        background-color: var(--B01);
-   }
-    div.wave > ul > li:nth-of-type(3):after{
-        background-color: var(--B05);
-   }
-    div.wave > ul > li:nth-of-type(4):after{
-        background-color: var(--B02);
-   }
-
-
-
-
-
     div.wave > ul > li > ol{
         display: grid;
         grid-template-columns: 1fr;
@@ -2400,19 +1982,6 @@ div.wave > ul > li:after{
    }
     div.wave > ul > li > p{
         width: 55%;
-        color: var(--GS01);
-   }
-    div.wave > ul > li:nth-of-type(1) ol li a:hover{
-        color: var(--B06);
-   }
-    div.wave > ul > li:nth-of-type(2) ol li a:hover{
-        color: var(--B01);
-   }
-    div.wave > ul > li:nth-of-type(3) ol li a:hover{
-        color: var(--B05);
-   }
-    div.wave > ul > li:nth-of-type(4) ol li a:hover{
-        color: var(--B02);
    }
     div.wave > ul.support > li p{
         width: 30%;
@@ -2421,14 +1990,9 @@ div.wave > ul > li:after{
         border-radius: 15px;
         padding: 40px 0px 40px 40px;
    }
-
-
     div.wave > div.supportSearch > form input:nth-of-type(1){
         padding: var(--sp15) var(--sp20);
         width: 70%;
-   }
-    div.wave > div.supportSearch > form input::placeholder{
-        color: var(--B04);
    }
     div.wave > div.supportSearch > form input:nth-of-type(2){
         padding: 15px 25px;
@@ -2438,38 +2002,20 @@ div.wave > ul > li:after{
         gap: 10px;
    }
     div.wave > div.supportSearch > ol li{
-        background-color: var(--B04);
         padding: 15px 0px 15px 50px;
         background-repeat: no-repeat;
         background-position: left 20px center;
         width: 200px;
    }
-
-
-    div.wave > div.supportSearch > form > input:last-of-type{
-        background-color: var(--B04);
-   }
    /* *my account */
     .accountContainer{
         padding: var(--sp140) 0 var(--sp80);
-        background-color: black;
-   }
-    .accountContainer > div{
-        width: 93.5%;
-        margin: 0 auto;
    }
     .accountContainer > div h2{
-        margin-bottom: var(-sp40);
+        margin-bottom: var(--sp40);
    }
-    .accountContainer > div > div.wrapper{
-        gap: 40px;
-   }
-
     .test > div:first-of-type{
         order: 1;
-   }
-    .accountContainer > div > div.wrapper > div{
-        gap: 40px;
    }
     .accountContainer > div > div.wrapper > div > div:first-of-type{
         padding: var(--sp20);
@@ -2480,33 +2026,21 @@ div.wave > ul > li:after{
     .accountContainer > div > div.wrapper > div > div > hr{
         border: 1px solid var(--B03);
    }
-    .accountContainer > div > div.wrapper > div > div:first-of-type > div {
-        margin-bottom: var(--sp20);
-   }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
    }
-
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li img{
         padding: var(--sp20) var(--sp25);
    }
-    .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption{
-        background-color: var(--GS12);
-        text-align: center;
-        padding-block: var(--sp10);
-   }
+
 
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
         height: 100%;
         padding-top: 55%;
    }
 
-    .accountContainer > div > div.wrapper > ul{
-        background-color: var(--GS12);
-        gap: 40px;
-   }
+
     .accountContainer > div > div.wrapper > ul li:first-of-type img{
         max-width: 476px;
         float: right;
@@ -2518,20 +2052,11 @@ div.wave > ul > li:after{
     .accountContainer > div > div.wrapper > ul li:first-of-type a{
         bottom: 20px;
    }
-    .accountContainer > div > div.wrapper > ul li p{
-        left: 20px;
-        bottom: 40px;
-   }
-    .accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
-        left: 20px;
-        bottom: 20px;
-   }
-    .accountContainer > div > div.wrapper > ul li:last-of-type {
-        margin-bottom: var(--sp80);
-   }
+
+
    /* !! START OF LOGIN` */
     div.dark > div > div:first-of-type{
-        height: 760px;
+        height: 830px;
    }
     div.dark > div > div:first-of-type > div {
         width: 73.33%;
@@ -2541,19 +2066,10 @@ div.wave > ul > li:after{
         transform-style: preserve-3d;
         backface-visibility: hidden;
    }
-    .dellLogin, .createPassword {
-        transform: rotateY(0deg);
-   }
-    .createDell, .findPassword {
-        transform: rotateY(180deg);
-   }
-    .rotate-card{
-        transform: rotateY(180deg);
-   }
+
     div.dark > div > div:first-of-type > div button{
         cursor: pointer;
    }
-
     div.dark > div > div:first-of-type > div fieldset > ul > li label, div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label{ 
         top: 0;
         left: 20px;
@@ -2561,7 +2077,9 @@ div.wave > ul > li:after{
         pointer-events: none;
         transition: .3s;
    }
-    div.dark > div > div:first-of-type > div fieldset input:focus ~ label, div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
+    div.dark > div > div:first-of-type > div fieldset input:focus ~ label, 
+    div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, 
+    div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
         top: -10px;
         left: 10px;
         z-index: 20;
@@ -2573,16 +2091,11 @@ div.wave > ul > li:after{
         outline: none;
         border: 1px solid var(--B03);
    }
-
-    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type{
-        margin-bottom: var(--sp20);
-   }
-
-    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
+    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, 
+    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
         top: 50%;
         width: 150px;
         height: 1px;
-        background-color: var(--B04);
    }
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before{
         left: 0;
@@ -2592,9 +2105,6 @@ div.wave > ul > li:after{
    }
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
         background-position: left 42% center;
-   }
-    div.dark > div > div:first-of-type > div.createDell fieldset div{
-        text-align: left;
    }
     div.dark > div > div:first-of-type > div.createDell fieldset ul{
         gap: 20px;
@@ -2611,32 +2121,20 @@ div.wave > ul > li:after{
         margin-bottom: var(--sp10);
    }
 
-    div.dark > div > div:first-of-type > div.createDell fieldset > p{
-        text-align: left;
-        margin-bottom: var(--sp20);
-   }
 
-    div.dark > div > div:first-of-type > div.createDell button:first-of-type{
-        background-color: var(--B04);
-        margin-bottom: var(--sp20);
-   }
+
+
     div.dark > div > div:first-of-type > div.createDell button:last-of-type{
         border: 1px solid var(--B04);
    }
 
-    div.dark > div > div:first-of-type > div.findPassword fieldset > button{
-        background-color: var(--B04);
-        padding-block: var(--sp10);
-   }
+
 
    /** start dell account */
     div.dark > div > div:nth-of-type(2){        
-        text-align: center;
-        padding: var(--sp80s) 0;
+        padding-block: var(--sp80s);
    }
-    div.dark > div > div:nth-of-type(2) h2{
-        margin-bottom: var(--sp20);
-   }
+
     div.dark > div > div:nth-of-type(2) ul{
         gap: 20px;
         margin: var(--sp40) auto;
@@ -2646,23 +2144,6 @@ div.wave > ul > li:after{
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: top center;
-        margin-bottom: var(--sp20);
-   }
-
-
-
-   /* * end of login */
-   /* * shopping checkout */
-    section.twoface > div > div.checkOut{
-        padding-inline: var(--sp80);
-   }
-    section.twoface > div > div.checkOut ol li{
-        display: inline-block;
-   }
-
-    section.twoface > div > div.checkOut form{
-        margin-top: var(--sp40);
-        text-align: center;
    }
 
     section.twoface > div > div.checkOut form fieldset ul:first-of-type > li{
@@ -2675,26 +2156,11 @@ div.wave > ul > li:after{
         text-indent: -9999px;
         background-color: #f7c518;
    }
-    section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
-        background-color: var(--GS12);
-        padding-right: 20px;
-   }
-
-    section.twoface > div > div.checkOut form fieldset ul:last-of-type > li a{
-        display: inline-block;
-   }
-
     section.twoface > div > div:last-of-type{
         padding-inline: var(--sp40);
    }
     section.twoface > div > div.checkOut button{
         cursor: pointer;
-   }
-
-
-
-    section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3){
-        text-align: left;
    }
     section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3) > input{
         width: 3%;
@@ -2709,6 +2175,7 @@ div.wave > ul > li:after{
         width: 48%;
    }
     section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label{
+        position: absolute;
         top: 0;
         left: 20px;
         padding: 16px 0;
@@ -2730,19 +2197,15 @@ div.wave > ul > li:after{
    /* * calculator */
     section.twoface div.calculator > div:first-of-type h3{
         line-height: 20px;
-        text-align: left;
    }
 
     section.twoface div.calculator > div:first-of-type > div input{
         width: 40px;
    }
     section.twoface button{
-        background-color: #222222;
         border: none;
    }
-    div.calculator input{
-        background-color: white;
-   }
+
     div.calculator > div:nth-of-type(2){
         margin: var(--sp20) 0px var(--sp20) 20px;
    }
@@ -2751,7 +2214,6 @@ div.wave > ul > li:after{
         padding: 15px 15px;
    }
     div.calculator > div:nth-of-type(2) a{
-        background-color: var(--GS07);
         margin-left: 10px;
         padding: 15px 40px;
    }
@@ -2767,18 +2229,12 @@ div.wave > ul > li:after{
     div.calculator ul li:first-of-type small {
         margin-left: 5px;
    }
-
     div.calculator > p{
         width: 60%;
         line-height: 24px;
    }
-    div.calculator > a{
-        margin-top: var(--sp40);
-   }
 
     .twowrap > div {
-        width: 93.5%;
-        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr;
    }
@@ -2797,15 +2253,10 @@ div.wave > ul > li:after{
         padding-inline: var(--sp25);
    }
 
-    .arrival > ol li:nth-child(n+3){
-        color: var(--GS06);
-   }
-    .arrival > ol li:nth-child(3):hover{
-        color: var(--GS12);
-   }
+
+
     .arrival > ol li:not(:nth-of-type(4)):hover:before {
         transform: scale(1.2);
-        background-color: var(--B05);
         border: 3px solid white;
    }
     .arrival > ol li:after {
@@ -2817,8 +2268,6 @@ div.wave > ul > li:after{
     div.orderStatus{
         padding-inline: var(--sp25);
    }
-
-
     div.orderStatus > figure{
         margin-block: var(--sp30) var(--sp20);
         max-width: 264px;
@@ -2829,57 +2278,27 @@ div.wave > ul > li:after{
     div.orderStatus > figure img{
         padding: var(--sp20) var(--sp25);
    }
-    div.orderStatus > figure figcaption{
-        text-align: center;
-        background-color: var(--GS12);
-        padding-block: var(--sp10);
-   }
-
-    div.orderStatus > div a{
-        margin-top: var(--sp40);
-   }
    /* end of ordersttaus */
-    .returns{
-        margin: var(--sp80) auto;
-   }
-    .returns > div:first-of-type {
-        text-align: center;
-   }
-    .returns > div > h2{
-        margin-bottom: var(--sp20);
-   }
     .returns > ol{
         margin: var(--sp40) auto var(--sp80);
         gap: 100px;
    }
     .returns > ol li{
         flex: 1 0 42%;
-        text-align: left;
    }
     .returns > ol li img{
         max-width: 200px;
         margin: 0 auto 20px;
    }
-    .returns > ol li > dl dt{
-        margin-bottom: var(--sp20);
-   }
-
    /* * copyright */
     article.rightsInfo{
-        width: 93.5%;
-        margin: 0 auto;
         padding-block: var(--sp140) var(--sp80);
    }
     article.rightsInfo > ul{
         background-color: var(--GS04);
         padding: var(--sp40) var(--sp80);
    }
-    article.rightsInfo > ul > li{
-        margin-bottom: var(--sp20);
-   }
-    article.rightsInfo > ul li h3{
-        margin-bottom: var(--sp20);
-   }
+
     article.rightsInfo > ul li > ul > li{
         list-style: disc;
         margin-left: var(--sp20);
@@ -2897,6 +2316,10 @@ div.wave > ul > li:after{
     div.orderStatus > span:first-of-type {
         display: block;
     }
+    div.details > div.fineTuned > div ul,
+    .recycle > img{
+        margin: 0 auto;
+    }
     div.wave > div::after,
     .accountContainer > div > div.wrapper > ul li::after,
     div.orderStatus:after{
@@ -2904,14 +2327,20 @@ div.wave > ul > li:after{
         clear: both;
         content: '';
     }
+    div.details > div.superCharge > div ul,
+    div.listContainer > nav ul,
+    .accountContainer > div > div.wrapper > div > div:first-of-type ul{
+        gap: 40px;
+    }
     div.listContainer > div > aside{
         position: relative;
     }
-
     .accountContainer > div > div.wrapper > ul li:first-of-type a{
         position: absolute;
     }
-    main > div:nth-of-type(3) > ul li a,
+    main > div:nth-of-type(3) > ul li a{
+        text-indent: -9999px;
+    }
     div.listContainer > div > aside > ul,
     section.detailContainer > div:nth-of-type(3) nav > div img.zoom{
         display: none;
@@ -2929,18 +2358,14 @@ div.wave > ul > li:after{
     .arrival > ol li:after{
         width: 100%;
     }
-    section.twoface > div > div.checkOut ol li:not(:last-of-type){
-        padding-right: var(--sp30);
-    }
     main > div:nth-of-type(3) > div {
-        flex-direction: row;
+        flex-direction: c;
     }
     section.detailContainer > div:nth-of-type(2) table tr th{
         padding-block: var(--sp20);
     }
     div.listContainer> div > aside > input{background: url('../images/exit.png') no-repeat;}
-    div.listContainer > div > aside ul li > b:after {
-        background-color: var(--GS08);
+    div.listContainer > div > aside ul li > b:after{        
         height: 1px;
         left: 0px;
         bottom: -40px;
@@ -2952,7 +2377,30 @@ div.wave > ul > li:after{
     div.listContainer > nav ul::-webkit-scrollbar-thumb:hover {
         background-color: var(--GS09);
     }
-
+    div.listContainer > div > aside > h3{
+        text-align: center;
+    }
+    div.orderStatus > div a{
+        margin-top: var(--sp40);
+    }
+    div.details > div.fineTuned > div ul{
+        align-self: center;
+    }
+    div.wave > ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--sp20);
+    }
+    .arrival > ol{
+        padding-inline: var(--sp80);
+    }
+    div.orderStatus > div{
+        margin-top: var(--sp30);
+    }
+    div.listContainer > div > aside > h3,
+    div.listContainer > div > aside > ul.active{
+         background-color: var(--GS12);
+    }
     div.listContainer > nav ul::-webkit-scrollbar-thumb {
         background-color: var(--GS12);
         border-radius: 5px;
@@ -2986,9 +2434,6 @@ div.wave > ul > li:after{
     }
     section.detailContainer > div:nth-of-type(3) button {background: url('../images/arrowUp.png') no-repeat center center;}
     main > div:nth-of-type(2) > div p,
-    article.rightsInfo > ul li > p{
-        margin-bottom: var(--sp20);
-    }
     main > div:nth-of-type(3) > ul,
     section.detailContainer > div:nth-of-type(3),
     div.dark > div,
@@ -3036,13 +2481,49 @@ div.wave > ul > li:after{
         text-transform: uppercase;
         white-space: nowrap;
     }
-
-    div.wave > ul > li h3{ 
-        margin-bottom: var(--sp20);
-    }
     
+    .accountContainer > div > div.wrapper > ul li:last-of-type {
+        margin-bottom: var(--sp80);
+    }
+    header>div>div:nth-of-type(2) ul,
+    section.detailContainer > div:nth-of-type(3){
+        background-color: var(--GS02);
+    }
+    section.detailContainer > div:nth-of-type(3) > aside > div > input{
+        background-color: var(--B04);
+    }
+    .returns > div > h2,
+    div.details > div.fineTuned > div p,
+    article.rightsInfo > ul > li,
+    article.rightsInfo > ul li h3,
+    article.rightsInfo > ul li > p,
+    div.dark > div > div:first-of-type > div.createDell button:first-of-type,
+    div.dark > div > div:first-of-type > div.createDell fieldset > p,
+    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type,
+    div.dark > div > div:nth-of-type(2) ul li dl dt,
+    .accountContainer > div > div.wrapper > div > div:first-of-type > div,
+    div.wave > ul > li h3{
+        margin-bottom: var(--sp20);
+    }    
 }
 @media screen and (min-width: 1280px){
+    main > div:nth-of-type(2) > div p, 
+    section.detailContainer > div:nth-of-type(3) nav ul li,
+    div.details > div.fineTuned > div p, div.wave > ul > li h3, 
+    .accountContainer > div > div.wrapper > div > div:first-of-type > div, 
+    div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type, 
+    div.dark > div > div:first-of-type > div.createDell fieldset > p, 
+    div.dark > div > div:first-of-type > div.createDell button:first-of-type, 
+    div.dark > div > div:nth-of-type(2) ul li dl dt, article.rightsInfo > ul > li, 
+    article.rightsInfo > ul li h3, article.rightsInfo > ul li > p, .returns > div > h2, 
+    .returns > ol li > dl dt {
+        margin-bottom: var(--sp20);
+    }
+    div.grid-group-wrapper > ul > li > div,
+    .twowrap, 
+    div.dark{
+     background-color: var(--GS12);
+    }
     div.details > div.fineTuned > div ul{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -3137,8 +2618,7 @@ div.wave > ul > li:after{
         left: 50%;
         transform: translateX(-50%);
    }
-    main > div:first-of-type .sButton > button{
-        
+    main > div:first-of-type .sButton > button{        
         user-select: none;
         width: 31px;
         height: 23px;
@@ -3183,9 +2663,7 @@ div.wave > ul > li:after{
     main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover{
         flex-grow: 2;
    }
-    main > ul{
-        color: var(--GS01);
-   }
+
     main > ul li{
         width: 49.5%;
         padding: var(--sp40) 0;
@@ -3196,19 +2674,6 @@ div.wave > ul > li:after{
     main > ul li:nth-child(2n){
         margin-left: 0.5%;
    }
-   /* list */
-   div.listContainer,
-   section.detailContainer > div:first-child,
-   section.detailContainer > div:nth-of-type(2),
-   section.detailContainer > div:nth-of-type(3) aside,
-   .accountContainer > div > div.wrapper > div >*,
-   .twowrap > div > div:last-of-type,
-   div.dark > div > div:nth-of-type(2){
-        background-color: var(--GS11);
-   }
-    div.listContainer{        
-        margin-bottom: var(--sp80);
-   }
 
     div.listContainer > nav ul {
         padding: 160px 0 var(--sp50);
@@ -3218,6 +2683,10 @@ div.wave > ul > li:after{
         margin-bottom: var(--sp15);
         max-width: 122px;
    }
+    div.listContainer > div > aside ul li > b{ 
+        margin-bottom: var(--sp80);
+    }
+
    /* end of list nav */
     div.listContainer > div {
         display: grid;
@@ -3230,28 +2699,20 @@ div.wave > ul > li:after{
     div.listContainer .cart-Toggle{
         color: var(--GS12);
         padding: 13px 10px;
-        background-color: var(--B02);
         max-width: 110px;
         transition: background-color 0.3s ease;
         border-radius: 4px;
    }
-    div.listContainer .cart-Toggle:hover{
-        background-color: var(--B05);
-   }
+
     div.listContainer > div > div:first-child > div button {
         background-repeat: no-repeat;
         background-position: center center;
         height: 42px;
         width: 42px;
         text-indent: -9999px;
-        display: inline-block;
         margin-right: 20px;
    }
-    div.details > div.superCharge > div, div.details > div.fineTuned > div{
-        text-align: center;
-        margin: 0 auto;
-    }
- 
+
    /** aside */
     div.listContainer > div > aside input{
         margin-right: 10px;
@@ -3260,8 +2721,7 @@ div.wave > ul > li:after{
         margin-bottom: var(--sp60);
    }
     div.listContainer > div > aside ul li > b {
-        padding-right: 140px;
-        margin-bottom: var(--sp80);
+        padding-right: 140px;        
         cursor: pointer;
         text-transform: uppercase;
         white-space: nowrap;
@@ -3270,8 +2730,7 @@ div.wave > ul > li:after{
         right: 0;
         top: 50%;
         width: 14px;
-        height: 9px;
-        
+        height: 9px;    
         transform: translateY(-50%);
         transition: transform 0.3s ease;
    }
@@ -3279,7 +2738,6 @@ div.wave > ul > li:after{
         transform: translateY(-50%) rotate(180deg);
    }
     div.listContainer > div > aside ul li > b:after {
-        background-color: var(--GS08);
         width: 265px;
         height: 1px;
         left: -10px;
@@ -3323,10 +2781,8 @@ div.wave > ul > li:after{
         top: 20px;
         left: -5px;
         z-index: 10;
-        background-color: #30acd5;
         padding: var(--sp10) 4.56%;
    }
-
     div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{
         margin: 0 6.56%;
    }
@@ -3337,7 +2793,6 @@ div.wave > ul > li:after{
         padding-bottom: var(--sp30);
         gap: 20px;
    }
-
     div.listContainer > div > div:last-child > ul > li > div > div:last-child > a{
         margin-right: 4%;
    }
@@ -3365,12 +2820,8 @@ div.wave > ul > li:after{
         max-width: 360px;
         border-top: 2px solid var(--GS01);
    }
-
     ol.pager li a {
         padding-top: var(--sp20);
-   }
-    ol.pager li a:hover {
-        color: var(--B04);
    }
    /** START DETAIL */
    /** START DETAIL */
@@ -3398,7 +2849,6 @@ div.wave > ul > li:after{
     section.detailContainer > div:first-child > div > input:first-of-type {
         padding-right: 1.56%;
    }
-
     section.detailContainer > div:nth-of-type(2) {
         border-bottom: 3px solid var(--GS12);
    }
@@ -3413,13 +2863,11 @@ div.wave > ul > li:after{
 
    /** start of image */
     section.detailContainer > div:nth-of-type(3){
-        margin-inline: auto;
         border-bottom: 2px solid var(--B04);
    }
     section.detailContainer > div:nth-of-type(3) nav{
         flex-basis: 57%;
         padding: var(--sp130) var(--sp80) var(--sp80) 260px;
-        background-color: var(--GS02);
         position: sticky;
         top: 0;
         height: 100vh;
@@ -3446,7 +2894,6 @@ div.wave > ul > li:after{
         margin-bottom: 0px;
    }
     section.detailContainer > div:nth-of-type(3) nav ul li img{
-        margin: 0 auto;
         object-fit: contain;
         height: 50px;
    }
@@ -3480,7 +2927,6 @@ div.wave > ul > li:after{
         max-width: 100%;
         max-height: 500px;
         object-fit: contain;
-        margin: 0 auto;
         width: auto;
    }
     section.detailContainer > div:nth-of-type(3) nav > div img.zoom {
@@ -3529,20 +2975,16 @@ div.wave > ul > li:after{
         flex-basis: 20%;
    }
     div.details > ul li dl dt{
-        color: var(--GS01);
         margin: var(--sp40) 0px var(--sp30);
         padding-top: var(--sp20);
    }
     div.details > div.superCharge, 
     div.details > div.fineTuned{
-        padding: var(--sp60) var(--sp40);        
-        margin-bottom: var(--sp80);
+        padding: var(--sp60) var(--sp40);   
+        margin-bottom: var(--sp80);     
    }
-    div.details > div.full{
-        background-color: var(--GS12);
-        padding-block: var(--sp60);
-   }
-    div.details > div.superCharge > div, div.details > div.fineTuned > div{
+    div.details > div.superCharge > div, 
+    div.details > div.fineTuned > div{
         max-width: 1760px;
    }
     div.details > div.superCharge > div h4, div.details > div.fineTuned > div h4, div.details > div.full > div h4 {
@@ -3568,43 +3010,20 @@ div.wave > ul > li:after{
         margin-top: -40px;
         margin-right: 15%;
    }
-
-    div.details > div.full > div > div {
-        color: white;
-   }
     div.details > div.superCharge > div ul {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(28%, 1fr));
         margin-top: var(--sp60);
         gap: 80px;
    }
-    div.details > div.superCharge > div ul li b {
-        color: var(--GS01);
-   }
-    div.details > div.fineTuned > div ul{
-        gap: 40px;
-   }
     div.details > div.fineTuned > div ul li{
         flex: 1;
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(1){
-        background-color: var(--B06);
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(2){
-        background-color: var(--B03);
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(3){
-        background-color: var(--B02);
-   }
-    div.details > div.fineTuned > div ul li:nth-of-type(4){
-        background-color: var(--B05);
    }
     div.details > div.fineTuned > div ul li dl dt{
         background-repeat: no-repeat;
         background-position: center top;
         padding: 100px 0px 20px;
    }
-
     .recycle{
         margin-bottom: 0px;
         background-image: url('../images/xps_13plus_bg.png');
@@ -3620,23 +3039,19 @@ div.wave > ul > li:after{
         max-width: 1516px;
         margin: var(--sp80) auto;
    }
-
     div.details .legend p{
         width: 66%;
    }
-
     div.details .legend nav > div img{
         margin-block: var(--sp40);
    }
     div.details .legend nav ul li{
-        display: inline-block;
         border: 3px solid transparent;
         margin: 0px var(--sp10);
    }
     div.details .legend nav ul li.selected{
         border-image: linear-gradient(45deg, #509fc9, #676eff) 1;
    }
-
     .show{
         opacity: 1;
         filter: blur(0);
@@ -3654,9 +3069,7 @@ div.wave > ul > li:after{
     section.detailContainer > .details > ul > li:nth-child(3), section.detailContainer > .details > .superCharge div > ul > li:nth-child(3), section.detailContainer > .details > .superCharge div > ul > li:nth-child(4){
         transition-delay: 400ms;
    }
-
    /* * start of contactUS */
-
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
@@ -3669,7 +3082,6 @@ div.wave > ul > li:after{
        }
    }
     div.wave > ul{
-        margin-bottom: var(--sp80);
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--sp20);
@@ -3679,18 +3091,6 @@ div.wave > ul > li:after{
         padding: var(--sp20) 0px 140px var(--sp40);
         background-repeat: no-repeat;
         background-position: right bottom ;
-   }
-    div.wave > ul > li:nth-of-type(1):after{
-        background-color: var(--B06);
-   }
-    div.wave > ul > li:nth-of-type(2):after{
-        background-color: var(--B01);
-   }
-    div.wave > ul > li:nth-of-type(3):after{
-        background-color: var(--B05);
-   }
-    div.wave > ul > li:nth-of-type(4):after{
-        background-color: var(--B02);
    }
     div.wave > ul > li > ol{
         display: grid;
@@ -3702,32 +3102,14 @@ div.wave > ul > li:after{
    }
     div.wave > ul > li > p{
         width: 55%;
-        color: var(--GS01);
-   }
-    div.wave > ul > li:nth-of-type(1) ol li a:hover{
-        color: var(--B06);
-   }
-    div.wave > ul > li:nth-of-type(2) ol li a:hover{
-        color: var(--B01);
-   }
-    div.wave > ul > li:nth-of-type(3) ol li a:hover{
-        color: var(--B05);
-   }
-    div.wave > ul > li:nth-of-type(4) ol li a:hover{
-        color: var(--B02);
    }
     div.wave > div.supportSearch{
         border-radius: 15px;
         padding: 40px 0px 40px 40px;
    }
-
-
     div.wave > div.supportSearch > form input:nth-of-type(1){
         padding: var(--sp15) var(--sp20);
         width: 60%;
-   }
-    div.wave > div.supportSearch > form input::placeholder{
-        color: var(--B04);
    }
     div.wave > div.supportSearch > form input:nth-of-type(2){
         padding: 15px 25px;
@@ -3737,32 +3119,21 @@ div.wave > ul > li:after{
         gap: 10px;
    }
     div.wave > div.supportSearch > ol li{
-        background-color: var(--B04);
         padding: 15px 0px 15px 50px;
         background-repeat: no-repeat;
         background-position: left 20px center;
         width: 18%;
    }
-
-
-    div.wave > div.supportSearch > form > input:last-of-type{
-        background-color: var(--B04);
-   }
    /* *my account */
     .accountContainer{
-        padding: var(--sp145) 0 var(--sp80);
-        background-color: black;
+        padding: var(--sp140) 0 var(--sp80);
    }
     .accountContainer > div h2{
-        margin-bottom: var(-sp40);
+        margin-bottom: var(--sp40);
    }
     .accountContainer > div > div.wrapper{
         display: grid;
         grid-template-columns: 1.4fr 1fr;
-        gap: 40px;
-   }
-    .accountContainer > div > div.wrapper > div{
-        gap: 40px;
    }
     .accountContainer > div > div.wrapper > div > div:first-of-type{
         padding: var(--sp20);
@@ -3779,28 +3150,12 @@ div.wave > ul > li:after{
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li img{
         padding: var(--sp20) var(--sp25);
    }
-    .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption{
-        text-align: center;
-        padding-block: var(--sp10);
-   }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){
         width: 50%;
    }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{
         height: 100%;
         padding-top: 150px;
-   }
-
-    .accountContainer > div > div.wrapper > ul{
-        gap: 40px;
-   }
-    .accountContainer > div > div.wrapper > ul li p{
-        left: 20px;
-        bottom: 40px;
-   }
-    .accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
-        left: 20px;
-        bottom: 20px;
    }
    /* !! START OF LOGIN` */
     div.dark{
@@ -3810,9 +3165,7 @@ div.wave > ul > li:after{
         flex: 1;
         max-width: 600px;
    }
-    div.dark > div > div:first-of-type{
-        
-        text-align: center;
+    div.dark > div > div:first-of-type{        
         transition: transform 1s ease;
         transform-style: preserve-3d;
         perspective: 1000px;
@@ -3826,19 +3179,9 @@ div.wave > ul > li:after{
         transform-style: preserve-3d;
         backface-visibility: hidden;
    }
-    .dellLogin, .createPassword {
-        transform: rotateY(0deg);
-   }
-    .createDell, .findPassword {
-        transform: rotateY(180deg);
-   }
-    .rotate-card{
-        transform: rotateY(180deg);
-   }
     div.dark > div > div:first-of-type > div button{
         cursor: pointer;
    }
-
     div.dark > div > div:first-of-type > div fieldset > ul > li label, div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label{ 
         top: 0;
         left: 20px;
@@ -3862,7 +3205,6 @@ div.wave > ul > li:after{
         top: 50%;
         width: 150px;
         height: 1px;
-        background-color: var(--B04);
    }
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before{
         left: 0;
@@ -3873,7 +3215,6 @@ div.wave > ul > li:after{
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{
         background-position: 170px center;
    }
-
     div.dark > div > div:first-of-type > div.createDell fieldset ul{
         gap: 20px;
    }
@@ -3889,27 +3230,17 @@ div.wave > ul > li:after{
         margin-bottom: var(--sp10);
    }
 
-
-    div.dark > div > div:first-of-type > div.createDell button:first-of-type{
-        background-color: var(--B04);
-   }
     div.dark > div > div:first-of-type > div.createDell button:last-of-type{
         border: 1px solid var(--B04);
    }
 
-    div.dark > div > div:first-of-type > div.findPassword fieldset > button{
-        background-color: var(--B04);
-        padding-block: var(--sp10);
-   }
+
 
    /** start dell account */
     div.dark > div > div:nth-of-type(2){
         padding: var(--sp80) var(--sp20);
-        text-align: center;
    }
-    div.dark > div > div:nth-of-type(2) h2{
-        margin-bottom: var(--sp20);
-   }
+
     div.dark > div > div:nth-of-type(2) ul{
         margin-top: 40px;
         gap: 20px;
@@ -3922,13 +3253,8 @@ div.wave > ul > li:after{
    }
    /* * end of login */
    /* * shopping checkout */
-    section.twoface > div > div.checkOut ol li{
-        display: inline-block;
-   }
-    section.twoface > div > div.checkOut form{
-        margin-top: var(--sp40);
-        text-align: center;
-   }
+
+
     section.twoface > div > div.checkOut form fieldset ul:first-of-type > li{
         padding: 10px 0px;
         border-radius: 5px;
@@ -3939,21 +3265,12 @@ div.wave > ul > li:after{
         text-indent: -9999px;
         background-color: #f7c518;
    }
-    section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
-        padding-right: var(--sp20);
-   }
-    section.twoface > div > div.checkOut form fieldset ul:last-of-type > li a{
-        display: inline-block;
-   }
     section.twoface > div > div:last-of-type{
         padding-inline: var(--sp40);
    }
     section.twoface > div > div.checkOut button{
         cursor: pointer;
    }
-
-
-
     section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3) > input{
         width: 3%;
    }
@@ -3967,6 +3284,7 @@ div.wave > ul > li:after{
         width: 48%;
    }
     section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label{
+        position: absolute;
         top: 0;
         left: 20px;
         padding: 16px 0;
@@ -3996,13 +3314,8 @@ div.wave > ul > li:after{
         width: 40px;
    }
     section.twoface button{
-        background-color: #222222;
         border: none;
    }
-    div.calculator input{
-        background-color: white;
-   }
-
     div.calculator > div:nth-of-type(2){
         margin: var(--sp20) 0px var(--sp20) 20px;
    }
@@ -4011,7 +3324,6 @@ div.wave > ul > li:after{
         padding: 15px 15px;
    }
     div.calculator > div:nth-of-type(2) a{
-        background-color: var(--GS07);
         margin-left: 10px;
         padding: 15px 40px;
    }
@@ -4031,43 +3343,32 @@ div.wave > ul > li:after{
         width: 80%;
         line-height: 24px;
    }
-    div.calculator > a{
-        margin-top: var(--sp40);
-   }
+
     .twowrap > div {
         display: grid;
         grid-template-columns: 1fr 1fr;
    }
-    .twowrap > div > div,article.rightsInfo{
-        padding-block: var(--sp145) var(--sp80);
+    .twowrap > div > div,
+    article.rightsInfo{
+        padding-block: var(--sp140) var(--sp80);
    }
-
    /* order status */
-
     .arrival > img{
         margin-block: 20px 80px;
    }
-
-   
     div.details > ul,
     .arrival > div, 
     .arrival > ol,
-    section.twoface > div > div.checkOut,
     div.orderStatus{
         padding-inline: var(--sp80);
     }
 
-    .arrival > ol li:nth-child(n+3){
-        color: var(--GS06);
-   }
-    .arrival > ol li:nth-child(3):hover{
-        color: var(--GS12);
-   }
+
+
 
 
     .arrival > ol li:not(:nth-of-type(4)):hover:before {
         transform: scale(1.2);
-        background-color: var(--B05);
         border: 3px solid white;
         cursor: pointer;
    }
@@ -4090,26 +3391,7 @@ div.wave > ul > li:after{
         padding: var(--sp20) var(--sp25);
    }
     div.orderStatus > figure figcaption{
-        text-align: center;        
         padding-block: var(--sp10);
-   }
-   div.grid-group-wrapper > ul > li > div,
-   div.listContainer > div > div:last-child > ul > li >div,
-   div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type,
-   section.detailContainer > div:nth-of-type(3) nav ul li,
-   section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child,
-   div.details > div.superCharge, 
-   .accountContainer > div > div.wrapper > ul,
-   .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption,
-   .twowrap, div.dark,
-   div.orderStatus > figure figcaption{
-        background-color: var(--GS12);
-   }
-    .returns{
-        margin: var(--sp80) auto;
-   }
-    .returns > div:first-of-type {
-        text-align: center;
    }
     .returns > ol{
         max-width: 1690px;
@@ -4119,15 +3401,6 @@ div.wave > ul > li:after{
     .returns > ol li{
         flex: 1;
     }
-    section.detailContainer > div:nth-of-type(2) table,
-    div.details > div.superCharge > div ul li,
-    div.dark > div > div:first-of-type > div.createDell fieldset div,
-    div.dark > div > div:first-of-type > div.createDell fieldset > p,
-    section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3),
-    .returns > ol li,
-    section.twoface div.calculator > div:first-of-type h3{
-       text-align: left;
-   }
     .returns > ol li img{
         max-width: 200px;
    }
@@ -4139,10 +3412,7 @@ div.wave > ul > li:after{
         background-color: var(--GS04);
         padding: var(--sp40) var(--sp80);
     }   
-    main > div:nth-of-type(2) > div p,
     section.detailContainer > div:nth-of-type(3) nav ul li,
-    div.details > div.fineTuned > div p,
-    div.wave > ul > li h3,
     .accountContainer > div > div.wrapper > div > div:first-of-type > div,
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type,
     div.dark > div > div:first-of-type > div.createDell fieldset > p,
@@ -4151,11 +3421,7 @@ div.wave > ul > li:after{
     article.rightsInfo > ul > li,
     article.rightsInfo > ul li h3,
     article.rightsInfo > ul li > p,
-    .returns > div > h2,
-    .returns > ol li > dl dt{
-        margin-bottom: var(--sp20);
-   }
-   article.rightsInfo > ul li > p{
+    article.rightsInfo > ul li > p{
         color: var(--GS11);
    }
     article.rightsInfo > ul li > ul > li{        

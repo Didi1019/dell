@@ -246,13 +246,6 @@
     transform: translateY(+100%);
     transition: all 1s;  
 }
-[class*='twoface']{
-    background-color: var(--GS12);
-}
-[class*='twoface'] > div {
-    margin: 0 auto;
-    display: flex;
-}
 [class$="Back"]{
     color: var(--GS01);
     max-width: 160px;
@@ -275,12 +268,15 @@
 [class*='alignE']{align-items: flex-end;}
 [class*='alignStart']{align-items: flex-start;}
 [class*='alignStrech']{align-items: stretch;}
-
 [class*='selfEnd']{align-self: flex-end;}
+
 [class*='dRow']{flex-direction: row;}
 [class*='dColumn']{flex-direction: column;}
 
-@media screen and (max-width: 767px){   
+@media screen and (max-width: 767px){
+    .accountContainer > div > div.wrapper > div > div:first-of-type ul li{
+        margin: 0 auto;
+    }
     .rzTH80, .rzTH40uc, .rzSB50uc, .rzSB50, .rzLT40, .rzSB30{font-size: 20px;}
     .rzTH24{font-size: 18px;}
     .twRB18{font-size: 12px;}
@@ -324,6 +320,11 @@
         --sp80: 40px;
         --sp60: 30px;
     }       
+    section.detailContainer > div:nth-of-type(3),
+    section.detailContainer > div:nth-of-type(3) nav ul li img,
+    section.detailContainer > div:nth-of-type(3) nav div img.display-img{
+        margin: 0 auto;
+    }
     [class^='image']{
         margin-bottom: var(--sp80);
     }    
@@ -422,6 +423,12 @@
     }
     [class*="long"]{max-width: 200px; max-height: 45px; padding: 15px 0;}       
     [class*="slice"]{ height: 45px; max-width: 120px;}
+
+    header>div>nav>ul>li ol,
+    header>div>div:nth-of-type(2) ul,
+    section.detailContainer > div:nth-of-type(3) nav{
+    background-color: var(--GS02);
+}
 }
 [class*="corner"]{
     color: var(--B01); padding: 20px 0px; 
@@ -473,7 +480,141 @@ div.orderStatus > figure img,
 div.wave > div.supportSearch > form{
     box-sizing: border-box;
 }
+
+/*  margin bottom*/
+div.wave > div.supportSearch > form,
+div.dark > div > div:nth-of-type(2) h2,
+.returns > ol li > dl dt{
+    margin-bottom: var(--sp20);
+}
+div.details > div.superCharge,
+div.details > div.fineTuned
+div.wave > ul,
+div.listContainer{ 
+    margin-bottom: var(--sp80);
+}
+/* gap */
+div.details > div.fineTuned > div ul,
+.accountContainer > div > div.wrapper > div,
+.accountContainer > div > div.wrapper,
+.accountContainer > div > div.wrapper > ul{
+    gap: 40px;
+}
+/* padding */
+section.twoface > div > div.checkOut{
+    padding-inline: var(--sp80);
+}
+
+/* textalign */
+div.details > div.superCharge > div ul li,
+section.detailContainer > div:nth-of-type(2) table,
+div.dark > div > div:first-of-type > div.createDell fieldset div,
+div.dark > div > div:first-of-type > div.createDell fieldset > p,
+div.dark > div > div:first-of-type > div.createDell fieldset div,
+.returns > ol li,
+section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3),
+section.twoface div.calculator > div:first-of-type h3{
+    text-align: left;
+}
+
+ul.bar li,
+ol.pager li,
+div.listContainer > nav ul li,
+div.details > div.superCharge > div,
+div.details > div.fineTuned > div,
+div.dark > div > div:first-of-type,
+div.dark > div > div:nth-of-type(2),
+.returns > div:first-of-type,
+.arrival > ol li,
+div.orderStatus > figure figcaption,
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption.accountContainer,
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,
+section.twoface > div > div.checkOut form,
+div.wave > div > a.Back{
+    text-align: center;
+}
+.returns{
+    margin: var(--sp80) auto;
+}
+main > ul > *,
+div.details .legend >*,
+div.calculator > *,
+div.black,
+div.details > div.fineTuned > div ul li{
+    margin-inline: auto;
+    text-align: center;
+}
+div.listContainer > div > div:last-child > ul > li > div div:first-of-type img,
+section.detailContainer > div:nth-of-type(3) nav div img.display-img,
+div.details > div.full > div img,
+.twoface > div,
+div.dark > div > div:nth-of-type(2) img,
+.arrival > ol li:before{
+    margin: 0 auto;
+}
+
+/* color */
+div.listContainer > nav ul li a,
+section.twoface > div > div.checkOut fieldset > a:hover,
+section.detailContainer > div:nth-of-type(3) > aside > ul > li > label,
+div.details > div.full > div > div,
+div.details > ul li dl dt,
+div.details > div.superCharge > div ul li b,
+div.wave > ul > li > p,
+div.wave > div > a.Back{
+    color: var(--GS01);
+}
+div.wave > ul > li:nth-of-type(2) ol li a:hover{
+    color: var(--B01);
+}
+div.wave > ul > li:nth-of-type(4) ol li a:hover{
+    color: var(--B02);
+}
+div.wave > div.supportSearch > form input::placeholder,    
+ol.pager li a:hover {
+    color: var(--B04);
+}
+div.wave > ul > li:nth-of-type(3) ol li a:hover{
+    color: var(--B05);
+}
+div.wave > ul > li:nth-of-type(1) ol li a:hover{
+    color: var(--B06);
+}
+div.listContainer > div > div:first-child > div:nth-of-type(2) select option,
+section.detailContainer > div:first-child > div > input:first-of-type,
+section.detailContainer > div:nth-of-type(2) table tr td,
+div.details > ul li dl dd,
+section.twoface > div > div.checkOut fieldset > a{
+    color: var(--GS05);
+}
+.arrival > ol li:nth-child(n+3){
+    color: var(--GS06);
+}
+.arrival > ol li:nth-child(3):hover{
+    color: var(--GS12);
+}
+
 /* * BACKGROUND COLOR */
+div.wave > div.supportSearch > form input:nth-of-type(1),
+.twowrap > div > div:first-of-type,
+div.dark > div > div:first-of-type,
+section.twoface > div > div.checkOut,
+section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label,
+section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, 
+section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label,
+div.dark > div > div:first-of-type > div fieldset input:focus ~ label, 
+div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, 
+div.dark > div > div:first-of-type > div fieldset input:valid ~ label,
+div.calculator input{   
+    background-color: var(--GS01);
+}
+div.calculator > div:nth-of-type(2) a{
+    background-color: var(--GS07);
+}    
+div.listContainer > div > aside ul li > b:after,
+div.listContainer > div > aside ul li > ol:after{
+    background-color: var(--GS08);
+}
 div.listContainer > nav,
 div.listContainer > div > div:last-child > ul > li > div div:first-of-type,
 .accountContainer > div > div.wrapper > div > div:first-of-type ul li img,
@@ -483,4 +624,98 @@ div.wave > div > a.Back,
 div.wave > ul > li,
 div.wave > div.supportSearch{
     background-color: var(--GS10);
+}
+div.listContainer,
+section.detailContainer > div:first-child,
+section.detailContainer > div:nth-of-type(2),
+section.detailContainer > div:nth-of-type(3) aside,
+.accountContainer > div > div.wrapper > div >*,
+.twowrap > div > div:last-of-type,
+section.twoface button,
+div.dark > div > div:nth-of-type(2){
+     background-color: var(--GS11);
+}
+
+div.listContainer > div > div:last-child > ul > li >div,
+div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type,
+div.details > div.full,
+div.details > div.superCharge,
+section.detailContainer > div:nth-of-type(3) nav ul li,
+.accountContainer,
+.accountContainer > div > div.wrapper > ul,
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption,
+.twowrap,
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child,
+div.orderStatus > figure figcaption{
+    background-color: var(--GS12);
+}
+
+div.wave > ul > li:nth-of-type(2):after{
+    background-color: var(--B01);
+}
+div.listContainer > div > div:last-child> ul > li > div > div mark,
+div.details > div.fineTuned > div ul li:nth-of-type(3),
+div.wave > ul > li:nth-of-type(4):after,
+div.listContainer .cart-Toggle{
+    background-color: var(--B02);
+}
+div.details > div.fineTuned > div ul li:nth-of-type(2){
+    background-color: var(--B03);
+}
+div.wave > div.supportSearch > ol li,
+div.wave > div.supportSearch > form > input:last-of-type,
+div.dark > div > div:first-of-type > div.findPassword fieldset > button,
+div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, 
+div.dark > div > div:first-of-type > div.createPassword fieldset > button,
+div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, 
+div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after,
+div.dark > div > div:first-of-type > div.createDell button:first-of-type,
+section.twoface > div > div.checkOut fieldset div button:first-of-type,
+ section.twoface > div > div.checkOut .createPassword fieldset > button{
+    background-color: var(--B04);
+}
+div.listContainer .cart-Toggle:hover,
+div.details > div.fineTuned > div ul li:nth-of-type(4),
+div.wave > ul > li:nth-of-type(3):after,
+.arrival > ol li:after,
+.arrival > ol li:not(:nth-of-type(4)):hover:before,
+.arrival > ol li:nth-of-type(1):before, 
+.arrival > ol li:nth-of-type(2):before{
+    background-color: var(--B05);
+}
+div.details > div.fineTuned > div ul li:nth-of-type(1),
+div.wave > ul > li:nth-of-type(1):after{
+    background-color: var(--B06);
+}
+
+
+
+
+
+
+div.details > div.full{
+    padding-block: var(--sp60);
+}
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption,
+div.dark > div > div:first-of-type > div.findPassword fieldset > button{
+    padding-block: var(--sp10);
+}
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
+    padding-right: var(--sp20);
+}
+section.twoface > div > div.checkOut form{
+    margin-top: var(--sp40);
+}
+div.details > div.full > div img,
+div.details > div.full > div > div,
+main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a{
+    height: 100%;
+}
+.accountContainer > div > div.wrapper > ul li p{
+    left: 20px;
+    bottom: 40px;
+}
+.accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
+    left: 20px;
+    bottom: 20px;
 }
