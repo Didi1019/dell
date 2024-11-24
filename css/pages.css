@@ -1203,7 +1203,6 @@ article.rightsInfo > ul li > address{
     .accountContainer > div > div.wrapper > ul li:nth-of-type(2) img{
         object-fit: cover;
     }
-
     div.dark > div > div:first-of-type > div.createDell fieldset button,div.dark > div > div:first-of-type > div.findPassword fieldset > button{
         padding-block: var(--sp10);
     }
@@ -1224,14 +1223,13 @@ article.rightsInfo > ul li > address{
         gap: 20px;
         margin: var(--sp40) auto;
     }
-   div.dark > div > div:first-of-type{
-    height: 830px;
-}
+    div.dark > div > div:first-of-type{
+        height: 830px;
+    }
    /*!! twowrap  */
    .twowrap > div > div:first-of-type{
         padding-block: var(--sp140) var(--sp80);
     }
-
     .arrival > ol{
         padding-inline: var(--sp25);
     }
