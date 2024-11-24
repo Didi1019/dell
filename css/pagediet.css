@@ -1,4 +1,5 @@
 
+
 /* mobile */
 
 /* tablet */
@@ -6,5 +7,22 @@
 /* mobile tablet */
 
 
-
 /* desktop */ 
+
+
+
+
+/* desktop and tablet */
+div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(2) input{
+    width: auto;
+    margin-block: var(--sp20);
+}
+.arrival > ol li:after {
+    top: calc(50% - 15px);
+}
+div.dark > div > div:first-of-type > div.createDell fieldset ul li{
+    flex: 1;
+}
+div.dark > div > div:first-of-type > div.createDell fieldset ul{
+    gap: 20px;
+}

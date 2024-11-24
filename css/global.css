@@ -75,6 +75,7 @@ article.rightsInfo > ul li > ul > li{
     section.detailContainer > div:first-child > div,
     .returns,
     ul.bar li,
+    section.detailContainer > div:nth-of-type(2) table,
     div.dark > div > div:nth-of-type(2) ul {
         padding-inline: 3.25%; 
    }
