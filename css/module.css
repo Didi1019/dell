@@ -210,9 +210,6 @@
 [class^='middle'] > ol li:last-of-type {
     margin-bottom: 10px;
 }
-[class^='middle'] > div{
-    text-align: left;
-}
 [class^='full'] {
     margin: var(--sp40) auto;
     text-align: center;
@@ -220,19 +217,7 @@
 [class^='full'] > p{
     margin: 0 auto;
 }
-[class$='recycle'] {
-    margin-bottom: 0px;
-    background-image: url('../images/xps_13plus_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-[class$='recycle'] > img {
-    max-width: 579px;
-    padding: var(--sp80) 0;
-}
 [class*='west'],[class*='east'],[class*='north']{
-    opacity: 0;
     filter: blur(5px);
     transition: all 2s; 
 }
@@ -250,7 +235,6 @@
     color: var(--GS01);
     max-width: 160px;
     padding: 14px 0px;
-    cursor: pointer;
     height: 50px;
 }
 [class*='floatL']{float: left;}
@@ -304,7 +288,7 @@
     }
 }
 @media screen and (max-width: 1279px) {
-    p.rzTH18, p.rbRG16, p.rzTH16{line-height: 30px;}    
+    p.rbRG16, p.rzTH16{line-height: 30px;}    
     .rzTH55{font-size: 55px;}
     .rzLT40{font-size: 40px;}
     .rbMD30, .rzTH55uc, .rzSB50, .rbSB50, .rbSB30{font-size: 30px;}    
@@ -361,7 +345,7 @@
 }
 @media screen and (min-width: 1280px){
     
-    p.rzTH18, p.rzTH16, td>ul>li.rbRG16, dd.rbRG16{line-height: 30px;}
+    p.rzTH16, td>ul>li.rbRG16, dd.rbRG16{line-height: 30px;}
     p.rbRG16:not(div.superCharge p, ul li > p){ line-height: 50px;}
     
     [class*='10']{font-size: 10px;}
@@ -388,7 +372,7 @@
         object-fit: contain; 
     }
     [class^='image'] > video{
-        background-color: var(--GS12); height: 540px; max-width: 960px;        
+        height: 540px; max-width: 960px;        
     }
     [class*='Lf'] > div{
         padding: 0 var(--sp80) 0 var(--sp110);
@@ -407,16 +391,12 @@
         padding-bottom: var(--sp40);
     }
     [class^='middle'] > div ol{
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     [class^='full'] > p, 
     [class^='middle'], 
     [class*='twoface'] > div{
         max-width: 1200px;
-    }
-    [class*='twoface']{        
-        background-color: var(--GS12);  
     }
     [class*='twoface'] > div > div{
         flex: 1; padding-block: var(--sp140) var(--sp80); max-width: 600px;
@@ -481,19 +461,63 @@ div.wave > div.supportSearch > form{
     box-sizing: border-box;
 }
 
+/*  */
+[class*='west'],[class*='east'],[class*='north'],
+main > div:first-of-type > ul li div,
+main > div:first-of-type > ul li:nth-child(6),
+ul.bar li,
+section.detailContainer > div:nth-of-type(3) > aside > ul > li > input{
+    opacity: 0;
+}
+
+
 /*  margin bottom*/
+main > ul li h4,
 div.wave > div.supportSearch > form,
 div.dark > div > div:nth-of-type(2) h2,
 .returns > ol li > dl dt{
     margin-bottom: var(--sp20);
 }
+div.details .legend h4,
+div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3),
+div.dark > div > div:first-of-type > div.findPassword fieldset > *,
+div.dark > div > div:first-of-type > div.findPassword fieldset > button,
+section.twoface > div > div.checkOut form fieldset legend,
+section.twoface > div > div.checkOut form fieldset ul > li,
+main > div:nth-of-type(2) > div h3,
+div.dark > div > div:first-of-type > div fieldset > ul > li,
+section.twoface > div > div.checkOut fieldset > ul > li {
+    margin-bottom: var(--sp30);
+}
+main > div:nth-of-type(3) > div div h2,
+div.grid-group-wrapper > ul > li,
+div.listContainer > div > div:last-child > ul > li,
+section.detailContainer > div:nth-of-type(3) > aside > div > h3,
+article.rightsInfo h2,
+article.rightsInfo > ul,
+section.twoface > div > div.checkOut fieldset legend,
+div.dark > div > div:first-of-type > div fieldset legend,
+div.wave > div.supportSearch h4,
+div.wave > div.supportSearch p,
+.accountContainer > div h2{
+    margin-bottom: var(--sp40);
+}
 div.details > div.superCharge,
-div.details > div.fineTuned
+div.details > div.fineTuned,
 div.wave > ul,
 div.listContainer{ 
     margin-bottom: var(--sp80);
 }
+section.twoface > div > div.checkOut form,
+div.calculator > a{
+    margin-top: var(--sp40);
+}
+
+
 /* gap */
+div.wave > ul{
+    gap: 20px;
+}
 div.details > div.fineTuned > div ul,
 .accountContainer > div > div.wrapper > div,
 .accountContainer > div > div.wrapper,
@@ -504,8 +528,57 @@ div.details > div.fineTuned > div ul,
 section.twoface > div > div.checkOut{
     padding-inline: var(--sp80);
 }
+main > div:nth-of-type(3) > div,
+div.details > h4
+.recycle img,
+div.wave{
+    padding-block: var(--sp80);
+}
+/* lineheight */
+div.listContainer > div > div:last-child > ul > li > div ul li,
+div.listContainer > div > div:last-child > ul > li > div h3,
+section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4{
+    line-height: 21px;
+}
+p.rzTH18,
+[class^='image'] > div ul li p,
+div.listContainer > div > aside ul li > ol li,
+section.detailContainer > div:nth-of-type(2) table tr th,
+section.detailContainer > div:nth-of-type(2) table tr td,
+section.detailContainer > div:nth-of-type(2) table tr td ul li,
+section.detailContainer > div:nth-of-type(3) > aside > div > ul > li,
+div.details > div.superCharge > div ul li p,
+div.wave > ul > li > p,
+.accountContainer > div > div.wrapper > div > div > p,
+div.dark > div > div:first-of-type > div.createDell fieldset > p,
+div.dark > div > div:nth-of-type(2) ul li dl dd,
+article.rightsInfo > ul li > p,
+article.rightsInfo > ul li > address, 
+div.details > ul li dl dd,   
+.returns > ol li > dl dd{
+    line-height: 30px;
+}
 
+/* cursor */
+[class$="Back"],
+main > div:first-of-type .sButton > button,
+main > div:nth-of-type(3) > div label,
+div.listContainer > div > aside > input,
+div.listContainer > div > aside ul li > b,
+div.listContainer > div > aside ul li > ol li label,
+section.detailContainer > div:first-child > div > input:first-of-type,
+section.detailContainer > div:nth-of-type(3) > aside > ul > li > label,
+section.detailContainer > div:nth-of-type(3) > aside > div input,
+div.wave > div.supportSearch > form input:nth-of-type(2),
+div.dark > div > div:first-of-type > div button,
+div.dark > div > div:first-of-type > div.createDell fieldset button, 
+div.dark > div > div:first-of-type > div.findPassword fieldset > button,
+section.twoface > div > div.checkOut button,
+.arrival > ol li:not(:nth-of-type(4)):hover:before{
+    cursor: pointer;   
+}
 /* textalign */
+[class^='middle'] > div,
 div.details > div.superCharge > div ul li,
 section.detailContainer > div:nth-of-type(2) table,
 div.dark > div > div:first-of-type > div.createDell fieldset div,
@@ -516,7 +589,6 @@ section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3),
 section.twoface div.calculator > div:first-of-type h3{
     text-align: left;
 }
-
 ul.bar li,
 ol.pager li,
 div.listContainer > nav ul li,
@@ -526,6 +598,7 @@ div.dark > div > div:first-of-type,
 div.dark > div > div:nth-of-type(2),
 .returns > div:first-of-type,
 .arrival > ol li,
+.accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption,
 div.orderStatus > figure figcaption,
 .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption.accountContainer,
 .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,
@@ -533,8 +606,22 @@ section.twoface > div > div.checkOut form,
 div.wave > div > a.Back{
     text-align: center;
 }
+main > div:nth-of-type(3) > ul li,
+main > div:first-of-type .sButton > button,
+div.listContainer > div > div:last-child .gradient li,
+div.listContainer > div > div:first-child > div button,
+section.detailContainer > div:nth-of-type(3) button,
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child,
+div.calculator > div:first-of-type > div > button{
+    text-indent: -9999px;
+}
+div.details .legend,
+div.details > ul,
 .returns{
     margin: var(--sp80) auto;
+}
+div.details .legend nav > div img {
+    margin: var(--sp40) auto;
 }
 main > ul > *,
 div.details .legend >*,
@@ -552,6 +639,11 @@ div.dark > div > div:nth-of-type(2) img,
 .arrival > ol li:before{
     margin: 0 auto;
 }
+/** marginbottom */
+div.listContainer > nav ul li a img,
+div.wave > ul > li ol li{
+    margin-bottom: var(--sp15);
+}
 
 /* color */
 div.listContainer > nav ul li a,
@@ -563,6 +655,9 @@ div.details > div.superCharge > div ul li b,
 div.wave > ul > li > p,
 div.wave > div > a.Back{
     color: var(--GS01);
+}
+div.listContainer > div > aside ul li > ol li{
+    color: var(--GS08);        
 }
 div.wave > ul > li:nth-of-type(2) ol li a:hover{
     color: var(--B01);
@@ -587,6 +682,7 @@ div.details > ul li dl dd,
 section.twoface > div > div.checkOut fieldset > a{
     color: var(--GS05);
 }
+div.listContainer > div > div:last-child > ul > li > div ul li,
 .arrival > ol li:nth-child(n+3){
     color: var(--GS06);
 }
@@ -608,12 +704,19 @@ div.dark > div > div:first-of-type > div fieldset input:valid ~ label,
 div.calculator input{   
     background-color: var(--GS01);
 }
+.arrival > ol li:nth-of-type(3):before, 
+.arrival > ol li:nth-of-type(4):before{
+    background-color: var(--GS06); 
+}
 div.calculator > div:nth-of-type(2) a{
     background-color: var(--GS07);
 }    
 div.listContainer > div > aside ul li > b:after,
 div.listContainer > div > aside ul li > ol:after{
     background-color: var(--GS08);
+}
+div.listContainer > div > div:first-child > div:nth-of-type(2) select option {
+    background-color: var(--GS09);
 }
 div.listContainer > nav,
 div.listContainer > div > div:last-child > ul > li > div div:first-of-type,
@@ -635,21 +738,22 @@ section.twoface button,
 div.dark > div > div:nth-of-type(2){
      background-color: var(--GS11);
 }
-
+[class^='image'] > video,
+[class^='image'] > img,
 div.listContainer > div > div:last-child > ul > li >div,
 div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type,
 div.details > div.full,
 div.details > div.superCharge,
 section.detailContainer > div:nth-of-type(3) nav ul li,
-.accountContainer,
-.accountContainer > div > div.wrapper > ul,
 .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption,
 .twowrap,
 section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child,
 div.orderStatus > figure figcaption{
     background-color: var(--GS12);
 }
-
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{
+    background-color: #f7c518;
+}
 div.wave > ul > li:nth-of-type(2):after{
     background-color: var(--B01);
 }
@@ -662,6 +766,7 @@ div.listContainer .cart-Toggle{
 div.details > div.fineTuned > div ul li:nth-of-type(2){
     background-color: var(--B03);
 }
+#pager-line,
 div.wave > div.supportSearch > ol li,
 div.wave > div.supportSearch > form > input:last-of-type,
 div.dark > div > div:first-of-type > div.findPassword fieldset > button,
@@ -718,4 +823,63 @@ main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a{
 .accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
     left: 20px;
     bottom: 20px;
+}
+
+/* background */
+main > div:first-of-type > ul li:nth-child(1),
+main > div:nth-of-type(3) > ul li,
+main > div:nth-of-type(3) > div:has(input:checked) ~ ul li,
+.show{
+    opacity: 1;
+}
+main > ul li,
+main > ul li span,
+main > div:nth-of-type(3) > ul li,
+div.listContainer > div > div:first-child > div button,
+section.detailContainer > div:nth-of-type(3) > aside > div input,
+div.details > div.fineTuned > div ul li dl dt,
+div.calculator > div:first-of-type > div > button,
+div.dark > div > div:nth-of-type(2) ul li dl dt,
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li,
+div.wave > div.supportSearch > ol li,
+div.wave > ul > li{
+    background-repeat: no-repeat;
+}
+div.listContainer > div > div:first-child > div button,
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li,
+div.calculator > div:first-of-type > div > button{
+    background-position: center center;
+}
+main > ul li,
+main > ul li span,
+main > div:nth-of-type(3) > ul li{
+    background-position: center;
+}
+
+div.dark > div > div:nth-of-type(2) ul li dl dt{
+    background-position: top center;
+}
+div.details > div.fineTuned > div ul li dl dt{
+    background-position: center top;
+}
+div.wave > div.supportSearch > ol li{
+    background-position: left 20px center;
+}
+div.wave > ul > li{
+    background-position: right bottom ;
+}
+main > ul li{
+    background-size: cover;
+}
+
+/* grid */
+[class^='middle'] > div ol,
+div.listContainer > div,
+div.details > div.fineTuned > div ul,
+div.details > div.superCharge > div ul,
+div.details > div.full > div > div > ul,
+.twowrap > div,
+div.wave > ul,
+div.wave > ul > li > ol{
+    display: grid;
 }

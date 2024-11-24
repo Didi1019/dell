@@ -17,6 +17,7 @@ $(function() {
 });
 
 function preloadHoverImages() {
+    if (!window.location.pathname.split('/').pop().startsWith('list')) return;    
     $(".change img").each(function () {
         $('<img>').attr('src', $(this).attr('src').replace(".png", "Hover.png"));
     });
@@ -31,16 +32,12 @@ function hoverImg() {
         const isHovering = shouldChangeToHover(e, img);
         updateImageSrc(img, isHovering);
     });
-
-    // Helper to decide if the image should switch to the hover version
     function shouldChangeToHover(event, img) {
         const isClick = event.type === "click";
         const isHoverEvent = event.type === "mouseenter";
         const isAlreadyHovering = img.attr('src').includes("Hover.png");
         return isHoverEvent || (isClick && !isAlreadyHovering);
     }
-
-    // Helper to update the image source and handle opacity transitions
     function updateImageSrc(img, toHover) {
         const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
         img.css('opacity', '0').one('transitionend', function () {
