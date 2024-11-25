@@ -408,7 +408,9 @@ $(document).ready(function() {
             $(this).parent().addClass('selected');
         });
     
-        var zoomImage = '<img class="zoom" src="' + $('.display-img').attr('src') + '">';
+        var altText = $('.display-img').attr('alt') || 'Default alt text';
+        var zoomImage = '<img class="zoom" src="' + $('.display-img').attr('src') + '" alt="' + altText + '">';
+
         $('.detailContainer > div:nth-of-type(3) > nav > div').addClass('big-img');
         $('.big-img').append(zoomImage);
     
@@ -468,7 +470,6 @@ $(document).ready(function() {
     
         $(window).on('resize', applyZoom);
         applyZoom();
-    
 
     }
     
