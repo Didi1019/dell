@@ -101,16 +101,16 @@
     opacity: 80%;
 }
 [class*="slice"]:before {
-   background: transparent transparent transparent var(--B05);
-   bottom: 0;
+    background: transparent transparent transparent var(--B05);
+    border-color: transparent transparent transparent var(--B05);
+    bottom: 0;
     left: 0;
-   border-color: transparent transparent transparent var(--B05);
 }
 [class*="slice"]:after {
-   background:transparent var(--B04) transparent transparent;
+    background:transparent var(--B04) transparent transparent;
+    border-color: transparent var(--B04) transparent transparent;
     top: 0;
     right: 0;
-   border-color: transparent var(--B04) transparent transparent;
 }
 [class*="slice"]:hover:before, [class*="slice"]:hover:after {
    border-width: 120px 340px;
@@ -304,7 +304,7 @@
     .rzSB20, .rzSB40uc, .rzLT20, .rbRG20{font-size: 20px;}
     .rzTH20, .rzTH20uc, .rbRG18{font-size: 16px;}
     .rbMD14, .rbBL18, .rzTH20uc{font-size: 14px;}
-    .rzLT18{font-size: 12px;}
+    .rzLT18,main > div:first-of-type > ul li div p{font-size: 12px;}
     .rbRG10{font-size: 10px;}
     :root{
         --sp345: 80px;
@@ -421,21 +421,18 @@
 [class$='List']{
     background-size: 214px;
 }
-
 .cart-Toggle{
     padding: 13px 10px;
     max-width: 110px;
     transition: background-color 0.3s ease;
     border-radius: 4px;
 }
-
 [class~='clearfix']::after,
 [class~='clearfix']::before {
     content: '';
     display: block;
     clear: both;
 }
-
 [class*="corner"]::before,[class*="corner"]::after,[class*="corner"] span::before, [class*="corner"] span::after, [class*="slice"]:before,[class*="slice"]:after, [class$="Back"]:before, [class$="Back"]:after, [class$="long"]:before,div.listContainer > div > aside ul li > b::before,div.listContainer > div > aside ul li > b:after,div.wave > ul > li:after,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after,.arrival > ol li:after{
     position: absolute;
     content: '';
@@ -478,7 +475,6 @@ main > div:first-of-type > ul li:nth-child(1), main > div:first-of-type > ul li:
 main > div:nth-of-type(3) > ul::before, div.listContainer > div > aside ul li > b::before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
     right: 0;
 }
-
 [class$='Panel'], [class$='Popup'], [class^=btn-], [class*=more], main > div:first-of-type > ul, main > div:nth-of-type(3) > ul,main > div:nth-of-type(3) > ul li,div.listContainer > div > aside ul li > b,div.listContainer > div > div:first-child > div:nth-of-type(2) select,div.listContainer > div > div:first-child > div:nth-of-type(2) label,div.listContainer > div > aside ul li,div.listContainer > div > aside ul li > ol li label,div.listContainer > div > div:last-of-type > ul li > div,div.listContainer > div > div:last-child >.test >div:first-child,div.grid-group-wrapper > ul > li > div,ol.pager,div.details > div.full > div,div.details > div.full > div img,section.detailContainer > div:nth-of-type(3) nav > div,#sort,section.twoface > div > div.checkOut fieldset > ul > li,.arrival > ol li:before,.arrival > ol li,div.dark > div > div:first-of-type > div fieldset div,div.dark > div > div:first-of-type > div fieldset > ul > li,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type,section.detailContainer > div:first-child > div > input:first-of-type,.accountContainer > div > div.wrapper > ul li,div.dark > div > div:first-of-type,main > div:first-of-type,div.dark > div,div.wave,div.wave > ul > li h3,div.wave > ul > li{
     position: relative;
 }
@@ -493,14 +489,12 @@ div.details .legend h4, div.dark > div > div:first-of-type > div.createDell fiel
 main > div:nth-of-type(3) > div div h2, div.grid-group-wrapper > ul > li, div.listContainer > div > div:last-child > ul > li, [class^='image'] > div ul li p, section.detailContainer > div:nth-of-type(3) > aside > div > h3, article.rightsInfo h2, article.rightsInfo > ul, section.twoface > div > div.checkOut fieldset legend, div.dark > div > div:first-of-type > div fieldset legend, div.wave > div.supportSearch h4, div.wave > div.supportSearch p, .accountContainer > div h2{margin-bottom: var(--sp40);}
 div.details > div.superCharge, div.details > div.fineTuned, div.wave > ul, div.listContainer{margin-bottom: var(--sp80);}
 section.twoface > div > div.checkOut form, div.calculator > a{margin-top: var(--sp40);}
-/* gap */
 div.listContainer > div > div:last-child > ul > li > div > div:last-child, div.wave > ul{
     gap: 20px;
 }
 div.details > div.fineTuned > div ul, .accountContainer > div > div.wrapper > div, .accountContainer > div > div.wrapper, .accountContainer > div > div.wrapper > ul{
     gap: 40px;
 }
-/* padding */
 section.twoface > div > div.checkOut{
     padding-inline: var(--sp80);
 }
@@ -510,18 +504,15 @@ main > div:nth-of-type(3) > div, div.details > h4 .recycle img, div.wave{
 [class^='middle'] > h4, [class^='full'] > h4{
     padding-bottom: var(--sp40);
 }
-/* lineheight */
 #sort, section.twoface div.calculator > div:first-of-type h3, div.listContainer > div > div:last-child > ul > li > div ul li, div.listContainer > div > div:last-child > ul > li > div h3, section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4, div.calculator > p{
     line-height: 21px;
 }
 p.rzTH18, [class^='image'] > div ul li p, div.listContainer > div > aside ul li > ol li, section.detailContainer > div:nth-of-type(2) table tr th, article.rightsInfo > ul li > ul > li,section.detailContainer > div:nth-of-type(2) table tr td, section.detailContainer > div:nth-of-type(2) table tr td ul li, section.detailContainer > div:nth-of-type(3) > aside > div > ul > li, div.details > div.superCharge > div ul li p, div.wave > ul > li > p, .accountContainer > div > div.wrapper > div > div > p, div.dark > div > div:first-of-type > div.createDell fieldset > p, div.dark > div > div:nth-of-type(2) ul li dl dd, article.rightsInfo > ul li > p, article.rightsInfo > ul li > address, div.details > ul li dl dd, .returns > ol li > dl dd{
     line-height: 30px;
 }
-/* cursor */
 [class$="Back"], main > div:first-of-type .sButton > button, main > div:nth-of-type(3) > div label, div.listContainer > div > aside > input, div.listContainer > div > aside ul li > b, div.listContainer > div > aside ul li > ol li label, section.detailContainer > div:first-child > div > input:first-of-type, section.detailContainer > div:nth-of-type(3) > aside > ul > li > label, section.detailContainer > div:nth-of-type(3) > aside > div input, div.wave > div.supportSearch > form input:nth-of-type(2), div.dark > div > div:first-of-type > div button, div.dark > div > div:first-of-type > div.createDell fieldset button, div.dark > div > div:first-of-type > div.findPassword fieldset > button, section.twoface > div > div.checkOut button, .arrival > ol li:not(:nth-of-type(4)):hover:before{
     cursor: pointer;
 }
-/* textalign */
 [class^='middle'] > div, div.details > div.superCharge > div ul li, section.detailContainer > div:nth-of-type(2) table, div.dark > div > div:first-of-type > div.createDell fieldset div, div.dark > div > div:first-of-type > div.createDell fieldset > p, div.dark > div > div:first-of-type > div.createDell fieldset div, .returns > ol li, section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3), section.twoface div.calculator > div:first-of-type h3{
     text-align: left;
 }
@@ -558,40 +549,19 @@ div.listContainer > div > div:last-child > ul > li > div ul li, .arrival > ol li
 div.listContainer > div > aside ul li > ol li{
     color: var(--GS08);
 }
-[class*="corner"],
-div.wave > ul > li:nth-of-type(2) ol li a:hover{
-    color: var(--B01);
-}
-div.wave > ul > li:nth-of-type(4) ol li a:hover{
-    color: var(--B02);
-}
-div.wave > div.supportSearch > form input::placeholder, ol.pager li a:hover {
-    color: var(--B04);
-}
-div.wave > ul > li:nth-of-type(3) ol li a:hover{
-    color: var(--B05);
-}
-div.wave > ul > li:nth-of-type(1) ol li a:hover{
-    color: var(--B06);
-}
-[class*='zero'],
-.cart-Toggle,
-.arrival > ol li:nth-child(3):hover{
-    color: var(--GS12);
-}
-/* * BACKGROUND COLOR */
-[class*='twoface'] > div > div:first-of-type, div.wave > div.supportSearch > form input:nth-of-type(1), .twowrap > div > div:first-of-type, div.dark > div > div:first-of-type, section.twoface > div > div.checkOut, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label, div.dark > div > div:first-of-type > div fieldset input:focus ~ label, div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, div.dark > div > div:first-of-type > div fieldset input:valid ~ label, div.calculator input{
-    background-color: var(--GS01);
-}
-article.rightsInfo > ul{
-    background-color: var(--GS04);
-}
+
+[class*="corner"],div.wave > ul > li:nth-of-type(2) ol li a:hover{color: var(--B01);}
+div.wave > ul > li:nth-of-type(4) ol li a:hover{color: var(--B02);}
+div.wave > div.supportSearch > form input::placeholder, ol.pager li a:hover {color: var(--B04);}
+div.wave > ul > li:nth-of-type(3) ol li a:hover{color: var(--B05);}
+div.wave > ul > li:nth-of-type(1) ol li a:hover{color: var(--B06);}
+[class*='zero'], .cart-Toggle,.arrival > ol li:nth-child(3):hover{color: var(--GS12);}
+[class*='twoface'] > div > div:first-of-type, div.wave > div.supportSearch > form input:nth-of-type(1), .twowrap > div > div:first-of-type, div.dark > div > div:first-of-type, section.twoface > div > div.checkOut, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label, div.dark > div > div:first-of-type > div fieldset input:focus ~ label, div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, div.dark > div > div:first-of-type > div fieldset input:valid ~ label, div.calculator input{background-color: var(--GS01);}
+article.rightsInfo > ul{background-color: var(--GS04);}
 .arrival > ol li:nth-of-type(3):after, .arrival > ol li:nth-of-type(3):before, .arrival > ol li:nth-of-type(4):before{
     background-color: var(--GS06);
 }
-div.calculator > div:nth-of-type(2) a{
-    background-color: var(--GS07);
-}
+div.calculator > div:nth-of-type(2) a{background-color: var(--GS07);}
 div.listContainer > div > aside ul li > b:after, div.listContainer > div > aside ul li > ol:after{
     background-color: var(--GS08);
 }
@@ -607,18 +577,12 @@ div.listContainer, section.detailContainer > div:first-child, [class*='twoface']
 [class^='image'] > video, [class^='image'] > img, div.listContainer > div > div:last-child > ul > li >div, div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type, div.details > div.full, div.details > div.superCharge, section.detailContainer > div:nth-of-type(3) nav ul li, .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption, .twowrap, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child, div.orderStatus > figure figcaption{
     background-color: var(--GS12);
 }
-section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{
-    background-color: #f7c518;
-}
-div.wave > ul > li:nth-of-type(2):after{
-    background-color: var(--B01);
-}
+section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{background-color: #f7c518;}
+div.wave > ul > li:nth-of-type(2):after{background-color: var(--B01);}
 .cart-Toggle, div.listContainer > div > div:last-child> ul > li > div > div mark, div.details > div.fineTuned > div ul li:nth-of-type(3), div.wave > ul > li:nth-of-type(4):after, div.listContainer .cart-Toggle{
     background-color: var(--B02);
 }
-div.details > div.fineTuned > div ul li:nth-of-type(2){
-    background-color: var(--B03);
-}
+div.details > div.fineTuned > div ul li:nth-of-type(2){background-color: var(--B03);}
 #pager-line, div.wave > div.supportSearch > ol li, div.wave > div.supportSearch > form > input:last-of-type, div.dark > div > div:first-of-type > div.findPassword fieldset > button, div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, div.dark > div > div:first-of-type > div.createPassword fieldset > button, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after, div.dark > div > div:first-of-type > div.createDell button:first-of-type, section.twoface > div > div.checkOut fieldset div button:first-of-type, section.twoface > div > div.checkOut .createPassword fieldset > button{
     background-color: var(--B04);
 }
@@ -628,26 +592,16 @@ div.listContainer .cart-Toggle:hover, div.details > div.fineTuned > div ul li:nt
 div.details > div.fineTuned > div ul li:nth-of-type(1), div.wave > ul > li:nth-of-type(1):after{
     background-color: var(--B06);
 }
-div.details > div.full{
-    padding-block: var(--sp60);
-}
+div.details > div.full{padding-block: var(--sp60);}
 .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption, div.dark > div > div:first-of-type > div.findPassword fieldset > button{
     padding-block: var(--sp10);
 }
 section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child{
     padding-right: var(--sp20);
 }
-section.twoface > div > div.checkOut form{
-    margin-top: var(--sp40);
-}
-div.details > div.full > div img, div.details > div.full > div > div, main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a,div.dark > div > div:first-of-type > div{
-    height: 100%;
-}
-
-/* background */
-main > div:first-of-type > ul li:nth-child(1), main > div:nth-of-type(3) > ul li, main > div:nth-of-type(3) > div:has(input:checked) ~ ul li, .show{
-    opacity: 1;
-}
+section.twoface > div > div.checkOut form{margin-top: var(--sp40);}
+div.details > div.full > div img, div.details > div.full > div > div, main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a,div.dark > div > div:first-of-type > div{height: 100%;}
+main > div:first-of-type > ul li:nth-child(1), main > div:nth-of-type(3) > ul li, main > div:nth-of-type(3) > div:has(input:checked) ~ ul li, .show{opacity: 1;}
 [class$='List'], main > ul li, main > ul li span, main > div:nth-of-type(3) > ul li, div.listContainer > div > div:first-child > div button, section.detailContainer > div:nth-of-type(3) > aside > div input, div.details > div.fineTuned > div ul li dl dt, div.calculator > div:first-of-type > div > button, div.dark > div > div:nth-of-type(2) ul li dl dt, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li, div.wave > div.supportSearch > ol li, div.wave > ul > li{
     background-repeat: no-repeat;
 }
@@ -669,12 +623,7 @@ div.wave > div.supportSearch > ol li{
 div.wave > ul > li{
     background-position: right bottom ;
 }
-main > div:first-of-type > ul li, 
-main > div:nth-of-type(3) > ul li,
-main > ul li{
-    background-size: cover;
-}
-/* grid */
+main > div:first-of-type > ul li, main > div:nth-of-type(3) > ul li, main > ul li{background-size: cover;}
 [class*='gridWrapper'], [class^='middle'] > div ol{display: grid;}
 section.detailContainer > div:nth-of-type(3) nav div img.display-img, section.detailContainer > div:nth-of-type(3) nav ul li img, div.details > div.full > div > div > ul li img{
     object-fit: contain;
