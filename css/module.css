@@ -91,10 +91,6 @@
     overflow: hidden;
     width: 100%;
 }
-[class*="corner"]::before,[class*="corner"]::after,[class*="corner"] span::before, [class*="corner"] span::after, [class*="slice"]:before,[class*="slice"]:after, [class$="Back"]:before, [class$="Back"]:after, [class$="long"]:before{
-    position: absolute;
-    content: "";
-}
 [class*="slice"]:before,[class*="slice"]:after {
     transition: 0.7s ease-in-out;
     width: 0;
@@ -128,30 +124,14 @@
     transition: transform 0.3s;
     z-index: -20;
 }
-[class*="corner"]::before {
-    transform: translate(-100%, -100%);
-}
-[class*="corner"]::after {
-    transform: translate(-100%, 100%);
-}
-[class*="corner"] span::before {
-    transform: translate(100%, -100%);
-}
-[class*="corner"] span::after {
-    transform: translate(100%, 100%);
-}
-[class*="corner"]:hover::before {
-    transform: translate(-50%, -50%);
-}
-[class*="corner"]:hover::after {
-    transform: translate(-50%, 50%);
-}
-[class*="corner"]:hover span::before {
-    transform: translate(50%, -50%);
-}
-[class*="corner"]:hover span::after {
-    transform: translate(50%, 50%);
-}
+[class*="corner"]::before {transform: translate(-100%, -100%);}
+[class*="corner"]::after {transform: translate(-100%, 100%);}
+[class*="corner"] span::before {transform: translate(100%, -100%);}
+[class*="corner"] span::after {transform: translate(100%, 100%);}
+[class*="corner"]:hover::before {transform: translate(-50%, -50%);}
+[class*="corner"]:hover::after {transform: translate(-50%, 50%);}
+[class*="corner"]:hover span::before {transform: translate(50%, -50%);}
+[class*="corner"]:hover span::after {transform: translate(50%, 50%);}
 [class$="Back"]:before, [class$="Back"]:after {
     inset: 0;
     border-bottom: 50px solid var(--B04);
@@ -198,16 +178,10 @@
     border-right: 50px solid transparent;
     transform: translateX(-100%);
 }
-[class*='Lf'] > *{
-    animation: left 1s ease-out;
-}
-[class*='RT'] > *{
-    animation: right 1s ease-out;
-}
+[class*='Lf'] > *{animation: left 1s ease-out;}
+[class*='RT'] > *{animation: right 1s ease-out;}
 /* start of image */
-[class^='image'] > div h5 {
-    padding: var(--sp40) 0;
-}
+[class^='image'] > div h5 {padding: var(--sp40) 0;}
 [class^='image'] > div p{
     width: 100%;
 }
@@ -266,58 +240,23 @@
     padding: 14px 0px;
     height: 50px;
 }
-[class*='floatL']{
-   float: left;
-}
-[class*='w100']{
-   width: 100%;
-}
-[class*='fUno']{
-   flex: 1;
-}
-[class*='flexWrapper']{
-   display: flex;
-}
-[class*='JCmid']{
-   justify-content: center;
-}
-[class*='JCstart']{
-   justify-content:flex-start;
-}
-[class*='JCend']{
-   justify-content:flex-end;
-}
-[class*='JCspace']{
-   justify-content: space-between;
-}
-[class*='JCstretch']{
-   justify-content: stretch;
-}
-[class*='alignC']{
-   align-items: center;
-}
-[class*='alignE']{
-   align-items: flex-end;
-}
-[class*='alignStart']{
-   align-items: flex-start;
-}
-[class*='alignStrech']{
-   align-items: stretch;
-}
-[class*='selfEnd']{
-   align-self: flex-end;
-}
-[class*='dRow']{
-   flex-direction: row;
-}
-[class*='dColumn']{
-   flex-direction: column;
-}
-[class^='image']{
-    display: flex;
-    margin-bottom: var(--sp80);
-}
+[class*='floatL']{float: left;}
+[class*='w100']{width: 100%;}
+[class*='fUno']{flex: 1;}
+[class*='flexWrapper']{display: flex;}
+[class*='JCmid']{justify-content: center;}
+[class*='JCstart']{justify-content:flex-start;}
+[class*='JCend']{justify-content:flex-end;}
+[class*='JCspace']{justify-content: space-between;}
+[class*='JCstretch']{justify-content: stretch;}
+[class*='alignC']{align-items: center;}
+[class*='alignE']{align-items: flex-end;}
+[class*='alignStart']{align-items: flex-start;}
+[class*='alignStrech']{align-items: stretch;}
+[class*='selfEnd']{align-self: flex-end;}
+[class*='dRow']{flex-direction: row;}
+[class*='dColumn']{flex-direction: column;}
+[class^='image']{ display: flex; margin-bottom: var(--sp80);}
 @media screen and (max-width: 767px){
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li{
         margin: 0 auto;
@@ -358,33 +297,15 @@
     p.rbRG16, p.rzTH16,section.detailContainer aside h3{
        line-height: 30px;
    }
-    .rzTH55{
-       font-size: 55px;
-   }
-    .rzLT40{
-       font-size: 40px;
-   }
-    .rbMD30, .rzTH55uc, .rzSB50, .rbSB50, .rbSB30{
-       font-size: 30px;
-   }
-    .rzSB24, .rzTH24{
-       font-size: 24px;
-   }
-    .rzSB20, .rzSB40uc, .rzLT20, .rbRG20{
-       font-size: 20px;
-   }
-    .rzTH20, .rzTH20uc, .rbRG18{
-       font-size: 16px;
-   }
-    .rbMD14, .rbBL18, .rzTH20uc{
-       font-size: 14px;
-   }
-    .rzLT18{
-       font-size: 12px;
-   }
-    .rbRG10{
-       font-size: 10px;
-   }
+    .rzTH55{font-size: 55px;}
+    .rzLT40{font-size: 40px;}
+    .rbMD30, .rzTH55uc, .rzSB50, .rbSB50, .rbSB30{font-size: 30px;}
+    .rzSB24, .rzTH24{font-size: 24px;}
+    .rzSB20, .rzSB40uc, .rzLT20, .rbRG20{font-size: 20px;}
+    .rzTH20, .rzTH20uc, .rbRG18{font-size: 16px;}
+    .rbMD14, .rbBL18, .rzTH20uc{font-size: 14px;}
+    .rzLT18{font-size: 12px;}
+    .rbRG10{font-size: 10px;}
     :root{
         --sp345: 80px;
         --sp190: 80px;
@@ -397,18 +318,9 @@
     [class^='imageLf']{
         flex-direction: column;
    }
-    [class^='image'] > div{
-        padding-inline: 3.25%;
-   }
     [class*='imageRT']{
         flex-direction: column-reverse;
         margin-bottom: var(--sp80);
-   }
-    [class^='middle'] {
-        width: 93.5%;
-   }
-    [class^='middle'] > h4, [class^='full'] > h4{
-        padding-bottom: var(--sp40);
    }
     [class*="long"]{
         height: 30px;
@@ -457,9 +369,6 @@
     [class^='image'] > div h4{
         padding: var(--sp80) 0 var(--sp40);
    }
-    [class^='middle'] > h4, [class^='full'] > h4{
-        padding-bottom: var(--sp40);
-   }
     [class^='middle'] > div ol{
         grid-template-columns: repeat(3, 1fr);
    }
@@ -485,7 +394,6 @@
    }
 }
 [class*="corner"]{
-    color: var(--B01);
     padding: 20px 0px;
     transition: color 0.3s;
     z-index: 1;
@@ -521,11 +429,14 @@
     border-radius: 4px;
 }
 
+[class~='clearfix']::after,
+[class~='clearfix']::before {
+    content: '';
+    display: block;
+    clear: both;
+}
 
-
-
-
-div.listContainer > div > aside ul li > b::before,div.listContainer > div > aside ul li > b:after,div.wave > ul > li:after,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after,.arrival > ol li:after{
+[class*="corner"]::before,[class*="corner"]::after,[class*="corner"] span::before, [class*="corner"] span::after, [class*="slice"]:before,[class*="slice"]:after, [class$="Back"]:before, [class$="Back"]:after, [class$="long"]:before,div.listContainer > div > aside ul li > b::before,div.listContainer > div > aside ul li > b:after,div.wave > ul > li:after,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after,.arrival > ol li:after{
     position: absolute;
     content: '';
 }
@@ -575,21 +486,13 @@ section.detailContainer > div:first-child > div, section.detailContainer > div:n
 [class*='west'],[class*='east'],[class*='north'], main > div:first-of-type > ul li div, main > div:first-of-type > ul li:nth-child(6), ul.bar li, section.detailContainer > div:nth-of-type(3) > aside > ul > li > input{
     opacity: 0;
 }
-main > ul li h4, div.wave > div.supportSearch > form, div.dark > div > div:nth-of-type(2) h2, .returns > ol li > dl dt{
+main > div:first-of-type .sButton > button:last-of-type, article.rightsInfo > ul li > ul > li,main > ul li h4, div.wave > div.supportSearch > form, div.dark > div > div:nth-of-type(2) h2, .returns > ol li > dl dt{
     margin-bottom: var(--sp20);
 }
-div.details .legend h4, div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3), div.dark > div > div:first-of-type > div.findPassword fieldset > *, div.dark > div > div:first-of-type > div.findPassword fieldset > button, section.twoface > div > div.checkOut form fieldset legend, section.twoface > div > div.checkOut form fieldset ul > li, main > div:nth-of-type(2) > div h3, div.dark > div > div:first-of-type > div fieldset > ul > li, section.twoface > div > div.checkOut fieldset > ul > li {
-    margin-bottom: var(--sp30);
-}
-main > div:nth-of-type(3) > div div h2, div.grid-group-wrapper > ul > li, div.listContainer > div > div:last-child > ul > li, [class^='image'] > div ul li p, section.detailContainer > div:nth-of-type(3) > aside > div > h3, article.rightsInfo h2, article.rightsInfo > ul, section.twoface > div > div.checkOut fieldset legend, div.dark > div > div:first-of-type > div fieldset legend, div.wave > div.supportSearch h4, div.wave > div.supportSearch p, .accountContainer > div h2{
-    margin-bottom: var(--sp40);
-}
-div.details > div.superCharge, div.details > div.fineTuned, div.wave > ul, div.listContainer{
-    margin-bottom: var(--sp80);
-}
-section.twoface > div > div.checkOut form, div.calculator > a{
-    margin-top: var(--sp40);
-}
+div.details .legend h4, div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3), div.dark > div > div:first-of-type > div.findPassword fieldset > *, div.dark > div > div:first-of-type > div.findPassword fieldset > button, section.twoface > div > div.checkOut form fieldset legend, section.twoface > div > div.checkOut form fieldset ul > li, main > div:nth-of-type(2) > div h3, div.dark > div > div:first-of-type > div fieldset > ul > li, section.twoface > div > div.checkOut fieldset > ul > li {margin-bottom: var(--sp30);}
+main > div:nth-of-type(3) > div div h2, div.grid-group-wrapper > ul > li, div.listContainer > div > div:last-child > ul > li, [class^='image'] > div ul li p, section.detailContainer > div:nth-of-type(3) > aside > div > h3, article.rightsInfo h2, article.rightsInfo > ul, section.twoface > div > div.checkOut fieldset legend, div.dark > div > div:first-of-type > div fieldset legend, div.wave > div.supportSearch h4, div.wave > div.supportSearch p, .accountContainer > div h2{margin-bottom: var(--sp40);}
+div.details > div.superCharge, div.details > div.fineTuned, div.wave > ul, div.listContainer{margin-bottom: var(--sp80);}
+section.twoface > div > div.checkOut form, div.calculator > a{margin-top: var(--sp40);}
 /* gap */
 div.listContainer > div > div:last-child > ul > li > div > div:last-child, div.wave > ul{
     gap: 20px;
@@ -604,11 +507,14 @@ section.twoface > div > div.checkOut{
 main > div:nth-of-type(3) > div, div.details > h4 .recycle img, div.wave{
     padding-block: var(--sp80);
 }
+[class^='middle'] > h4, [class^='full'] > h4{
+    padding-bottom: var(--sp40);
+}
 /* lineheight */
 #sort, section.twoface div.calculator > div:first-of-type h3, div.listContainer > div > div:last-child > ul > li > div ul li, div.listContainer > div > div:last-child > ul > li > div h3, section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4, div.calculator > p{
     line-height: 21px;
 }
-p.rzTH18, [class^='image'] > div ul li p, div.listContainer > div > aside ul li > ol li, section.detailContainer > div:nth-of-type(2) table tr th, section.detailContainer > div:nth-of-type(2) table tr td, section.detailContainer > div:nth-of-type(2) table tr td ul li, section.detailContainer > div:nth-of-type(3) > aside > div > ul > li, div.details > div.superCharge > div ul li p, div.wave > ul > li > p, .accountContainer > div > div.wrapper > div > div > p, div.dark > div > div:first-of-type > div.createDell fieldset > p, div.dark > div > div:nth-of-type(2) ul li dl dd, article.rightsInfo > ul li > p, article.rightsInfo > ul li > address, div.details > ul li dl dd, .returns > ol li > dl dd{
+p.rzTH18, [class^='image'] > div ul li p, div.listContainer > div > aside ul li > ol li, section.detailContainer > div:nth-of-type(2) table tr th, article.rightsInfo > ul li > ul > li,section.detailContainer > div:nth-of-type(2) table tr td, section.detailContainer > div:nth-of-type(2) table tr td ul li, section.detailContainer > div:nth-of-type(3) > aside > div > ul > li, div.details > div.superCharge > div ul li p, div.wave > ul > li > p, .accountContainer > div > div.wrapper > div > div > p, div.dark > div > div:first-of-type > div.createDell fieldset > p, div.dark > div > div:nth-of-type(2) ul li dl dd, article.rightsInfo > ul li > p, article.rightsInfo > ul li > address, div.details > ul li dl dd, .returns > ol li > dl dd{
     line-height: 30px;
 }
 /* cursor */
@@ -632,7 +538,7 @@ div.details .legend nav > div img {
     margin: var(--sp40) auto;
 }
 main > ul > *, div.details .legend >*, div.calculator > *, div.black, div.details > div.fineTuned > div ul li{margin-inline: auto; text-align: center;}
-div.listContainer > div > div:last-child > ul > li > div div:first-of-type img, section.detailContainer > div:nth-of-type(3) nav div img.display-img, div.details > div.full > div img, .twoface > div, div.dark > div > div:nth-of-type(2) img, .arrival > ol li:before{
+main > ul li a, div.listContainer > div > div:last-child > ul > li > div div:first-of-type img, section.detailContainer > div:nth-of-type(3) nav div img.display-img, div.details > div.full > div img, .twoface > div, div.dark > div > div:nth-of-type(2) img, .arrival > ol li:before{
     margin: 0 auto;
 }
 /** marginbottom */
@@ -652,7 +558,7 @@ div.listContainer > div > div:last-child > ul > li > div ul li, .arrival > ol li
 div.listContainer > div > aside ul li > ol li{
     color: var(--GS08);
 }
-
+[class*="corner"],
 div.wave > ul > li:nth-of-type(2) ol li a:hover{
     color: var(--B01);
 }
@@ -737,14 +643,7 @@ section.twoface > div > div.checkOut form{
 div.details > div.full > div img, div.details > div.full > div > div, main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a,div.dark > div > div:first-of-type > div{
     height: 100%;
 }
-.accountContainer > div > div.wrapper > ul li p{
-    left: 20px;
-    bottom: 40px;
-}
-.accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
-    left: 20px;
-    bottom: 20px;
-}
+
 /* background */
 main > div:first-of-type > ul li:nth-child(1), main > div:nth-of-type(3) > ul li, main > div:nth-of-type(3) > div:has(input:checked) ~ ul li, .show{
     opacity: 1;
@@ -776,9 +675,7 @@ main > ul li{
     background-size: cover;
 }
 /* grid */
-[class^='middle'] > div ol, div.listContainer > div, div.details > div.fineTuned > div ul, div.details > div.superCharge > div ul, div.details > div.full > div > div > ul, .twowrap > div, div.wave > ul, div.wave > ul > li > ol{
-    display: grid;
-}
+[class*='gridWrapper'], [class^='middle'] > div ol{display: grid;}
 section.detailContainer > div:nth-of-type(3) nav div img.display-img, section.detailContainer > div:nth-of-type(3) nav ul li img, div.details > div.full > div > div > ul li img{
     object-fit: contain;
 }

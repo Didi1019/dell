@@ -1,7 +1,6 @@
-body{background-color:var(--GS11);  overflow-x: hidden;}
+body{background-color:var(--GS11); overflow-x: hidden;}
 header{background-color:var(--GS02); position:fixed; width:100%; z-index:999;}
 header>h1>a>img{max-width:44px;}
-
 header>div>div.chessGun>ul>li:nth-child(3),.noUser>ul>li:nth-child(2){background-image:url('../images/cartBlack.png');}
 header>div>div.chessGun>ul>li:nth-child(3):hover,.noUser>ul>li:nth-child(2):hover{background-image:url('../images/cartBlue.png');}
 header>div>div.chessGun>ul>li:nth-child(4),.noUser>ul>li:nth-child(3){background-image:url('../images/account.png');}
@@ -18,13 +17,6 @@ header>div>div:nth-of-type(2) ul li{line-height:50px; text-align:center; backgro
 header>div>div.chessGun ul li:nth-child(1){background-image:url('../images/checkout_alienware.png'); padding:var(--sp25) 0px var(--sp25) var(--sp60); line-height:21px;}
 footer{background-color: #111;}
 footer>div{padding-block:var(--sp30);}
-main > ul li a{
-    margin-inline: auto;
-}
-article.rightsInfo > ul li > ul > li{
-    line-height: 30px;
-}
-
 @media screen and (max-width:767px){
     main > div:first-of-type > ul li div,
     main > div:first-of-type > ul li div h2,
@@ -65,20 +57,12 @@ article.rightsInfo > ul li > ul > li{
     footer>div{
         margin-inline: auto; width:93.5%; 
    }
+   [class^='middle'],
     div.details .legend p,
     section.detailContainer > div:nth-of-type(2) table{
         width: 93.5%;
     }
-    header > div,
-    .details > ul,
-    .details > h4,
-    section.detailContainer > div:first-child > div,
-    .returns,
-    ul.bar li,
-    section.detailContainer > div:nth-of-type(2) table,
-    div.dark > div > div:nth-of-type(2) ul {
-        padding-inline: 3.25%; 
-   }
+    header > div, [class^='image'] > div, .details > ul, .details > h4, section.detailContainer > div:first-child > div, .returns, ul.bar li, section.detailContainer > div:nth-of-type(2) table, div.dark > div > div:nth-of-type(2) ul {padding-inline: 3.25%;}
     header>div>nav.is-active ul li ol:after{content:''; background-color:var(--GS08); width:100%; height:1px; position:absolute; left:0px; bottom:-10px;}
     header>div>nav,header>div>a{display:none;}
     header>div{position:relative; height:60px; gap:35px;}

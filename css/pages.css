@@ -42,26 +42,14 @@ div.dark>div>div:nth-of-type(2) ul li:nth-of-type(1) dl dt{background-image: url
 section.twoface>div>div.checkOut form fieldset ul:first-of-type>li:first-child{background-image: url('../images/paypal.png');}section.twoface>div>div.checkOut form fieldset ul:first-of-type>li:last-child{background-image: url('../images/googlePay.png');}
 div.calculator>div:first-of-type button:first-of-type{background-image: url('../images/add.png');}div.calculator>div:first-of-type button:nth-of-type(2){background-image: url('../images/minus.png');}div.calculator>div:first-of-type button:nth-of-type(3){background-image: url('../images/trahcan.png');}
 /*** main */
-main > div:first-of-type .sButton{
-    z-index: 100;
-    left: 50%;
-    transform: translateX(-50%);
-}
-main > div:first-of-type > ul li div{
-    transform: translateY(-50%);
-    z-index: 10;
-}
-main > div:first-of-type .sButton > button:last-of-type{
-    margin-left: var(--sp20);
-    transform: rotate(180deg);
-}
-main > div:nth-of-type(3) > div div h2{
-    padding-bottom: var(--sp20);
-    border-bottom: 1px solid var(--GS12);
-}
-main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{
-    width: 0px;
-}
+main > div:first-of-type .sButton, ul.bar{z-index: 100;}
+main > div:first-of-type .sButton{left: 50%; transform: translateX(-50%);}
+main > div:first-of-type > ul li div,div.listContainer > div > div:last-child> ul > li > div > div mark{z-index: 10;}
+main > div:first-of-type > ul li div,
+div.listContainer > div > aside ul li > ol li label::before,div.listContainer > div > aside ul li > b::before{transform: translateY(-50%);}
+main > div:first-of-type .sButton > button:last-of-type{transform: rotate(180deg);}
+main > div:nth-of-type(3) > div div h2{padding-bottom: var(--sp20); border-bottom: 1px solid var(--GS12);}
+main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{width: 0px;}
 main > div:first-of-type > ul li{border-radius: 20px;box-shadow: 0 20px 30px rgba(255, 255, 255, 0.3) inset;transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s, opacity 0.5s;}
 main > ul li:nth-of-type(1){background-image: url('../images/main_bg01.png');}
 main > ul li:nth-of-type(2){background-image: url('../images/main_bg02.png');}
@@ -69,7 +57,6 @@ main > ul li:nth-of-type(3){background-image: url('../images/main_bg03.png');}
 main > ul li:nth-of-type(4){background-image: url('../images/main_bg04.png');}
 main > ul li:nth-of-type(5){background-image: url('../images/main_bg05.png');}
 main > ul li:nth-of-type(6){background-image: url('../images/main_bg06.png');}
-
 main > ul li:nth-of-type(1) span{background-image: url('../images/main_mouse.png');}
 main > ul li:nth-of-type(5) span{background-image: url('../images/main_bag.png');}
 main>div:nth-of-type(3)>ul li{flex-grow: 1}
@@ -128,7 +115,6 @@ main > div:first-of-type{
 /*** bar */
 ul.bar{
     height: 50px;
-    z-index: 100;
     top: 60px;
 }
 ul.bar li{animation: slideShow 12s infinite;}
@@ -144,7 +130,7 @@ div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-chil
 .color-change img, .change img{
     transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
-div.listContainer > div > div:last-child> ul > li > div > div mark{top: 20px; left: -5px; z-index: 10; padding: var(--sp10) 4.56%;}
+div.listContainer > div > div:last-child> ul > li > div > div mark{top: 20px; left: -5px; padding: var(--sp10) 4.56%;}
 ol.pager{border-top: 2px solid var(--GS01);}
 div.listContainer > div > div:last-child > ul > li > div > div:last-child{padding-bottom: var(--sp30);}
 div.listContainer>div>div:first-child>div button:first-of-type{background: url('../images/gridButton.png');}
@@ -167,7 +153,6 @@ div.listContainer > div > aside ul li > b::before{
     top: 50%;
     width: 14px;
     height: 9px;
-    transform: translateY(-50%);
     transition: transform 0.3s ease;
 }
 div.listContainer > div > aside ul li > b.active::before{
@@ -497,7 +482,6 @@ div.listContainer > div > aside ul li > ol li label::before{
     width: 13px;
     height: 13px;
     background: url('../images/checkUnclicked.png') no-repeat center / cover;
-    transform: translateY(-50%);
     transition: background-image 0.3s ease;
 }
 #sort{
@@ -554,15 +538,20 @@ div.black{
 article.rightsInfo > ul{
     padding: var(--sp40) var(--sp80);
 }
-article.rightsInfo > ul li > ul > li{
-    list-style: disc;
-    margin-left: var(--sp20);
-}
+article.rightsInfo > ul li > ul > li{list-style: disc;}
 section.twoface button{
     border: none;
 }
 article.rightsInfo > ul li > address{
     font-style: normal;
+}
+.accountContainer > div > div.wrapper > ul li p{
+    left: 20px;
+    bottom: 40px;
+}
+.accountContainer > div > div.wrapper > ul li:not(:last-of-type) a{
+    left: 20px;
+    bottom: 20px;
 }
 @media screen and (max-width: 767px){
     section.detailContainer > div:first-child > div > h2,section.detailContainer > div:first-child > div > input:last-of-type{
