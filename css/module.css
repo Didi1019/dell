@@ -294,7 +294,7 @@
 
 }
 @media screen and (max-width: 1279px) {
-    p.rbRG16, p.rzTH16,section.detailContainer aside h3{
+    p.rbRG16, p.rzTH16{
        line-height: 30px;
    }
     .rzTH55{font-size: 55px;}
