@@ -56,66 +56,25 @@
 [class*='BL']{font-weight: 700;}
 [class$='Up']{padding-top: 115px;}
 [class$='Panel'], [class$='Popup']{display: none;}
-[class$='Panel'].active, [class$='Popup'].active{
-    display: block;
-}
-[class*=BG12]{
-   background-color: var(--GS12);
-}
-[class*='fff']{
-   color: var(--GS01);
-}
-[class*='GS03']{
-   color: var(--GS03);
-}
-[class*='GS04']{
-   color: var(--GS04);
-}
-[class*='GS05']{
-   color: var(--GS05);
-}
-[class*='GS06']{
-   color: var(--GS06);
-}
-[class*='GS08']{
-   color: var(--GS08);
-}
-[class*='GS09']{
-   color: var(--GS09);
-}
-[class*='GS11']{
-   color: var(--GS11);
-}
-[class*='hovBlue']:hover{
-   color: var(--B02);
-}
-[class*='devil']{
-   color: var(--GS07);
-}
-[class*='cb01']{
-   color: var(--B01);
-}
-[class*='cb02']{
-   color: var(--B02);
-}
-[class*='cb03']{
-   color: var(--B03);
-}
-[class*='cb04']{
-   color: var(--B04);
-}
-[class*='cb05']{
-   color: var(--B05);
-}
-[class*='cb06']{
-   color: var(--B06);
-}
-[class*='12']{
-   font-size: 12px;
-}
-[class*='14']{
-   font-size: 14px;
-}
+[class*=BG12]{background-color: var(--GS12);}
+[class*='fff']{color: var(--GS01);}
+[class*='GS03']{color: var(--GS03);}
+[class*='GS04']{color: var(--GS04);}
+[class*='GS05']{color: var(--GS05);}
+[class*='GS06']{color: var(--GS06);}
+[class*='GS08']{color: var(--GS08);}
+[class*='GS09']{color: var(--GS09);}
+[class*='GS11']{color: var(--GS11);}
+[class*='hovBlue']:hover{color: var(--B02);}
+[class*='devil']{color: var(--GS07);}
+[class*='cb01']{color: var(--B01);}
+[class*='cb02']{color: var(--B02);}
+[class*='cb03']{color: var(--B03);}
+[class*='cb04']{color: var(--B04);}
+[class*='cb05']{color: var(--B05);}
+[class*='cb06']{color: var(--B06);}
+[class*='12']{font-size: 12px;}
+[class*='14']{font-size: 14px;}
 [class^=btn-]{
     display: block;
     overflow: hidden;
@@ -254,7 +213,6 @@
 }
 [class^='image'] > div ul li b{
     margin-bottom: 10px;
-    display: block;
 }
 [class^='middle'] {
     margin: var(--sp40) auto;
@@ -356,6 +314,10 @@
 [class*='dColumn']{
    flex-direction: column;
 }
+[class^='image']{
+    display: flex;
+    margin-bottom: var(--sp80);
+}
 @media screen and (max-width: 767px){
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li{
         margin: 0 auto;
@@ -387,6 +349,9 @@
     [class^='image'] > div h4{
         padding: var(--sp20) 0 var(--sp40);
    }
+   [class^='image'] > div ul li p:not(:last-of-type){
+        margin-bottom: var(--sp40);
+    }
 
 }
 @media screen and (max-width: 1279px) {
@@ -429,18 +394,13 @@
     section.detailContainer > div:nth-of-type(3), section.detailContainer > div:nth-of-type(3) nav ul li img, section.detailContainer > div:nth-of-type(3) nav div img.display-img{
         margin: 0 auto;
    }
-    [class^='image']{
-        margin-bottom: var(--sp80);
-   }
     [class^='imageLf']{
-        display: flex;
         flex-direction: column;
    }
     [class^='image'] > div{
         padding-inline: 3.25%;
    }
     [class*='imageRT']{
-        display: flex;
         flex-direction: column-reverse;
         margin-bottom: var(--sp80);
    }
@@ -477,10 +437,7 @@
         line-height: 50px;
    }
    [class*='10']{font-size:10px}[class*='16']{font-size:16px}[class*='18']{font-size:18px}[class*='20']{font-size:20px}[class*='24']{font-size:24px}[class*='30']{font-size:30px}[class*='40']{font-size:40px}[class*='50']{font-size:50px}[class*='55']{font-size:55px}[class*='60']{font-size:60px}[class*='80']{font-size:80px}[class*='120']{font-size:120px}
-    [class^='image']{
-        display: flex;
-        margin-bottom: var(--sp80);
-   }
+
     [class^='image'] > video, [class^='image'] > div, [class^='image'] > img{
         width: 50%;
    }
@@ -535,70 +492,82 @@
     max-width: 110px;
     max-height: 40px;
 }
-[class$='BW']{
-   background: linear-gradient(90deg, var(--GS12), var(--GS01));
-}
-[class$='BB']{
-   background: linear-gradient(90deg, var(--GS12), var(--B04));
-}
-[class$='BBW']{
-   background: linear-gradient(90deg, var(--GS12), var(--B04), var(--GS01));
-}
-[class$='BBG']{
-   background: linear-gradient(90deg, var(--GS12), var(--B04), var(--GS05));
-}
-[class$='BT']{
-   background: linear-gradient(90deg, var(--GS12), var(--B01));
-}
-[class$='BTR']{
-   background: linear-gradient(90deg, var(--GS12), var(--B01), var(--red));
-}
-[class$='WB']{
-   background: linear-gradient(90deg, var(--GS01), var(--B04));
-}
-[class$='BPW']{
-   background: linear-gradient(90deg, var(--GS12), var(--B06), var(--GS01));
-}
-[class$='BRP']{
-   background: linear-gradient(90deg, var(--GS12), var(--red), var(--pink));
-}
-[class$='Bgray']{
-   background: linear-gradient(90deg, var(--B04), var(--GS08));
-}
-[class$='GP']{
-   background: linear-gradient(90deg, var(--GS08), var(--B06));
-}
-[class$='GreenB']{
-   background: linear-gradient(90deg, #2c5b5b, var(--GS12));
-}
-[class$='BRW']{
-   background: linear-gradient(90deg, var(--GS12), var(--red), var(--GS01));
-}
-[class$='BWP']{
-   background: linear-gradient(90deg, var(--GS12), var(--GS01), var(--pink));
-}
-[class$='YRP']{
-   background: linear-gradient(90deg, var(--yellow), var(--red), var(--B06));
-}
-[class$='BBR']{
-   background: linear-gradient(90deg, var(--GS12), var(--B04), var(--red));
-}
-[class$='Trio']{
-   width: 33.33%;
-}
-[class$='Duo']{
-   width: 50%;
-}
+[class$='BW']{background: linear-gradient(90deg, var(--GS12), var(--GS01));}
+[class$='BB']{background: linear-gradient(90deg, var(--GS12), var(--B04));}
+[class$='BBW']{background: linear-gradient(90deg, var(--GS12), var(--B04), var(--GS01));}
+[class$='BBG']{background: linear-gradient(90deg, var(--GS12), var(--B04), var(--GS05));}
+[class$='BT']{background: linear-gradient(90deg, var(--GS12), var(--B01));}
+[class$='BTR']{background: linear-gradient(90deg, var(--GS12), var(--B01), var(--red));}
+[class$='WB']{background: linear-gradient(90deg, var(--GS01), var(--B04));}
+[class$='BPW']{background: linear-gradient(90deg, var(--GS12), var(--B06), var(--GS01));}
+[class$='BRP']{background: linear-gradient(90deg, var(--GS12), var(--red), var(--pink));}
+[class$='Bgray']{background: linear-gradient(90deg, var(--B04), var(--GS08));}
+[class$='GP']{background: linear-gradient(90deg, var(--GS08), var(--B06));}
+[class$='GreenB']{background: linear-gradient(90deg, #2c5b5b, var(--GS12));}
+[class$='BRW']{background: linear-gradient(90deg, var(--GS12), var(--red), var(--GS01));}
+[class$='BWP']{background: linear-gradient(90deg, var(--GS12), var(--GS01), var(--pink));}
+[class$='YRP']{background: linear-gradient(90deg, var(--yellow), var(--red), var(--B06));}
+[class$='BBR']{background: linear-gradient(90deg, var(--GS12), var(--B04), var(--red));}
+[class$='Trio']{width: 33.33%;}
+[class$='Duo']{width: 50%;}
 [class$='List']{
     background-size: 214px;
 }
+
 .cart-Toggle{
     padding: 13px 10px;
-    background-color: var(--B02);
     max-width: 110px;
     transition: background-color 0.3s ease;
     border-radius: 4px;
 }
+
+
+
+
+
+div.listContainer > div > aside ul li > b::before,div.listContainer > div > aside ul li > b:after,div.wave > ul > li:after,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after,.arrival > ol li:after{
+    position: absolute;
+    content: '';
+}
+div.list-group-wrapper > ul > li > div:after,main > ul:after,div.grid-group-wrapper > ul:after,div.listContainer > div:after,section.twoface > div > div.checkOut fieldset > ul::after,div.listContainer > div > div:last-child > ul > li > div > div:last-child:after,div.dark > div > div:first-of-type > div.createDell fieldset div:after,section.detailContainer > div:first-child > div:after{    clear: both;
+    content: '';
+    display: block;
+    clear: both;
+}
+div.listContainer > div > aside ul li > ol li label,div.listContainer > div > div:first-child > div:nth-of-type(2) label,section.twoface div.calculator > div:first-of-type > div input,div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) p{
+    padding-left: var(--sp20);
+}
+main > div:first-of-type > ul,main > div:first-of-type > ul li:nth-child(1),main > div:first-of-type > ul li:nth-child(2),main > video,main > div:nth-of-type(3) > ul,main > div:nth-of-type(3) > div,main > div:nth-of-type(3) > div div,main > div:nth-of-type(3) > ul::before,main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a,div.details > div.full > div img,div.details .legend nav ul li img,div.details > div.full > div > div,div.dark > div > div:nth-of-type(2) img,ul.bar,div.listContainer > div > div:last-child .gradient,div.list-group-wrapper > ul > li,#pager-line,.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,section.twoface > div > div.checkOut fieldset div button:first-of-type,section.twoface > div > div.checkOut .createPassword fieldset > button,section.twoface > div > div.checkOut ul li input,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type,div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,div.dark > div > div:first-of-type > div:first-of-type fieldset div > a,div.dark > div > div:first-of-type > div.createPassword fieldset > button,div.dark > div > div:first-of-type > div.createDell fieldset button,div.dark > div > div:first-of-type > div.findPassword fieldset > button,div.dark > div > div:first-of-type input{
+    width: 100%;
+}
+main > ul li span,main > div:first-of-type > ul li div,[class^='image'] > div ul li b, [class$='Panel'].active, [class$='Popup'].active,main > div:first-of-type > ul li:nth-of-type(2) div,div.listContainer > div > div:last-of-type > ul li > div,div.listContainer > div > div:last-child > ul > li > div strong,div.listContainer > nav ul li,div.listContainer > div > aside ul li > b,div.grid-group-wrapper > ul > li,section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4,.arrival > ol li:before,.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2),.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,section.twoface > div > div.checkOut fieldset div button:first-of-type,section.twoface > div > div.checkOut .createPassword fieldset > button,div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,div.dark > div > div:first-of-type > div.createPassword fieldset > button,article.rightsInfo small,section.twoface > div > div.checkOut fieldset > button,section.detailContainer > div:nth-of-type(3) > aside > ul > li > label,div.listContainer > div > div:last-child .gradient li{
+    display: block;
+}
+div.listContainer > div > div:first-child > div button,div.details .legend nav ul li,section.twoface > div > div.checkOut ol li,section.twoface > div > div.checkOut form fieldset ul:last-of-type > li a{
+    display: inline-block;
+}
+div.listContainer > div > div:last-child .gradient,div.listContainer > div > aside ul li > ol li label{
+    display: flex;
+}
+div.listContainer > div > aside ul li > ol li label{
+    align-items: center;
+}
+main > div:first-of-type > ul li:nth-child(n+3) a,main > div:nth-of-type(3) > div input,div.listContainer > div > aside > input,div.listContainer > div > aside ul li > ol li input{
+    display: none;
+}
+section.twoface div.calculator > div:first-of-type > div,section.twoface > div > div.checkOut fieldset > button,div.dark > div > div:first-of-type > div:first-of-type fieldset > button,div.calculator ul li:first-of-type strong,section.twoface > div > div.checkOut fieldset > a{
+    margin-left: auto;
+}
+main > div:first-of-type > ul li,main > div:first-of-type > ul li div,main > div:first-of-type .sButton,main > div:nth-of-type(3) > ul::before,div.listContainer > div > aside > input,div.listContainer > div > div:last-child .gradient,div.listContainer > div > aside ul li > ol:after,div.listContainer > div > aside > ul.active,div.listContainer > div > aside ul li > ol li label::before,div.listContainer > div > div:last-child> ul > li > div > div mark,#pager-line,ul.bar,ul.bar li,div.details > div.full > div > div,section.detailContainer > div:nth-of-type(3) button,.accountContainer > div > div.wrapper > ul li p,div.dark > div > div:first-of-type > div,div.dark > div > div:first-of-type > div fieldset > ul > li label,div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label,.accountContainer > div > div.wrapper > ul li:not(:last-of-type) a,section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label,section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label{
+    position: absolute;
+}
+main > div:first-of-type > ul li:nth-child(1), main > div:first-of-type > ul li:nth-child(2), #pager-line, #sort, div.listContainer > div > aside ul li > ol li label::before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,div.listContainer > div > div:last-child .gradient,div.wave > ul > li:after{
+    left: 0;
+}
+main > div:nth-of-type(3) > ul::before, div.listContainer > div > aside ul li > b::before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
+    right: 0;
+}
+
 [class$='Panel'], [class$='Popup'], [class^=btn-], [class*=more], main > div:first-of-type > ul, main > div:nth-of-type(3) > ul,main > div:nth-of-type(3) > ul li,div.listContainer > div > aside ul li > b,div.listContainer > div > div:first-child > div:nth-of-type(2) select,div.listContainer > div > div:first-child > div:nth-of-type(2) label,div.listContainer > div > aside ul li,div.listContainer > div > aside ul li > ol li label,div.listContainer > div > div:last-of-type > ul li > div,div.listContainer > div > div:last-child >.test >div:first-child,div.grid-group-wrapper > ul > li > div,ol.pager,div.details > div.full > div,div.details > div.full > div img,section.detailContainer > div:nth-of-type(3) nav > div,#sort,section.twoface > div > div.checkOut fieldset > ul > li,.arrival > ol li:before,.arrival > ol li,div.dark > div > div:first-of-type > div fieldset div,div.dark > div > div:first-of-type > div fieldset > ul > li,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type,section.detailContainer > div:first-child > div > input:first-of-type,.accountContainer > div > div.wrapper > ul li,div.dark > div > div:first-of-type,main > div:first-of-type,div.dark > div,div.wave,div.wave > ul > li h3,div.wave > ul > li{
     position: relative;
 }
@@ -738,7 +707,7 @@ section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-c
 div.wave > ul > li:nth-of-type(2):after{
     background-color: var(--B01);
 }
-div.listContainer > div > div:last-child> ul > li > div > div mark, div.details > div.fineTuned > div ul li:nth-of-type(3), div.wave > ul > li:nth-of-type(4):after, div.listContainer .cart-Toggle{
+.cart-Toggle, div.listContainer > div > div:last-child> ul > li > div > div mark, div.details > div.fineTuned > div ul li:nth-of-type(3), div.wave > ul > li:nth-of-type(4):after, div.listContainer .cart-Toggle{
     background-color: var(--B02);
 }
 div.details > div.fineTuned > div ul li:nth-of-type(2){
@@ -801,7 +770,9 @@ div.wave > div.supportSearch > ol li{
 div.wave > ul > li{
     background-position: right bottom ;
 }
-main > div:first-of-type > ul li, main > ul li{
+main > div:first-of-type > ul li, 
+main > div:nth-of-type(3) > ul li,
+main > ul li{
     background-size: cover;
 }
 /* grid */

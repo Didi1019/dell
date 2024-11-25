@@ -1,44 +1,4 @@
-main > ul li span,main > div:first-of-type > ul li div,main > div:first-of-type > ul li:nth-of-type(2) div,div.listContainer > div > div:last-of-type > ul li > div,div.listContainer > div > div:last-child > ul > li > div strong,div.listContainer > nav ul li,div.listContainer > div > aside ul li > b,div.grid-group-wrapper > ul > li,section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4,.arrival > ol li:before,.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2),.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,section.twoface > div > div.checkOut fieldset div button:first-of-type,section.twoface > div > div.checkOut .createPassword fieldset > button,div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,div.dark > div > div:first-of-type > div.createPassword fieldset > button,article.rightsInfo small,section.twoface > div > div.checkOut fieldset > button,section.detailContainer > div:nth-of-type(3) > aside > ul > li > label,div.listContainer > div > div:last-child .gradient li{
-    display: block;
-}
-div.listContainer > div > div:first-child > div button,div.details .legend nav ul li,section.twoface > div > div.checkOut ol li,section.twoface > div > div.checkOut form fieldset ul:last-of-type > li a{
-    display: inline-block;
-}
-div.listContainer > div > div:last-child .gradient,div.listContainer > div > aside ul li > ol li label{
-    display: flex;
-}
-div.listContainer > div > aside ul li > ol li label{
-    align-items: center;
-}
-main > div:first-of-type > ul li:nth-child(n+3) a,main > div:nth-of-type(3) > div input,div.listContainer > div > aside > input,div.listContainer > div > aside ul li > ol li input{
-    display: none;
-}
-section.twoface div.calculator > div:first-of-type > div,section.twoface > div > div.checkOut fieldset > button,div.dark > div > div:first-of-type > div:first-of-type fieldset > button,div.calculator ul li:first-of-type strong,section.twoface > div > div.checkOut fieldset > a{
-    margin-left: auto;
-}
-main > div:first-of-type > ul li,main > div:first-of-type > ul li div,main > div:first-of-type .sButton,main > div:nth-of-type(3) > ul::before,div.listContainer > div > aside > input,div.listContainer > div > div:last-child .gradient,div.listContainer > div > aside ul li > ol:after,div.listContainer > div > aside > ul.active,div.listContainer > div > aside ul li > ol li label::before,div.listContainer > div > div:last-child> ul > li > div > div mark,#pager-line,ul.bar,ul.bar li,div.details > div.full > div > div,section.detailContainer > div:nth-of-type(3) button,.accountContainer > div > div.wrapper > ul li p,div.dark > div > div:first-of-type > div,div.dark > div > div:first-of-type > div fieldset > ul > li label,div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label,.accountContainer > div > div.wrapper > ul li:not(:last-of-type) a,section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label,section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label{
-    position: absolute;
-}
-main > div:first-of-type > ul li:nth-child(1), main > div:first-of-type > ul li:nth-child(2), #pager-line, #sort, div.listContainer > div > aside ul li > ol li label::before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,div.listContainer > div > div:last-child .gradient,div.wave > ul > li:after{
-    left: 0;
-}
-main > div:nth-of-type(3) > ul::before, div.listContainer > div > aside ul li > b::before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{
-    right: 0;
-}
-div.listContainer > div > aside ul li > b::before,div.listContainer > div > aside ul li > b:after,div.wave > ul > li:after,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after,.arrival > ol li:after{
-    position: absolute;
-    content: '';
-}
-div.list-group-wrapper > ul > li > div:after,main > ul:after,div.grid-group-wrapper > ul:after,div.listContainer > div:after,section.twoface > div > div.checkOut fieldset > ul::after,div.listContainer > div > div:last-child > ul > li > div > div:last-child:after,div.dark > div > div:first-of-type > div.createDell fieldset div:after,section.detailContainer > div:first-child > div:after{    clear: both;
-    content: '';
-    display: block;
-}
-div.listContainer > div > aside ul li > ol li label,div.listContainer > div > div:first-child > div:nth-of-type(2) label,section.twoface div.calculator > div:first-of-type > div input,div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) p{
-    padding-left: var(--sp20);
-}
-main > div:first-of-type > ul,main > div:first-of-type > ul li:nth-child(1),main > div:first-of-type > ul li:nth-child(2),main > video,main > div:nth-of-type(3) > ul,main > div:nth-of-type(3) > div,main > div:nth-of-type(3) > div div,main > div:nth-of-type(3) > ul::before,main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a,div.details > div.full > div img,div.details .legend nav ul li img,div.details > div.full > div > div,div.dark > div > div:nth-of-type(2) img,ul.bar,div.listContainer > div > div:last-child .gradient,div.list-group-wrapper > ul > li,#pager-line,.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,section.twoface > div > div.checkOut fieldset div button:first-of-type,section.twoface > div > div.checkOut .createPassword fieldset > button,section.twoface > div > div.checkOut ul li input,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type,div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,div.dark > div > div:first-of-type > div:first-of-type fieldset div > a,div.dark > div > div:first-of-type > div.createPassword fieldset > button,div.dark > div > div:first-of-type > div.createDell fieldset button,div.dark > div > div:first-of-type > div.findPassword fieldset > button,div.dark > div > div:first-of-type input{
-    width: 100%;
-}
+
 /* */
 /* ????????????? */
 /* ! need to clean up */
@@ -109,8 +69,10 @@ main > ul li:nth-of-type(3){background-image: url('../images/main_bg03.png');}
 main > ul li:nth-of-type(4){background-image: url('../images/main_bg04.png');}
 main > ul li:nth-of-type(5){background-image: url('../images/main_bg05.png');}
 main > ul li:nth-of-type(6){background-image: url('../images/main_bg06.png');}
-main > ul li:nth-of-type(1)span{background-image: url('../images/main_mouse.png');}
+
+main > ul li:nth-of-type(1) span{background-image: url('../images/main_mouse.png');}
 main > ul li:nth-of-type(5) span{background-image: url('../images/main_bag.png');}
+main>div:nth-of-type(3)>ul li{flex-grow: 1}
 main>div:nth-of-type(3)>ul li:first-of-type{background-image: url('../images/test1.png');}
 main>div:nth-of-type(3)>ul li:nth-of-type(2){background-image: url("../images/test2.png");}
 main>div:nth-of-type(3)>ul li:nth-of-type(3){background-image: url("../images/test3.png");}
@@ -182,6 +144,7 @@ div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-chil
 .color-change img, .change img{
     transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
+div.listContainer > div > div:last-child> ul > li > div > div mark{top: 20px; left: -5px; z-index: 10; padding: var(--sp10) 4.56%;}
 ol.pager{border-top: 2px solid var(--GS01);}
 div.listContainer > div > div:last-child > ul > li > div > div:last-child{padding-bottom: var(--sp30);}
 div.listContainer>div>div:first-child>div button:first-of-type{background: url('../images/gridButton.png');}
@@ -628,18 +591,10 @@ article.rightsInfo > ul li > address{
         left: 50%;
         transform: translateX(-50%);
     }
-    main > div:first-of-type > ul li:nth-child(3){
-        left: calc(50% - 130px);
-    }
-    main > div:first-of-type > ul li:nth-child(4){
-        left: calc(50% + 0px);
-    }
-    main > div:first-of-type > ul li:nth-child(5){
-        left: calc(50% + 130px);
-    }
-    main > div:first-of-type > ul li:nth-child(6){
-        left: calc(50% + 370px);
-    }
+    main > div:first-of-type > ul li:nth-child(3){left: calc(50% - 130px);}
+    main > div:first-of-type > ul li:nth-child(4){left: calc(50% + 0px);}
+    main > div:first-of-type > ul li:nth-child(5){left: calc(50% + 130px);}
+    main > div:first-of-type > ul li:nth-child(6){left: calc(50% + 370px);}
     main > div:first-of-type > ul li div{
         top: 190px;
         left: 25px;
@@ -692,12 +647,6 @@ article.rightsInfo > ul li > address{
         transition: background-color .7s;
         box-sizing: revert;
     }
-    div.listContainer > div > div:last-child> ul > li > div > div mark{
-        top: 20px;
-        left: -5px;
-        z-index: 10;
-        padding: var(--sp10) 4.56%;
-    }
     div.listContainer > div > div:first-child{
         justify-content: flex-start;
     }
@@ -745,9 +694,7 @@ article.rightsInfo > ul li > address{
         right: 3.5%;
         bottom: 42.5px;
     }
-   [class^='image'] > div ul li p:not(:last-of-type){
-        margin-bottom: var(--sp40);
-        }
+
     section.detailContainer > div:nth-of-type(3) button:first-of-type{
         left: 3.5%;
         transform: rotate(270deg);
@@ -803,7 +750,6 @@ article.rightsInfo > ul li > address{
         width: 70%;
     }
    /* *my account */
-    
     .accountContainer > div > div.wrapper > div > div:first-of-type ul{grid-auto-rows: 1fr; align-items: stretch;}
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{padding-top: 50%;}
     div.dark > div > div:first-of-type > div{        
@@ -833,12 +779,7 @@ article.rightsInfo > ul li > address{
     .arrival > ol li:after{
         top: calc(50% - 12px);
     }
-    div.orderStatus{
-        padding-inline: 3.25%;
-    }
-
-   /* end of ordersttaus */
-   /* * copyright */
+    div.orderStatus{padding-inline: 3.25%;}
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     [class^='middle'] > div ol{
@@ -856,7 +797,8 @@ article.rightsInfo > ul li > address{
         display: none;
     }
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2),
-    .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,.accountContainer > div > div.wrapper > div > div:first-of-type ul li figure,section.detailContainer > div:nth-of-type(3) nav ul{
+    .accountContainer > div > div.wrapper > div > div:first-of-type ul li figure,
+    section.detailContainer > div:nth-of-type(3) nav ul{
         width: 100%;
     }
     div.grid-group-wrapper > ul > li:nth-of-type(2n+1) > div{
@@ -954,12 +896,7 @@ article.rightsInfo > ul li > address{
     div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type{
         padding: 80px 10% 40px;
     }
-    div.listContainer > div > div:last-child> ul > li > div > div mark{
-        top: 20px;
-        left: -5px;
-        z-index: 10;
-        padding: var(--sp10) 4.56%;
-    }
+
     div.listContainer > div > div.list-group-wrapper > ul > li > div > div:last-child{
         margin-left: 31.56%;
     }
@@ -1061,10 +998,8 @@ article.rightsInfo > ul li > address{
         margin-right: 11.11%;
         float: left;
     }
-
    /* end of ordersttaus */
    /* * copyright */
-
 }
 @media screen and (max-width:1279px){
     .returns > div > h2,div.details > div.fineTuned > div p,article.rightsInfo > ul > li,article.rightsInfo > ul li h3,article.rightsInfo > ul li > p,div.dark > div > div:first-of-type > div.createDell button:first-of-type,div.dark > div > div:first-of-type > div.createDell fieldset > p,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type,div.dark > div > div:nth-of-type(2) ul li dl dt,.accountContainer > div > div.wrapper > div > div:first-of-type > div,div.wave > ul > li h3{
@@ -1096,7 +1031,7 @@ article.rightsInfo > ul li > address{
     div.details > div.fineTuned > div ul,.recycle > img{
         margin: 0 auto;
     }
-    div.listContainer > div > aside ul li > b:after,div.listContainer > div > aside ul li > ol:after,div.details > div.fineTuned > div ul li,section.detailContainer > div:nth-of-type(3) > aside > ul::after,.arrival > ol li:nth-of-type(3):after,.returns > ol li > dl dd,.accountContainer > div > div.wrapper > ul li:nth-of-type(2) img,div.dark,div.dark > div > div,div.dark > div > div:first-of-type,.arrival > ol li:after{
+    .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2), div.listContainer > div > aside ul li > b:after,div.listContainer > div > aside ul li > ol:after,div.details > div.fineTuned > div ul li,section.detailContainer > div:nth-of-type(3) > aside > ul::after,.arrival > ol li:nth-of-type(3):after,.returns > ol li > dl dd,.accountContainer > div > div.wrapper > ul li:nth-of-type(2) img,div.dark,div.dark > div > div,div.dark > div > div:first-of-type,.arrival > ol li:after{
         width: 100%;
     }
     div.listContainer > div > aside > ul,section.detailContainer > div:nth-of-type(3) nav > div img.zoom{display: none;}
@@ -1104,9 +1039,10 @@ article.rightsInfo > ul li > address{
    /*!! main */
     main > div:first-of-type .sButton{
         bottom: 40px;
-        }
-    main > div:nth-of-type(3) > div{
-        flex-direction: column;
+    }
+    
+    main > div:nth-of-type(3) > ul{
+        flex-direction: row;
     }
     main > div:nth-of-type(2) > div p,main > div:nth-of-type(3) > ul,section.detailContainer > div:nth-of-type(3),div.dark > div,div.orderStatus > div{
         flex-direction: column;
@@ -1381,16 +1317,12 @@ article.rightsInfo > ul li > address{
         width: 265px;
     }
    /* * end of aside */
-    div.grid-group-wrapper > ul > li{
-        width: 33.3333%;
-    }
+    div.grid-group-wrapper > ul > li{width: 33.3333%;}
     div.list-group-wrapper > ul > li > div > div:first-child{
         float: left;
         margin-right: 6%;
     }
-    div.grid-group-wrapper > ul > li > div{
-        margin-right: 4.56%;
-    }
+    div.grid-group-wrapper > ul > li > div{margin-right: 4.56%;}
     div.listContainer > div > div.grid-group-wrapper > ul > li > div div:first-of-type{
         padding: var(--sp85) 10% var(--sp60);
     }
@@ -1407,12 +1339,7 @@ article.rightsInfo > ul li > address{
     div.listContainer > div > div:last-child > ul > li > div div:first-of-type img{
         max-width: 214px;
     }
-    div.listContainer > div > div:last-child> ul > li > div > div mark{
-        top: 20px;
-        left: -5px;
-        z-index: 10;
-        padding: var(--sp10) 4.56%;
-    }
+
     div.listContainer > div > div.list-group-wrapper > ul > li > div > div:last-child{
         margin-left: 31.56%;
     }
@@ -1433,12 +1360,8 @@ article.rightsInfo > ul li > address{
         text-align: right;
         line-height: 50px;
     }
-    section.detailContainer > div:first-child > div >*{
-        display: inline-block;
-    }
-    section.detailContainer ul.bar{
-        top: 130px;
-    }
+    section.detailContainer > div:first-child > div >*{display: inline-block;}
+    section.detailContainer ul.bar{top: 130px;}
     section.detailContainer > div:first-child > div > strong{
         margin-right: 2%;
     }
@@ -1473,9 +1396,7 @@ article.rightsInfo > ul li > address{
         height: 480px;
         overflow-y: scroll;
     }
-    section.detailContainer > div:nth-of-type(3) nav ul li{
-        padding: 10px 5px;
-    }
+    section.detailContainer > div:nth-of-type(3) nav ul li{padding: 10px 5px;}
     section.detailContainer > div:nth-of-type(3) nav ul li:last-of-type{
         margin-bottom: 0px;
     }
@@ -1496,7 +1417,6 @@ article.rightsInfo > ul li > address{
         transform: rotate(180deg);
         top: 630px;
     }
-
     section.detailContainer > div:nth-of-type(3) nav > div{
         height: 700px;
         cursor: zoom-in;
@@ -1514,9 +1434,7 @@ article.rightsInfo > ul li > address{
         opacity: 0;
         bottom: 500px;
     }
-    section.detailContainer > div:nth-of-type(3) nav > div.zoomed{
-        cursor: zoom-out;
-    }
+    section.detailContainer > div:nth-of-type(3) nav > div.zoomed{cursor: zoom-out;}
     section.detailContainer > div:nth-of-type(3) > aside > div >h3{
         line-height: 55px;
     }
@@ -1527,9 +1445,7 @@ article.rightsInfo > ul li > address{
     div.details > h4{
         margin-left: 110px;
     }
-    div.details > ul li{
-        flex-basis: 20%;
-    }
+    div.details > ul li{flex-basis: 20%;}
     div.details > ul li dl dt{
         padding-top: var(--sp20);
     }
@@ -1567,9 +1483,7 @@ article.rightsInfo > ul li > address{
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2){width: 50%;}
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{height: 100%; padding-top: 150px;}
    /* !! START OF LOGIN` */
-    div.dark{
-        padding-top: var(--sp60);
-    }
+    div.dark{padding-top: var(--sp60);}
     div.dark > div > div{flex: 1; max-width: 600px;}
     div.dark > div > div:first-of-type{perspective: 1000px; padding: var(--sp80);}
     div.dark > div > div:first-of-type > div{width: 73.33%; top: 80px; left: 80px;}
@@ -1591,13 +1505,10 @@ article.rightsInfo > ul li > address{
     }
    /* * calculator */
     div.calculator > p{width: 80%;}
-    .twowrap > div{
-        grid-template-columns: 1fr 1fr;
-    }
+    .twowrap > div{grid-template-columns: 1fr 1fr;}
     .twowrap > div > div,article.rightsInfo{
         padding-block: var(--sp140) var(--sp80);
     }
-   /* order status */
     .arrival > img{
         margin-block: var(--sp20) var(--sp80);
     }
