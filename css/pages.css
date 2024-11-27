@@ -116,6 +116,14 @@ div.listContainer > div > div:first-child > div:nth-of-type(2) label{margin-bott
 div.listContainer > div > aside ul li > ol li label::before{content: ''; top: 50%; width: 13px; height: 13px; background: url('../images/checkUnclicked.png') no-repeat center / cover; transition: background-image 0.3s ease;}
 div.listContainer > div > div:last-child > ul > li >div, div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type, div.details > div.full, div.details > div.superCharge, section.detailContainer > div:nth-of-type(3) nav ul li, .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption, .twowrap, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child, div.orderStatus > figure figcaption{background-color: var(--GS12);}
 ol.pager li{flex: 1;}
+div.dark > div > div:first-of-type > div fieldset input:focus ~ label,
+div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label,
+div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
+    top: -10px;  left: 10px;  
+    z-index: 20; padding: 5px 10px;
+    color: var(--B03); 
+    border: 1px solid transparent; 
+}
 ol.pager li a{padding-top: var(--sp20);}
 #pager-line{top: -2px; height: 2px; z-index: 2; transform: translateX(0); transform-origin: left; transition: transform 0.4s ease-in-out;}
 #pager-line, div.wave > div.supportSearch > ol li, div.wave > div.supportSearch > form > input:last-of-type, div.dark > div > div:first-of-type > div.findPassword fieldset > button, div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, div.dark > div > div:first-of-type > div.createPassword fieldset > button, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after, div.dark > div > div:first-of-type > div.createDell button:first-of-type, section.twoface > div > div.checkOut fieldset div button:first-of-type, section.twoface > div > div.checkOut .createPassword fieldset > button{background-color: var(--B04);}
@@ -540,15 +548,6 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     div.listContainer > div > div.list-group-wrapper > ul > li > div > div:last-child{margin-left: 31.56%;}
     div.listContainer > div > div.list-group-wrapper ul li .gradient{top: 305px;}
     .color-change img, .change img{opacity: 1;}
-    div.dark > div > div:first-of-type > div fieldset input:focus ~ label,
-    div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label,
-    div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
-    top: -10px;  left: 10px;  
-    z-index: 20; padding: 5px 10px;
-    color: var(--B03); 
-    font-size: 10px;    
-    border: 1px solid transparent; 
-    }
     ol.pager{margin: 0 0 var(--sp80) 63.66% ; max-width: 360px;}
     section.detailContainer > div:first-child > div{padding-block: var(--sp10); text-align: right; line-height: 50px;}
     section.detailContainer > div:first-child > div >*{display: inline-block;}
