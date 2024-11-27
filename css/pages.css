@@ -135,17 +135,24 @@ section.detailContainer ul.bar{max-width: 100%;}
 section.detailContainer > div:first-child{z-index: 90;}
 section.detailContainer > div:nth-of-type(3) > aside > ul > li:first-of-type > h4{border-top: 1px solid var(--B02);}
 section.detailContainer > div:nth-of-type(3) nav ul li:hover, section.detailContainer > div:nth-of-type(3) nav ul li.selected, .legend nav ul li.selected, .legend nav ul li:hover{border-image: linear-gradient(45deg, var(--B03), var(--B06)) 1;}
-div.details .legend nav ul li.selected{border-image: linear-gradient(45deg, #509fc9, #676eff) 1;}
 section.detailContainer > div:first-child > div > input:first-of-type{margin-right: 2%; background: url('../images/showMore.png') no-repeat right center;}
 section.detailContainer > div:nth-of-type(2){border-bottom: 3px solid var(--GS12);}
 section.detailContainer > div:nth-of-type(2) table{z-index: 1000;margin-block: var(--sp50);padding-top: var(--sp40);}
 div.details > div.fineTuned > div ul, .accountContainer > div > div.wrapper > div, .accountContainer > div > div.wrapper, .accountContainer > div > div.wrapper > ul{gap: 40px;}
 div.details .legend h4, div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3), div.dark > div > div:first-of-type > div.findPassword fieldset > *, div.dark > div > div:first-of-type > div.findPassword fieldset > button, section.twoface > div > div.checkOut form fieldset legend, section.twoface > div > div.checkOut form fieldset ul > li, main > div:nth-of-type(2) > div h3, div.dark > div > div:first-of-type > div fieldset > ul > li, section.twoface > div > div.checkOut fieldset > ul > li {margin-bottom: var(--sp30);}
 div.details > div.full > div img, div.details > div.full > div > div, main > div:nth-of-type(3) > div:has(input:checked) ~ ul li:hover a,div.dark > div > div:first-of-type > div{height: 100%;}
+div.details .legend nav ul li.selected{border-image: linear-gradient(45deg, #509fc9, #676eff) 1;}
 div.details .legend, div.details > ul, .returns{margin: var(--sp80) auto;}
 div.details .legend nav > div img {margin: var(--sp40) auto;}
 div.details > div.full{padding-block: var(--sp60);}
-div.details > div.superCharge > div ul li, section.detailContainer > div:nth-of-type(2) table, div.dark > div > div:first-of-type > div.createDell fieldset div, div.dark > div > div:first-of-type > div.createDell fieldset > p, div.dark > div > div:first-of-type > div.createDell fieldset div, .returns > ol li, section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3), section.twoface div.calculator > div:first-of-type h3{text-align: left;}
+div.details > div.superCharge > div ul li, section.detailContainer > div:nth-of-type(2) table, 
+div.dark > div > div:first-of-type > div.createDell fieldset div, 
+div.dark > div > div:first-of-type > div.createDell fieldset > p, 
+div.dark > div > div:first-of-type > div.createDell fieldset div, .returns > ol li, 
+section.twoface > div > div.checkOut fieldset > ul > li:nth-of-type(3), 
+section.twoface div.calculator > div:first-of-type h3{
+    text-align: left;
+}
 div.details > div.fineTuned > div ul li:nth-of-type(2){background-color: var(--B03);}
 div.details > div.superCharge, div.details > div.fineTuned, div.wave > ul, div.listContainer{margin-bottom: var(--sp80);}
 div.details > div.fineTuned > div ul li:nth-of-type(1), div.wave > ul > li:nth-of-type(1):after{background-color: var(--B06);}
@@ -175,7 +182,16 @@ input#teal[type="radio"]:checked + label, input#teal[type="radio"]:hover + label
 .arrival > ol li:nth-of-type(3):after, .arrival > ol li:nth-of-type(3):before, .arrival > ol li:nth-of-type(4):before{background-color: var(--GS06);}
 div.calculator > div:nth-of-type(2) a{background-color: var(--GS07);}
 .cart-Toggle,.arrival > ol li:nth-child(3):hover{color: var(--GS12);}
-div.wave > div.supportSearch > form input:nth-of-type(1), .twowrap > div > div:first-of-type, div.dark > div > div:first-of-type, section.twoface > div > div.checkOut, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label, div.dark > div > div:first-of-type > div fieldset input:focus ~ label, div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, div.dark > div > div:first-of-type > div fieldset input:valid ~ label, div.calculator input{background-color: var(--GS01);}
+div.wave > div.supportSearch > form input:nth-of-type(1), 
+.twowrap > div > div:first-of-type, div.dark > div > div:first-of-type, 
+section.twoface > div > div.checkOut, 
+section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus ~ label, 
+section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:not(:placeholder-shown) ~ label, 
+section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:valid ~ label, 
+div.dark > div > div:first-of-type > div fieldset input:focus ~ label, 
+div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label, 
+div.dark > div > div:first-of-type > div fieldset input:valid ~ label, 
+div.calculator input{background-color: var(--GS01);}
 div.wave > ul > li:nth-of-type(2):after{background-color: var(--B01);}
 div.wave > div.supportSearch > ol{gap: 10px;}
 div.wave > div.supportSearch > form input:nth-of-type(2){padding: var(--sp15) var(--sp25);}
@@ -202,7 +218,6 @@ div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-
 div.dark > div > div:first-of-type > div{transform-style: preserve-3d; backface-visibility: hidden;}
 div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{top: 50%;height: 1px;}
 div.dark > div > div:nth-of-type(2) img{max-width: 400px;}
-div.dark > div > div:first-of-type > div fieldset input:focus ~ label, div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label,div.dark > div > div:first-of-type > div fieldset input:valid ~ label, section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) input:focus, div.dark > div > div:first-of-type > div fieldset input:focus{outline: none; border: 1px solid var(--B03);}
 div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(3) input{margin-bottom: var(--sp10);}
 div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,div.dark > div > div:first-of-type > div.createPassword fieldset > button{margin: var(--sp30) auto; padding-block: var(--sp15);}
 div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{padding: var(--sp15) 0px var(--sp15) var(--sp25); background: var(--GS12) url('../images/google.png') no-repeat;}
@@ -214,7 +229,7 @@ section.twoface > div > div.checkOut form{margin-top: var(--sp40);}
 section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child{background-color: #f7c518;}
 section.twoface > div > div.checkOut form, div.calculator > a{margin-top: var(--sp40);}
 section.twoface > div > div.checkOut fieldset > ul > li:not(:nth-of-type(3)) label,div.dark > div > div:first-of-type > div fieldset > ul > li label, div.dark > div > div:first-of-type > div fieldset div:not(:nth-of-type(2)) > label{
-    top: 0; left: 20px; padding: 16px 0; pointer-events: none; transition: .3s;
+    top: 0; left: 20px; padding: 16px 0; pointer-events: none; transition: .3s; 
 }
 div.dark > div > div:first-of-type > div fieldset input:focus ~ label,
 div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label,
@@ -243,7 +258,10 @@ div.orderStatus > figure figcaption{padding-block: var(--sp10);}
 div.calculator > div:nth-of-type(2) input{width: 66.6%; padding: var(--sp15);}
 div.calculator > div:nth-of-type(2){margin: var(--sp20) 0px var(--sp20) 20px;}
 div.calculator > div:nth-of-type(2) a{margin-left: var(--sp10);  padding: var(--sp15) var(--sp40);}
-div.calculator > hr, div.dark > div > div:first-of-type > div.createDell button:last-of-type{border: 1px solid var(--B04);}
+div.calculator > hr, 
+div.dark > div > div:first-of-type > div.createDell button:last-of-type{
+    border: 1px solid var(--B04);
+}
 div.calculator ul li{margin-bottom: 15px;}
 div.calculator ul li:first-of-type small{margin-left: 5px;}
 .calculator input[type="number"]::-webkit-outer-spin-button, .calculator input[type="number"]::-webkit-inner-spin-button{-webkit-appearance: none;}
