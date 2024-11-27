@@ -489,7 +489,7 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     .returns > ol li{flex: 1 0 42%;}
     .returns > ol li img{margin: 0 auto var(--sp20);}    
 }
-@media screen and (min-width: 1280px){s
+@media screen and (min-width: 1280px){
     main > div:nth-of-type(2) > div p,section.detailContainer > div:nth-of-type(3) nav ul li,div.details > div.fineTuned > div p, div.wave > ul > li h3,.accountContainer > div > div.wrapper > div > div:first-of-type > div,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:first-of-type,div.dark > div > div:first-of-type > div.createDell fieldset > p,div.dark > div > div:first-of-type > div.createDell button:first-of-type,div.dark > div > div:nth-of-type(2) ul li dl dt, article.rightsInfo > ul > li,article.rightsInfo > ul li h3, article.rightsInfo > ul li > p, .returns > div > h2,.returns > ol li > dl dt{margin-bottom: var(--sp20);}
     div.details > ul,.arrival > div,.arrival > ol,div.orderStatus{padding-inline: var(--sp80);}
     div.grid-group-wrapper > ul > li > div,div.dark{background-color: var(--GS12);}
@@ -540,6 +540,15 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     div.listContainer > div > div.list-group-wrapper > ul > li > div > div:last-child{margin-left: 31.56%;}
     div.listContainer > div > div.list-group-wrapper ul li .gradient{top: 305px;}
     .color-change img, .change img{opacity: 1;}
+    div.dark > div > div:first-of-type > div fieldset input:focus ~ label,
+    div.dark > div > div:first-of-type > div fieldset input:not(:placeholder-shown) ~ label,
+    div.dark > div > div:first-of-type > div fieldset input:valid ~ label{
+    top: -10px;  left: 10px;  
+    z-index: 20; padding: 5px 10px;
+    color: var(--B03); 
+    font-size: 10px;    
+    border: 1px solid transparent; 
+    }
     ol.pager{margin: 0 0 var(--sp80) 63.66% ; max-width: 360px;}
     section.detailContainer > div:first-child > div{padding-block: var(--sp10); text-align: right; line-height: 50px;}
     section.detailContainer > div:first-child > div >*{display: inline-block;}

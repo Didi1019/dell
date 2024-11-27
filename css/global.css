@@ -59,7 +59,9 @@ footer>div{padding-block:var(--sp30);}
     section.detailContainer > div:nth-of-type(2) table{
         width: 93.5%;
     }
-    header > div, [class^='image'] > div, .details > ul, .details > h4, section.detailContainer > div:first-child > div, .returns, ul.bar li, section.detailContainer > div:nth-of-type(2) table, div.dark > div > div:nth-of-type(2) ul {padding-inline: 3.25%;}
+    header > div, [class^='image'] > div, article.rightsinfo p,.details > ul, .details > h4, section.detailContainer > div:first-child > div, .returns, ul.bar li, section.detailContainer > div:nth-of-type(2) table, div.dark > div > div:nth-of-type(2) ul {
+        padding-inline: 3.25%;
+    }
     header>div>nav.is-active ul li ol:after{content:''; background-color:var(--GS08); width:100%; height:1px; position:absolute; left:0px; bottom:-10px;}
     header>div>nav,header>div>a{display:none;}
     header>div{position:relative; height:60px; gap:35px;}
