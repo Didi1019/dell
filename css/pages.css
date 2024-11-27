@@ -10,7 +10,7 @@ main > ul li, main > ul li span, main > div:nth-of-type(3) > ul li, div.listCont
 main > ul li span,main > div:first-of-type > ul li div,[class^='image'] > div ul li b, [class$='Panel'].active, [class$='Popup'].active,main > div:first-of-type > ul li:nth-of-type(2) div,div.listContainer > div > div:last-of-type > ul li > div,div.listContainer > div > div:last-child > ul > li > div strong,div.listContainer > nav ul li,div.listContainer > div > aside ul li > b,div.grid-group-wrapper > ul > li,section.detailContainer > div:nth-of-type(3) > aside > ul > li > h4,.arrival > ol li:before,.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2),.accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a,section.twoface > div > div.checkOut fieldset div button:first-of-type,section.twoface > div > div.checkOut .createPassword fieldset > button,div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type,div.dark > div > div:first-of-type > div.createPassword fieldset > button,article.rightsInfo small,section.twoface > div > div.checkOut fieldset > button,section.detailContainer > div:nth-of-type(3) > aside > ul > li > label,div.listContainer > div > div:last-child .gradient li{display: block;}
 main > div:nth-of-type(3) > div div h2, div.grid-group-wrapper > ul > li, div.listContainer > div > div:last-child > ul > li, [class^='image'] > div ul li p, section.detailContainer > div:nth-of-type(3) > aside > div > h3, article.rightsInfo h2, article.rightsInfo > ul, section.twoface > div > div.checkOut fieldset legend, div.dark > div > div:first-of-type > div fieldset legend, div.wave > div.supportSearch h4, div.wave > div.supportSearch p, .accountContainer > div h2{margin-bottom: var(--sp40);}
 main > div:nth-of-type(3) > div, div.details > h4 .recycle img, div.wave{padding-block: var(--sp80);}
-main > div:nth-of-type(3) > ul li, main > div:first-of-type .sButton > button, div.listContainer > div > div:last-child .gradient li, table > caption, div.listContainer > div > div:first-child > div button, section.detailContainer > div:nth-of-type(3) button, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child, div.calculator > div:first-of-type > div > button{text-indent: -9999px;}
+main > div:nth-of-type(3) > ul li, main > div:first-of-type .sButton > button, div.listContainer > div > div:last-child .gradient li, table > caption, div.listContainer > div > div:first-child > div button, section.detailContainer > div:nth-of-type(3) button, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:first-child, div.calculator > div:first-of-type > div > button, main>div:nth-of-type(3)>ul li{text-indent: -9999px;}
 main > div:first-of-type > ul li, main > ul li, main > ul li span, main > div:nth-of-type(3) > ul li{background-position: center;}
 section.twoface div.calculator > div:first-of-type > div,section.twoface > div > div.checkOut fieldset > button,div.dark > div > div:first-of-type > div:first-of-type fieldset > button,div.calculator ul li:first-of-type strong,section.twoface > div > div.checkOut fieldset > a{margin-left: auto;}
 main > div:first-of-type .sButton > button:last-of-type, article.rightsInfo > ul li > ul > li,main > ul li h4, div.wave > div.supportSearch > form, div.dark > div > div:nth-of-type(2) h2, .returns > ol li > dl dt{margin-bottom: var(--sp20);}
@@ -32,8 +32,9 @@ main > div:first-of-type .sButton{left: 50%; transform: translateX(-50%);}
 main > div:first-of-type > ul li div,div.listContainer > div > div:last-child> ul > li > div > div mark{z-index: 10;}
 main > div:first-of-type > ul li div, div.listContainer > div > aside ul li > ol li label::before,div.listContainer > div > aside ul li > b::before{transform: translateY(-50%);}
 main > div:first-of-type .sButton > button:last-of-type{transform: rotate(180deg);}
-main > div:nth-of-type(3) > div div h2{padding-bottom: var(--sp20); border-bottom: 1px solid var(--GS12);}
-main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{width: 0px;}
+main > div:first-of-type .sButton > button{user-select: none; width: 31px; height: 23px;}
+main > div:first-of-type > ul li:nth-child(3), main > div:first-of-type > ul li:nth-child(4), main > div:first-of-type > ul li:nth-child(5){opacity: 0.9;}
+main > div:first-of-type > ul li:nth-child(1), main > div:first-of-type > ul li:nth-child(2){transform: none; border-radius: 0; box-shadow: none;}
 main > div:first-of-type > ul li{border-radius: 20px;box-shadow: 0 20px 30px rgba(255, 255, 255, 0.3) inset;transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s, opacity 0.5s;}
 main > ul li:nth-of-type(1){background-image: url('../images/main_bg01.png');}
 main > ul li:nth-of-type(2){background-image: url('../images/main_bg02.png');}
@@ -49,11 +50,10 @@ main>div:nth-of-type(3)>ul li:nth-of-type(2){background-image: url("../images/te
 main>div:nth-of-type(3)>ul li:nth-of-type(3){background-image: url("../images/test3.png");}
 main>div:nth-of-type(3)>ul li:nth-of-type(4){background-image: url("../images/test4.png");}
 main>div:nth-of-type(3)>ul li:nth-of-type(5){background-image: url("../images/test5.png");}
-main>div:nth-of-type(3)>ul li{text-indent: -9999px; font-size: 0px;}
-main > div:first-of-type .sButton > button{user-select: none; width: 31px; height: 23px;}
-main > div:first-of-type > ul li:nth-child(3), main > div:first-of-type > ul li:nth-child(4), main > div:first-of-type > ul li:nth-child(5){opacity: 0.9;}
-main > div:first-of-type > ul li:nth-child(1), main > div:first-of-type > ul li:nth-child(2){transform: none; border-radius: 0; box-shadow: none;}
 main > div:nth-of-type(2), main > ul li{padding: var(--sp40) 0;}
+main > div:nth-of-type(3) > div:has(input:checked) ~ ul::before{width: 0px;}
+main>div:nth-of-type(3)>ul li{font-size: 0px;}
+main > div:nth-of-type(3) > div div h2{padding-bottom: var(--sp20); border-bottom: 1px solid var(--GS12);}
 main > ul li span{padding-bottom: 370px;}
 main > div:nth-of-type(3) > div div{max-width: 600px;}
 main > div:nth-of-type(3) > ul, main > div:nth-of-type(3) > ul li, main > div:nth-of-type(3) > div:has(input:checked) ~ ul{transition: all 0.5s ease;}main 
@@ -116,7 +116,6 @@ div.listContainer > div > div:first-child > div:nth-of-type(2) label{margin-bott
 div.listContainer > div > aside ul li > ol li label::before{content: ''; top: 50%; width: 13px; height: 13px; background: url('../images/checkUnclicked.png') no-repeat center / cover; transition: background-image 0.3s ease;}
 div.listContainer > div > div:last-child > ul > li >div, div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type, div.details > div.full, div.details > div.superCharge, section.detailContainer > div:nth-of-type(3) nav ul li, .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption, .twowrap, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child, div.orderStatus > figure figcaption{background-color: var(--GS12);}
 ol.pager li{flex: 1;}
-
 ol.pager li a{padding-top: var(--sp20);}
 #pager-line{top: -2px; height: 2px; z-index: 2; transform: translateX(0); transform-origin: left; transition: transform 0.4s ease-in-out;}
 #pager-line, div.wave > div.supportSearch > ol li, div.wave > div.supportSearch > form > input:last-of-type, div.dark > div > div:first-of-type > div.findPassword fieldset > button, div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, div.dark > div > div:first-of-type > div.createPassword fieldset > button, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after, div.dark > div > div:first-of-type > div.createDell button:first-of-type, section.twoface > div > div.checkOut fieldset div button:first-of-type, section.twoface > div > div.checkOut .createPassword fieldset > button{background-color: var(--B04);}
@@ -178,7 +177,6 @@ div.details > div.superCharge > div ul li p{margin-top: var(--sp20);}
 .show{filter: blur(0); transform: translateX(0) translateY(0);}
 section.detailContainer > div:nth-of-type(2) table tr th{padding-right: 100px; color: var(--GS04);}
 input#teal[type="radio"]:checked + label, input#teal[type="radio"]:hover + label{--border-color: var(--B01);}input#sand[type="radio"]:checked + label, input#sand[type="radio"]:hover + label{--border-color: var(--sand);}input#yellow[type="radio"]:checked + label, input#yellow[type="radio"]:hover + label{--border-color: var(--yellow);}input#black[type="radio"]:checked + label, input#black[type="radio"]:hover + label{--border-color: var(--GS12);}input#green[type="radio"]:checked + label, input#green[type="radio"]:hover + label{--border-color: var(--green);}input#red[type="radio"]:checked + label, input#red[type="radio"]:hover + label{--border-color: var(--red);}input#gray[type="radio"]:checked + label, input#gray[type="radio"]:hover + label{--border-color: var(--GS05);}input#purple[type="radio"]:checked + label, input#purple[type="radio"]:hover + label{--border-color: var(--B06);}input#pink[type="radio"]:checked + label, input#pink[type="radio"]:hover + label{--border-color: var(--pink);}input#white[type="radio"]:checked + label, input#white[type="radio"]:hover + label, input#silver[type="radio"]:checked + label, input#silver[type="radio"]:hover + label{--border-color: var(--GS01);}
-/* color */
 .arrival > ol li:nth-of-type(3):after, .arrival > ol li:nth-of-type(3):before, .arrival > ol li:nth-of-type(4):before{background-color: var(--GS06);}
 div.calculator > div:nth-of-type(2) a{background-color: var(--GS07);}
 .cart-Toggle,.arrival > ol li:nth-child(3):hover{color: var(--GS12);}
