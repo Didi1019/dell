@@ -152,9 +152,7 @@
     [class^='image'] > div ul li p:not(:last-of-type){margin-bottom: var(--sp40);}
 }
 @media screen and (max-width: 1279px) {
-    p.rbRG16, p.rzTH16{
-       line-height: 30px;
-   }
+    p.rbRG16, p.rzTH16, .rzSB20uc, .rzSB20{line-height: 30px;}
     .rzTH55{font-size: 55px;}
     .rzLT40{font-size: 40px;}
     .rbMD30, .rzTH55uc, .rzSB50, .rbSB50, .rbSB30{font-size: 30px;}

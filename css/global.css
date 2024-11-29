@@ -46,7 +46,6 @@ footer>div{padding-block:var(--sp30);}
     main > div:nth-of-type(3),
     div.wave > div.supportSearch,
     .accountContainer > div,
-    .twowrap > div,
     div.wave > div.supportSearch,
     div.wave > ul,
     .accountContainer > div,    
@@ -59,7 +58,7 @@ footer>div{padding-block:var(--sp30);}
     section.detailContainer > div:nth-of-type(2) table{
         width: 93.5%;
     }
-    header > div, [class^='image'] > div, article.rightsinfo p,.details > ul, .details > h4, section.detailContainer > div:first-child > div, .returns, ul.bar li, section.detailContainer > div:nth-of-type(2) table, div.dark > div > div:nth-of-type(2) ul {
+    header > div, [class^='image'] > div, article.rightsinfo p,.details > ul, .details > h4, section.detailContainer > div:first-child > div, .returns, ul.bar li, section.detailContainer > div:nth-of-type(2) table, div.dark > div > div:nth-of-type(2) ul, .arrival > *:not(img) {
         padding-inline: 3.25%;
     }
     header>div>nav.is-active ul li ol:after{content:''; background-color:var(--GS08); width:100%; height:1px; position:absolute; left:0px; bottom:-10px;}

@@ -338,7 +338,7 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     section.detailContainer > div:nth-of-type(3) nav{padding-top: 100px;}
     section.detailContainer > div:nth-of-type(3) aside{padding: var(--sp80) 3% 0px;}
     section.detailContainer > div:nth-of-type(3) nav ul{max-width: 70%;}
-    section.detailContainer > div:nth-of-type(3) button{background-size: 15px 9px; width: 55px; height: 50px; z-index: 10; right: 3.5%; bottom: 42.5px;}
+    section.detailContainer > div:nth-of-type(3) button{background-size: 15px 9px; width: 55px; height: 50px; z-index: 10; right: 3.5%; bottom: 100.5px;}
     section.detailContainer > div:nth-of-type(3) button:first-of-type{left: 3.5%; transform: rotate(270deg);}
     section.detailContainer > div:nth-of-type(3) button:last-of-type{transform: rotate(90deg);}
     section.detailContainer > div:nth-of-type(3) nav div img.display-img{max-width: 560px; padding-inline: 10px; height: 300px;}
@@ -495,7 +495,8 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     .arrival > ol{padding-inline: var(--sp25);}
     div.orderStatus > div,section.detailContainer > div:nth-of-type(3) nav,section.detailContainer > div:nth-of-type(3) nav ul,section.detailContainer > div:nth-of-type(3) nav ul li{display: flex;}
     article.rightsInfo > ul li > p{color: var(--GS11);}
-    .arrival > ol li{width: 25%;}  
+    .arrival > ol li{width: 25%;} 
+    .arrival > ol li:nth-of-type(3):after{width: 100%; left: 50%;} 
     div.dark > div > div:first-of-type > div.createDell fieldset button,div.dark > div > div:first-of-type > div.findPassword fieldset > button{padding-block: var(--sp10);}
     div.dark > div > div:first-of-type > div.createDell fieldset div:nth-of-type(2) input{width: auto; margin-block: var(--sp20);}
     div.dark > div > div:nth-of-type(2) ul{gap: 20px;}
