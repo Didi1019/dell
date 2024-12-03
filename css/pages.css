@@ -4,6 +4,7 @@ main > div:first-of-type > ul,main > div:first-of-type > ul li:nth-child(1),main
 main > div:first-of-type > ul li div, main > div:first-of-type > ul li:nth-child(6), ul.bar li, section.detailContainer > div:nth-of-type(3) > aside > ul > li > input{opacity: 0;}
 main > div:first-of-type > ul li, main > div:nth-of-type(3) > ul li, main > ul li{background-size: cover;}
 main > div:first-of-type > ul li:nth-child(1), main > div:nth-of-type(3) > ul li, main > div:nth-of-type(3) > div:has(input:checked) ~ ul li, .show{opacity: 1;}
+main > div:first-of-type .sButton > button:first-of-type, section.twoface div.calculator > div:first-of-type img{margin-right: var(--sp25);}
 main > ul > *, div.details .legend >*, div.calculator > *, div.black, div.details > div.fineTuned > div ul li{margin-inline: auto; text-align: center;}
 main > ul li a, div.listContainer > div > div:last-child > ul > li > div div:first-of-type img, section.detailContainer > div:nth-of-type(3) nav div img.display-img, div.details > div.full > div img, .twoface > div, div.dark > div > div:nth-of-type(2) img, .arrival > ol li:before{margin: 0 auto;}
 main > ul li, main > ul li span, main > div:nth-of-type(3) > ul li, div.listContainer > div > div:first-child > div button, section.detailContainer > div:nth-of-type(3) > aside > div input, div.details > div.fineTuned > div ul li dl dt, div.calculator > div:first-of-type > div > button, div.dark > div > div:nth-of-type(2) ul li dl dt, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li, div.wave > div.supportSearch > ol li, div.wave > ul > li{background-repeat: no-repeat;}
@@ -267,7 +268,7 @@ div.calculator ul li:not(:nth-child(3)) strong::before{content: '$';}
 div.calculator > div:first-of-type > div > button{padding: 10px;}
 div.calculator > div:nth-of-type(2){flex: 1;}
 article.rightsInfo small{margin-top: 10px;}
-section.twoface div.calculator > div:first-of-type img{margin-right: var(--sp25); max-width: 120px;}
+section.twoface div.calculator > div:first-of-type img{max-width: 120px;}
 @keyframes gradient{
     0%{background-position: 0% 50%;}
     50%{background-position: 100% 50%;}
@@ -548,7 +549,7 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     main > div:first-of-type > ul li:nth-child(5){left: calc(65% + 440px);}
     main > div:first-of-type > ul li:nth-child(6){left: calc(65% + 660px);}
     main > div:first-of-type > ul li div{width: 350px; top: 50%; left: 10%;}
-    main > div:first-of-type > ul li div p{margin-block: 20px;}
+    main > div:first-of-type > ul li div p{margin-block: 20px;}    
     main > div:first-of-type .sButton{bottom: 160px;}
     main > div:nth-of-type(2){padding: var(--sp190) 0 var(--sp345);}
     main > div:nth-of-type(2) > div{margin: 0 auto 0px 19%; max-width: 800px;}
