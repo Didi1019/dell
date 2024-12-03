@@ -322,6 +322,9 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     div.listContainer > div > aside > h3{margin-bottom: var(--sp50); padding: var(--sp15) 0px var(--sp15) var(--sp30); max-width: 260px;}
     div.listContainer > div > aside > ul.active{left: 0;}
     ul.img-selection, div.listContainer > nav ul{overflow-x: scroll;}
+    ul.img-selection::-webkit-scrollbar, div.listContainer > nav ul::-webkit-scrollbar {
+        display: none; 
+    }
     div.grid-group-wrapper{margin-top: var(--sp40);}
     div.listContainer > div > div.grid-group-wrapper > ul > li > div div:first-of-type{padding: 80px 10% 40px;}
     div.listContainer > div > div:last-child > ul > li > div div:first-of-type{transition: background-color .7s; box-sizing: revert;}
@@ -338,7 +341,7 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     section.detailContainer > div:nth-of-type(3) nav{padding-top: 100px;}
     section.detailContainer > div:nth-of-type(3) aside{padding: var(--sp80) 3% 0px;}
     section.detailContainer > div:nth-of-type(3) nav ul{max-width: 70%;}
-    section.detailContainer > div:nth-of-type(3) button{background-size: 15px 9px; width: 55px; height: 50px; z-index: 10; right: 3.5%; bottom: 100.5px;}
+    section.detailContainer > div:nth-of-type(3) button{background-size: 15px 9px; width: 55px; height: 50px; z-index: 10; right: 3.5%; bottom: 80.5px;}
     section.detailContainer > div:nth-of-type(3) button:first-of-type{left: 3.5%; transform: rotate(270deg);}
     section.detailContainer > div:nth-of-type(3) button:last-of-type{transform: rotate(90deg);}
     section.detailContainer > div:nth-of-type(3) nav div img.display-img{max-width: 560px; padding-inline: 10px; height: 300px;}
@@ -422,7 +425,7 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     div.wave > div.supportSearch > form input:nth-of-type(1){padding: var(--sp15) var(--sp20); width: 70%;}
     .accountContainer > div > div.wrapper > div > div:first-of-type ul{grid-template-columns: 1fr 1fr;}
     .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a{height: 100%; padding-top: 55%;}
-    .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2), .accountContainer > div > div.wrapper > div > div:first-of-type ul li figure, section.detailContainer > div:nth-of-type(3) nav ul{width: 100%;}
+    .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2), .accountContainer > div > div.wrapper > div > div:first-of-type ul li figure{width: 100%;}
     div.dark > div > div:first-of-type > div{width: 73.33%; top: 140px; left: 12.5%;}
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before,div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after{width: 150px;}
     div.dark > div > div:first-of-type > div:first-of-type fieldset div > a{background-position: left 42% center;}
@@ -449,7 +452,19 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     .accountContainer > div > div.wrapper > ul li:first-of-type a{position: absolute;}
     div.listContainer > div > aside > input.active,div.listContainer > div > aside > ul.active,.arrival > ol li,div.dark > div > div:first-of-type,div.dark > div > div:first-of-type > div.createDell fieldset button,div.dark > div > div:first-of-type > div.findPassword fieldset > button,section.detailContainer > div:nth-of-type(3) > aside > ul::after,section.detailContainer > div:nth-of-type(3) > aside > div > input,div.orderStatus > span:first-of-type{display: block;}
     div.details > div.fineTuned > div ul,.recycle > img{margin: 0 auto;}
-    .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2), div.listContainer > div > aside ul li > b:after,div.listContainer > div > aside ul li > ol:after,div.details > div.fineTuned > div ul li,section.detailContainer > div:nth-of-type(3) > aside > ul::after,.arrival > ol li:nth-of-type(3):after,.returns > ol li > dl dd,.accountContainer > div > div.wrapper > ul li:nth-of-type(2) img,div.dark,div.dark > div > div,div.dark > div > div:first-of-type,.arrival > ol li:after{width: 100%;}
+
+    .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2), 
+    div.listContainer > div > aside ul li > b:after,div.listContainer > div > aside ul li > ol:after,
+    div.details > div.fineTuned > div ul li,
+    section.detailContainer > div:nth-of-type(3) > aside > ul::after,
+    .arrival > ol li:nth-of-type(3):after,.returns > ol li > dl dd,
+    .accountContainer > div > div.wrapper > ul li:nth-of-type(2) img,
+    div.dark,div.dark > div > div,
+    div.dark > div > div:first-of-type,
+    .arrival > ol li:after{
+        width: 100%;
+    }
+
     div.listContainer > div > aside > ul,section.detailContainer > div:nth-of-type(3) nav > div img.zoom{display: none;}
     div.details > div.superCharge > div ul,div.listContainer > nav ul,.accountContainer > div > div.wrapper > div > div:first-of-type ul{gap: 40px;}
     /*!! list */

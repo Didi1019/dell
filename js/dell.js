@@ -490,13 +490,20 @@ $(document).ready(function () {
         var scrollLeft = $thumbs.scrollLeft();
         var maxScrollLeft = $thumbs[0].scrollWidth - $thumbs.outerWidth();
         toggleButtons(scrollLeft > 0, scrollLeft < maxScrollLeft);
+    
         $('nav.change button:first-of-type').off('click').on('click', function () {
             scrollThumbs($thumbs, 'scrollLeft', `-=${listItemWidth}`);
+            scrollLeft = $thumbs.scrollLeft();
+            toggleButtons(scrollLeft > 0, scrollLeft < maxScrollLeft);
         });
+    
         $('nav.change button:last-of-type').off('click').on('click', function () {
             scrollThumbs($thumbs, 'scrollLeft', `+=${listItemWidth}`);
+            scrollLeft = $thumbs.scrollLeft(); 
+            toggleButtons(scrollLeft > 0, scrollLeft < maxScrollLeft);
         });
     }
+    
     function toggleButtons(showUp, showDown) {
         $('nav.change button:first-of-type').toggle(showUp);
         $('nav.change button:last-of-type').toggle(showDown);
