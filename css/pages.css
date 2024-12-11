@@ -118,7 +118,7 @@ div.listContainer > div > aside ul li > ol li label::before{content: ''; top: 50
 div.listContainer > div > div:last-child > ul > li >div, div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type, div.details > div.full, div.details > div.superCharge, section.detailContainer > div:nth-of-type(3) nav ul li, .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption, .twowrap, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li:last-child, div.orderStatus > figure figcaption{background-color: var(--GS12);}
 ol.pager li{flex: 1;}
 ol.pager li a{padding-top: var(--sp20);}
-#pager-line{top: -2px; height: 2px; z-index: 2; transform: translateX(0); transform-origin: left; transition: transform 0.4s ease-in-out;}
+#pager-line{top: -2px; height: 2px; z-index: 2; transform: translateX(0); transform-origin: left; transition: transform 0.4s ease-in-out; max-width: 100%;}
 #pager-line, div.wave > div.supportSearch > ol li, div.wave > div.supportSearch > form > input:last-of-type, div.dark > div > div:first-of-type > div.findPassword fieldset > button, div.dark > div > div:first-of-type > div:first-of-type fieldset div button:first-of-type, div.dark > div > div:first-of-type > div.createPassword fieldset > button, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:before, div.dark > div > div:first-of-type > div:first-of-type fieldset div > p:last-of-type:after, div.dark > div > div:first-of-type > div.createDell button:first-of-type, section.twoface > div > div.checkOut fieldset div button:first-of-type, section.twoface > div > div.checkOut .createPassword fieldset > button{background-color: var(--B04);}
 div.listContainer > div > div:last-child .gradient{height: 15px; top: 275px;}
 div.listContainer > div > aside ul li > ol:after{content: ''; height: 1px; left: -10px; bottom: -40px;}
@@ -203,7 +203,7 @@ div.wave{background: linear-gradient(-45deg, var(--B05), var(--GS12), var(--B02)
 div.wave > ul > li:nth-of-type(2) ol li a:hover{color: var(--B01);}
 div.wave > ul > li:nth-of-type(4) ol li a:hover{color: var(--B02);}
 div.wave > ul > li:nth-of-type(3) ol li a:hover{color: var(--B05);}
-div.wave > div.supportSearch > form input::placeholder, ol.pager li a:hover {color: var(--B04);}
+div.wave > div.supportSearch > form input::placeholder, ol.pager li a:hover {color: var(--B02);}
 div.wave > ul > li:nth-of-type(1) ol li a:hover{color: var(--B06);}
 .accountContainer > div > div.wrapper > div > div > p{width: 66%;}
 .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption, div.dark > div > div:first-of-type > div.findPassword fieldset > button{padding-block: var(--sp10);}
