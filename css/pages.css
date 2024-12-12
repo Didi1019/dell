@@ -65,7 +65,7 @@ main > div:first-of-type > ul li:nth-of-type(2) div{animation: show 0.75s ease-i
 main > div:nth-of-type(2){background: url('../images/peakBg.png') no-repeat center center / cover;}
 main > div:first-of-type .sButton > button:hover{background: url('../images/arrowButtonFill.png') no-repeat center center;}
 main > div:first-of-type{padding-bottom: var(--sp60); overflow: hidden;}
-@keyframes show{0%{filter: blur(15px); transform: translateY(calc(-50% + 75px));}100%{opacity: 1; filter: blur(0); }}
+@keyframes show{0%{filter: blur(15px); transform: translateY(calc(-50% + 75px));} 100% {opacity: 1; filter: blur(0); }}
 ul.bar li, ol.pager li, div.listContainer > nav ul li, div.details > div.superCharge > div, div.details > div.fineTuned > div, div.dark > div > div:first-of-type, div.dark > div > div:nth-of-type(2), .returns > div:first-of-type, .arrival > ol li, .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption, div.orderStatus > figure figcaption, .accountContainer > div > div.wrapper > div > div:first-of-type ul li figcaption.accountContainer, .accountContainer > div > div.wrapper > div > div:first-of-type ul li:nth-of-type(2) a, section.twoface > div > div.checkOut form, div.wave > div > a.Back{text-align: center;}
 ul.bar{height: 50px; top: 60px;}
 ul.bar li{animation: slideShow 12s infinite;}
@@ -332,7 +332,7 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     section.detailContainer > div:first-child > div{padding-block: var(--sp20); line-height: 50px;}
     section.detailContainer > div:first-child > div > h2{float: none;}
     section.detailContainer ul.bar{top: 243px;}
-    ul.img-selection{overflow-x: scroll;}
+    ul.img-selection{overflow-x: scroll;}    
     ul.img-selection::-webkit-scrollbar{
         display: none; 
     }

@@ -484,7 +484,7 @@ $(document).ready(function () {
     function handleMobileScroll() {
         var $thumbs = $('#thumbs');
         var $listItem = $thumbs.find('li').first();
-        var listItemWidth = $listItem.outerWidth(true) + 125;
+        var listItemWidth = $listItem.outerWidth(true) + 95;
         var scrollLeft = $thumbs.scrollLeft();
         var maxScrollLeft = $thumbs[0].scrollWidth - $thumbs.outerWidth();
         toggleButtons(scrollLeft > 0, scrollLeft < maxScrollLeft);
