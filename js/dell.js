@@ -12,7 +12,6 @@ $(function() {
     mouseLeave();
     intersection();
     gradientImg();
-    preloadHoverImages();
     hoverImg();
 });
 function gradientImg() {
@@ -42,10 +41,6 @@ function gradientImg() {
     }
     hoverEffect(secondLi, "Second");
     hoverEffect(thirdLi, "Third");
-}
-function preloadHoverImages() {
-    if (!window.location.pathname.split('/').pop().startsWith('list')) return;    
-
 }
 function hoverImg() {
     if (!window.location.pathname.split('/').pop().startsWith('list')) return;
