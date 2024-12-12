@@ -15,61 +15,61 @@ $(function() {
     preloadHoverImages();
     hoverImg();
 });
-// function gradientImg() {
-//     var secondLi = $(".color-change ul.gradient li:nth-child(2)");
-//     var thirdLi = $(".color-change ul.gradient li:nth-child(3)");
-//     function hoverEffect(li, replacementText) {
-//         li.hover(
-//             function() {
-//                 var img = $(this).closest('div').find('img');
-//                 img.css('opacity', '0');
-//                 img.one('transitionend', function() {
-//                     var originalSrc = img.attr('src');
-//                     var hoverSrc = originalSrc.replace(".png", replacementText + ".png");
-//                     img.attr('src', hoverSrc).css('opacity', '1');
-//                 });
-//             }, 
-//             function() {
-//                 var img = $(this).closest('div').find('img');
-//                 img.css('opacity', '0');
-//                 img.one('transitionend', function() {
-//                     var hoverSrc = img.attr('src');
-//                     var originalSrc = hoverSrc.replace(replacementText + ".png", ".png");
-//                     img.attr('src', originalSrc).css('opacity', '1');
-//                 });
-//             }
-//         );
-//     }
-//     hoverEffect(secondLi, "Second");
-//     hoverEffect(thirdLi, "Third");
-// }
-// function preloadHoverImages() {
-//     if (!window.location.pathname.split('/').pop().startsWith('list')) return;    
+function gradientImg() {
+    var secondLi = $(".color-change ul.gradient li:nth-child(2)");
+    var thirdLi = $(".color-change ul.gradient li:nth-child(3)");
+    function hoverEffect(li, replacementText) {
+        li.hover(
+            function() {
+                var img = $(this).closest('div').find('img');
+                img.css('opacity', '0');
+                img.one('transitionend', function() {
+                    var originalSrc = img.attr('src');
+                    var hoverSrc = originalSrc.replace(".png", replacementText + ".png");
+                    img.attr('src', hoverSrc).css('opacity', '1');
+                });
+            }, 
+            function() {
+                var img = $(this).closest('div').find('img');
+                img.css('opacity', '0');
+                img.one('transitionend', function() {
+                    var hoverSrc = img.attr('src');
+                    var originalSrc = hoverSrc.replace(replacementText + ".png", ".png");
+                    img.attr('src', originalSrc).css('opacity', '1');
+                });
+            }
+        );
+    }
+    hoverEffect(secondLi, "Second");
+    hoverEffect(thirdLi, "Third");
+}
+function preloadHoverImages() {
+    if (!window.location.pathname.split('/').pop().startsWith('list')) return;    
 
-// }
-// function hoverImg() {
-//     if (!window.location.pathname.split('/').pop().startsWith('list')) return;
+}
+function hoverImg() {
+    if (!window.location.pathname.split('/').pop().startsWith('list')) return;
 
-//     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-//     $(".change").on(isTouchDevice ? "click" : "mouseenter mouseleave", function (e) {
-//         const img = $(this).find('img');
-//         const isHovering = shouldChangeToHover(e, img);
-//         updateImageSrc(img, isHovering);
-//     });
-//     function shouldChangeToHover(event, img) {
-//         const isClick = event.type === "click";
-//         const isHoverEvent = event.type === "mouseenter";
-//         const isAlreadyHovering = img.attr('src').includes("Hover.png");
-//         return isHoverEvent || (isClick && !isAlreadyHovering);
-//     }
-//     function updateImageSrc(img, toHover) {
-//         const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
-//         img.css('opacity', '0').one('transitionend', function () {
-//             img.attr('src', newSrc).css('opacity', '1');
-//         });
-//     }
-// }
+    $(".change").on(isTouchDevice ? "click" : "mouseenter mouseleave", function (e) {
+        const img = $(this).find('img');
+        const isHovering = shouldChangeToHover(e, img);
+        updateImageSrc(img, isHovering);
+    });
+    function shouldChangeToHover(event, img) {
+        const isClick = event.type === "click";
+        const isHoverEvent = event.type === "mouseenter";
+        const isAlreadyHovering = img.attr('src').includes("Hover.png");
+        return isHoverEvent || (isClick && !isAlreadyHovering);
+    }
+    function updateImageSrc(img, toHover) {
+        const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
+        img.css('opacity', '0').one('transitionend', function () {
+            img.attr('src', newSrc).css('opacity', '1');
+        });
+    }
+}
 
 function password() {
     $('#createPW').submit(function(event) {
@@ -484,7 +484,7 @@ $(document).ready(function () {
     function handleMobileScroll() {
         var $thumbs = $('#thumbs');
         var $listItem = $thumbs.find('li').first();
-        var listItemWidth = $listItem.outerWidth(true) + 15;
+        var listItemWidth = $listItem.outerWidth(true) + 125;
         var scrollLeft = $thumbs.scrollLeft();
         var maxScrollLeft = $thumbs[0].scrollWidth - $thumbs.outerWidth();
         toggleButtons(scrollLeft > 0, scrollLeft < maxScrollLeft);
