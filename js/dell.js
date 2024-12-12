@@ -57,19 +57,25 @@ function hoverImg() {
         const isHovering = shouldChangeToHover(e, img);
         updateImageSrc(img, isHovering);
     });
+
     function shouldChangeToHover(event, img) {
         const isClick = event.type === "click";
         const isHoverEvent = event.type === "mouseenter";
         const isAlreadyHovering = img.attr('src').includes("Hover.png");
         return isHoverEvent || (isClick && !isAlreadyHovering);
     }
+
     function updateImageSrc(img, toHover) {
+        if (toHover && img.attr('src').includes("Hover.png")) {
+            return; 
+        }
         const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
         img.css('opacity', '0').one('transitionend', function () {
             img.attr('src', newSrc).css('opacity', '1');
         });
     }
 }
+
 
 function password() {
     $('#createPW').submit(function(event) {
