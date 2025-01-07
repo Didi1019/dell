@@ -580,6 +580,10 @@ article.rightsInfo > ul{background-color: var(--GS04);}
     div.listContainer > div > div.list-group-wrapper > ul > li > div div:first-of-type{padding: var(--sp85) 5% var(--sp60);}
     div.listContainer > div > div:last-child > ul > li > div div:first-of-type{height: var(--sp140);}
     div.listContainer > div > div:last-child > ul > li > div div:first-of-type img{max-width: 214px;}
+    div.listContainer > div > div:last-child > ul > li > div div:first-of-type:has(img) ul li:hover{
+        opacity: 0.5;
+    }
+    
     div.listContainer > div > div.list-group-wrapper > ul > li > div > div:last-child{margin-left: 31.56%;}
     div.listContainer > div > div.list-group-wrapper ul li .gradient{top: 305px;}
     .color-change img, .change img{opacity: 1;}

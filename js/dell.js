@@ -17,31 +17,24 @@ $(function() {
 function gradientImg() {
     var secondLi = $(".color-change ul.gradient li:nth-child(2)");
     var thirdLi = $(".color-change ul.gradient li:nth-child(3)");
+
     function hoverEffect(li, replacementText) {
         li.hover(
-            function() {
+            function() { // Mouse enter
                 var img = $(this).closest('div').find('img');
-                img.css('opacity', '0');
-                img.one('transitionend', function() {
-                    var originalSrc = img.attr('src');
-                    var hoverSrc = originalSrc.replace(".png", replacementText + ".png");
-                    img.attr('src', hoverSrc).css('opacity', '1');
-                });
+                img.attr('src', img.attr('src').replace(".png", replacementText + ".png"));
             }, 
-            function() {
+            function() { // Mouse leave
                 var img = $(this).closest('div').find('img');
-                img.css('opacity', '0');
-                img.one('transitionend', function() {
-                    var hoverSrc = img.attr('src');
-                    var originalSrc = hoverSrc.replace(replacementText + ".png", ".png");
-                    img.attr('src', originalSrc).css('opacity', '1');
-                });
+                img.attr('src', img.attr('src').replace(replacementText + ".png", ".png"));
             }
         );
     }
+
     hoverEffect(secondLi, "Second");
     hoverEffect(thirdLi, "Third");
 }
+
 function hoverImg() {
     if (!window.location.pathname.split('/').pop().startsWith('list')) return;
 
@@ -70,8 +63,6 @@ function hoverImg() {
         });
     }
 }
-
-
 function password() {
     $('#createPW').submit(function(event) {
         const newPassword = $('#newPassword').val();
