@@ -284,7 +284,7 @@ function pager() {
             var width = $parent.outerWidth();            
             $pagerLine.css({
                 "transform": `translateX(${leftPos}px)`,
-                "width": `${width}px` 
+                "max-width": `${width}px` 
             });
         }
     }
