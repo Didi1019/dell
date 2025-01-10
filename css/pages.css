@@ -97,7 +97,7 @@ div.listContainer > nav, div.listContainer > div > div:last-child > ul > li > di
 div.listContainer, section.detailContainer > div:first-child,  section.detailContainer > div:nth-of-type(2), section.detailContainer > div:nth-of-type(3) aside, .accountContainer > div > div.wrapper > div >*, .twowrap > div > div:last-of-type, section.twoface button, div.dark > div > div:nth-of-type(2){background-color: var(--GS11);}
 div.listContainer > nav ul{padding: 160px 0 var(--sp40);}
 div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{margin: 0 6.56%;}
-.color-change img, .change img{transition: opacity 0.3s ease-in-out;}
+.color-change img, .change img{transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
 div.listContainer > div > div:last-child> ul > li > div > div mark{top: 20px; left: -5px; padding: var(--sp10) 4.56%;}
 ol.pager{border-top: 2px solid var(--GS01);}
 div.listContainer > div > div:first-child > div button, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li, div.calculator > div:first-of-type > div > button{background-position: center center;}

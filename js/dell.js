@@ -54,15 +54,18 @@ function hoverImg() {
     }
 
     function updateImageSrc(img, toHover) {
+        // Prevent unnecessary image reload if already in desired state
         if (toHover && img.attr('src').includes("Hover.png")) {
-            return; 
+            return;
         }
+
+        // Change the image source immediately without animations
         const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
-        img.css('opacity', '0').one('transitionend', function () {
-            img.attr('src', newSrc).css('opacity', '1');
-        });
+        img.attr('src', newSrc);
     }
 }
+
+
 function password() {
     $('#createPW').submit(function(event) {
         const newPassword = $('#newPassword').val();
@@ -93,6 +96,58 @@ function intersection() {
 function marked(){
     $(".detailContainer > div:nth-of-type(3) > aside > ul > li > input:first-of-type").prop('checked', true);
 } 
+function pager() {
+    var $pagerLine = $("<li id='pager-line'></li>").appendTo("ol.pager");
+
+    function updatePagerLine($item) {
+        var $parent = $item.closest('li');
+        if ($parent.length) { 
+            var leftPos = $parent.position().left;
+            var width = $parent.outerWidth();            
+            $pagerLine.css({
+                "transform": `translateX(${leftPos}px)`,
+                "max-width": `${width}px` 
+            });
+        }
+    }
+    updatePagerLine($(".current_page a"));
+    $("ol.pager li").hover(
+        function() {
+            var $link = $(this).find("> a");
+            updatePagerLine($link);
+        },
+        function() {
+            updatePagerLine($(".current_page a"));
+        }
+    );
+}
+function gridtolist() {
+    $('#products').addClass('grid-group-wrapper');
+    $('#grid').addClass('active');
+    const applyGridWrapper = () => {
+        if (window.innerWidth <= 767) {
+            $('#products').removeClass('list-group-wrapper').addClass('grid-group-wrapper');
+            $('#grid').addClass('active');
+            $('#list').removeClass('active');
+        }
+    };
+    applyGridWrapper();
+    $('#grid').click((event) => {
+        event.preventDefault();
+        $('#products').removeClass('list-group-wrapper').addClass('grid-group-wrapper');
+        $('#grid').addClass('active');
+        $('#list').removeClass('active');
+    });
+        $('#list').click((event) => {
+        event.preventDefault();
+        if (window.innerWidth > 767) {
+            $('#products').removeClass('grid-group-wrapper').addClass('list-group-wrapper');
+            $('#list').addClass('active');
+            $('#grid').removeClass('active');
+        }
+    });
+    $(window).resize(applyGridWrapper);
+}
 
 function hidden() {
     $('[class*="Hidden"]').hide();
@@ -274,58 +329,6 @@ function slider() {
     });
 }
 
-function pager() {
-    var $pagerLine = $("<li id='pager-line'></li>").appendTo("ol.pager");
-
-    function updatePagerLine($item) {
-        var $parent = $item.closest('li');
-        if ($parent.length) { 
-            var leftPos = $parent.position().left;
-            var width = $parent.outerWidth();            
-            $pagerLine.css({
-                "transform": `translateX(${leftPos}px)`,
-                "max-width": `${width}px` 
-            });
-        }
-    }
-    updatePagerLine($(".current_page a"));
-    $("ol.pager li").hover(
-        function() {
-            var $link = $(this).find("> a");
-            updatePagerLine($link);
-        },
-        function() {
-            updatePagerLine($(".current_page a"));
-        }
-    );
-}
-function gridtolist() {
-    $('#products').addClass('grid-group-wrapper');
-    $('#grid').addClass('active');
-    const applyGridWrapper = () => {
-        if (window.innerWidth <= 767) {
-            $('#products').removeClass('list-group-wrapper').addClass('grid-group-wrapper');
-            $('#grid').addClass('active');
-            $('#list').removeClass('active');
-        }
-    };
-    applyGridWrapper();
-    $('#grid').click((event) => {
-        event.preventDefault();
-        $('#products').removeClass('list-group-wrapper').addClass('grid-group-wrapper');
-        $('#grid').addClass('active');
-        $('#list').removeClass('active');
-    });
-        $('#list').click((event) => {
-        event.preventDefault();
-        if (window.innerWidth > 767) {
-            $('#products').removeClass('grid-group-wrapper').addClass('list-group-wrapper');
-            $('#list').addClass('active');
-            $('#grid').removeClass('active');
-        }
-    });
-    $(window).resize(applyGridWrapper);
-}
 
 function rotation() {
     $('.createDell, .findPassword, .createPassword').hide();
