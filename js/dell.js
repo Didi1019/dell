@@ -37,9 +37,7 @@ function gradientImg() {
 
 function hoverImg() {
     if (!window.location.pathname.split('/').pop().startsWith('list')) return;
-
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
     $(".change").on(isTouchDevice ? "click" : "mouseenter mouseleave", function (e) {
         const img = $(this).find('img');
         const isHovering = shouldChangeToHover(e, img);
@@ -55,13 +53,21 @@ function hoverImg() {
 
     function updateImageSrc(img, toHover) {
         if (toHover && img.attr('src').includes("Hover.png")) {
-            return; 
+            return;
         }
+    
         const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
-        img.css('opacity', '0').one('transitionend', function () {
-            img.attr('src', newSrc).css('opacity', '1');
+            img.css({
+            transition: 'opacity 0.3s ease',
+            opacity: '0'
+        }).one('transitionend', function () {
+            img.attr('src', newSrc);
+            img.css({
+                opacity: '1'
+            });
         });
     }
+    
 }
 function password() {
     $('#createPW').submit(function(event) {
