@@ -36,8 +36,11 @@ function gradientImg() {
 }
 
 function hoverImg() {
-    if (!window.location.pathname.split('/').pop().startsWith('list')) return;
+    const pageName = window.location.pathname.replace(/\/$/, '').split('/').pop();
+    if (!pageName.startsWith('list')) return;
+
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
     $(".change").on(isTouchDevice ? "click" : "mouseenter mouseleave", function (e) {
         const img = $(this).find('img');
         const isHovering = shouldChangeToHover(e, img);
@@ -52,23 +55,20 @@ function hoverImg() {
     }
 
     function updateImageSrc(img, toHover) {
-        if (toHover && img.attr('src').includes("Hover.png")) {
-            return;
-        }
-    
+        const isAlreadyHovering = img.attr('src').includes("Hover.png");
+        if (toHover && isAlreadyHovering) return;
+
         const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
-            img.css({
-            transition: 'opacity 0.3s ease',
+
+        img.css({
+            transition: 'opacity 0.3s',
             opacity: '0'
         }).one('transitionend', function () {
-            img.attr('src', newSrc);
-            img.css({
-                opacity: '1'
-            });
+            img.attr('src', newSrc).css('opacity', '1');
         });
     }
-    
 }
+
 function password() {
     $('#createPW').submit(function(event) {
         const newPassword = $('#newPassword').val();

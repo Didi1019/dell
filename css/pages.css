@@ -58,7 +58,7 @@ main>div:nth-of-type(3)>ul li{font-size: 0px;}
 main > div:nth-of-type(3) > div div h2{padding-bottom: var(--sp20); border-bottom: 1px solid var(--GS12);}
 main > ul li span{padding-bottom: 370px;}
 main > div:nth-of-type(3) > div div{max-width: 600px;}
-main > div:nth-of-type(3) > ul, main > div:nth-of-type(3) > ul li, main > div:nth-of-type(3) > div:has(input:checked) ~ ul{transition: all 0.5s ease;}main 
+main > div:nth-of-type(3) > ul, main > div:nth-of-type(3) > ul li, main > div:nth-of-type(3) > div:has(input:checked) ~ ul{transition: all 0.5s ease;}
 main > div:nth-of-type(3) > ul li{flex-grow: 1; background-attachment: scroll;}
 main > div:nth-of-type(3) > ul{height: 0; padding-bottom: 80px;}
 main > div:nth-of-type(3) > ul::before{top: 0;height: 2px;background-image: linear-gradient( 90deg,#be92ff,#be92ff,#509FC9,#30ACD5, #0083CA,#676EFF, #00E7E7 ); content: ""; z-index: 2; transition: all 1.2s ease;}
@@ -97,7 +97,7 @@ div.listContainer > nav, div.listContainer > div > div:last-child > ul > li > di
 div.listContainer, section.detailContainer > div:first-child,  section.detailContainer > div:nth-of-type(2), section.detailContainer > div:nth-of-type(3) aside, .accountContainer > div > div.wrapper > div >*, .twowrap > div > div:last-of-type, section.twoface button, div.dark > div > div:nth-of-type(2){background-color: var(--GS11);}
 div.listContainer > nav ul{padding: 160px 0 var(--sp40);}
 div.listContainer > div > div.grid-group-wrapper > ul > li > div > div:last-child{margin: 0 6.56%;}
-.color-change img, .change img{transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
+.color-change img, .change img{transition: opacity 0.3s ease-in-out;}
 div.listContainer > div > div:last-child> ul > li > div > div mark{top: 20px; left: -5px; padding: var(--sp10) 4.56%;}
 ol.pager{border-top: 2px solid var(--GS01);}
 div.listContainer > div > div:first-child > div button, section.twoface > div > div.checkOut form fieldset ul:first-of-type > li, div.calculator > div:first-of-type > div > button{background-position: center center;}
