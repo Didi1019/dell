@@ -48,24 +48,15 @@ function hoverImg() {
     });
 
     function shouldChangeToHover(event, img) {
-        const isClick = event.type === "click";
         const isHoverEvent = event.type === "mouseenter";
         const isAlreadyHovering = img.attr('src').includes("Hover.png");
-        return isHoverEvent || (isClick && !isAlreadyHovering);
+        return isHoverEvent && !isAlreadyHovering;
     }
 
     function updateImageSrc(img, toHover) {
-        const isAlreadyHovering = img.attr('src').includes("Hover.png");
-        if (toHover && isAlreadyHovering) return;
-
-        const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
-
-        img.css({
-            transition: 'opacity 0.3s',
-            opacity: '0'
-        }).one('transitionend', function () {
-            img.attr('src', newSrc).css('opacity', '1');
-        });
+        const currentSrc = img.attr('src');
+        const newSrc = toHover ? currentSrc.replace(".png", "Hover.png") : currentSrc.replace("Hover.png", ".png");
+        img.attr('src', newSrc);
     }
 }
 
