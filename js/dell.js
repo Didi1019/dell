@@ -20,11 +20,11 @@ function gradientImg() {
 
     function hoverEffect(li, replacementText) {
         li.hover(
-            function() { // Mouse enter
+            function() { 
                 var img = $(this).closest('div').find('img');
                 img.attr('src', img.attr('src').replace(".png", replacementText + ".png"));
             }, 
-            function() { // Mouse leave
+            function() { 
                 var img = $(this).closest('div').find('img');
                 img.attr('src', img.attr('src').replace(replacementText + ".png", ".png"));
             }
@@ -54,12 +54,9 @@ function hoverImg() {
     }
 
     function updateImageSrc(img, toHover) {
-        // Prevent unnecessary image reload if already in desired state
         if (toHover && img.attr('src').includes("Hover.png")) {
             return;
         }
-
-        // Change the image source immediately without animations
         const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
         img.attr('src', newSrc);
     }
