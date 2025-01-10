@@ -36,8 +36,7 @@ function gradientImg() {
 }
 
 function hoverImg() {
-    const pageName = window.location.pathname.replace(/\/$/, '').split('/').pop();
-    if (!pageName.startsWith('list')) return;
+    if (!window.location.pathname.split('/').pop().startsWith('list')) return;
 
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
@@ -48,18 +47,22 @@ function hoverImg() {
     });
 
     function shouldChangeToHover(event, img) {
+        const isClick = event.type === "click";
         const isHoverEvent = event.type === "mouseenter";
         const isAlreadyHovering = img.attr('src').includes("Hover.png");
-        return isHoverEvent && !isAlreadyHovering;
+        return isHoverEvent || (isClick && !isAlreadyHovering);
     }
 
     function updateImageSrc(img, toHover) {
-        const currentSrc = img.attr('src');
-        const newSrc = toHover ? currentSrc.replace(".png", "Hover.png") : currentSrc.replace("Hover.png", ".png");
-        img.attr('src', newSrc);
+        if (toHover && img.attr('src').includes("Hover.png")) {
+            return; 
+        }
+        const newSrc = img.attr('src').replace(toHover ? ".png" : "Hover.png", toHover ? "Hover.png" : ".png");
+        img.css('opacity', '0').one('transitionend', function () {
+            img.attr('src', newSrc).css('opacity', '1');
+        });
     }
 }
-
 function password() {
     $('#createPW').submit(function(event) {
         const newPassword = $('#newPassword').val();
