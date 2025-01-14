@@ -30,14 +30,12 @@ function gradientImg() {
             }
         );
     }
-
     hoverEffect(secondLi, "Second");
     hoverEffect(thirdLi, "Third");
 }
 
 function hoverImg() {
     if (!window.location.pathname.split('/').pop().startsWith('list')) return;
-
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
     $(".change").on(isTouchDevice ? "click" : "mouseenter mouseleave", function (e) {
@@ -67,13 +65,11 @@ function password() {
     $('#createPW').submit(function(event) {
         const newPassword = $('#newPassword').val();
         const confirmPassword = $('#confirmPassword').val();
-
         if (newPassword !== confirmPassword) {
             confirm_password.setCustomValidity("Passwords Don't Match");
         } else {
           confirm_password.setCustomValidity('');
         }
-      
     });
 }
 function intersection() {
@@ -162,7 +158,6 @@ function hidden() {
         const aside = $(this).closest('aside');
         const ul = aside.find('ul');
         const inputButton = aside.find('input.mui.filter');
-        
         ul.toggleClass('active');
         inputButton.toggle(ul.hasClass('active'));
     });

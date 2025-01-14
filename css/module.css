@@ -103,7 +103,7 @@
 [class*='Lf'] > *{animation: left 1s ease-out;}
 [class*='RT'] > *{animation: right 1s ease-out;}
 [class^='image'] > div h5 {padding: var(--sp40) 0;}
-[class*=more], [class^='middle'] > img, [class^='full'] > img, [class^='middle'] > video, [class^='image'] > div p{width: 100%;}
+[class*='more'], [class^='middle'] > img, [class^='full'] > img, [class^='middle'] > video, [class^='image'] > div p{width: 100%;}
 [class^='image'] > div ul li b{margin-bottom: 10px;}
 [class^='middle'] {margin: var(--sp40) auto; text-align: center;}
 [class^='middle'] > img, [class^='full'] > img, [class^='middle'] > video{margin: var(--sp80) auto; object-fit: cover;}
@@ -111,13 +111,14 @@
 [class^='middle'] ol li {color: var(--GS05); margin-bottom: var(--sp30); list-style: decimal; list-style-position: inside;}
 [class^='middle'] > ol li:last-of-type {margin-bottom: 10px;}
 [class^='full'] {margin: var(--sp40) auto; text-align: center;}
-[class*='west'],[class*='east'],[class*='north']{
+[class*='west'],[class*='east'],[class*='north'],[class*='heaven']{
     filter: blur(5px);
     transition: all 2s;
 }
 [class*='west']{transform: translateX(-100%);}
 [class*='east']{transform: translateX(+100%);}
-[class*='north']{transform: translateY(+100%); transition: all 1s;}
+[class*='heaven']{transform: translateY(+100%);}
+[class*='north']{transform: translateY(+100%);}
 [class$="Back"]{color: var(--GS01); max-width: 160px; padding: 14px 0px; height: 50px; cursor: pointer;}
 [class*='floatL']{float: left;}
 [class*='w100']{width: 100%;}
@@ -219,8 +220,6 @@
 [class$='Trio']{width: 33.33%;}
 [class$='Duo']{width: 50%;}
 [class$='List']{background-size: 214px; background-repeat: no-repeat;}
-
-
 [class~='clearfix']::after, [class~='clearfix']::before {
     content: ''; display: block; clear: both;
 }
@@ -228,7 +227,7 @@
     position: absolute; content: '';
 }
 [class$='Panel'], [class$='Popup'], [class^=btn-], [class*=more]{position: relative;}
-[class*='west'],[class*='east'],[class*='north']{opacity: 0;}
+[class*='west'],[class*='east'],[class*='north'],[class*="heaven"]{opacity: 0;}
 [class^='middle'] > h4, [class^='full'] > h4{
     padding-bottom: var(--sp40);
 }
